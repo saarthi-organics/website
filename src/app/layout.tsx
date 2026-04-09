@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Static Website",
-  description: "A premium state-of-the-art NextJS static website template",
+  title: "Saarthi Organics",
+  description: "Trading premium molasses procured across North India.",
 };
 
 export default function RootLayout({

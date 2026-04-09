@@ -25,7 +25,7 @@ export default function Home() {
       <header className="nav-header">
         <div className="nav-logo gradient-text" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <Image src="/Logo2_transparent.png" alt="Website Logo" width={72} height={72} style={{ borderRadius: '8px', objectFit: 'fill' }} priority />
-          Aura Molasses
+          Saarthi Organics
         </div>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
@@ -42,7 +42,7 @@ export default function Home() {
               Premium <br /> <span className="gradient-text">Blackstrap</span> Molasses
             </h1>
             <p className="subtitle-large">
-              We source and trade the highest quality molasses globally. Rich, pure, and refined for the most demanding industries. Partner with the industry leader in wholesale natural syrups.
+              We are dedicated wholesale traders of molasses, procuring the highest quality product through various trusted sugar mills across North India.
             </p>
             <a href="#contact" className="cta-button" style={{ textDecoration: 'none' }}>
               Request a Quote
@@ -103,18 +103,18 @@ export default function Home() {
               </p>
 
               <div className="contact-item">
-                <h4>Global Headquarters</h4>
-                <p>1280 Sweetwater Avenue<br />Miami, FL 33101</p>
+                <h4>Office Address</h4>
+                <p>Farm House, Liberty Chowk<br />Karnal - 132001</p>
               </div>
 
               <div className="contact-item">
-                <h4>Direct Trading Line</h4>
-                <p>+1 (800) 555-CANE</p>
+                <h4>Direct Contact</h4>
+                <p>+91 7055552535<br />+91 9927029029</p>
               </div>
 
               <div className="contact-item">
                 <h4>Email Inquiries</h4>
-                <p>traders@auramolasses.com</p>
+                <p>contact@saarthiorganics.com</p>
               </div>
             </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
       </main>
 
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Aura Molasses Trading Group. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Saarthi Organics. All rights reserved.</p>
       </footer>
     </>
   );
