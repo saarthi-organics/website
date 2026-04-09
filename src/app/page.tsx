@@ -23,7 +23,10 @@ export default function Home() {
   return (
     <>
       <header className="nav-header">
-        <div className="nav-logo gradient-text">Aura Molasses</div>
+        <div className="nav-logo gradient-text" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <Image src="/Logo2_transparent.png" alt="Website Logo" width={72} height={72} style={{ borderRadius: '8px', objectFit: 'fill' }} priority />
+          Aura Molasses
+        </div>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#products">Products</a></li>
@@ -92,23 +95,23 @@ export default function Home() {
           <h2 className="title-large" style={{ fontSize: '3rem' }}>
             Let's <span className="gradient-text">Talk Business</span>
           </h2>
-          
+
           <div className="contact-section">
             <div className="contact-details">
               <p className="subtitle-large" style={{ marginBottom: '40px' }}>
                 Looking to secure a stable and premium supply of molasses for your commercial needs? Reach out to our trading desk today.
               </p>
-              
+
               <div className="contact-item">
                 <h4>Global Headquarters</h4>
-                <p>1280 Sweetwater Avenue<br/>Miami, FL 33101</p>
+                <p>1280 Sweetwater Avenue<br />Miami, FL 33101</p>
               </div>
-              
+
               <div className="contact-item">
                 <h4>Direct Trading Line</h4>
                 <p>+1 (800) 555-CANE</p>
               </div>
-              
+
               <div className="contact-item">
                 <h4>Email Inquiries</h4>
                 <p>traders@auramolasses.com</p>
@@ -117,7 +120,7 @@ export default function Home() {
 
             <form className="glass-panel lead-form" onSubmit={handleSubmit}>
               <h3 style={{ fontSize: '1.8rem', marginBottom: '16px' }}>Request Wholesale Pricing</h3>
-              
+
               {isSubmitted ? (
                 <div style={{ padding: '20px', background: 'rgba(46, 204, 113, 0.2)', border: '1px solid #2ecc71', borderRadius: '12px', textAlign: 'center', color: '#2ecc71' }}>
                   Thank you! Your inquiry has been received. Our traders will contact you shortly.
@@ -128,7 +131,7 @@ export default function Home() {
                     <label>Full Name</label>
                     <input required name="name" value={formData.name} onChange={handleInput} type="text" className="form-control" placeholder="John Doe" />
                   </div>
-                  
+
                   <div className="form-group">
                     <label>Company Email</label>
                     <input required name="email" value={formData.email} onChange={handleInput} type="email" className="form-control" placeholder="john@example.com" />
