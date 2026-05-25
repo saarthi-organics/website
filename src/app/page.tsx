@@ -6,18 +6,101 @@ import './globals.css';
 
 export default function Home() {
   const [formData, setFormData] = useState({ name: '', email: '', company: '', message: '' });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    // In a real app, integrate with Formspree, Next.js API Routes, etc.
-    setTimeout(() => setIsSubmitted(false), 4000);
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setFormStatus('submitting');
+    setErrorMessage('');
+
+    const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL;
+    const web3formsAccessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+
+    // 1. Check if Google Forms is configured
+    if (googleFormUrl && googleFormUrl !== 'YOUR_GOOGLE_FORM_RESPONSE_URL' && googleFormUrl.trim() !== '') {
+      try {
+        const entryName = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_NAME || '';
+        const entryEmail = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_EMAIL || '';
+        const entryCompany = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_COMPANY || '';
+        const entryMessage = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_MESSAGE || '';
+
+        const formDataBody = new URLSearchParams();
+        formDataBody.append(entryName, formData.name);
+        formDataBody.append(entryEmail, formData.email);
+        formDataBody.append(entryCompany, formData.company || 'N/A');
+        formDataBody.append(entryMessage, formData.message);
+
+        // Submitting to Google Forms requires mode: 'no-cors' to avoid browser CORS blocking
+        await fetch(googleFormUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: formDataBody.toString()
+        });
+
+        // With no-cors, we assume success if the fetch promise resolves
+        setFormStatus('success');
+        setFormData({ name: '', email: '', company: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 5000);
+      } catch (err) {
+        console.error('Error submitting to Google Forms:', err);
+        setFormStatus('error');
+        setErrorMessage('Failed to submit form to Google Sheets. Please check your network and try again.');
+      }
+      return;
+    }
+
+    // 2. Check if Web3Forms is configured
+    if (web3formsAccessKey && web3formsAccessKey !== 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' && web3formsAccessKey.trim() !== '') {
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: web3formsAccessKey,
+            name: formData.name,
+            email: formData.email,
+            subject: `New wholesale inquiry from ${formData.company || formData.name}`,
+            from_name: 'Saarthi Organics Website',
+            company: formData.company || 'N/A',
+            message: formData.message
+          })
+        });
+
+        const result = await response.json();
+        if (response.ok && result.success) {
+          setFormStatus('success');
+          setFormData({ name: '', email: '', company: '', message: '' });
+          setTimeout(() => setFormStatus('idle'), 5000);
+        } else {
+          setFormStatus('error');
+          setErrorMessage(result.message || 'Form submission failed. Please try again.');
+        }
+      } catch (err) {
+        console.error('Error submitting to Web3Forms:', err);
+        setFormStatus('error');
+        setErrorMessage('A network error occurred. Please check your connection and try again.');
+      }
+      return;
+    }
+
+    // 3. Fallback: Simulation for development/testing
+    console.warn("Neither Google Forms nor Web3Forms is configured in environment variables. Running simulator.");
+    setTimeout(() => {
+      setFormStatus('success');
+      setFormData({ name: '', email: '', company: '', message: '' });
+      setTimeout(() => setFormStatus('idle'), 5000);
+    }, 1200);
   };
 
   return (
@@ -227,34 +310,52 @@ export default function Home() {
             <form className="glass-panel lead-form" onSubmit={handleSubmit}>
               <h3 style={{ fontSize: '1.8rem', marginBottom: '16px' }}>Request Wholesale Pricing</h3>
 
-              {isSubmitted ? (
-                <div style={{ padding: '20px', background: 'rgba(46, 204, 113, 0.2)', border: '1px solid #2ecc71', borderRadius: '12px', textAlign: 'center', color: '#2ecc71' }}>
-                  Thank you! Your inquiry has been received. Our traders will contact you shortly.
+              {formStatus === 'success' ? (
+                <div style={{ padding: '24px', background: 'rgba(46, 204, 113, 0.15)', border: '1px solid rgba(46, 204, 113, 0.4)', borderRadius: '16px', textAlign: 'center', color: '#2ecc71', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ fontSize: '2.5rem', lineHeight: 1 }}>✓</div>
+                  <h4 style={{ margin: 0, fontSize: '1.3rem', fontWeight: 600 }}>Inquiry Received!</h4>
+                  <p style={{ margin: 0, fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.5' }}>
+                    Thank you! Your inquiry has been received. Our traders will review your volume requirements and contact you shortly.
+                  </p>
                 </div>
               ) : (
                 <>
                   <div className="form-group">
                     <label>Full Name</label>
-                    <input required name="name" value={formData.name} onChange={handleInput} type="text" className="form-control" placeholder="John Doe" />
+                    <input required disabled={formStatus === 'submitting'} name="name" value={formData.name} onChange={handleInput} type="text" className="form-control" placeholder="John Doe" />
                   </div>
 
                   <div className="form-group">
                     <label>Company Email</label>
-                    <input required name="email" value={formData.email} onChange={handleInput} type="email" className="form-control" placeholder="john@example.com" />
+                    <input required disabled={formStatus === 'submitting'} name="email" value={formData.email} onChange={handleInput} type="email" className="form-control" placeholder="john@example.com" />
                   </div>
 
                   <div className="form-group">
                     <label>Company Name</label>
-                    <input name="company" value={formData.company} onChange={handleInput} type="text" className="form-control" placeholder="Acme Distillery" />
+                    <input disabled={formStatus === 'submitting'} name="company" value={formData.company} onChange={handleInput} type="text" className="form-control" placeholder="Acme Distillery" />
                   </div>
 
                   <div className="form-group">
                     <label>Volume Requirement & Details</label>
-                    <textarea required name="message" value={formData.message} onChange={handleInput} className="form-control" placeholder="Tell us about your estimated monthly volume..."></textarea>
+                    <textarea required disabled={formStatus === 'submitting'} name="message" value={formData.message} onChange={handleInput} className="form-control" placeholder="Tell us about your estimated monthly volume..."></textarea>
                   </div>
 
-                  <button type="submit" className="cta-button submit-btn">
-                    Submit Inquiry
+                  {formStatus === 'error' && (
+                    <div style={{ margin: '8px 0 16px 0', padding: '12px 16px', background: 'rgba(231, 76, 60, 0.12)', border: '1px solid rgba(231, 76, 60, 0.3)', borderRadius: '12px', color: '#e74c3c', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>⚠</span>
+                      <span>{errorMessage}</span>
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={formStatus === 'submitting'} className="cta-button submit-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', opacity: formStatus === 'submitting' ? 0.7 : 1, cursor: formStatus === 'submitting' ? 'not-allowed' : 'pointer' }}>
+                    {formStatus === 'submitting' ? (
+                      <>
+                        <span className="spinner"></span>
+                        Sending Inquiry...
+                      </>
+                    ) : (
+                      'Submit Inquiry'
+                    )}
                   </button>
                 </>
               )}
