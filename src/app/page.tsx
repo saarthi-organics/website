@@ -162,7 +162,6 @@ export default function Home() {
                 className="hero-image"
                 priority
               />
-              <div className="pour-overlay"></div>
             </div>
           </div>
         </section>
