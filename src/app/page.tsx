@@ -41,52 +41,158 @@ export default function Home() {
             <h1 className="title-large">
               Premium <br /> <span className="gradient-text">Blackstrap</span> Molasses
             </h1>
-            <p className="subtitle-large">
-              We are dedicated wholesale traders of molasses, procuring the highest quality product through various trusted sugar mills across North India.
+            <p className="subtitle-large" style={{ marginBottom: '32px' }}>
+              SAARTHI ORGANICS is a trusted name in molasses trading across North India. We specialize in bulk tanker supply, offering consistent quality, transparent billing, and reliable logistics to industrial buyers. With our own transport network and experienced handling, we ensure smooth, safe, and timely delivery of molasses across North India. Our logistics strength allows us to meet urgent and bulk requirements with ease.
             </p>
-            <a href="#contact" className="cta-button" style={{ textDecoration: 'none' }}>
+            <a href="#contact" className="cta-button" style={{ textDecoration: 'none', display: 'inline-block' }}>
               Request a Quote
             </a>
+
+            <div className="trust-lines" style={{ marginTop: '48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Bulk Supply Available
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> PAN India Delivery
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Consistent Quality
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Competitive Pricing
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Custom Packaging Options
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-gold)' }}>✔</span> In-house Transport Network
+              </div>
+            </div>
           </div>
           <div className="hero-image-wrapper">
-            <Image
-              src="/molasses_hero.png"
-              alt="Rich dark pouring molasses"
-              width={450}
-              height={550}
-              className="hero-image"
-              priority
-            />
+            <div className="hero-image-container">
+              <Image
+                src="/molasses_hero.png"
+                alt="Rich dark pouring molasses"
+                width={450}
+                height={550}
+                className="hero-image"
+                priority
+              />
+              <div className="pour-overlay"></div>
+            </div>
           </div>
         </section>
 
-        {/* FEATURES / PRODUCTS */}
-        <section id="products">
-          <h2 className="title-large" style={{ fontSize: '3rem', textAlign: 'center' }}>
-            Unmatched <span className="gradient-text">Quality</span>
+        {/* WHY CHOOSE US SECTION */}
+        <section id="why-choose-us" style={{ background: 'linear-gradient(135deg, rgba(245, 176, 65, 0.05), rgba(211, 84, 0, 0.05))', borderRadius: '24px', padding: '60px 40px', margin: '0 auto 60px auto', border: '1px solid var(--glass-border)' }}>
+          <h2 className="title-large" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', textAlign: 'center', marginBottom: '40px' }}>
+            Why <span className="gradient-text">Choose Us</span>
           </h2>
-          <div className="features-grid">
+          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', marginTop: '0', gap: '24px' }}>
+            
+            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🚛</div>
+              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Own Transport Fleet</h3>
+            </div>
+
+            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📍</div>
+              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Strong Network in North India</h3>
+            </div>
+
+            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📄</div>
+              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Proper GST Billing & Documentation</h3>
+            </div>
+
+            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>⏱️</div>
+              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Timely Delivery</h3>
+            </div>
+
+            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🤝</div>
+              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Trusted by Bulk Buyers</h3>
+            </div>
+
+          </div>
+        </section>
+
+        {/* APPLICATIONS SECTION */}
+        <section id="products">
+          <h2 className="title-large" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', textAlign: 'center', marginBottom: '20px' }}>
+            Applications of <span className="gradient-text">Blackstrap Molasses</span>
+          </h2>
+          <p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 50px auto' }}>
+            Our high-quality molasses serves as a critical ingredient and raw material across multiple major industries.
+          </p>
+          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+            
             <div className="glass-panel glass-card">
-              <div className="feature-icon">🌿</div>
-              <h3 className="feature-title">100% Pure Organic</h3>
+              <div className="feature-icon">🐄</div>
+              <h3 className="feature-title">Cattle Feed Industry</h3>
               <p className="feature-desc">
-                Our extraction processes ensure zero additives, bringing you pure unrefined organic molasses straight from the sugarcane.
+                Used as a nutritional supplement and palatability enhancer in animal feed.
               </p>
             </div>
+
             <div className="glass-panel glass-card">
-              <div className="feature-icon">🚚</div>
-              <h3 className="feature-title">Global Wholesale Shipping</h3>
+              <div className="feature-icon">🥃</div>
+              <h3 className="feature-title">Ethanol & Distillery</h3>
               <p className="feature-desc">
-                From barrel to cargo ship, our logistics network securely delivers wholesale quantities of premium molasses anywhere in the world.
+                Widely used as a raw material for ethanol and alcohol production.
               </p>
             </div>
+
             <div className="glass-panel glass-card">
-              <div className="feature-icon">🍯</div>
-              <h3 className="feature-title">Rich Flavor Profile</h3>
+              <div className="feature-icon">🦠</div>
+              <h3 className="feature-title">Yeast & Fermentation</h3>
               <p className="feature-desc">
-                Deep, robust, and full-bodied. Ideal for premium culinary applications, craft distilleries, and high-end agriculture.
+                Ideal for yeast cultivation and fermentation processes.
               </p>
             </div>
+
+            <div className="glass-panel glass-card">
+              <div className="feature-icon">🚬</div>
+              <h3 className="feature-title">Tobacco Industry</h3>
+              <p className="feature-desc">
+                Used as a flavoring and moisture-retaining agent in tobacco products.
+              </p>
+            </div>
+
+            <div className="glass-panel glass-card">
+              <div className="feature-icon">🏭</div>
+              <h3 className="feature-title">Casting & Foundry</h3>
+              <p className="feature-desc">
+                Used as a binder additive in sand casting applications.
+              </p>
+            </div>
+
+            <div className="glass-panel glass-card">
+              <div className="feature-icon">🌱</div>
+              <h3 className="feature-title">Agriculture & Farming</h3>
+              <p className="feature-desc">
+                Used in organic farming, composting, and as a soil conditioner.
+              </p>
+            </div>
+
+            <div className="glass-panel glass-card">
+              <div className="feature-icon">🍞</div>
+              <h3 className="feature-title">Food Processing</h3>
+              <p className="feature-desc">
+                Used in bakery, confectionery, and food-grade applications.
+              </p>
+            </div>
+
+            <div className="glass-panel glass-card">
+              <div className="feature-icon">🔬</div>
+              <h3 className="feature-title">Pharmaceuticals</h3>
+              <p className="feature-desc">
+                Acts as a vital carbon source in the fermentation of antibiotics and vitamins.
+              </p>
+            </div>
+
           </div>
         </section>
 
