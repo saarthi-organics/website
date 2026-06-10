@@ -88,7 +88,7 @@ export default function ContactForm() {
             >
               💬 WhatsApp Inquiry
             </a>
-            <a href="tel:+917055552535" className="btn-secondary" style={{ padding: '10px 18px', fontSize: '0.9rem' }}>
+            <a href="tel:+917055552535" className="btn-secondary">
               📞 Call Operator
             </a>
           </div>
