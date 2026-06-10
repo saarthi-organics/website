@@ -676,6 +676,14 @@ section {
   transition: all 0.25s ease;
 }
 
+.quote-contact-actions svg {
+  width: 1.15em;
+  height: 1.15em;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 .quote-contact-actions .btn-whatsapp {
   background: rgba(37, 211, 102, 0.08);
   color: #25d366;
