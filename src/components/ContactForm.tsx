@@ -242,9 +242,8 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="monthlyRequirement">Estimated Monthly Vol (MT) *</label>
+              <label htmlFor="monthlyRequirement">Estimated Monthly Vol (MT)</label>
               <input 
-                required
                 type="text" 
                 id="monthlyRequirement"
                 name="monthlyRequirement" 
@@ -256,9 +255,8 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Message / Specifications *</label>
+              <label htmlFor="message">Message / Specifications</label>
               <textarea 
-                required
                 id="message"
                 name="message" 
                 value={formData.message} 
