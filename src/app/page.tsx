@@ -107,8 +107,8 @@ export default function Home() {
     <>
       <header className="nav-header">
         <div className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <Image src="/Logo2_transparent.png" alt="Website Logo" width={42} height={42} style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(245, 176, 65, 0.2))' }} priority />
-          <span className="gradient-text" style={{ fontSize: '1.4rem', fontWeight: 800, letterSpacing: '1px' }}>
+          <Image src="/Logo2_transparent.png" alt="Website Logo" width={46} height={46} style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(245, 176, 65, 0.25))' }} priority />
+          <span className="nav-logo-text gradient-text">
             Saarthi Organics
           </span>
         </div>
@@ -123,19 +123,6 @@ export default function Home() {
         {/* HERO SECTION */}
         <section className="hero-section" id="about">
           <div className="hero-content">
-            <div className="hero-logo-container">
-              <Image
-                src="/Logo2_transparent.png"
-                alt="Saarthi Organics Logo"
-                width={90}
-                height={90}
-                style={{
-                  objectFit: 'contain',
-                  filter: 'drop-shadow(0 0 12px rgba(245, 176, 65, 0.25))'
-                }}
-                priority
-              />
-            </div>
             <h1 className="title-large">
               <span className="gradient-text">Saarthi Organics</span> <br />
               Premium Blackstrap Molasses
@@ -320,6 +307,11 @@ export default function Home() {
                 <h4>Email Inquiries</h4>
                 <p>contact@saarthiorganics.com</p>
               </div>
+
+              <div className="contact-item">
+                <h4>GSTIN</h4>
+                <p style={{ fontWeight: 600, letterSpacing: '0.5px' }}>06AFEFS2128A1ZJ</p>
+              </div>
             </div>
 
             <form className="glass-panel lead-form" onSubmit={handleSubmit}>
@@ -381,6 +373,7 @@ export default function Home() {
 
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Saarthi Organics. All rights reserved.</p>
+        <p style={{ fontSize: '0.85rem', marginTop: '8px', opacity: 0.8, letterSpacing: '0.5px' }}>GSTIN: 06AFEFS2128A1ZJ</p>
       </footer>
     </>
   );
