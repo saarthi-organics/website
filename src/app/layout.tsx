@@ -24,7 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <div className="bg-mesh-container">
+          <div className="bg-mesh-blob blob-1"></div>
+          <div className="bg-mesh-blob blob-2"></div>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

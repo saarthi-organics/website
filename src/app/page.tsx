@@ -106,9 +106,13 @@ export default function Home() {
   return (
     <>
       <header className="nav-header">
-        <div className="nav-logo gradient-text" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <Image src="/Logo2_transparent.png" alt="Website Logo" width={72} height={72} style={{ borderRadius: '8px', objectFit: 'fill' }} priority />
-          Saarthi Organics
+        <div className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div className="nav-logo-icon-wrapper">
+            <Image src="/Logo2_transparent.png" alt="Website Logo" width={42} height={42} style={{ objectFit: 'contain' }} priority />
+          </div>
+          <span className="gradient-text" style={{ fontSize: '1.4rem', fontWeight: 800, letterSpacing: '1px' }}>
+            Saarthi Organics
+          </span>
         </div>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
@@ -120,48 +124,72 @@ export default function Home() {
       <main>
         {/* HERO SECTION */}
         <section className="hero-section" id="about">
-          <div className="hero-content">
-            <h1 className="title-large">
-              Premium <br /> <span className="gradient-text">Blackstrap</span> Molasses
-            </h1>
-            <p className="subtitle-large" style={{ marginBottom: '32px' }}>
-              SAARTHI ORGANICS is a trusted name in molasses trading across North India. We specialize in bulk tanker supply, offering consistent quality, transparent billing, and reliable logistics to industrial buyers. With our own transport network and experienced handling, we ensure smooth, safe, and timely delivery of molasses across North India. Our logistics strength allows us to meet urgent and bulk requirements with ease.
-            </p>
-            <a href="#contact" className="cta-button" style={{ textDecoration: 'none', display: 'inline-block' }}>
-              Request a Quote
-            </a>
-
-            <div className="trust-lines" style={{ marginTop: '48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', textAlign: 'left' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Bulk Supply Available
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> PAN India Delivery
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Consistent Quality
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Competitive Pricing
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Custom Packaging Options
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> In-house Transport Network
-              </div>
-            </div>
-          </div>
-          <div className="hero-image-wrapper">
-            <div className="hero-image-container">
+          {/* Centered Brand Presentation */}
+          <div className="hero-brand-header">
+            <div className="hero-logo-large-wrapper">
               <Image
-                src="/molasses_hero.png"
-                alt="Rich dark pouring molasses"
-                width={450}
-                height={550}
-                className="hero-image"
+                src="/Logo2_transparent.png"
+                alt="Saarthi Organics Logo"
+                width={150}
+                height={150}
+                className="hero-logo-large"
                 priority
               />
+            </div>
+            <h1 className="hero-title-main">
+              Saarthi <span className="gradient-text-gold">Organics</span>
+            </h1>
+            <p className="hero-tagline">
+              Premium Blackstrap Molasses & Bulk Supply
+            </p>
+            <div className="divider-line"></div>
+          </div>
+
+          {/* Two-Column split details below branding */}
+          <div className="hero-split-content">
+            <div className="hero-content">
+              <h2 className="title-large" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', marginBottom: '20px' }}>
+                North India's Trusted <br /> <span className="gradient-text">Molasses Trading</span> Partner
+              </h2>
+              <p className="subtitle-large" style={{ marginBottom: '32px' }}>
+                SAARTHI ORGANICS is a trusted name in molasses trading across North India. We specialize in bulk tanker supply, offering consistent quality, transparent billing, and reliable logistics to industrial buyers. With our own transport network and experienced handling, we ensure smooth, safe, and timely delivery of molasses across North India. Our logistics strength allows us to meet urgent and bulk requirements with ease.
+              </p>
+              <a href="#contact" className="cta-button" style={{ textDecoration: 'none', display: 'inline-block' }}>
+                Request a Quote
+              </a>
+
+              <div className="trust-lines" style={{ marginTop: '48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', textAlign: 'left' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> Bulk Supply Available
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> PAN India Delivery
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> Consistent Quality
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> Competitive Pricing
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> Custom Packaging Options
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
+                  <span style={{ color: 'var(--accent-gold)' }}>✔</span> In-house Transport Network
+                </div>
+              </div>
+            </div>
+            <div className="hero-image-wrapper">
+              <div className="hero-image-container">
+                <Image
+                  src="/molasses_hero.png"
+                  alt="Rich dark pouring molasses"
+                  width={450}
+                  height={550}
+                  className="hero-image"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </section>
