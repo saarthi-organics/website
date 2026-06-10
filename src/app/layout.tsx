@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Saarthi Organics",
-  description: "Trading premium molasses procured across North India.",
+  title: "Saarthi Organics - Bulk Blackstrap Molasses Industrial Supply Partner",
+  description: "Reliable molasses bulk procurement partner via dedicated transport tankers across North India. Sourcing solutions for distilleries, feed mills, yeast, tobacco, and food processing.",
 };
 
 export default function RootLayout({
@@ -23,13 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <body>
-        <div className="bg-mesh-container">
-          <div className="bg-mesh-blob blob-1"></div>
-          <div className="bg-mesh-blob blob-2"></div>
-        </div>
+        <div className="bg-mesh-container"></div>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,380 +1,314 @@
 "use client";
 
 import Image from 'next/image';
-import { FormEvent, useState } from 'react';
-import './globals.css';
+import Link from 'next/link';
+import SpecTable from '@/components/SpecTable';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
-  const [formData, setFormData] = useState({ name: '', email: '', company: '', message: '' });
-  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    setErrorMessage('');
-
-    const googleFormUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL;
-    const web3formsAccessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-
-    // 1. Check if Google Forms is configured
-    if (googleFormUrl && googleFormUrl !== 'YOUR_GOOGLE_FORM_RESPONSE_URL' && googleFormUrl.trim() !== '') {
-      try {
-        const entryName = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_NAME || '';
-        const entryEmail = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_EMAIL || '';
-        const entryCompany = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_COMPANY || '';
-        const entryMessage = process.env.NEXT_PUBLIC_GOOGLE_ENTRY_MESSAGE || '';
-
-        const formDataBody = new URLSearchParams();
-        formDataBody.append(entryName, formData.name);
-        formDataBody.append(entryEmail, formData.email);
-        formDataBody.append(entryCompany, formData.company || 'N/A');
-        formDataBody.append(entryMessage, formData.message);
-
-        // Submitting to Google Forms requires mode: 'no-cors' to avoid browser CORS blocking
-        await fetch(googleFormUrl, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: formDataBody.toString()
-        });
-
-        // With no-cors, we assume success if the fetch promise resolves
-        setFormStatus('success');
-        setFormData({ name: '', email: '', company: '', message: '' });
-        setTimeout(() => setFormStatus('idle'), 5000);
-      } catch (err) {
-        console.error('Error submitting to Google Forms:', err);
-        setFormStatus('error');
-        setErrorMessage('Failed to submit form to Google Sheets. Please check your network and try again.');
-      }
-      return;
+  const features = [
+    {
+      icon: "🚛",
+      title: "Own Transport Fleet",
+      desc: "Our in-house logistics company manages a dedicated fleet of specialized stainless steel liquid tankers, ensuring secure, contamination-free, and highly reliable transportation."
+    },
+    {
+      icon: "🛢️",
+      title: "Bulk Tanker Supply",
+      desc: "Specialized in bulk industrial distribution. We support routine, high-volume deliveries from 20 - 50 Metric Tons (single tanker) to multi-tanker daily dispatch coordination."
+    },
+    {
+      icon: "📍",
+      title: "PAN India Delivery",
+      desc: "Robust logistics grid operating across North India (Haryana, Punjab, UP, Rajasthan) and extending long-haul dispatch capability to industrial zones nationwide."
+    },
+    {
+      icon: "📄",
+      title: "GST-Compliant Documentation",
+      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, certificates of analysis (COA), and proper transit permit documentation."
+    },
+    {
+      icon: "📦",
+      title: "Custom Packaging Options",
+      desc: "While tanker supply is our core, we accommodate custom industrial requirements including 1000L IBC Totes, Flexibags, and standard 200L steel/HDPE drums."
+    },
+    {
+      icon: "🤝",
+      title: "Reliable Sourcing Network",
+      desc: "Strategic relationships with major sugar refining mills. We secure consistent product volumes and consistent quality metrics even during sugar crushing off-seasons."
     }
+  ];
 
-    // 2. Check if Web3Forms is configured
-    if (web3formsAccessKey && web3formsAccessKey !== 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' && web3formsAccessKey.trim() !== '') {
-      try {
-        const response = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            access_key: web3formsAccessKey,
-            name: formData.name,
-            email: formData.email,
-            subject: `New wholesale inquiry from ${formData.company || formData.name}`,
-            from_name: 'Saarthi Organics Website',
-            company: formData.company || 'N/A',
-            message: formData.message
-          })
-        });
-
-        const result = await response.json();
-        if (response.ok && result.success) {
-          setFormStatus('success');
-          setFormData({ name: '', email: '', company: '', message: '' });
-          setTimeout(() => setFormStatus('idle'), 5000);
-        } else {
-          setFormStatus('error');
-          setErrorMessage(result.message || 'Form submission failed. Please try again.');
-        }
-      } catch (err) {
-        console.error('Error submitting to Web3Forms:', err);
-        setFormStatus('error');
-        setErrorMessage('A network error occurred. Please check your connection and try again.');
-      }
-      return;
+  const industries = [
+    {
+      icon: "🥃",
+      title: "Distilleries & Ethanol",
+      desc: "High TRS (Total Reducing Sugars) molasses optimized for fermentation yields and bio-ethanol production requirements.",
+      link: "/molasses-for-distilleries"
+    },
+    {
+      icon: "🐄",
+      title: "Cattle Feed Mills",
+      desc: "Palatability enhancer and carbohydrate binder containing natural trace minerals, ideal for block and pellet feed manufacturers.",
+      link: "/molasses-for-cattle-feed"
+    },
+    {
+      icon: "🦠",
+      title: "Yeast Industry",
+      desc: "Highly filtered molasses with consistent pH and mineral profiles, serving as a primary carbon feed source for yeast propagation.",
+      link: "/molasses-for-yeast-industry"
+    },
+    {
+      icon: "🚬",
+      title: "Tobacco Industry",
+      desc: "High-viscosity molasses used as a natural binding, humectant, and flavoring agent in traditional tobacco processing.",
+      link: "/molasses-for-tobacco-industry"
+    },
+    {
+      icon: "🍞",
+      title: "Food Processing",
+      desc: "Food-grade molasses suited for baking, confectionery syrups, and specialized industrial fermentation processes.",
+      link: "/molasses-for-food-processing"
+    },
+    {
+      icon: "🔬",
+      title: "Pharma Industry",
+      desc: "Controlled-viscosity carbon feeds used in industrial fermentation systems for vitamins, antibiotics, and organic acids.",
+      link: "/molasses-for-pharma"
+    },
+    {
+      icon: "🏭",
+      title: "Foundries & Casting",
+      desc: "Binder additive for sand mold preparation, enhancing high-temperature stability and tensile strength during metal casting.",
+      link: "/molasses-for-foundries"
+    },
+    {
+      icon: "🌱",
+      title: "Agriculture & Farming",
+      desc: "Blackstrap molasses is widely used in organic farming, composting, and soil conditioning applications, helping support microbial activity and soil health.",
+      link: "/molasses-for-agriculture-and-farming"
     }
-
-    // 3. Fallback: Simulation for development/testing
-    console.warn("Neither Google Forms nor Web3Forms is configured in environment variables. Running simulator.");
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({ name: '', email: '', company: '', message: '' });
-      setTimeout(() => setFormStatus('idle'), 5000);
-    }, 1200);
-  };
+  ];
 
   return (
-    <>
-      <header className="nav-header">
-        <div className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <Image src="/Logo2_transparent.png" alt="Website Logo" width={46} height={46} style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(245, 176, 65, 0.25))' }} priority />
-          <span className="nav-logo-text gradient-text">
-            Saarthi Organics
-          </span>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </header>
-
-      <main>
-        {/* HERO SECTION */}
-        <section className="hero-section" id="about">
-          <div className="hero-content">
-            <h1 className="title-large">
-              <span className="gradient-text">Saarthi Organics</span> <br />
-              Premium Blackstrap Molasses
-            </h1>
-            <p className="subtitle-large" style={{ marginBottom: '32px' }}>
-              SAARTHI ORGANICS is a trusted name in molasses trading across North India. We specialize in bulk tanker supply, offering consistent quality, transparent billing, and reliable logistics to industrial buyers. With our own transport network and experienced handling, we ensure smooth, safe, and timely delivery of molasses across North India. Our logistics strength allows us to meet urgent and bulk requirements with ease.
-            </p>
-            <a href="#contact" className="cta-button" style={{ textDecoration: 'none', display: 'inline-block' }}>
-              Request a Quote
-            </a>
-
-            <div className="trust-lines" style={{ marginTop: '48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', textAlign: 'left' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Bulk Supply Available
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> PAN India Delivery
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Consistent Quality
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Competitive Pricing
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> Custom Packaging Options
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-gold)' }}>✔</span> In-house Transport Network
-              </div>
-            </div>
-          </div>
-          <div className="hero-image-wrapper">
-            <div className="hero-image-container">
-              <Image
-                src="/molasses_hero.png"
-                alt="Rich dark pouring molasses"
-                width={450}
-                height={550}
-                className="hero-image"
-                priority
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* WHY CHOOSE US SECTION */}
-        <section id="why-choose-us" style={{ background: 'linear-gradient(135deg, rgba(245, 176, 65, 0.05), rgba(211, 84, 0, 0.05))', borderRadius: '24px', padding: '60px 40px', margin: '0 auto 60px auto', border: '1px solid var(--glass-border)' }}>
-          <h2 className="title-large" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', textAlign: 'center', marginBottom: '40px' }}>
-            Why <span className="gradient-text">Choose Us</span>
-          </h2>
-          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', marginTop: '0', gap: '24px' }}>
-            
-            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🚛</div>
-              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Own Transport Fleet</h3>
-            </div>
-
-            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📍</div>
-              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Strong Network in North India</h3>
-            </div>
-
-            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📄</div>
-              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Proper GST Billing & Documentation</h3>
-            </div>
-
-            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>⏱️</div>
-              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Timely Delivery</h3>
-            </div>
-
-            <div className="glass-panel glass-card" style={{ textAlign: 'center', padding: '32px 24px' }}>
-              <div style={{ fontSize: '3rem', marginBottom: '16px' }}>🤝</div>
-              <h3 className="feature-title" style={{ fontSize: '1.2rem', marginBottom: '0' }}>Trusted by Bulk Buyers</h3>
-            </div>
-
-          </div>
-        </section>
-
-        {/* APPLICATIONS SECTION */}
-        <section id="products">
-          <h2 className="title-large" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', textAlign: 'center', marginBottom: '20px' }}>
-            Applications of <span className="gradient-text">Blackstrap Molasses</span>
-          </h2>
-          <p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 50px auto' }}>
-            Our high-quality molasses serves as a critical ingredient and raw material across multiple major industries.
+    <main style={{ marginTop: '72px' }}>
+      
+      {/* SECTION 1 — HERO */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <span className="section-label">Industrial Procurement Partner</span>
+          <h1 className="hero-title">
+            Bulk Blackstrap Molasses Industrial Supply Partner
+          </h1>
+          <p className="hero-subtitle">
+            Reliable tanker-based supply across North India and PAN India. Sourcing high-quality molasses for distilleries, cattle feed mills, yeast plants, tobacco processors, and foundry foundations.
           </p>
-          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-            
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🐄</div>
-              <h3 className="feature-title">Cattle Feed Industry</h3>
-              <p className="feature-desc">
-                Used as a nutritional supplement and palatability enhancer in animal feed.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🥃</div>
-              <h3 className="feature-title">Ethanol & Distillery</h3>
-              <p className="feature-desc">
-                Widely used as a raw material for ethanol and alcohol production.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🦠</div>
-              <h3 className="feature-title">Yeast & Fermentation</h3>
-              <p className="feature-desc">
-                Ideal for yeast cultivation and fermentation processes.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🚬</div>
-              <h3 className="feature-title">Tobacco Industry</h3>
-              <p className="feature-desc">
-                Used as a flavoring and moisture-retaining agent in tobacco products.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🏭</div>
-              <h3 className="feature-title">Casting & Foundry</h3>
-              <p className="feature-desc">
-                Used as a binder additive in sand casting applications.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🌱</div>
-              <h3 className="feature-title">Agriculture & Farming</h3>
-              <p className="feature-desc">
-                Used in organic farming, composting, and as a soil conditioner.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🍞</div>
-              <h3 className="feature-title">Food Processing</h3>
-              <p className="feature-desc">
-                Used in bakery, confectionery, and food-grade applications.
-              </p>
-            </div>
-
-            <div className="glass-panel glass-card">
-              <div className="feature-icon">🔬</div>
-              <h3 className="feature-title">Pharmaceuticals</h3>
-              <p className="feature-desc">
-                Acts as a vital carbon source in the fermentation of antibiotics and vitamins.
-              </p>
-            </div>
-
+          <div className="hero-ctas">
+            <a href="#quote-form-section" className="btn-primary">
+              Request Bulk Quote
+            </a>
+            <Link href="/blackstrap-molasses" className="btn-secondary">
+              Download Specifications
+            </Link>
           </div>
-        </section>
+        </div>
+        <div className="hero-image-wrapper">
+          <div className="hero-image-container">
+            <Image
+              src="/molasses_pouring.png"
+              alt="Rich viscous blackstrap molasses pouring in industrial facility"
+              width={500}
+              height={500}
+              style={{ objectFit: 'cover', display: 'block' }}
+              priority
+            />
+          </div>
+        </div>
+      </section>
 
-        {/* CONTACT / LEAD CARDS */}
-        <section id="contact">
-          <h2 className="title-large" style={{ fontSize: '3rem' }}>
-            Let's <span className="gradient-text">Talk Business</span>
-          </h2>
+      {/* Trust Strip */}
+      <div className="trust-strip-wrapper">
+        <div className="trust-strip">
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> PAN India Supply
+          </div>
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> Own Tanker Fleet
+          </div>
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> Bulk Tanker Delivery
+          </div>
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> GST Invoicing
+          </div>
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> Consistent Quality
+          </div>
+          <div className="trust-item">
+            <span className="trust-icon">✓</span> Fast Dispatch
+          </div>
+        </div>
+      </div>
 
-          <div className="contact-section">
-            <div className="contact-details">
-              <p className="subtitle-large" style={{ marginBottom: '40px' }}>
-                Looking to secure a stable and premium supply of molasses for your commercial needs? Reach out to our trading desk today.
-              </p>
-
-              <div className="contact-item">
-                <h4>Office Address</h4>
-                <p>Farm House, Liberty Chowk<br />Karnal - 132001</p>
-              </div>
-
-              <div className="contact-item">
-                <h4>Direct Contact</h4>
-                <p>+91 7055552535<br />+91 9927029029</p>
-              </div>
-
-              <div className="contact-item">
-                <h4>Email Inquiries</h4>
-                <p>contact@saarthiorganics.com</p>
-              </div>
-
-              <div className="contact-item">
-                <h4>GSTIN</h4>
-                <p style={{ fontWeight: 600, letterSpacing: '0.5px' }}>06AFEFS2128A1ZJ</p>
-              </div>
+      {/* Feature Blocks */}
+      <section id="features">
+        <div className="section-header">
+          <span className="section-label">Operational Differentiators</span>
+          <h2 className="section-title">Logistics & Supply Strength</h2>
+          <p className="section-desc">
+            We manage a robust industrial supply network and tanker dispatch system designed to meet the rigorous logistics demands of plant managers and procurement professionals.
+          </p>
+        </div>
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <div key={index} className="feature-card">
+              <span className="feature-card-icon">{feature.icon}</span>
+              <h3 className="feature-card-title">{feature.title}</h3>
+              <p className="feature-card-desc">{feature.desc}</p>
             </div>
+          ))}
+        </div>
+      </section>
 
-            <form className="glass-panel lead-form" onSubmit={handleSubmit}>
-              <h3 style={{ fontSize: '1.8rem', marginBottom: '16px' }}>Request Wholesale Pricing</h3>
-
-              {formStatus === 'success' ? (
-                <div style={{ padding: '24px', background: 'rgba(46, 204, 113, 0.15)', border: '1px solid rgba(46, 204, 113, 0.4)', borderRadius: '16px', textAlign: 'center', color: '#2ecc71', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ fontSize: '2.5rem', lineHeight: 1 }}>✓</div>
-                  <h4 style={{ margin: 0, fontSize: '1.3rem', fontWeight: 600 }}>Inquiry Received!</h4>
-                  <p style={{ margin: 0, fontSize: '0.95rem', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.5' }}>
-                    Thank you! Your inquiry has been received. Our traders will review your volume requirements and contact you shortly.
-                  </p>
+      {/* Industries Grid */}
+      <section id="industries" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div className="section-header">
+            <span className="section-label">Industrial Solutions</span>
+            <h2 className="section-title">Industries We Serve</h2>
+            <p className="section-desc">
+              Providing application-specific molasses formulations matching the distinct chemical and physical specifications of diverse industrial sectors.
+            </p>
+          </div>
+          <div className="industry-grid">
+            {industries.map((ind, index) => (
+              <div key={index} className="industry-card">
+                <div className="industry-image-container">
+                  {ind.icon}
                 </div>
-              ) : (
-                <>
-                  <div className="form-group">
-                    <label>Full Name</label>
-                    <input required disabled={formStatus === 'submitting'} name="name" value={formData.name} onChange={handleInput} type="text" className="form-control" placeholder="John Doe" />
-                  </div>
-
-                  <div className="form-group">
-                    <label>Company Email</label>
-                    <input required disabled={formStatus === 'submitting'} name="email" value={formData.email} onChange={handleInput} type="email" className="form-control" placeholder="john@example.com" />
-                  </div>
-
-                  <div className="form-group">
-                    <label>Company Name</label>
-                    <input disabled={formStatus === 'submitting'} name="company" value={formData.company} onChange={handleInput} type="text" className="form-control" placeholder="Acme Distillery" />
-                  </div>
-
-                  <div className="form-group">
-                    <label>Volume Requirement & Details</label>
-                    <textarea required disabled={formStatus === 'submitting'} name="message" value={formData.message} onChange={handleInput} className="form-control" placeholder="Tell us about your estimated monthly volume..."></textarea>
-                  </div>
-
-                  {formStatus === 'error' && (
-                    <div style={{ margin: '8px 0 16px 0', padding: '12px 16px', background: 'rgba(231, 76, 60, 0.12)', border: '1px solid rgba(231, 76, 60, 0.3)', borderRadius: '12px', color: '#e74c3c', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>⚠</span>
-                      <span>{errorMessage}</span>
-                    </div>
-                  )}
-
-                  <button type="submit" disabled={formStatus === 'submitting'} className="cta-button submit-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', opacity: formStatus === 'submitting' ? 0.7 : 1, cursor: formStatus === 'submitting' ? 'not-allowed' : 'pointer' }}>
-                    {formStatus === 'submitting' ? (
-                      <>
-                        <span className="spinner"></span>
-                        Sending Inquiry...
-                      </>
-                    ) : (
-                      'Submit Inquiry'
-                    )}
-                  </button>
-                </>
-              )}
-            </form>
+                <div className="industry-card-content">
+                  <h3 className="industry-card-title">{ind.title}</h3>
+                  <p className="industry-card-desc">{ind.desc}</p>
+                  <Link href={ind.link} className="industry-card-link">
+                    View Industry Applications &rarr;
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Saarthi Organics. All rights reserved.</p>
-        <p style={{ fontSize: '0.85rem', marginTop: '8px', opacity: 0.8, letterSpacing: '0.5px' }}>GSTIN: 06AFEFS2128A1ZJ</p>
-      </footer>
-    </>
+      {/* Specifications datasheet */}
+      <section id="specifications">
+        <div className="section-header">
+          <span className="section-label">Technical Datasheet</span>
+          <h2 className="section-title">Specifications Preview</h2>
+          <p className="section-desc">
+            We guarantee industrial-grade consistency. Review key chemical and physical metrics for our standard heavy blackstrap molasses.
+          </p>
+        </div>
+        <SpecTable />
+      </section>
+
+      {/* Logistics & Delivery Highlights */}
+      <section className="logistics-section" id="logistics">
+        <div className="logistics-container">
+          <div className="logistics-content">
+            <span className="section-label" style={{ color: 'var(--accent-gold)' }}>Fleet Logistics</span>
+            <h2 className="section-title logistics-title">Reliable Logistics & Fleet Network</h2>
+            <p className="section-desc logistics-desc">
+              Our in-house transport network guarantees on-time dispatch and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant's storage tanks.
+            </p>
+            <div className="logistics-grid">
+              <div className="logistics-item">
+                <h4>In-House Logistics</h4>
+                <p>No reliance on third-party brokers. We maintain complete control over dispatch timelines and tanker routing.</p>
+              </div>
+              <div className="logistics-item">
+                <h4>Emergency Sourcing</h4>
+                <p>We leverage our strong sugar mill network to coordinate urgent dispatches and prevent client plant shutdowns.</p>
+              </div>
+              <div className="logistics-item">
+                <h4>Flexible Turnaround</h4>
+                <p>Swift loading and unloading turnaround with standard couplers matching industrial plant intake setups.</p>
+              </div>
+              <div className="logistics-item">
+                <h4>Real-Time Dispatch</h4>
+                <p>Constant communication with tanker operators for transparent ETA updates at your receiving bay.</p>
+              </div>
+            </div>
+            <div style={{ marginTop: '30px' }}>
+              <Link href="/logistics" className="btn-primary" style={{ background: 'var(--accent-gold)', color: 'var(--bg-primary)' }}>
+                Explore Transport Capabilities
+              </Link>
+            </div>
+          </div>
+          <div className="logistics-visual">
+            <Image
+              src="/molasses_plant.png"
+              alt="Industrial sugar refinery processing facility"
+              width={500}
+              height={500}
+              style={{ objectFit: 'cover', display: 'block' }}
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals & Stats */}
+      <section id="trust-signals">
+        <div className="section-header">
+          <span className="section-label">Corporate Credibility</span>
+          <h2 className="section-title">Operational Statistics</h2>
+          <p className="section-desc">
+            Trusted by national distilleries, ethanol refineries, and industrial conglomerates across the Indian subcontinent.
+          </p>
+        </div>
+        
+        <div className="stats-strip">
+          <div className="stat-card">
+            <div className="stat-number">10+</div>
+            <div className="stat-label">States Served</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">150K+</div>
+            <div className="stat-label">Tons Supplied Annually</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">40+</div>
+            <div className="stat-label">Active Tanker Fleet</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">100%</div>
+            <div className="stat-label">GST Compliance</div>
+          </div>
+        </div>
+
+        <div className="trust-signals-grid">
+          <div className="trust-signal-card">
+            <h4>Lab Testing & COA</h4>
+            <p>Every dispatch tanker is accompanied by a fresh Certificate of Analysis detailing Brix, TRS, and ash percentages.</p>
+          </div>
+          <div className="trust-signal-card">
+            <h4>GSTIN Registered Sourcing</h4>
+            <p>100% legal compliance. We facilitate input tax credits with accurate and immediate GST billing records.</p>
+          </div>
+          <div className="trust-signal-card">
+            <h4>Security of Sourcing</h4>
+            <p>We source directly from large-scale sugar refineries, insulating our buyers from seasonal scarcity.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote Form */}
+      <section id="contact-desk" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px', borderTop: '1px solid var(--border-light)' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <ContactForm />
+        </div>
+      </section>
+
+    </main>
   );
 }
