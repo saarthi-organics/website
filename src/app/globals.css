@@ -68,6 +68,11 @@ section {
   margin: 0 auto;
 }
 
+/* Allow full-bleed sections to span viewport without off-center shift */
+section[style*="100vw"] {
+  max-width: none !important;
+}
+
 /* Sticky B2B Header Navigation */
 .nav-header {
   position: fixed;
@@ -328,12 +333,15 @@ section {
 
 /* B2B Industry Section */
 .industry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .industry-card {
+  flex: 1 1 280px;
+  max-width: 298px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 6px;
@@ -456,6 +464,7 @@ section {
 .logistics-section {
   background: var(--bg-secondary);
   color: var(--text-primary);
+  max-width: none;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -1042,6 +1051,10 @@ section {
     grid-template-columns: 1fr !important;
     flex-direction: column;
     gap: 16px !important;
+  }
+
+  .industry-card {
+    max-width: none !important;
   }
 
   .stat-card {
