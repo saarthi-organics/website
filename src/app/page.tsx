@@ -238,7 +238,7 @@ export default function Home() {
                 <p>Constant communication with tanker operators for transparent ETA updates at your receiving bay.</p>
               </div>
             </div>
-            <div style={{ marginTop: '30px' }}>
+            <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
               <Link href="/logistics" className="btn-primary" style={{ background: 'var(--accent-gold)', color: 'var(--bg-primary)' }}>
                 Explore Transport Capabilities
               </Link>
