@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import ContactForm from '@/components/ContactForm';
-import MolassesAnimation from '@/components/MolassesAnimation';
 
 export default function Home() {
   const features = [
@@ -99,7 +98,7 @@ export default function Home() {
         <div className="hero-content">
           <span className="section-label">Industrial Procurement Partner</span>
           <h1 className="hero-title">
-            Bulk Blackstrap Molasses Industrial Supply Partner
+            Bulk <span className="highlight-gold">Blackstrap Molasses</span> Industrial Supply Partner
           </h1>
           <p className="hero-subtitle">
             Reliable tanker-based supply across North India and PAN India. Sourcing high-quality molasses for distilleries, cattle feed mills, yeast plants, tobacco processors, and foundry foundations.
@@ -114,8 +113,15 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-image-wrapper">
-          <div className="hero-image-container" style={{ aspectRatio: '1', overflow: 'hidden' }}>
-            <MolassesAnimation />
+          <div className="hero-image-container">
+            <Image
+              src="/molasses_pouring.png"
+              alt="Rich viscous blackstrap molasses pouring in industrial facility"
+              width={500}
+              height={500}
+              style={{ objectFit: 'cover', display: 'block' }}
+              priority
+            />
           </div>
         </div>
       </section>

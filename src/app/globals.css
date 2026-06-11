@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap');
 
 :root {
-  --bg-primary: #121212;       /* Deepest Charcoal Black */
-  --bg-secondary: #1a1a1a;     /* Charcoal Black */
-  --bg-surface: #222222;       /* Industrial Dark Grey */
-  --bg-surface-alt: #2b2b2b;   /* Alternate Dark Grey */
+  --bg-primary: #1a1a1a;       /* Primary Background */
+  --bg-secondary: #2b2b2b;     /* Secondary Background */
+  --bg-surface: #2b2b2b;       /* Surface Background for Cards */
+  --bg-light: #2b2b2b;         /* Alternate Background */
   
-  --text-primary: #f5f5f7;     /* Off-White for High Readability */
-  --text-secondary: #a0a6b0;   /* Muted Grey-Blue */
-  --text-muted: #6b7280;
+  --text-primary: #ffffff;     /* Primary Text */
+  --text-secondary: #e5e5e5;   /* Secondary Text */
+  --text-muted: #bdbdbd;       /* Supporting Text */
+  --text-primary-light: var(--text-primary);
+  --text-secondary-light: var(--text-secondary);
   
-  --accent-gold: #d4af37;      /* Accent Gold */
-  --accent-dark-gold: #b8860b; /* Dark Gold */
-  --accent-brown: #8c6a2f;     /* Molasses Brown */
+  --accent-gold: #d4af37;      /* Primary Accent (Gold) */
+  --accent-dark-gold: #b8860b; /* Secondary Accent (Dark Gold) */
+  --accent-brown: #8c6a2f;     /* Supporting Accent (Molasses Brown) */
   
-  --bg-light: #161616;         /* Slightly lighter charcoal background for sections/cards */
-  --border-light: rgba(140, 106, 47, 0.25); /* Subtle border color for containers */
-  --border-color: rgba(140, 106, 47, 0.35);   /* Muted molasses brown border */
-  --border-glow: rgba(212, 175, 55, 0.08);
+  --border-light: rgba(212, 175, 55, 0.12); /* Subtle gold tint border */
+  --border-color: rgba(212, 175, 55, 0.18);   /* Low-opacity gold separator/border */
+  --border-glow: rgba(212, 175, 55, 0.04);   /* Soft gold glow (NOT neon) */
   
   font-family: 'Inter', sans-serif;
 }
@@ -160,6 +161,10 @@ section[style*="100vw"] {
   margin-bottom: 20px;
 }
 
+.highlight-gold {
+  color: var(--accent-gold);
+}
+
 .hero-subtitle {
   font-size: 1.15rem;
   color: var(--text-secondary);
@@ -174,8 +179,8 @@ section[style*="100vw"] {
 }
 
 .btn-primary {
-  background: var(--accent-gold);
-  color: var(--bg-primary);
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-dark-gold));
+  color: #1a1a1a;
   border: 1px solid var(--accent-gold);
   padding: 14px 28px;
   border-radius: 4px;
@@ -183,37 +188,39 @@ section[style*="100vw"] {
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .btn-primary:hover {
-  background: var(--accent-dark-gold);
+  background: linear-gradient(135deg, var(--accent-dark-gold), #8c6a2f);
   border-color: var(--accent-dark-gold);
   color: var(--text-primary);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
   padding: 14px 28px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .btn-secondary:hover {
-  background: var(--bg-surface);
+  background: rgba(212, 175, 55, 0.08);
   border-color: var(--accent-gold);
+  color: var(--text-primary);
 }
 
 .hero-image-wrapper {
@@ -300,7 +307,7 @@ section[style*="100vw"] {
 
 .feature-card {
   background: var(--bg-surface);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-light);
   border-radius: 6px;
   padding: 32px;
   transition: all 0.3s ease;
@@ -308,7 +315,7 @@ section[style*="100vw"] {
 
 .feature-card:hover {
   border-color: var(--accent-gold);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px var(--border-glow);
   transform: translateY(-2px);
 }
 
@@ -343,7 +350,7 @@ section[style*="100vw"] {
   flex: 1 1 280px;
   max-width: 298px;
   background: var(--bg-surface);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-light);
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -355,7 +362,7 @@ section[style*="100vw"] {
 
 .industry-card:hover {
   border-color: var(--accent-gold);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px var(--border-glow);
 }
 
 .industry-image-container {
@@ -786,10 +793,9 @@ section[style*="100vw"] {
 
 /* Footer Section */
 .footer-wrapper {
-  background: var(--bg-primary);
+  background: #111111;
   color: var(--text-primary);
   padding: 80px 24px 40px 24px;
-  border-top: 5px solid var(--accent-brown);
   margin-top: auto;
   border-top: 4px solid var(--accent-brown);
 }
