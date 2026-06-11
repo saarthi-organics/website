@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LogisticsPage() {
   return (
@@ -38,7 +39,18 @@ export default function LogisticsPage() {
             </div>
           </div>
 
-          <div style={{ flex: 0.9, minWidth: '300px' }}>
+          <div style={{ flex: 0.9, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
+            <div className="logistics-visual">
+              <Image
+                src="/molasses_tanker.png"
+                alt="Premium stainless steel liquid transport tanker in logistics dispatch bay"
+                width={600}
+                height={400}
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', display: 'block' }}
+                loading="lazy"
+              />
+            </div>
+
             <div className="quote-contact-card" style={{ background: 'var(--bg-light)' }}>
               <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary-light)', marginBottom: '12px' }}>Request Delivery Estimate</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', lineHeight: '1.5', marginBottom: '20px' }}>
