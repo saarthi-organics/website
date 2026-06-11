@@ -215,9 +215,9 @@ export default function Home() {
       <section className="logistics-section" id="logistics">
         <div className="logistics-container">
           <div className="logistics-content">
-            <span className="section-label" style={{ color: 'var(--accent-gold)' }}>Fleet Logistics</span>
-            <h2 className="section-title logistics-title">Reliable Logistics & Fleet Network</h2>
-            <p className="section-desc logistics-desc">
+            <span className="section-label" style={{ color: 'var(--accent-gold)', textAlign: 'center' }}>Fleet Logistics</span>
+            <h2 className="section-title logistics-title" style={{ textAlign: 'center' }}>Reliable Logistics & Fleet Network</h2>
+            <p className="section-desc logistics-desc" style={{ textAlign: 'center' }}>
               Our in-house transport network guarantees on-time dispatch and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant's storage tanks.
             </p>
             <div className="logistics-grid">
@@ -246,8 +246,8 @@ export default function Home() {
           </div>
           <div className="logistics-visual">
             <Image
-              src="/molasses_plant.png"
-              alt="Industrial sugar refinery processing facility"
+              src="/molasses_tanker.png"
+              alt="Premium stainless steel liquid transport tanker in logistics dispatch bay"
               width={500}
               height={500}
               style={{ objectFit: 'cover', display: 'block' }}
