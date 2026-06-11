@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import ContactForm from '@/components/ContactForm';
+import MolassesAnimation from '@/components/MolassesAnimation';
 
 export default function Home() {
   const features = [
@@ -113,15 +114,8 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-image-wrapper">
-          <div className="hero-image-container">
-            <Image
-              src="/molasses_pouring.png"
-              alt="Rich viscous blackstrap molasses pouring in industrial facility"
-              width={500}
-              height={500}
-              style={{ objectFit: 'cover', display: 'block' }}
-              priority
-            />
+          <div className="hero-image-container" style={{ aspectRatio: '1', overflow: 'hidden' }}>
+            <MolassesAnimation />
           </div>
         </div>
       </section>
