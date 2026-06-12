@@ -128,6 +128,32 @@ section[style*="100vw"] {
   backdrop-filter: blur(16px);
   background: rgba(10, 10, 10, 0.96); /* Deep Warm Rich Black Navbar */
   border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.nav-logo-img-wrapper {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.nav-logo-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
 
 .nav-logo-text {
@@ -135,6 +161,8 @@ section[style*="100vw"] {
   font-size: 1.6rem;
   font-weight: 900;
   letter-spacing: 1px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 .gradient-text {
@@ -406,40 +434,36 @@ section[style*="100vw"] {
 
 /* B2B Industry Section */
 .industry-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
+  width: 100%;
 }
 
 .industry-card {
-  flex: 1 1 280px;
-  max-width: 298px;
   background: var(--bg-surface);
   border: 1px solid var(--border-light);
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  width: 100%;
 }
 
 .industry-card:hover {
   border-color: var(--accent-gold);
-  box-shadow: 0 8px 24px var(--border-glow);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
 }
 
 .industry-image-container {
   width: 100%;
-  height: 160px;
+  aspect-ratio: 1.6 / 1;
+  height: auto;
   background: var(--bg-secondary);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  overflow: hidden;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -447,26 +471,28 @@ section[style*="100vw"] {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   flex: 1;
   width: 100%;
 }
 
 .industry-card-title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--text-primary);
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
 }
 
 .industry-card-desc {
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
   margin-bottom: 20px;
   flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .industry-card-link {
@@ -1124,12 +1150,42 @@ section[style*="100vw"] {
     padding: 48px 16px !important;
   }
 
-  /* Navigation Padding */
+  /* Navigation Padding & Sizing */
   .nav-header {
-    padding: 16px 20px;
+    padding: 10px 16px !important;
+    min-height: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .nav-links {
     display: none;
+  }
+  .nav-logo-link {
+    gap: 8px !important;
+  }
+  .nav-logo-img-wrapper {
+    width: 42px !important;
+    height: 42px !important;
+    border-width: 1.5px !important;
+    box-shadow: 0 0 6px rgba(212, 175, 55, 0.15) !important;
+  }
+  .nav-logo-text {
+    font-size: 1.25rem !important;
+    letter-spacing: 0.3px !important;
+    white-space: nowrap !important;
+  }
+  .mobile-toggle {
+    font-size: 1.4rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 42px !important;
+    width: 42px !important;
+    line-height: 1 !important;
   }
 
   /* Stacked touch-friendly buttons with ample spacing */
@@ -1146,14 +1202,57 @@ section[style*="100vw"] {
   }
 
   /* Stacked Responsive Grids */
-  .features-grid, .industry-grid, .trust-signals-grid, .stats-strip {
+  .features-grid, .trust-signals-grid, .stats-strip {
     grid-template-columns: 1fr !important;
     flex-direction: column;
     gap: 16px !important;
   }
 
+  .industry-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  @media (min-width: 520px) {
+    .industry-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 20px !important;
+    }
+  }
+
   .industry-card {
     max-width: none !important;
+    border-radius: 8px !important;
+  }
+
+  .industry-image-container {
+    aspect-ratio: 1.6 / 1 !important;
+    height: auto !important;
+  }
+
+  .industry-card-content {
+    padding: 20px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .industry-card-title {
+    font-size: 1.2rem !important;
+    text-align: left !important;
+    margin-bottom: 8px !important;
+  }
+
+  .industry-card-desc {
+    font-size: 15px !important; /* Slightly smaller for mobile layout balance, overrides the generic 18px body font rule to prevent text bloat in cards */
+    line-height: 1.5 !important;
+    text-align: left !important;
+    margin-bottom: 16px !important;
+  }
+
+  .industry-card-link {
+    font-size: 15px !important;
   }
 
   .stat-card {
@@ -1455,4 +1554,123 @@ section[style*="var(--bg-light)"] .symmetrical-detail-box,
 /* Breadcrumb Hover Helper */
 .breadcrumb-link:hover {
   color: var(--accent-gold) !important;
+}
+
+/* Mobile Sticky Action Bar Styling */
+.sticky-action-bar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(66px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  .sticky-action-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(10, 10, 10, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1.5px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.7);
+    padding: 10px 12px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .sticky-action-bar-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.15fr;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sticky-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 46px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .sticky-btn svg {
+    flex-shrink: 0;
+  }
+
+  .sticky-btn-call {
+    background: rgba(20, 20, 20, 0.75);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: var(--accent-gold);
+  }
+
+  .sticky-btn-call:active {
+    background: rgba(212, 175, 55, 0.12);
+    border-color: var(--accent-gold);
+    transform: scale(0.97);
+  }
+
+  .sticky-btn-whatsapp {
+    background: rgba(37, 211, 102, 0.08);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    color: #25d366;
+  }
+
+  .sticky-btn-whatsapp:active {
+    background: rgba(37, 211, 102, 0.16);
+    border-color: #25d366;
+    transform: scale(0.97);
+  }
+
+  .sticky-btn-quote {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-dark-gold) 100%);
+    border: 1px solid var(--accent-dark-gold);
+    color: #0A0A0A;
+  }
+
+  .sticky-btn-quote:active {
+    background: linear-gradient(135deg, var(--accent-bright-orange) 0%, var(--accent-gold) 100%);
+    transform: scale(0.97);
+  }
+}
+
+@media (max-width: 375px) {
+  .sticky-action-bar {
+    padding: 8px 8px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .sticky-action-bar-buttons {
+    gap: 6px;
+  }
+
+  .sticky-btn {
+    font-size: 11.5px;
+    gap: 4px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sticky-btn {
+    font-size: 10.5px;
+    gap: 3px;
+  }
+  .sticky-btn svg {
+    width: 13px;
+    height: 13px;
+  }
 }

@@ -25,21 +25,17 @@ export default function Header() {
     <>
       <header className="nav-header">
         <div className="nav-logo">
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '16px', textDecoration: 'none' }}>
-            <Image 
-              src="/logo_heritage.jpg" 
-              alt="Saarthi Organics Logo" 
-              width={54} 
-              height={54} 
-              style={{ 
-                objectFit: 'cover', 
-                borderRadius: '50%', 
-                border: '2px solid var(--accent-gold)', 
-                boxShadow: '0 0 8px rgba(212, 175, 55, 0.2)',
-                flexShrink: 0
-              }} 
-              priority 
-            />
+          <Link href="/" className="nav-logo-link">
+            <div className="nav-logo-img-wrapper">
+              <Image 
+                src="/logo_heritage.jpg" 
+                alt="Saarthi Organics Logo" 
+                width={54} 
+                height={54} 
+                className="nav-logo-img"
+                priority 
+              />
+            </div>
             <span className="nav-logo-text gradient-text">
               Saarthi Organics
             </span>

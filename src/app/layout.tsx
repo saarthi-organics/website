@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AttributionTracker from "@/components/AttributionTracker";
+import StickyActionBar from "@/components/StickyActionBar";
 
 export const metadata: Metadata = {
   title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <StickyActionBar />
       </body>
     </html>
   );
