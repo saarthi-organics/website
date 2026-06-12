@@ -25,6 +25,7 @@ export default function Footer() {
                 src="/logo_heritage.jpg" 
                 alt="Saarthi Organics Heritage Seal" 
                 fill
+                sizes="96px"
                 style={{ objectFit: 'cover' }} 
               />
             </div>

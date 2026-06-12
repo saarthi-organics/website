@@ -67,7 +67,7 @@ export default function HaryanaSupplierPage() {
               Because molasses movement is heavily regulated by state excise laws, our compliance desk in Karnal directly manages all transit documentations, including Haryana Excise passes, e-way bills, and computerized weighment logs. Our in-house fleet of specialized liquid road tankers (20 - 50 MT capacity) guarantees priority dispatch schedules and absolute transit safety.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Direct Mill Sourcing</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct logistics loading at Yamunanagar, Shahabad, and Panipat sugar mills, keeping pricing competitive.</p>

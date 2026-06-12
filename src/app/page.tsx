@@ -180,6 +180,7 @@ export default function Home() {
               src="/logo_heritage.jpg" 
               alt="Saarthi Organics Heritage Seal Logo" 
               fill
+              sizes="280px"
               style={{ objectFit: 'cover' }}
             />
           </div>
@@ -256,6 +257,7 @@ export default function Home() {
                     src={ind.image} 
                     alt={ind.title} 
                     fill 
+                    sizes="(max-width: 520px) 100vw, (max-width: 968px) 50vw, 300px"
                     style={{ objectFit: 'cover' }} 
                   />
                   <div style={{ position: 'absolute', top: '10px', left: '10px', background: 'rgba(10, 10, 10, 0.85)', padding: '6px 10px', borderRadius: '4px', fontSize: '1.2rem', color: 'var(--accent-gold)' }}>
@@ -308,7 +310,7 @@ export default function Home() {
           <div className="gallery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '30px' }}>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
-                <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill style={{ objectFit: 'cover' }} />
+                <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h4>
@@ -317,7 +319,7 @@ export default function Home() {
             </div>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
-                <Image src="/gallery_texture.png" alt="Molasses texture close-up" fill style={{ objectFit: 'cover' }} />
+                <Image src="/gallery_texture.png" alt="Molasses texture close-up" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h4>
@@ -326,7 +328,7 @@ export default function Home() {
             </div>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
-                <Image src="/gallery_sugarcane.png" alt="Sugarcane raw material sourcing" fill style={{ objectFit: 'cover' }} />
+                <Image src="/gallery_sugarcane.png" alt="Sugarcane raw material sourcing" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Sugarcane Source</h4>
@@ -335,7 +337,7 @@ export default function Home() {
             </div>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
-                <Image src="/gallery_industrial.png" alt="Industrial molasses mixing application" fill style={{ objectFit: 'cover' }} />
+                <Image src="/gallery_industrial.png" alt="Industrial molasses mixing application" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Industrial Processing</h4>
@@ -357,7 +359,7 @@ export default function Home() {
             <span className="section-label" style={{ color: 'var(--accent-gold)', textAlign: 'center' }}>Fleet Logistics</span>
             <h2 className="section-title logistics-title" style={{ textAlign: 'center' }}>Reliable Logistics & Fleet Network</h2>
             <p className="section-desc logistics-desc" style={{ textAlign: 'center' }}>
-              Our in-house transport network guarantees on-time dispatch and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant's storage tanks.
+              Our in-house transport network guarantees on-time dispatch and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant&apos;s storage tanks.
             </p>
             <div className="logistics-grid">
               <div className="logistics-item">

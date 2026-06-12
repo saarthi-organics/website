@@ -44,7 +44,7 @@ export default function AgricultureFarmingIndustry() {
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Soil & Compost Biological Metrics</h3>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Microbial Stimulation</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Provides immediately bio-available sugars to activate nitrogen-fixing soil bacteria.</p>

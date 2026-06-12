@@ -1,0 +1,42 @@
+{
+  "searches": {
+    "molasses for distilleries & ethanol plants": {
+      "count": 1,
+      "noResults": false
+    },
+    "nonexistentquery": {
+      "count": 1,
+      "noResults": true
+    },
+    "molasses": {
+      "count": 1,
+      "noResults": false
+    }
+  },
+  "clicks": {
+    "/molasses-for-distilleries": {
+      "count": 1,
+      "queries": [
+        "molasses for distilleries & ethanol plants"
+      ],
+      "title": "Molasses for Distilleries & Ethanol Plants | Saarthi Organics"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "2026-06-12T17:32:16.362Z",
+      "query": "molasses for distilleries & ethanol plants",
+      "resultsCount": 33
+    },
+    {
+      "timestamp": "2026-06-12T17:32:50.411Z",
+      "query": "nonexistentquery",
+      "resultsCount": 0
+    },
+    {
+      "timestamp": "2026-06-12T18:12:51.553Z",
+      "query": "molasses",
+      "resultsCount": 33
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, FormEvent } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import ContactForm from '@/components/ContactForm';
-import { articles, Article } from '@/data/blogArticles';
+import { articles } from '@/data/blogArticles';
 
 export default function BlogHubClient() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
@@ -228,7 +227,7 @@ export default function BlogHubClient() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <h4>No articles found</h4>
-            <p style={{ fontSize: '0.9rem' }}>We couldn't find any papers matching your filter or search query. Try another keyword.</p>
+            <p style={{ fontSize: '0.9rem' }}>We couldn&apos;t find any papers matching your filter or search query. Try another keyword.</p>
           </div>
         )}
       </section>

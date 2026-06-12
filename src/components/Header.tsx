@@ -3,11 +3,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import SearchOverlay from './SearchOverlay';
 
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -20,6 +22,30 @@ export default function Header() {
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  // Listen to Cmd+K / Ctrl+K keyboard shortcut
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
 
   return (
     <>
@@ -55,6 +81,33 @@ export default function Header() {
                 </li>
               );
             })}
+            
+            {/* Desktop Search Trigger */}
+            <li>
+              <button 
+                onClick={() => setIsSearchOpen(true)}
+                aria-label="Open Search"
+                className="search-nav-btn"
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-secondary)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: '8px',
+                  transition: 'color 0.2s ease'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent-gold)'}
+                onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </button>
+            </li>
+
             <li>
               <Link href="/contact" className="nav-cta">
                 Request Quote
@@ -63,22 +116,45 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Mobile Hamburger Toggle */}
-        <button 
-          className="mobile-toggle" 
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle Menu"
-          style={{
-            background: 'transparent',
-            border: 'none',
-            color: 'var(--text-primary)',
-            fontSize: '1.5rem',
-            cursor: 'pointer',
-            display: 'none'
-          }}
-        >
-          {mobileOpen ? '✕' : '☰'}
-        </button>
+        {/* Mobile Search & Hamburger Actions Container */}
+        <div className="mobile-header-actions" style={{ display: 'none', alignItems: 'center', gap: '16px' }}>
+          {/* Mobile Direct Search Icon */}
+          <button 
+            onClick={() => setIsSearchOpen(true)}
+            aria-label="Open Search"
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-primary)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              padding: '6px'
+            }}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          {/* Mobile Hamburger Toggle */}
+          <button 
+            className="mobile-toggle" 
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle Menu"
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-primary)',
+              fontSize: '1.5rem',
+              cursor: 'pointer',
+              display: 'block'
+            }}
+          >
+            {mobileOpen ? '✕' : '☰'}
+          </button>
+        </div>
       </header>
 
       {/* Mobile Menu Overlay */}
@@ -101,6 +177,32 @@ export default function Header() {
             overflowY: 'auto'
           }}
         >
+          {/* Mobile Menu Search Searchbar trigger */}
+          <button 
+            onClick={() => { setMobileOpen(false); setIsSearchOpen(true); }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              color: 'var(--text-primary)',
+              background: 'rgba(255, 255, 255, 0.04)',
+              border: '1px solid var(--border-light)',
+              borderRadius: '4px',
+              padding: '12px 16px',
+              fontSize: '1.1rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              width: '100%',
+              textAlign: 'left'
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>Search Website</span>
+          </button>
+
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -135,6 +237,12 @@ export default function Header() {
         </div>
       )}
 
+      {/* Global Search Overlay Modal */}
+      <SearchOverlay 
+        isOpen={isSearchOpen} 
+        onClose={() => setIsSearchOpen(false)} 
+      />
+
       {/* Inline styles to handle hamburger show/hide on mobile */}
       <style jsx global>{`
         @media (max-width: 968px) {
@@ -142,7 +250,10 @@ export default function Header() {
             display: none !important;
           }
           .mobile-toggle {
-            display: block !important;
+            display: flex !important;
+          }
+          .mobile-header-actions {
+            display: flex !important;
           }
         }
       `}</style>

@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
       }
     });
 
-  } catch (err: any) {
+  } catch (err) {
     console.error('[API CRASH] Critical error exporting CSV data:', err);
     return new Response('Server error generating export.', { status: 500 });
   }

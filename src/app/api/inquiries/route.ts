@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({ success: true, records });
 
-  } catch (err: any) {
+  } catch (err) {
     console.error('[API CRASH] Critical error fetching inquiries:', err);
     return NextResponse.json({ success: false, message: 'Server error processing request.' }, { status: 500 });
   }

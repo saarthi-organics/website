@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
@@ -45,7 +44,7 @@ export default function AboutUs() {
               We recognize that industrial buyers, plant heads, and distilleries cannot afford operational downtime. That is why we do not function as simple brokers. Instead, we control the entire supply chain—procuring directly, testing in our laboratory, and managing transport in our own dedicated tanker fleet.
             </p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Sourcing Authority</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Direct tie-ups with leading sugar manufacturing plants across North India.</p>
@@ -120,7 +119,7 @@ export default function AboutUs() {
           Based in the corporate administrative area of Karnal, our main office coordinates and aligns volume contracts across sugar mill boards and raw material supply chain managers.
         </p>
         <p className="section-desc" style={{ fontSize: '1rem', lineHeight: '1.6', margin: 0 }}>
-          Our dedicated sales, dispatch dispatchers, and billing teams operate here to provide smooth contract renewals, instantaneous e-way bill generation, and transparent cargo transit reports.
+          Our dedicated sales, dispatch coordinators, and billing teams operate here to provide smooth contract renewals, instantaneous e-way bill generation, and transparent cargo transit reports.
         </p>
       </section>
 

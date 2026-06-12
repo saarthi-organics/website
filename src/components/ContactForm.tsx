@@ -116,7 +116,8 @@ export default function ContactForm() {
       if (response.ok && result.success) {
         // Push conversion events to GTM dataLayer
         if (typeof window !== 'undefined') {
-          const dl = (window as any).dataLayer || [];
+          const win = window as unknown as { dataLayer?: Record<string, unknown>[] };
+          const dl = win.dataLayer || [];
           dl.push({
             event: 'form_submission_success',
             inquiryId: result.submissionId || '',
@@ -128,7 +129,7 @@ export default function ContactForm() {
             utmMedium: payload.utmMedium,
             utmCampaign: payload.utmCampaign
           });
-          (window as any).dataLayer = dl;
+          win.dataLayer = dl;
 
           // Dispatch standard CustomEvent for other analytics (Meta, CRM, etc.)
           const customEvent = new CustomEvent('saarthi_inquiry_submitted', {
@@ -161,7 +162,7 @@ export default function ContactForm() {
         setStatus('error');
         setError(result.message || 'An error occurred during form submission. Please verify your entries.');
       }
-    } catch (err) {
+    } catch {
       setStatus('error');
       setError('Connection failure. Your inquiry has been secured. Please call our sourcing desk at +91-7055552535.');
     }

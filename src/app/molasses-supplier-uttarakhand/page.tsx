@@ -62,10 +62,10 @@ export default function UttarakhandSupplierPage() {
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Uttarakhand Mountain Logistics & Audits</h3>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Transporting high-viscosity liquid tankers through Uttarakhand's hilly entry pathways requires professional logistics mapping. We use specialized, well-maintained tankers and arrange early deliveries to avoid local traffic bottlenecks. For pharmaceutical audits, we provide a full Certificate of Analysis (COA) and material batch codes prior to gate discharge.
+              Transporting high-viscosity liquid tankers through Uttarakhand&apos;s hilly entry pathways requires professional logistics mapping. We use specialized, well-maintained tankers and arrange early deliveries to avoid local traffic bottlenecks. For pharmaceutical audits, we provide a full Certificate of Analysis (COA) and material batch codes prior to gate discharge.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>API Grade Audited Batches</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Sourcing carbon substrates featuring documented trace element profiles (iron, zinc, magnesium).</p>

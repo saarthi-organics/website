@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import FinalCTA from '@/components/FinalCTA';
 
@@ -71,7 +70,7 @@ export default function BlackstrapMolasses() {
               Our standard industrial blackstrap features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
             </p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div className="symmetrical-grid-two-col">
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong>Brix: 82% - 88%</strong>
                 <p>High active dry solids count</p>

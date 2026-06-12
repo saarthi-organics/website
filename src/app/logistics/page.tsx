@@ -34,10 +34,10 @@ export default function LogisticsPage() {
               Unlike traditional brokers or generic traders who rely on third-party transport intermediaries, Saarthi Organics owns and controls its logistics operations. For plant heads and distillery operators, this translates to guaranteed delivery windows and operational predictability.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              We maintain specialized, high-capacity liquid tankers designed for viscous fluids. Our logistics division monitors all tanker movements from loading terminals in sugar mills directly to your plant's intake valves, keeping your dispatch schedules completely transparent.
+              We maintain specialized, high-capacity liquid tankers designed for viscous fluids. Our logistics division monitors all tanker movements from loading terminals in sugar mills directly to your plant&apos;s intake valves, keeping your dispatch schedules completely transparent.
             </p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Standard Tanker Capacity</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Standardized liquid transport tankers carrying 20 - 50 Metric Tons (MT) per run.</p>

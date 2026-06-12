@@ -42,7 +42,7 @@ export default function FoodProcessingIndustry() {
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Food Grade Sourcing Standards</h3>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Natural Shelf Life</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Functions as a clean-label humectant, retaining moisture and freshness without synthetic additives.</p>

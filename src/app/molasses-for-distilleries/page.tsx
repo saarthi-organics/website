@@ -42,7 +42,7 @@ export default function DistilleriesIndustry() {
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Sourcing & Quality Parameters</h3>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Total Reducing Sugars (TRS)</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Maintained at 45.0% - 50.0% to support continuous cell density and prevent fermentation stalls.</p>

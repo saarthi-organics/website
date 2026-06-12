@@ -4,7 +4,7 @@ import path from 'path';
 import nodemailer from 'nodemailer';
 
 // Helper to sanitize fields for CSV representation
-function escapeCSV(val: any): string {
+function escapeCSV(val: unknown): string {
   if (val === undefined || val === null) return '';
   const str = String(val).trim();
   if (str.includes(',') || str.includes('"') || str.includes('\n') || str.includes('\r')) {
@@ -104,11 +104,11 @@ function migrateCSVIfRequired(jsonPath: string, csvPath: string): boolean {
     if (rewrite && fs.existsSync(jsonPath)) {
       const records = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
       if (Array.isArray(records)) {
-        const rows = records.map((record: any) => {
-          let dateVal = record.date || '';
-          let timeVal = record.time || '';
+        const rows = records.map((record: Record<string, unknown>) => {
+          let dateVal = String(record.date || '');
+          let timeVal = String(record.time || '');
           if (!dateVal && record.dateTime) {
-            const parts = record.dateTime.split(', ');
+            const parts = String(record.dateTime).split(', ');
             dateVal = parts[0] || '';
             timeVal = parts[1] || '';
           }
@@ -257,8 +257,8 @@ export async function POST(req: NextRequest) {
 
     let localSaveSuccess = false;
     let emailSendSuccess = false;
-    let localError: any = null;
-    let emailError: any = null;
+    let localError: unknown = null;
+    let emailError: unknown = null;
 
     // 4. Local Database Logging & Self-Healing CSV Update
     const dataDir = path.join(process.cwd(), 'data');
@@ -479,7 +479,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({
         success: false,
         message: 'System error processing request. Sourcing team notified. Please contact directly by phone.',
-        errors: { local: localError?.message, email: emailError?.message }
+        errors: {
+          local: localError instanceof Error ? localError.message : String(localError),
+          email: emailError instanceof Error ? emailError.message : String(emailError)
+        }
       }, { status: 500 });
     }
 
@@ -491,7 +494,7 @@ export async function POST(req: NextRequest) {
       warning: 'One of the dispatch pipeline steps completed with errors, but your inquiry has been secured.'
     });
 
-  } catch (err: any) {
+  } catch (err) {
     console.error('[API CRASH] Critical failure in form submission handler:', err);
     return NextResponse.json({
       success: false,

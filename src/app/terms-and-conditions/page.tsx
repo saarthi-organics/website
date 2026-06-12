@@ -48,21 +48,21 @@ export default function TermsAndConditions() {
             2. Weighment & Cargo Verification
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            The net weight of molasses cargo is determined at verified refinery terminal weighbridges and logged on our tax invoices. Standard shipping includes public weighbridge slips. Any weighment audit at the client's receiving bay must occur prior to unloading, and any weight variance exceeding ±0.5% must be reported to our transit desk immediately.
+            The net weight of molasses cargo is determined at verified refinery terminal weighbridges and logged on our tax invoices. Standard shipping includes public weighbridge slips. Any weighment audit at the client&apos;s receiving bay must occur prior to unloading, and any weight variance exceeding ±0.5% must be reported to our transit desk immediately.
           </p>
 
           <h2 style={{ fontSize: '1.4rem', marginBottom: '14px', color: 'var(--accent-gold)', borderBottom: '1px solid var(--border-light)', paddingBottom: '8px' }}>
             3. Unloading & Discharge Turnaround
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            Receiving plants are responsible for providing appropriate storage tanks, standard couplers (3-inch or 4-inch), and positive displacement rotary lobe pumps. Liquid tankers allow up to 4 hours of free unloading turnaround at the client's bay. Delays beyond this window due to pump malfunctions or tank capacity deficits may incur standard demurrage charges.
+            Receiving plants are responsible for providing appropriate storage tanks, standard couplers (3-inch or 4-inch), and positive displacement rotary lobe pumps. Liquid tankers allow up to 4 hours of free unloading turnaround at the client&apos;s bay. Delays beyond this window due to pump malfunctions or tank capacity deficits may incur standard demurrage charges.
           </p>
 
           <h2 style={{ fontSize: '1.4rem', marginBottom: '14px', color: 'var(--accent-gold)', borderBottom: '1px solid var(--border-light)', paddingBottom: '8px' }}>
             4. Commercial Billing & GST Compliance
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            All dispatches are subject to standard Goods and Services Tax (GST) rates (HSN Code 1703). Invoices showing Saarthi Organics' GSTIN (06AFEFS2128A1ZJ) are uploaded immediately to ensure seamless Input Tax Credit (ITC) matching. Payments must comply with contractual credit timelines.
+            All dispatches are subject to standard Goods and Services Tax (GST) rates (HSN Code 1703). Invoices showing Saarthi Organics&apos; GSTIN (06AFEFS2128A1ZJ) are uploaded immediately to ensure seamless Input Tax Credit (ITC) matching. Payments must comply with contractual credit timelines.
           </p>
 
           <div style={{ borderTop: '1px solid var(--border-color)', marginTop: '40px', paddingTop: '24px', textAlign: 'center' }}>

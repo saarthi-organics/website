@@ -65,7 +65,7 @@ export default function DelhiNCRSupplierPage() {
               Operating liquid tankers inside Delhi NCR requires strict navigation of traffic rules and timing restrictions. Our logistics desk maps routes dynamically to bypass peak-hour constraints, coordinating evening and early morning gate discharge times. We generate e-way bills and state transit permissions instantly to guarantee zero delays.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Dynamic Route Mapping</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Coordinating gate deliveries aligned with NCR no-entry truck timings to keep discharge under 60 mins.</p>

@@ -1137,12 +1137,17 @@ section[style*="100vw"] {
 
 @media (max-width: 768px) {
   /* Minimum 18px Body/Paragraph Text Size */
-  body, p, li, td, th, label, input, select, textarea, 
+  body, p, input, select, textarea, 
   .feature-card-desc, .industry-card-desc, .faq-answer, 
-  .quote-info-desc, .footer-brand p, .footer-column ul a,
-  .footer-info-item {
+  .quote-info-desc {
     font-size: 18px !important;
     line-height: 1.6 !important;
+  }
+
+  /* Table cells, small labels, and lists/footer links at clean sizes */
+  td, th, label, li, .footer-brand p, .footer-column ul a, .footer-info-item {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
   }
 
   /* Consistent section spacing */
@@ -1674,3 +1679,69 @@ section[style*="var(--bg-light)"] .symmetrical-detail-box,
     height: 13px;
   }
 }
+
+/* --- Search Overlay Global Styles --- */
+.search-highlight {
+  background: rgba(212, 175, 55, 0.25) !important;
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.search-overlay-backdrop {
+  animation: fadeInSearch 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInSearch {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(20px);
+  }
+}
+
+/* Custom scrollbar for search overlay results */
+.search-overlay-backdrop::-webkit-scrollbar {
+  width: 8px;
+}
+
+.search-overlay-backdrop::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+.search-overlay-backdrop::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.search-overlay-backdrop::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* Admin panel table enhancements */
+.admin-table-row {
+  transition: background-color 0.15s ease;
+}
+
+.admin-table-row:hover {
+  background-color: rgba(212, 175, 55, 0.04) !important;
+}
+
+/* Symmetrical Grid Two-Column Responsive Layout */
+.symmetrical-grid-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .symmetrical-grid-two-col {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+}
+

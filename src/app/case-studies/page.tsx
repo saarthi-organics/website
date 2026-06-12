@@ -1,6 +1,14 @@
-import Link from 'next/link';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+
+export const metadata: Metadata = {
+  title: 'B2B Case Studies | Sugarcane Molasses Supply Results | Saarthi Organics',
+  description: 'Real-world case studies demonstrating our sugarcane molasses sourcing solutions, logistics fleet reliability, and quality control performance for feed mills, distilleries, and yeast plants.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/case-studies',
+  },
+};
 
 export default function CaseStudies() {
   const cases = [
@@ -63,7 +71,7 @@ export default function CaseStudies() {
                   </span>
                   <h3 style={{ fontSize: '1.5rem', color: 'var(--text-primary-light)', marginBottom: '20px' }}>{cs.title}</h3>
                   
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', flexWrap: 'wrap' }}>
+                  <div className="symmetrical-grid-two-col">
                     <div>
                       <h4 style={{ fontSize: '1.05rem', color: 'var(--text-primary-light)', marginBottom: '8px' }}>The Challenge</h4>
                       <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.95rem', lineHeight: 1.6 }}>{cs.challenge}</p>
@@ -81,6 +89,7 @@ export default function CaseStudies() {
                       src={cs.image} 
                       alt={cs.title} 
                       fill 
+                      sizes="(max-width: 768px) 100vw, 300px"
                       style={{ objectFit: 'cover' }} 
                     />
                   </div>

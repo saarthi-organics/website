@@ -39,7 +39,7 @@ export default function PunjabSupplierPage() {
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Punjab</h1>
           <p className="subpage-hero-desc">
-            Excise-aligned, high Total Reducing Sugars (TRS) sugarcane molasses supply for Punjab's cattle feed manufacturers and fermentation plants.
+            Excise-aligned, high Total Reducing Sugars (TRS) sugarcane molasses supply for Punjab&apos;s cattle feed manufacturers and fermentation plants.
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function PunjabSupplierPage() {
           
           <div style={{ flex: 1.1, minWidth: '300px' }}>
             <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>
-              Fueling Punjab's Agriculture & Distillery Sectors
+              Fueling Punjab&apos;s Agriculture & Distillery Sectors
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
@@ -57,7 +57,7 @@ export default function PunjabSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics provides a dependable logistics network that connects sugar crushing zones in neighboring Haryana directly with Punjab's heavy industrial consumers. Sourcing raw materials from high-capacity modern sugar refineries, we deliver sugarcane blackstrap molasses with a guaranteed Brix density of 82.0% - 88.0% and low ash parameters.
+              Saarthi Organics provides a dependable logistics network that connects sugar crushing zones in neighboring Haryana directly with Punjab&apos;s heavy industrial consumers. Sourcing raw materials from high-capacity modern sugar refineries, we deliver sugarcane blackstrap molasses with a guaranteed Brix density of 82.0% - 88.0% and low ash parameters.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Interstate Transit & Punjab Excise Passes</h3>
@@ -65,7 +65,7 @@ export default function PunjabSupplierPage() {
               Interstate transport of molasses into Punjab is heavily controlled by state liquor and excise policies. Our dedicated logistics desk manages the entire compliance chain—securing transport permits, generating GSTR-1 aligned invoices, and verifying e-way bill data—to ensure tankers proceed through border checkpoints (such as Shambhu or Lalru) without operational delays.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Interstate Transit Coordination</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Seamless cross-border logistics management from Haryana mills directly to Punjab plant valves.</p>

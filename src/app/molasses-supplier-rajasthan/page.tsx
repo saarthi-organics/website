@@ -65,7 +65,7 @@ export default function RajasthanSupplierPage() {
               Because long-distance transport through arid zones can impact product temperature and flowability, our logistics desk monitors all tanker routes. For foundry casting setups requiring high-adhesion media, we guarantee that the molasses delivered is pure and contains minimal ash residue, ensuring excellent mold tensile strength.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px', marginBottom: '36px' }}>
+            <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Long-Distance Fleet Coordination</strong>
                 <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>GPS-tracked bulk liquid tankers ensuring prompt, secure arrival across Rajasthan industrial areas.</p>
