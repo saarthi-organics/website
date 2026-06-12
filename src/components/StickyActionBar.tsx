@@ -75,7 +75,7 @@ export default function StickyActionBar() {
 
         {/* Button 3: Request Quote */}
         <Link
-          href="/contact"
+          href="/#contact-desk"
           className="sticky-btn sticky-btn-quote"
           onClick={() => trackClick('request_quote')}
         >
