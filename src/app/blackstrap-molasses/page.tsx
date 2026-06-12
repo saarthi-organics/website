@@ -1,7 +1,16 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import FinalCTA from '@/components/FinalCTA';
+
+export const metadata: Metadata = {
+  title: 'Industrial Blackstrap Molasses Specifications & TDS | Saarthi Organics',
+  description: 'Detailed technical specification datasheet for blackstrap molasses. Review brix parameters, total reducing sugars, and packaging formats for bulk industrial buyers.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/blackstrap-molasses',
+  },
+};
 
 export default function BlackstrapMolasses() {
   const faqs = [

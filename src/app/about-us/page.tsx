@@ -1,6 +1,15 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+
+export const metadata: Metadata = {
+  title: 'About Saarthi Organics | Sugarcane Molasses Sourcing Authority',
+  description: 'Learn about Saarthi Organics, a premier industrial molasses sourcing partner based in Karnal, Haryana. Discover our corporate values, founders, and quality standards.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/about-us',
+  },
+};
 
 export default function AboutUs() {
   return (
@@ -15,6 +24,10 @@ export default function AboutUs() {
             Industrial raw material partner based in Karnal, India. We are structured exclusively to handle the bulk procurement, dispatch coordination, and supply network needs of heavy manufacturing plants.
           </p>
         </div>
+      </div>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
       </div>
 
       {/* Main Content */}
@@ -59,6 +72,10 @@ export default function AboutUs() {
         </div>
       </section>
 
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
+
       {/* Core Values / Operational Standards */}
       <section style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -90,6 +107,10 @@ export default function AboutUs() {
         </div>
       </section>
 
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
+
       {/* Sourcing Office / Administration */}
       <section style={{ maxWidth: '800px', margin: '0 auto 80px auto', textAlign: 'center' }}>
         <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '24px' }}>
@@ -102,6 +123,10 @@ export default function AboutUs() {
           Our dedicated sales, dispatch dispatchers, and billing teams operate here to provide smooth contract renewals, instantaneous e-way bill generation, and transparent cargo transit reports.
         </p>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Leadership Team Desk */}
       <section style={{ 
@@ -202,6 +227,10 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Final Action Area */}
       <FinalCTA />

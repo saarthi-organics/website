@@ -1,17 +1,26 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
+export const metadata: Metadata = {
+  title: 'Molasses for Agriculture, Farming & Soil Health | Saarthi Organics',
+  description: 'Pure blackstrap molasses for organic farming, composting, and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/molasses-for-agriculture-and-farming',
+  },
+};
+
 export default function AgricultureFarmingIndustry() {
   return (
-    <main style={{ marginTop: '72px' }}>
+    <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       
       {/* Subpage Hero / Overview */}
       <div className="subpage-hero">
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>
-          <h1 className="subpage-hero-title">Molasses for Agriculture & Farming</h1>
+          <h1 className="subpage-hero-title">Molasses Sourcing for Agriculture & Bio-Fertilizers</h1>
           <p className="subpage-hero-desc">
-            Premium, high-solids blackstrap molasses rich in trace minerals and natural carbohydrates to stimulate soil biology, accelerate composting, and enhance organic crop nutrition.
+            Raw, high-solids blackstrap molasses rich in organic carbon and trace elements, optimized for agricultural soil conditioning and composting setups.
           </p>
         </div>
       </div>
@@ -21,59 +30,56 @@ export default function AgricultureFarmingIndustry() {
         <div style={{ display: 'flex', gap: '60px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
           
           <div style={{ flex: 1.1, minWidth: '300px' }}>
-            <h2 className="section-title">Agricultural Uses of Molasses</h2>
-            <p className="section-desc" style={{ marginBottom: '20px', lineHeight: '1.6' }}>
-              In modern sustainable agriculture and organic farming systems, heavy blackstrap molasses is valued as an exceptional soil stimulant. Because it contains concentrated sucrose, glucose, and fructose along with complex organic matter, it serves as a highly bio-available energy source for beneficial soil microbes, mycorrhizal fungi, and nitrogen-fixing bacteria.
-            </p>
-            <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              We procure molasses directly from primary sugarcane processing mills, ensuring it retains its natural mineral density—specifically calcium, magnesium, iron, and potassium. This high trace-mineral count provides instant micro-nutrients to crops while supporting systemic soil health.
+            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>
+              Microbial Soil Activation & Bio-Nutrient Sourcing
+            </h2>
+            
+            <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
+              <strong>Why the Agricultural Industry Uses Molasses:</strong> Commercial farming and organic fertilizer manufacturers utilize blackstrap molasses as an organic carbon source. Liquid molasses activates beneficial soil microorganisms, mycorrhizal fungi, and nitrogen-fixing bacteria, building soil structure and improving plant nutrient absorption.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Targeted Agricultural Applications</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div className="symmetrical-detail-box">
-                <strong>Soil Conditioning & Microbial Activation</strong>
-                <p>
-                  Increases the biological activity of soil bacteria and earthworms. Applied via drip irrigation or sprayers to build soil structure, improve water retention, and reduce nutrient leaching.
-                </p>
+            <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
+              <strong>Key Sourcing Benefits:</strong> Our raw molasses is sourced directly from primary sugar crushing mills, retaining its natural trace minerals (potassium, calcium, magnesium, iron). Sourcing raw, un-diluted syrup (Brix ≥ 82.0% min) guarantees maximum carbohydrate energy values per liter.
+            </p>
+
+            <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Soil & Compost Biological Metrics</h3>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '36px' }}>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Microbial Stimulation</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Provides immediately bio-available sugars to activate nitrogen-fixing soil bacteria.</p>
               </div>
-              <div className="symmetrical-detail-box">
-                <strong>Composting & Compost Tea Acceleration</strong>
-                <p>
-                  Functions as a quick-release carbon food source in compost heaps and aerobic compost teas. Accelerates the decomposition of raw organic matter, increasing thermophilic temperatures to break down cellulose and eradicate weed seeds.
-                </p>
-              </div>
-              <div className="symmetrical-detail-box">
-                <strong>Organic Crop Nutrition & Chelating Agent</strong>
-                <p>
-                  Acts as a natural chelating agent, binding to trace minerals (like iron and zinc) to make them more bio-available for root absorption. Can also be utilized as a natural surfactant in foliar spray mixes.
-                </p>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Chelating Carbon</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Complex organic acids naturally bind to trace minerals, preventing crop nutrient lockouts.</p>
               </div>
             </div>
+
+            <h3 style={{ fontSize: '1.4rem', margin: '24px 0 16px 0', color: 'var(--accent-gold)' }}>Procurement, Packaging & Delivery</h3>
+            
+            <p className="section-desc" style={{ marginBottom: '16px', textAlign: 'left', lineHeight: '1.6' }}>
+              <strong>Flexible Packaging Formats:</strong> Because agricultural distributors and fertilizer blenders operate under varied intake yards, we offer flexible packaging options. These include 1000L IBC Totes (approx. 1.4 MT net), Flexibags for bulk export containers (20-24 MT), and 200L HDPE drums, alongside standard road tankers (20 - 50 MT).
+            </p>
+
+            <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>
+              <strong>Sourcing Desk Support:</strong> Sourced directly from sugar refiners, our logistics division coordinates multi-state transport to your blending warehouses, guaranteeing consistent deliveries to feed your production lines.
+            </p>
           </div>
 
           {/* Sourcing Desk Card */}
           <div style={{ flex: 0.9, minWidth: '300px' }}>
-            <div className="quote-contact-card" style={{ background: 'var(--bg-light)' }}>
-              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary-light)', marginBottom: '12px' }}>Agricultural Sourcing Inquiry</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', lineHeight: '1.5', marginBottom: '20px' }}>
-                We coordinate seasonal contract pricing and spot allocations for agricultural cooperatives, fertilizer manufacturers, and large-scale farming estates.
+            <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Agricultural Sourcing Desk</h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
+                We coordinate scheduled supply programs and contract pricing options for fertilizer manufacturers and farming cooperatives.
               </p>
               
-              <h4 style={{ fontSize: '1rem', color: 'var(--accent-amber)', marginBottom: '8px' }}>Bulk Supply Options</h4>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)', lineHeight: '1.4', marginBottom: '20px' }}>
-                • Dedicated liquid road tankers (20 - 50 MT capacity)<br />
-                • Flexibags for bulk sea containers (20-24 MT)<br />
-                • Heavy-duty IBC Totes (1000L / 1.4 MT)<br />
-                • Standard 200L steel or HDPE drums
-              </p>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <Link href="/contact" className="btn-primary" style={{ textAlign: 'center' }}>
-                  Request Bulk RFQ
+                  Request Bulk Pricing
                 </Link>
-                <Link href="/blackstrap-molasses" className="btn-secondary" style={{ textAlign: 'center' }}>
-                  Download Specifications
+                <Link href="/contact" className="btn-secondary" style={{ textAlign: 'center' }}>
+                  Discuss Sourcing Details
                 </Link>
               </div>
             </div>
@@ -81,6 +87,10 @@ export default function AgricultureFarmingIndustry() {
 
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       <FinalCTA />
 

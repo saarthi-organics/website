@@ -4,6 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
+interface FAQItem {
+  q: string;
+  a: string;
+}
+
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -11,42 +16,97 @@ export default function FAQPage() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const faqs = [
+  const faqs: FAQItem[] = [
     {
-      q: "What is your standard Minimum Order Quantity (MOQ)?",
-      a: "Our standard industrial MOQ is 20 - 50 Metric Tons (MT), which fills one standard single-compartment liquid tanker truck. For bulk contract procurement, we coordinate multi-tanker daily or weekly dispatches to feed distilleries or feed mills."
+      q: "What is the typical Brix range of your molasses?",
+      a: "We supply heavy industrial blackstrap molasses with a standardized refractometric Brix range of 82.0% to 88.0% (titrated at 20°C). This ensures high density, high concentration of total soluble solids, and stable shelf life under proper storage parameters."
     },
     {
-      q: "What is the typical delivery turnaround time?",
-      a: "For regions in North India (Haryana, Punjab, Uttar Pradesh, and Rajasthan), deliveries are typically made within 48 to 72 hours from purchase order confirmation. For PAN India delivery regions, turnaround times are calculated based on travel transit times."
+      q: "What industries commonly use your molasses?",
+      a: "Our sugarcane-derived molasses serves as a vital raw material feedstock across multiple manufacturing sectors. Common applications include ethanol fermentation in distilleries, carbohydrate binding in animal cattle feed mills, carbon sourcing in yeast plants, sand core binder formulations in foundries, organic nutrients in agriculture, flavor humectants in tobacco, and growth substrates in pharmaceutical manufacturing."
     },
     {
-      q: "How do you handle sugar crushing off-season shortages?",
-      a: "Sugar mills only crush cane from November through April. During the off-season (May to October), raw molasses is held at the sugar mills' associated storage tanks. We secure priority supply allocations directly through these milling networks, guaranteeing year-round availability for our contract buyers without interruption."
+      q: "What packaging formats are available?",
+      a: "While bulk liquid tanker delivery is our primary distribution channel, we accommodate varied industrial requirements. Packaging formats include dedicated road tankers (20 to 50 Metric Tons capacity), heavy-duty 1000L IBC Totes (approximately 1.4 MT net weight), Flexibags for export containers (20-24 MT), and standardized 200L steel or HDPE drums."
     },
     {
-      q: "Do you supply Certificates of Analysis (COA)?",
-      a: "Yes. A Certificate of Analysis (COA) can be provided on request. It details key quality metrics such as the Brix level, Total Reducing Sugars (TRS), and pH value of the batch to support your quality verification processes."
+      q: "Can tanker deliveries be arranged?",
+      a: "Yes. Bulk tanker supply is our specialized operation. We coordinate logistics utilizing our in-house fleet of tankers, ensuring reliable transit routing and priority dispatch schedules directly to your plant receiving valves."
     },
     {
-      q: "Is your billing GST compliant?",
-      a: "Yes, Saarthi Organics is a fully registered tax-paying corporate entity. We issue standard Tax Invoices showing our GSTIN (06AFEFS2128A1ZJ) and provide standard e-way bills to ensure legal transit compliance and seamless Input Tax Credit (ITC) reconciliation."
+      q: "Do you provide GST-compliant invoices?",
+      a: "Yes. Saarthi Organics is a fully registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation."
     },
     {
-      q: "Can we request a pre-shipment laboratory sample?",
-      a: "Yes. For corporate contract buyers, our laboratory can coordinate a sealed 500ml sample from the current dispatch batch alongside its corresponding analysis sheet. Contact our sales desk to arrange courier routing."
+      q: "Can recurring monthly supply contracts be supported?",
+      a: "Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This guarantees raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October)."
+    },
+    {
+      q: "How is pricing determined for bulk orders?",
+      a: "Bulk contract pricing is formulated based on current ex-mill sugarcane crushing rates, volume commitments, and delivery transit distances from our sourcing hubs in Karnal and neighboring sugar mills. We provide formal quotations with transparent freight breakdown structures."
+    },
+    {
+      q: "What information is required to request a quotation?",
+      a: "To provide an accurate B2B quote, we request your target volume (in Metric Tons), frequency of dispatch (daily, weekly, or monthly), preferred packaging format, delivery site postal PIN code, and any specific unloading gate constraints (such as coupler sizes or pump requirements)."
+    },
+    {
+      q: "Can deliveries be arranged on short notice?",
+      a: "Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to prevent distillery or plant shutdown scenarios."
+    },
+    {
+      q: "Do you support buyers across multiple locations?",
+      a: "Yes. We coordinate multi-destination corporate accounts, allowing national procurement teams to negotiate unified supply terms while our logistics desk manages local dispatches to individual factory units."
+    },
+    {
+      q: "What documents can be provided with dispatches?",
+      a: "Every shipment is accompanied by a complete dispatch dossier: GST Tax Invoice, e-Way Bill, Mill weighment slip, Gate pass, transport permit, and a laboratory Certificate of Analysis (COA) documenting refractometer Brix and Total Reducing Sugars (TRS) metrics."
+    },
+    {
+      q: "How should molasses be handled upon receipt?",
+      a: "Molasses should be stored in steel or concrete tanks with specialized bottom discharge lines. Due to its high viscosity, we recommend using positive displacement rotary lobe pumps. For winter dispatches in cold climates, our tankers are fitted with internal steam-heating coils to drop the viscosity for rapid unloading."
+    },
+    {
+      q: "What factors influence molasses quality consistency?",
+      a: "Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We maintain parameters by sourcing directly from high-capacity modern sugar mill refineries and running laboratory QA titrations prior to terminal tanker loading."
+    },
+    {
+      q: "Can custom packaging requirements be accommodated?",
+      a: "Yes. For special industrial operations, we can coordinate packaging into client-specified container sizes or food-grade lined drums. Please outline your requirements with our sourcing desk."
+    },
+    {
+      q: "What is the recommended method for requesting technical information?",
+      a: "Procurement heads and laboratory managers can request Technical Data Sheets (TDS), material safety data sheets (MSDS), and pre-shipment laboratory sample kits (500ml) via our RFQ desk or by clicking the 'Request Technical Details' button on our forms."
     }
   ];
 
+  // FAQ Schema JSON-LD
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
-      
+      {/* Inject FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="subpage-hero">
         <div className="subpage-hero-container">
           <span className="section-label">Buyer Resources</span>
-          <h1 className="subpage-hero-title">Frequently Asked Questions</h1>
+          <h1 className="subpage-hero-title">Sourcing FAQ Desk</h1>
           <p className="subpage-hero-desc">
-            Find answers to commonly asked questions regarding industrial molasses specifications, transport tanker logistics, billing compliance, and sourcing.
+            Technical answers regarding molasses specifications, road tanker logistics, legal tax compliance, and commercial procurement contract parameters.
           </p>
         </div>
       </div>
@@ -100,7 +160,7 @@ export default function FAQPage() {
                 {/* Answer content with smooth height transition container */}
                 <div 
                   style={{
-                    maxHeight: isOpen ? '250px' : '0px',
+                    maxHeight: isOpen ? '300px' : '0px',
                     overflow: 'hidden',
                     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                     background: 'var(--bg-surface)'

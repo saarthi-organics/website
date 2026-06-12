@@ -7,7 +7,7 @@ export default function CaseStudies() {
     {
       title: "Ethanol Refinery Continuous Supply Contract",
       industry: "Potable Alcohol & Bio-Ethanol Distillery",
-      challenge: "A major distillery in Uttar Pradesh was experiencing periodic fermentation stalls due to unpredictable delivery lead times and moisture variations in broker-supplied molasses.",
+      challenge: "A major distillery in Haryana was experiencing periodic fermentation stalls due to unpredictable delivery lead times and moisture variations in broker-supplied molasses.",
       solution: "Saarthi Organics established an annual procurement contract dedicating 5 tankers from our in-house fleet exclusively to this client. We implemented pre-dispatch laboratory testing protocols, locking TRS levels above 46.5%.",
       result: "Achieved 100% on-time delivery across 180 consecutive runs. The distillery reported a 4% increase in alcohol fermentation yield due to consistent TRS parameters.",
       image: "/case_distillery.png"

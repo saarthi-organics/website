@@ -9,23 +9,30 @@ export default function Footer() {
       <div className="footer-container">
         
         {/* Company Column */}
-        <div className="footer-brand">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-            <Image 
-              src="/logo_heritage.jpg" 
-              alt="Saarthi Organics Heritage Seal" 
-              width={42} 
-              height={42} 
-              style={{ 
-                objectFit: 'cover', 
-                borderRadius: '50%', 
-                border: '1px solid var(--accent-gold)',
-                boxShadow: '0 0 6px rgba(212, 175, 55, 0.3)'
-              }} 
-            />
-            <h3 className="gradient-text" style={{ margin: 0, fontFamily: "'Cinzel', serif" }}>Saarthi Organics</h3>
+        <div className="footer-brand" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '14px', marginBottom: '24px' }}>
+            <div style={{
+              position: 'relative',
+              width: '96px',
+              height: '96px',
+              borderRadius: '50%',
+              overflow: 'hidden',
+              border: '2px solid var(--accent-gold)',
+              boxShadow: '0 0 12px rgba(212, 175, 55, 0.15)',
+              background: '#0A0A0A'
+            }}>
+              <Image 
+                src="/logo_heritage.jpg" 
+                alt="Saarthi Organics Heritage Seal" 
+                fill
+                style={{ objectFit: 'cover' }} 
+              />
+            </div>
+            <h3 className="gradient-text" style={{ margin: 0, fontFamily: "'Cinzel', serif", fontSize: '1.75rem', fontWeight: 900 }}>
+              Saarthi Organics
+            </h3>
           </div>
-          <p>
+          <p style={{ marginBottom: '20px' }}>
             Dependable bulk molasses procurement and distribution partner. We supply industrial-grade blackstrap molasses via our own transport fleet across North India and PAN India.
           </p>
           <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
@@ -40,18 +47,31 @@ export default function Footer() {
             <li><Link href="/blackstrap-molasses">Blackstrap Molasses</Link></li>
             <li><Link href="/quality-and-sourcing">Quality Assurance</Link></li>
             <li><Link href="/logistics">Logistics & Fleet</Link></li>
-            <li><Link href="/case-studies">Supply Scenarios</Link></li>
+            <li><Link href="/blog">Sourcing Blog</Link></li>
           </ul>
         </div>
 
         {/* Industry Focus */}
         <div className="footer-column">
-          <h4>Industries Served</h4>
+          <h4>Industries</h4>
           <ul>
             <li><Link href="/molasses-for-distilleries">Distilleries</Link></li>
             <li><Link href="/molasses-for-cattle-feed">Cattle Feed</Link></li>
             <li><Link href="/molasses-for-yeast-industry">Yeast Production</Link></li>
-            <li><Link href="/molasses-for-tobacco-industry">Tobacco & Foundries</Link></li>
+            <li><Link href="/molasses-for-pharma">Pharma Industry</Link></li>
+            <li><Link href="/molasses-for-foundries">Foundry Binder</Link></li>
+          </ul>
+        </div>
+
+        {/* Supply Regions */}
+        <div className="footer-column">
+          <h4>Supply Regions</h4>
+          <ul>
+            <li><Link href="/molasses-supplier-haryana">Haryana (Karnal)</Link></li>
+            <li><Link href="/molasses-supplier-punjab">Punjab (Ludhiana)</Link></li>
+            <li><Link href="/molasses-supplier-rajasthan">Rajasthan (Jaipur)</Link></li>
+            <li><Link href="/molasses-supplier-delhi-ncr">Delhi NCR</Link></li>
+            <li><Link href="/molasses-supplier-uttarakhand">Uttarakhand</Link></li>
           </ul>
         </div>
 

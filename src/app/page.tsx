@@ -1,10 +1,17 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import ContactForm from '@/components/ContactForm';
 import MolassesAnimation from '@/components/MolassesAnimation';
+
+export const metadata: Metadata = {
+  title: 'Saarthi Organics | Bulk Sugarcane Molasses Supplier India',
+  description: 'GST-compliant bulk industrial blackstrap molasses supplier and procurement partner. Coordinated liquid tanker supply for distilleries, feed mills, and casting foundries across North India.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com',
+  },
+};
 
 export default function Home() {
   const features = [
@@ -21,7 +28,7 @@ export default function Home() {
     {
       icon: "📍",
       title: "PAN India Delivery",
-      desc: "Robust logistics grid operating across North India (Haryana, Punjab, UP, Rajasthan) and extending long-haul dispatch capability to industrial zones nationwide."
+      desc: "Robust logistics grid operating across North India (Haryana, Punjab, Delhi NCR, Rajasthan, Uttarakhand) and extending long-haul dispatch capability to industrial zones nationwide."
     },
     {
       icon: "📄",
@@ -105,19 +112,19 @@ export default function Home() {
       {/* SECTION 1 — HERO */}
       <section className="hero-section">
         <div className="hero-content">
-          <span className="section-label">Industrial Procurement Partner</span>
+          <span className="section-label">Industrial Sourcing & Logistics</span>
           <h1 className="hero-title">
-            Reliable <span className="highlight-gold">Molasses Supply</span> for Industrial Applications
+            Sugarcane <span className="highlight-gold">Molasses Supply</span> for Industrial Sourcing
           </h1>
           <p className="hero-subtitle">
-            Reliable tanker-based supply across North India and PAN India. Sourcing high-quality molasses for distilleries, cattle feed mills, yeast plants, tobacco processors, and foundry foundations.
+            Excise-aligned bulk tanker distribution across North India and PAN India corridors. We coordinate direct-mill allocations of 82% min Brix molasses for distilleries, feed mills, yeast plants, and metal castings.
           </p>
           <div className="hero-ctas">
-            <a href="#quote-form-section" className="btn-primary">
-              Request Bulk Quote
+            <a href="#contact-desk" className="btn-primary">
+              Request Bulk Pricing
             </a>
             <Link href="/blackstrap-molasses" className="btn-secondary">
-              Download Specifications
+              Request Technical Details
             </Link>
           </div>
         </div>
@@ -152,6 +159,10 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
+
       {/* SECTION: Heritage and Legacy Seal */}
       <section style={{ padding: '80px 24px', display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
         <div style={{ flex: '0.8', minWidth: '280px', display: 'flex', justifyContent: 'center' }}>
@@ -163,7 +174,7 @@ export default function Home() {
             overflow: 'hidden',
             border: '2px solid var(--accent-gold)',
             boxShadow: '0 0 30px rgba(212, 175, 55, 0.2)',
-            background: 'black'
+            background: '#080706'
           }}>
             <Image 
               src="/logo_heritage.jpg" 
@@ -173,7 +184,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div style={{ flex: '1.2', minWidth: '320px' }}>
+        <div style={{ flex: '1.2', minWidth: '320px', textAlign: 'center' }}>
           <span className="section-label">Legacy & Governance</span>
           <h2 className="section-title" style={{ fontSize: '2.2rem', marginBottom: '20px' }}>
             The Mark of Sourcing Excellence
@@ -184,18 +195,22 @@ export default function Home() {
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '24px' }}>
             Every shipment dispatched under our seal is guaranteed to meet the rigorous Brix density and Total Reducing Sugar (TRS) standards required by commercial industrial plants. We combine classical values of direct accountability with modern chemical testing and logistics.
           </p>
-          <div style={{ display: 'flex', gap: '24px' }}>
-            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
+          <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }}>
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px', textAlign: 'left' }}>
               <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Authority</span>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Direct mill integrations</span>
             </div>
-            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px', textAlign: 'left' }}>
               <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Precision</span>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rigorous QA lab analysis</span>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Feature Blocks */}
       <section id="features" style={{ background: 'var(--bg-secondary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
@@ -218,6 +233,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Industries Grid */}
       <section id="industries" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
@@ -256,6 +275,10 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
+
       {/* Specifications datasheet */}
       <section id="specifications">
         <div className="section-header">
@@ -267,6 +290,10 @@ export default function Home() {
         </div>
         <SpecTable />
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Inside Blackstrap Molasses section (New Gallery) */}
       <section id="gallery-inside" style={{ background: 'var(--bg-secondary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
@@ -283,7 +310,7 @@ export default function Home() {
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
                 <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill style={{ objectFit: 'cover' }} />
               </div>
-              <div style={{ padding: '20px' }}>
+              <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rich, slow-flowing viscosity indicating high total soluble solids (Brix) and density.</p>
               </div>
@@ -292,7 +319,7 @@ export default function Home() {
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
                 <Image src="/gallery_texture.png" alt="Molasses texture close-up" fill style={{ objectFit: 'cover' }} />
               </div>
-              <div style={{ padding: '20px' }}>
+              <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Deep brown-black coloration containing natural minerals, sucrose, and organic matter.</p>
               </div>
@@ -301,7 +328,7 @@ export default function Home() {
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
                 <Image src="/gallery_sugarcane.png" alt="Sugarcane raw material sourcing" fill style={{ objectFit: 'cover' }} />
               </div>
-              <div style={{ padding: '20px' }}>
+              <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Sugarcane Source</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Sourced directly from large sugar mills situated in premium agricultural zones.</p>
               </div>
@@ -310,7 +337,7 @@ export default function Home() {
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
                 <Image src="/gallery_industrial.png" alt="Industrial molasses mixing application" fill style={{ objectFit: 'cover' }} />
               </div>
-              <div style={{ padding: '20px' }}>
+              <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Industrial Processing</h4>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>High-volume feedstock processing matching strict industrial quality specifications.</p>
               </div>
@@ -318,6 +345,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Logistics & Delivery Highlights */}
       <section className="logistics-section" id="logistics">
@@ -365,6 +396,10 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
+
       {/* Trust Signals & Stats */}
       <section id="trust-signals" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -411,6 +446,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="heritage-divider">
+        <span className="heritage-divider-motif">✦</span>
+      </div>
 
       {/* Quote Form */}
       <section id="contact-desk" style={{ background: 'var(--bg-primary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px', borderTop: '1px solid var(--border-light)' }}>

@@ -16,6 +16,7 @@ export default function ContactForm() {
     monthlyRequirement: '',
     message: ''
   });
+  const [honeypot, setHoneypot] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [error, setError] = useState('');
 
@@ -76,30 +77,94 @@ export default function ContactForm() {
     setStep(step - 1);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validateStep(3)) return;
     
     setStatus('submitting');
-    
-    // Simulate B2B inquiry processing
-    setTimeout(() => {
-      setStatus('success');
-      setStep(1);
-      setFormData({
-        companyName: '',
-        contactPerson: '',
-        phone: '',
-        email: '',
-        industryType: 'distillery',
-        requiredQuantity: '',
-        deliveryLocation: '',
-        packagingRequirement: 'tanker',
-        monthlyRequirement: '',
-        message: ''
+    setError('');
+
+    try {
+      const payload = {
+        ...formData,
+        sourcePage: typeof window !== 'undefined' ? window.location.pathname : '/',
+        website: honeypot,
+        
+        // Client Marketing Attribution Parameters
+        landingPageUrl: typeof window !== 'undefined' ? localStorage.getItem('saarthi_landing_page') || '' : '',
+        formPageUrl: typeof window !== 'undefined' ? window.location.href : '',
+        referringUrl: typeof window !== 'undefined' ? localStorage.getItem('saarthi_referrer') || '' : '',
+        pageName: typeof window !== 'undefined' ? document.title : '',
+        utmSource: typeof window !== 'undefined' ? localStorage.getItem('saarthi_utm_source') || '' : '',
+        utmMedium: typeof window !== 'undefined' ? localStorage.getItem('saarthi_utm_medium') || '' : '',
+        utmCampaign: typeof window !== 'undefined' ? localStorage.getItem('saarthi_utm_campaign') || '' : '',
+        utmTerm: typeof window !== 'undefined' ? localStorage.getItem('saarthi_utm_term') || '' : '',
+        utmContent: typeof window !== 'undefined' ? localStorage.getItem('saarthi_utm_content') || '' : '',
+        trafficSource: typeof window !== 'undefined' ? localStorage.getItem('saarthi_traffic_source') || 'Direct Visit' : 'Direct Visit'
+      };
+
+      const response = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
       });
-      setTimeout(() => setStatus('idle'), 6000);
-    }, 1500);
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        // Push conversion events to GTM dataLayer
+        if (typeof window !== 'undefined') {
+          const dl = (window as any).dataLayer || [];
+          dl.push({
+            event: 'form_submission_success',
+            inquiryId: result.submissionId || '',
+            companyName: payload.companyName,
+            industryType: payload.industryType,
+            requiredQuantity: payload.requiredQuantity,
+            trafficSource: payload.trafficSource,
+            utmSource: payload.utmSource,
+            utmMedium: payload.utmMedium,
+            utmCampaign: payload.utmCampaign
+          });
+          (window as any).dataLayer = dl;
+
+          // Dispatch standard CustomEvent for other analytics (Meta, CRM, etc.)
+          const customEvent = new CustomEvent('saarthi_inquiry_submitted', {
+            detail: {
+              id: result.submissionId || '',
+              company: payload.companyName,
+              email: payload.email,
+              phone: payload.phone
+            }
+          });
+          window.dispatchEvent(customEvent);
+        }
+
+        setStatus('success');
+        setStep(1);
+        setFormData({
+          companyName: '',
+          contactPerson: '',
+          phone: '',
+          email: '',
+          industryType: 'distillery',
+          requiredQuantity: '',
+          deliveryLocation: '',
+          packagingRequirement: 'tanker',
+          monthlyRequirement: '',
+          message: ''
+        });
+        setHoneypot('');
+      } else {
+        setStatus('error');
+        setError(result.message || 'An error occurred during form submission. Please verify your entries.');
+      }
+    } catch (err) {
+      setStatus('error');
+      setError('Connection failure. Your inquiry has been secured. Please call our sourcing desk at +91-7055552535.');
+    }
   };
 
   return (
@@ -254,7 +319,7 @@ export default function ContactForm() {
             border: '1px solid var(--accent-gold)',
             borderRadius: '6px',
             textAlign: 'center',
-            color: 'var(--text-primary-light)',
+            color: 'var(--text-primary)',
             animation: 'fadeIn 0.5s ease-out'
           }}>
             <div style={{ 
@@ -269,14 +334,28 @@ export default function ContactForm() {
               justifyContent: 'center',
               margin: '0 auto 20px auto'
             }}>✓</div>
-            <h4 style={{ marginBottom: '12px', fontSize: '1.3rem', fontWeight: '700' }}>RFQ Received Successfully</h4>
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary-light)', lineHeight: 1.6, maxWidth: '440px', margin: '0 auto' }}>
-              Thank you. Your industrial procurement inquiry has been logged. Our logistics and pricing analysts will review your delivery coordinates and contact your purchasing manager shortly.
+            <h4 style={{ marginBottom: '12px', fontSize: '1.3rem', fontWeight: '700', color: 'var(--accent-gold)' }}>RFQ Received Successfully</h4>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '440px', margin: '0 auto' }}>
+              Thank you for contacting Saarthi Organics. Our team will review your requirement and get back to you shortly.
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px', minHeight: '340px', justifyContent: 'space-between' }}>
             
+            {/* Honeypot field (hidden from real users) */}
+            <div style={{ display: 'none' }} aria-hidden="true">
+              <label htmlFor="website">Website Address (Leave Blank)</label>
+              <input 
+                type="text" 
+                id="website" 
+                name="website" 
+                value={honeypot} 
+                onChange={(e) => setHoneypot(e.target.value)} 
+                tabIndex={-1} 
+                autoComplete="off" 
+              />
+            </div>
+
             {/* Step Contents */}
             <div style={{ transition: 'all 0.3s ease' }}>
               

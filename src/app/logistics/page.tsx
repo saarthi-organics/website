@@ -1,6 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+
+export const metadata: Metadata = {
+  title: 'Molasses Tanker Supply & Distribution Logistics | Saarthi Organics',
+  description: 'Learn about our dedicated logistics fleet of specialized liquid road tankers. We manage safe, GST-compliant, and temperature-controlled molasses dispatches across North India.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/logistics',
+  },
+};
 
 export default function LogisticsPage() {
   return (
@@ -50,14 +59,14 @@ export default function LogisticsPage() {
                 style={{ objectFit: 'cover', display: 'block' }}
               />
             </div>
-            <div className="quote-contact-card" style={{ background: 'var(--bg-light)' }}>
-              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary-light)', marginBottom: '12px' }}>Request Delivery Estimate</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', lineHeight: '1.5', marginBottom: '20px' }}>
+            <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Request Delivery Estimate</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
                 Contact our logistics desk to calculate transport schedules and delivery rates to your plant.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <Link href="/contact" className="btn-primary" style={{ textAlign: 'center' }}>
-                  Request Quote
+                  Discuss Sourcing Logistics
                 </Link>
                 <Link href="/quality-and-sourcing" className="btn-secondary" style={{ textAlign: 'center' }}>
                   Transit Quality Controls
@@ -94,7 +103,7 @@ export default function LogisticsPage() {
             <div className="feature-card">
               <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🚚</span>
               <h3 className="feature-card-title">North India & PAN India Coverage</h3>
-              <p className="feature-card-desc">Routine daily supply channels operating across Haryana, Punjab, Rajasthan, and Uttar Pradesh, with capability to dispatch long-haul tankers nationwide.</p>
+              <p className="feature-card-desc">Routine daily supply channels operating across Haryana, Punjab, Rajasthan, Delhi NCR, and Uttarakhand, with capability to dispatch long-haul tankers nationwide.</p>
             </div>
           </div>
         </div>

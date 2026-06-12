@@ -1,6 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+
+export const metadata: Metadata = {
+  title: 'Brix 82-88 Molasses Quality Standards & SQA | Saarthi Organics',
+  description: 'Discover the rigorous chemical analysis and refractometer testing that guarantees Brix 82.0% - 88.0% and TRS 45.0% - 50.0% for our sugarcane molasses batches.',
+  alternates: {
+    canonical: 'https://www.saarthiorganics.com/quality-and-sourcing',
+  },
+};
 
 export default function QualityAndSourcing() {
   return (
@@ -46,17 +55,17 @@ export default function QualityAndSourcing() {
                 style={{ objectFit: 'cover', display: 'block' }}
               />
             </div>
-            <div className="quote-contact-card" style={{ background: 'var(--bg-light)' }}>
-              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary-light)', marginBottom: '12px' }}>Request Specification Sheets</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', lineHeight: '1.5', marginBottom: '20px' }}>
+            <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
+              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Request Specification Sheets</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
                 Download our standard product data sheet or request historical batch analysis reports for audit compliance.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <Link href="/blackstrap-molasses" className="btn-primary" style={{ textAlign: 'center' }}>
-                  Product Datasheet
+                  Download Technical Details
                 </Link>
                 <Link href="/contact" className="btn-secondary" style={{ textAlign: 'center' }}>
-                  Request SQA Audit
+                  Speak With Our Team
                 </Link>
               </div>
             </div>
@@ -88,7 +97,7 @@ export default function QualityAndSourcing() {
             <div style={{ flex: 1.1, minWidth: '300px' }}>
               <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
-                We maintain direct trade allocations across leading crushing units in Haryana, Punjab, and Uttar Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
+                We maintain direct trade allocations across leading crushing units in Haryana, Punjab, Rajasthan, Uttarakhand, and Delhi NCR. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
               </p>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
                 By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
@@ -100,7 +109,7 @@ export default function QualityAndSourcing() {
             <div className="feature-card">
               <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🏭</span>
               <h3 className="feature-card-title">Sugar Refinery Tie-ups</h3>
-              <p className="feature-card-desc">We maintain annual purchase commitments with major crushing mills across Uttar Pradesh and Haryana, securing priority supply rights during tight crushing months.</p>
+              <p className="feature-card-desc">We maintain annual purchase commitments with major crushing mills across Haryana, Punjab, and Uttarakhand, securing priority supply rights during tight crushing months.</p>
             </div>
             
             <div className="feature-card">
