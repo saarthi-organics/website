@@ -27,11 +27,16 @@ export default function Header() {
         <div className="nav-logo">
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
             <Image 
-              src="/Logo2_transparent.png" 
+              src="/logo_heritage.jpg" 
               alt="Saarthi Organics Logo" 
               width={38} 
               height={38} 
-              style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 6px rgba(197, 160, 89, 0.3))' }} 
+              style={{ 
+                objectFit: 'cover', 
+                borderRadius: '50%', 
+                border: '1px solid var(--accent-gold)', 
+                boxShadow: '0 0 8px rgba(212, 175, 55, 0.4)' 
+              }} 
               priority 
             />
             <span className="nav-logo-text gradient-text">

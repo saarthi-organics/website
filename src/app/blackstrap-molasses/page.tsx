@@ -90,26 +90,47 @@ export default function BlackstrapMolasses() {
 
       {/* Storage and Handling section */}
       <section>
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '48px' }}>On-Site Storage & Handling Guidelines</h2>
-        
-        <div className="features-grid">
-          <div className="feature-card">
-            <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '16px' }}>🛢️</span>
-            <h4 className="feature-card-title">Plant Storage Tanks</h4>
-            <p className="feature-card-desc">For receiving delivered molasses, mild steel, stainless steel, or concrete tanks are recommended. Tanks must be properly vented to prevent condensation which can dilute the top layer and trigger yeast fermentation.</p>
-          </div>
+        <div style={{ display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap' }}>
           
-          <div className="feature-card">
-            <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '16px' }}>🌡️</span>
-            <h4 className="feature-card-title">Temperature Control</h4>
-            <p className="feature-card-desc">Keep client storage temperatures below 40°C to prevent thermal degradation. In cold climates, maintain temperature around 20-25°C using low-pressure steam or hot water coils to facilitate pumping.</p>
+          <div style={{ flex: 1.1, minWidth: '300px' }}>
+            <h2 className="section-title">On-Site Storage & Handling Guidelines</h2>
+            <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
+              Due to its high viscosity, industrial blackstrap molasses requires specific equipment and environment controls to maintain flowability and prevent pump cavitation.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+                <strong>Plant Storage Tanks</strong>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                  Mild steel, stainless steel, or concrete tanks are recommended. Proper top ventilation is mandatory to prevent moisture condensation, which can dilute the top layer and trigger wild yeast fermentation.
+                </p>
+              </div>
+              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+                <strong>Temperature & Viscosity Control</strong>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                  Keep storage temperatures below 40°C. In cold seasons, maintain warmth around 20-25°C using low-pressure steam or hot water jacket coils to facilitate pumping without degradation.
+                </p>
+              </div>
+              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+                <strong>Pumping Systems</strong>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                  Utilize positive displacement pumps (gear pumps or rotary lobe pumps) paired with wide-diameter feed lines to safely manage high-density viscous flows.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="feature-card">
-            <span style={{ fontSize: '1.8rem', display: 'block', marginBottom: '16px' }}>💧</span>
-            <h4 className="feature-card-title">Viscosity & Pumping</h4>
-            <p className="feature-card-desc">Due to its high viscosity, use positive displacement pumps (gear or rotary lobe pumps) with larger diameter intake pipes to prevent pump cavitation and operational delays.</p>
+          <div style={{ flex: 0.9, minWidth: '300px' }}>
+            <div className="hero-image-container">
+              <Image 
+                src="/molasses_handling.png" 
+                alt="Industrial pumping and handling connections for bulk road tankers" 
+                width={500} 
+                height={500} 
+                style={{ objectFit: 'cover', display: 'block' }}
+              />
+            </div>
           </div>
+
         </div>
       </section>
 

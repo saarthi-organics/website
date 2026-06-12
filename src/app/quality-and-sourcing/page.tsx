@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function QualityAndSourcing() {
   return (
@@ -34,7 +35,16 @@ export default function QualityAndSourcing() {
             </div>
           </div>
 
-          <div style={{ flex: 0.9, minWidth: '300px' }}>
+          <div style={{ flex: 0.9, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <div className="hero-image-container">
+              <Image 
+                src="/molasses_testing.png" 
+                alt="Saarthi Organics quality assurance manager validating Brix levels using a digital laboratory refractometer" 
+                width={500} 
+                height={320} 
+                style={{ objectFit: 'cover', display: 'block' }}
+              />
+            </div>
             <div className="quote-contact-card" style={{ background: 'var(--bg-light)' }}>
               <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary-light)', marginBottom: '12px' }}>Request Specification Sheets</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', lineHeight: '1.5', marginBottom: '20px' }}>
@@ -54,13 +64,35 @@ export default function QualityAndSourcing() {
         </div>
       </section>
 
-      {/* Sourcing Framework Grid */}
       <section style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div className="section-header">
             <span className="section-label">Sourcing Capability</span>
             <h2 className="section-title">Reliable Sourcing Network</h2>
             <p className="section-desc">Securing volume flowability even during sugarcane crushing off-seasons.</p>
+          </div>
+
+          <div style={{ display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '48px' }}>
+            <div style={{ flex: 0.9, minWidth: '300px' }}>
+              <div className="hero-image-container">
+                <Image 
+                  src="/sugarcane_harvest.png" 
+                  alt="Harvesting sugarcane in agricultural mill sourcing fields" 
+                  width={500} 
+                  height={360} 
+                  style={{ objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            </div>
+            <div style={{ flex: 1.1, minWidth: '300px' }}>
+              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
+                We maintain direct trade allocations across leading crushing units in Haryana, Punjab, and Uttar Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
+              </p>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
+                By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
+              </p>
+            </div>
           </div>
 
           <div className="features-grid">

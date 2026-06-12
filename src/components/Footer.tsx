@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,11 +10,25 @@ export default function Footer() {
         
         {/* Company Column */}
         <div className="footer-brand">
-          <h3 className="gradient-text">Saarthi Organics</h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+            <Image 
+              src="/logo_heritage.jpg" 
+              alt="Saarthi Organics Heritage Seal" 
+              width={42} 
+              height={42} 
+              style={{ 
+                objectFit: 'cover', 
+                borderRadius: '50%', 
+                border: '1px solid var(--accent-gold)',
+                boxShadow: '0 0 6px rgba(212, 175, 55, 0.3)'
+              }} 
+            />
+            <h3 className="gradient-text" style={{ margin: 0, fontFamily: "'Cinzel', serif" }}>Saarthi Organics</h3>
+          </div>
           <p>
             Dependable bulk molasses procurement and distribution partner. We supply industrial-grade blackstrap molasses via our own transport fleet across North India and PAN India.
           </p>
-          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary-dark)' }}>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             <strong>GSTIN:</strong> 06AFEFS2128A1ZJ
           </div>
         </div>
@@ -54,8 +69,8 @@ export default function Footer() {
             <div className="footer-info-item">
               <div>
                 <strong>Direct Contact:</strong><br />
-                +91 7055552535<br />
-                +91 9927029029
+                +91-7055552535<br />
+                +91-9927029029
               </div>
             </div>
             <div className="footer-info-item">

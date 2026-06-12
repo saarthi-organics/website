@@ -44,49 +44,57 @@ export default function Home() {
       icon: "🥃",
       title: "Distilleries & Ethanol",
       desc: "High TRS (Total Reducing Sugars) molasses optimized for fermentation yields and bio-ethanol production requirements.",
-      link: "/molasses-for-distilleries"
+      link: "/molasses-for-distilleries",
+      image: "/industry_distilleries.png"
     },
     {
       icon: "🐄",
       title: "Cattle Feed Mills",
       desc: "Palatability enhancer and carbohydrate binder containing natural trace minerals, ideal for block and pellet feed manufacturers.",
-      link: "/molasses-for-cattle-feed"
+      link: "/molasses-for-cattle-feed",
+      image: "/industry_cattle_feed.png"
     },
     {
       icon: "🦠",
       title: "Yeast Industry",
       desc: "Highly filtered molasses with consistent pH and mineral profiles, serving as a primary carbon feed source for yeast propagation.",
-      link: "/molasses-for-yeast-industry"
+      link: "/molasses-for-yeast-industry",
+      image: "/industry_yeast.png"
     },
     {
       icon: "🚬",
       title: "Tobacco Industry",
       desc: "High-viscosity molasses used as a natural binding, humectant, and flavoring agent in traditional tobacco processing.",
-      link: "/molasses-for-tobacco-industry"
+      link: "/molasses-for-tobacco-industry",
+      image: "/industry_tobacco.png"
     },
     {
       icon: "🍞",
       title: "Food Processing",
       desc: "Food-grade molasses suited for baking, confectionery syrups, and specialized industrial fermentation processes.",
-      link: "/molasses-for-food-processing"
+      link: "/molasses-for-food-processing",
+      image: "/industry_food.png"
     },
     {
       icon: "🔬",
       title: "Pharma Industry",
       desc: "Controlled-viscosity carbon feeds used in industrial fermentation systems for vitamins, antibiotics, and organic acids.",
-      link: "/molasses-for-pharma"
+      link: "/molasses-for-pharma",
+      image: "/industry_pharma.png"
     },
     {
       icon: "🏭",
       title: "Foundries & Casting",
       desc: "Binder additive for sand mold preparation, enhancing high-temperature stability and tensile strength during metal casting.",
-      link: "/molasses-for-foundries"
+      link: "/molasses-for-foundries",
+      image: "/industry_foundries.png"
     },
     {
       icon: "🌱",
       title: "Agriculture & Farming",
       desc: "Blackstrap molasses is widely used in organic farming, composting, and soil conditioning applications, helping support microbial activity and soil health.",
-      link: "/molasses-for-agriculture-and-farming"
+      link: "/molasses-for-agriculture-and-farming",
+      image: "/industry_agriculture.png"
     }
   ];
 
@@ -150,23 +158,70 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Feature Blocks */}
-      <section id="features">
-        <div className="section-header">
-          <span className="section-label">Operational Differentiators</span>
-          <h2 className="section-title">Logistics & Supply Strength</h2>
-          <p className="section-desc">
-            We manage a robust industrial supply network and tanker dispatch system designed to meet the rigorous logistics demands of plant managers and procurement professionals.
-          </p>
+      {/* SECTION: Heritage and Legacy Seal */}
+      <section style={{ padding: '80px 24px', display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ flex: '0.8', minWidth: '280px', display: 'flex', justifyContent: 'center' }}>
+          <div style={{
+            position: 'relative',
+            width: '280px',
+            height: '280px',
+            borderRadius: '50%',
+            overflow: 'hidden',
+            border: '2px solid var(--accent-gold)',
+            boxShadow: '0 0 30px rgba(212, 175, 55, 0.2)',
+            background: 'black'
+          }}>
+            <Image 
+              src="/logo_heritage.jpg" 
+              alt="Saarthi Organics Heritage Seal Logo" 
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
         </div>
-        <div className="features-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <span className="feature-card-icon">{feature.icon}</span>
-              <h3 className="feature-card-title">{feature.title}</h3>
-              <p className="feature-card-desc">{feature.desc}</p>
+        <div style={{ flex: '1.2', minWidth: '320px' }}>
+          <span className="section-label">Legacy & Governance</span>
+          <h2 className="section-title" style={{ fontSize: '2.2rem', marginBottom: '20px' }}>
+            The Mark of Sourcing Excellence
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '20px' }}>
+            Saarthi Organics operates under a heritage of trust, strength, and complete transparency. The Saarthi (Charioteer) represents guidance, dedication, and precision in navigating complex supply chains.
+          </p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '24px' }}>
+            Every shipment dispatched under our seal is guaranteed to meet the rigorous Brix density and Total Reducing Sugar (TRS) standards required by commercial industrial plants. We combine classical values of direct accountability with modern chemical testing and logistics.
+          </p>
+          <div style={{ display: 'flex', gap: '24px' }}>
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
+              <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Authority</span>
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Direct mill integrations</span>
             </div>
-          ))}
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
+              <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Precision</span>
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rigorous QA lab analysis</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Blocks */}
+      <section id="features" style={{ background: 'var(--bg-secondary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div className="section-header">
+            <span className="section-label">Operational Differentiators</span>
+            <h2 className="section-title">Logistics & Supply Strength</h2>
+            <p className="section-desc">
+              We manage a robust industrial supply network and tanker dispatch system designed to meet the rigorous logistics demands of plant managers and procurement professionals.
+            </p>
+          </div>
+          <div className="features-grid">
+            {features.map((feature, index) => (
+              <div key={index} className="feature-card">
+                <span className="feature-card-icon">{feature.icon}</span>
+                <h3 className="feature-card-title">{feature.title}</h3>
+                <p className="feature-card-desc">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -183,8 +238,16 @@ export default function Home() {
           <div className="industry-grid">
             {industries.map((ind, index) => (
               <div key={index} className="industry-card">
-                <div className="industry-image-container">
-                  {ind.icon}
+                <div className="industry-image-container" style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '160px' }}>
+                  <Image 
+                    src={ind.image} 
+                    alt={ind.title} 
+                    fill 
+                    style={{ objectFit: 'cover' }} 
+                  />
+                  <div style={{ position: 'absolute', top: '10px', left: '10px', background: 'rgba(10, 10, 10, 0.85)', padding: '6px 10px', borderRadius: '4px', fontSize: '1.2rem', color: 'var(--accent-gold)' }}>
+                    {ind.icon}
+                  </div>
                 </div>
                 <div className="industry-card-content">
                   <h3 className="industry-card-title">{ind.title}</h3>
@@ -209,6 +272,57 @@ export default function Home() {
           </p>
         </div>
         <SpecTable />
+      </section>
+
+      {/* Inside Blackstrap Molasses section (New Gallery) */}
+      <section id="gallery-inside" style={{ background: 'var(--bg-secondary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div className="section-header">
+            <span className="section-label">Visual Gallery</span>
+            <h2 className="section-title">Inside Blackstrap Molasses</h2>
+            <p className="section-desc">
+              Allowing you to visually witness the appearance, richness, and heavy industrial quality of our sugarcane-derived molasses.
+            </p>
+          </div>
+          <div className="gallery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '30px' }}>
+            <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
+              <div style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ padding: '20px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h4>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rich, slow-flowing viscosity indicating high total soluble solids (Brix) and density.</p>
+              </div>
+            </div>
+            <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
+              <div style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/gallery_texture.png" alt="Molasses texture close-up" fill style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ padding: '20px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h4>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Deep brown-black coloration containing natural minerals, sucrose, and organic matter.</p>
+              </div>
+            </div>
+            <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
+              <div style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/gallery_sugarcane.png" alt="Sugarcane raw material sourcing" fill style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ padding: '20px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Sugarcane Source</h4>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Sourced directly from large sugar mills situated in premium agricultural zones.</p>
+              </div>
+            </div>
+            <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
+              <div style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/gallery_industrial.png" alt="Industrial molasses mixing application" fill style={{ objectFit: 'cover' }} />
+              </div>
+              <div style={{ padding: '20px' }}>
+                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Industrial Processing</h4>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>High-volume feedstock processing matching strict industrial quality specifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Logistics & Delivery Highlights */}
@@ -239,7 +353,7 @@ export default function Home() {
               </div>
             </div>
             <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
-              <Link href="/logistics" className="btn-primary" style={{ background: 'var(--accent-gold)', color: 'var(--bg-primary)' }}>
+              <Link href="/logistics" className="btn-primary">
                 Explore Transport Capabilities
               </Link>
             </div>
@@ -258,52 +372,54 @@ export default function Home() {
       </section>
 
       {/* Trust Signals & Stats */}
-      <section id="trust-signals">
-        <div className="section-header">
-          <span className="section-label">Corporate Credibility</span>
-          <h2 className="section-title">Operational Statistics</h2>
-          <p className="section-desc">
-            Trusted by national distilleries, ethanol refineries, and industrial conglomerates across the Indian subcontinent.
-          </p>
-        </div>
-        
-        <div className="stats-strip">
-          <div className="stat-card">
-            <div className="stat-number">10+</div>
-            <div className="stat-label">States Served</div>
+      <section id="trust-signals" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <div className="section-header">
+            <span className="section-label">Corporate Credibility</span>
+            <h2 className="section-title">Operational Statistics</h2>
+            <p className="section-desc">
+              Trusted by national distilleries, ethanol refineries, and industrial conglomerates across the Indian subcontinent.
+            </p>
           </div>
-          <div className="stat-card">
-            <div className="stat-number">150K+</div>
-            <div className="stat-label">Tons Supplied Annually</div>
+          
+          <div className="stats-strip">
+            <div className="stat-card">
+              <div className="stat-number">10+</div>
+              <div className="stat-label">States Served</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">150K+</div>
+              <div className="stat-label">Tons Supplied Annually</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">40+</div>
+              <div className="stat-label">Active Tanker Fleet</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">100%</div>
+              <div className="stat-label">GST Compliance</div>
+            </div>
           </div>
-          <div className="stat-card">
-            <div className="stat-number">40+</div>
-            <div className="stat-label">Active Tanker Fleet</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">100%</div>
-            <div className="stat-label">GST Compliance</div>
-          </div>
-        </div>
 
-        <div className="trust-signals-grid">
-          <div className="trust-signal-card">
-            <h4>Lab Testing & COA</h4>
-            <p>Every dispatch tanker is accompanied by a fresh Certificate of Analysis detailing Brix, TRS, and ash percentages.</p>
-          </div>
-          <div className="trust-signal-card">
-            <h4>GSTIN Registered Sourcing</h4>
-            <p>100% legal compliance. We facilitate input tax credits with accurate and immediate GST billing records.</p>
-          </div>
-          <div className="trust-signal-card">
-            <h4>Security of Sourcing</h4>
-            <p>We source directly from large-scale sugar refineries, insulating our buyers from seasonal scarcity.</p>
+          <div className="trust-signals-grid">
+            <div className="trust-signal-card">
+              <h4>Lab Testing & COA</h4>
+              <p>Every dispatch tanker is accompanied by a fresh Certificate of Analysis detailing Brix, TRS, and ash percentages.</p>
+            </div>
+            <div className="trust-signal-card">
+              <h4>GSTIN Registered Sourcing</h4>
+              <p>100% legal compliance. We facilitate input tax credits with accurate and immediate GST billing records.</p>
+            </div>
+            <div className="trust-signal-card">
+              <h4>Security of Sourcing</h4>
+              <p>We source directly from large-scale sugar refineries, insulating our buyers from seasonal scarcity.</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Quote Form */}
-      <section id="contact-desk" style={{ background: 'var(--bg-light)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px', borderTop: '1px solid var(--border-light)' }}>
+      <section id="contact-desk" style={{ background: 'var(--bg-primary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px', borderTop: '1px solid var(--border-light)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <ContactForm />
         </div>
