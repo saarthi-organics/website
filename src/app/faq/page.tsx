@@ -52,7 +52,7 @@ export default function FAQPage() {
 
       {/* FAQ Accordion Section */}
       <section style={{ padding: '40px 24px 80px 24px' }}>
-        <div className="faq-list">
+        <div className="faq-list" style={{ maxWidth: '800px', margin: '0 auto' }}>
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (

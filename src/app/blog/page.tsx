@@ -301,7 +301,7 @@ export default function BlogHub() {
       <section style={{ maxWidth: '1280px', margin: '0 auto', padding: '40px 24px' }}>
         <div style={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '24px',
@@ -309,7 +309,7 @@ export default function BlogHub() {
           paddingBottom: '24px'
         }}>
           {/* Category Tabs */}
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -371,7 +371,7 @@ export default function BlogHub() {
         </div>
 
         {/* Results Counter */}
-        <div style={{ marginTop: '16px', color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '500' }}>
+        <div style={{ marginTop: '16px', color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '500', textAlign: 'center' }}>
           Showing {isFiltering ? allFilteredArticles.length : articles.length} of {articles.length} articles
           {isFiltering && (
             <button 
@@ -454,7 +454,7 @@ export default function BlogHub() {
                 {/* Article Info */}
                 <div style={{ padding: '28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
-                    <div style={{ display: 'flex', justifyItems: 'center', gap: '12px', fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
                       <span>{post.date}</span>
                       <span>•</span>
                       <span>{post.readTime}</span>
@@ -464,7 +464,8 @@ export default function BlogHub() {
                       color: 'var(--text-primary)', 
                       marginBottom: '12px', 
                       lineHeight: 1.4,
-                      fontWeight: 700 
+                      fontWeight: 700,
+                      textAlign: 'center'
                     }}>
                       {post.title}
                     </h3>
@@ -472,7 +473,8 @@ export default function BlogHub() {
                       color: 'var(--text-secondary)', 
                       fontSize: '0.9rem', 
                       lineHeight: 1.5, 
-                      marginBottom: '24px' 
+                      marginBottom: '24px',
+                      textAlign: 'center'
                     }}>
                       {post.summary}
                     </p>
@@ -480,12 +482,13 @@ export default function BlogHub() {
 
                   <div style={{ 
                     display: 'flex', 
+                    flexDirection: 'column',
                     alignItems: 'center', 
-                    justifyContent: 'space-between', 
+                    gap: '16px',
                     borderTop: '1px solid var(--border-color)', 
                     paddingTop: '16px' 
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexDirection: 'column', textAlign: 'center' }}>
                       <div style={{
                         width: '32px',
                         height: '32px',

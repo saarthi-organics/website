@@ -32,12 +32,12 @@ export default function AboutUs() {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px' }}>
-              <div style={{ background: 'var(--bg-light)', padding: '20px', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
-                <h4 style={{ color: 'var(--accent-amber)', marginBottom: '8px' }}>Sourcing Authority</h4>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Sourcing Authority</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Direct tie-ups with leading sugar manufacturing plants across North India.</p>
               </div>
-              <div style={{ background: 'var(--bg-light)', padding: '20px', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
-                <h4 style={{ color: 'var(--accent-amber)', marginBottom: '8px' }}>Logistics Command</h4>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Logistics Command</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>In-house tanker management ensuring dispatch prioritization and direct accountability.</p>
               </div>
             </div>

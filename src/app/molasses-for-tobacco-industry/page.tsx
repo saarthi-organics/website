@@ -26,19 +26,19 @@ export default function TobaccoIndustry() {
               In traditional hookahs, shisha, and chewing tobacco products, molasses serves as a structural casing. It binds raw leaves together and acts as an excellent base carrier that absorbs and releases flavorings steadily over time.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Tobacco Processing Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Tobacco Processing Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Moisture Preservation (Humectant)</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Keeps tobacco leaves at optimal moisture percentages, reducing crumble waste during packaging.</p>
+                <p>Keeps tobacco leaves at optimal moisture percentages, reducing crumble waste during packaging.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Excellent Flavor Adsorption</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Forms a uniform casing syrup film on the leaves, retaining added botanical and fruit aromas.</p>
+                <p>Forms a uniform casing syrup film on the leaves, retaining added botanical and fruit aromas.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Natural Carbohydrate Preservative</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>High soluble solids protect the finished tobacco blend from bacterial decay and shelf decomposition.</p>
+                <p>High soluble solids protect the finished tobacco blend from bacterial decay and shelf decomposition.</p>
               </div>
             </div>
           </div>

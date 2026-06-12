@@ -26,19 +26,19 @@ export default function DistilleriesIndustry() {
               We prioritize **Total Reducing Sugars (TRS)** as the key chemical indicator, keeping it consistently above **45.0% min**. This ensures high conversion efficiency to ethanol by yeast (Saccharomyces cerevisiae) and reduces unfermentable organic solids residue (slops) in your distillation column.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Industry-Specific Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Industry-Specific Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Optimal Yeast Propagation</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Balanced mineral profile including nitrogen, potassium, and magnesium to sustain yeast cell density.</p>
+                <p>Balanced mineral profile including nitrogen, potassium, and magnesium to sustain yeast cell density.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Predictable TRS Yields</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Standardized shipments with strict COA certificates to prevent batch-to-batch fermentation variations.</p>
+                <p>Standardized shipments with strict COA certificates to prevent batch-to-batch fermentation variations.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Direct Dispatch Logistics</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Direct tanker delivery synchronized to match your continuous fermentation storage tank replenishment rate.</p>
+                <p>Direct tanker delivery synchronized to match your continuous fermentation storage tank replenishment rate.</p>
               </div>
             </div>
           </div>

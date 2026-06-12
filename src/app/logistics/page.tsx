@@ -28,12 +28,12 @@ export default function LogisticsPage() {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '30px' }}>
-              <div style={{ background: 'var(--bg-light)', padding: '20px', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
-                <h4 style={{ color: 'var(--accent-amber)', marginBottom: '8px' }}>Standard Tanker Capacity</h4>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Standard Tanker Capacity</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Standardized liquid transport tankers carrying 20 - 50 Metric Tons (MT) per run.</p>
               </div>
-              <div style={{ background: 'var(--bg-light)', padding: '20px', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
-                <h4 style={{ color: 'var(--accent-amber)', marginBottom: '8px' }}>Sanitary Couplers</h4>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--accent-amber)' }}>Sanitary Couplers</strong>
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Equipped with standardized connections for secure, contamination-free discharge.</p>
               </div>
             </div>

@@ -26,19 +26,19 @@ export default function FoodProcessingIndustry() {
               We source raw molasses under strict hygiene parameters directly from selected sugar refineries. Every batch is certified for ash parameters and Brix consistency, ensuring your automated batch mixing systems function without operational adjustments.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Food Industry Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Food Industry Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Moisture Retention & Shelf Life</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Acts as a natural humectant in baked goods, extending freshness and preventing staling.</p>
+                <p>Acts as a natural humectant in baked goods, extending freshness and preventing staling.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Natural Coloring & Flavor Depth</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Provides a distinctive caramel profile and dark aesthetic without the need for artificial additives.</p>
+                <p>Provides a distinctive caramel profile and dark aesthetic without the need for artificial additives.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Standardized Viscosity</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Maintains specific viscosity limits to allow seamless pumping through automated industrial production lines.</p>
+                <p>Maintains specific viscosity limits to allow seamless pumping through automated industrial production lines.</p>
               </div>
             </div>
           </div>

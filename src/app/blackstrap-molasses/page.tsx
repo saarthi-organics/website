@@ -61,13 +61,13 @@ export default function BlackstrapMolasses() {
               Our standard industrial blackstrap features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
             </p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-              <div style={{ borderLeft: '3px solid var(--accent-gold)', paddingLeft: '12px' }}>
-                <strong style={{ display: 'block', fontSize: '1.1rem' }}>Brix: 82% - 88%</strong>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '20px' }}>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--text-primary-light)' }}>Brix: 82% - 88%</strong>
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>High active dry solids count</span>
               </div>
-              <div style={{ borderLeft: '3px solid var(--accent-gold)', paddingLeft: '12px' }}>
-                <strong style={{ display: 'block', fontSize: '1.1rem' }}>TRS: 45.0% - 50.0%</strong>
+              <div className="symmetrical-detail-box" style={{ margin: 0 }}>
+                <strong style={{ color: 'var(--text-primary-light)' }}>TRS: 45.0% - 50.0%</strong>
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>Excellent fermentation yield potential</span>
               </div>
             </div>
@@ -98,21 +98,21 @@ export default function BlackstrapMolasses() {
               Due to its high viscosity, industrial blackstrap molasses requires specific equipment and environment controls to maintain flowability and prevent pump cavitation.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Plant Storage Tanks</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                <p>
                   Mild steel, stainless steel, or concrete tanks are recommended. Proper top ventilation is mandatory to prevent moisture condensation, which can dilute the top layer and trigger wild yeast fermentation.
                 </p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Temperature & Viscosity Control</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                <p>
                   Keep storage temperatures below 40°C. In cold seasons, maintain warmth around 20-25°C using low-pressure steam or hot water jacket coils to facilitate pumping without degradation.
                 </p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-secondary)', borderRadius: '4px', borderLeft: '4px solid var(--accent-orange)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Pumping Systems</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                <p>
                   Utilize positive displacement pumps (gear pumps or rotary lobe pumps) paired with wide-diameter feed lines to safely manage high-density viscous flows.
                 </p>
               </div>

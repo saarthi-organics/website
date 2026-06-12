@@ -27,8 +27,8 @@ export default function QualityAndSourcing() {
               At Saarthi Organics, we manage quality at the source. We select batches directly from approved sugarcane refineries that maintain strict sanitation and crystallization parameters. Once sourced, the product is analyzed at the refinery loading terminal where it undergoes full hydrometer and refractometer analysis before transport dispatch.
             </p>
             
-            <div style={{ background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)', padding: '24px', borderRadius: '0 4px 4px 0' }}>
-              <h4 style={{ marginBottom: '10px', color: 'var(--text-primary-light)' }}>Certificate of Analysis (COA) Standard</h4>
+            <div className="symmetrical-detail-box" style={{ background: 'var(--bg-light)' }}>
+              <strong style={{ color: 'var(--text-primary-light)' }}>Certificate of Analysis (COA) Standard</strong>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary-light)', lineHeight: '1.5' }}>
                 Every liquid tanker leaving our loading bays is sealed and accompanied by a physical COA. This laboratory slip documents exact refractometric Brix, total reducing sugars (TRS), sulfated ash percentages, density, and pH values.
               </p>
@@ -84,12 +84,12 @@ export default function QualityAndSourcing() {
                 />
               </div>
             </div>
-            <div style={{ flex: 1.1, minWidth: '300px' }}>
-              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
-              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
+            <div style={{ flex: 1.1, minWidth: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px', textAlign: 'center' }}>Direct Refining Connections</h3>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px', textAlign: 'center' }}>
                 We maintain direct trade allocations across leading crushing units in Haryana, Punjab, and Uttar Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
               </p>
-              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', textAlign: 'center' }}>
                 By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
               </p>
             </div>

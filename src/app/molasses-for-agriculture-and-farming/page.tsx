@@ -28,23 +28,23 @@ export default function AgricultureFarmingIndustry() {
               We procure molasses directly from primary sugarcane processing mills, ensuring it retains its natural mineral density—specifically calcium, magnesium, iron, and potassium. This high trace-mineral count provides instant micro-nutrients to crops while supporting systemic soil health.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Targeted Agricultural Applications</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Targeted Agricultural Applications</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Soil Conditioning & Microbial Activation</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>
+                <p>
                   Increases the biological activity of soil bacteria and earthworms. Applied via drip irrigation or sprayers to build soil structure, improve water retention, and reduce nutrient leaching.
                 </p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Composting & Compost Tea Acceleration</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>
+                <p>
                   Functions as a quick-release carbon food source in compost heaps and aerobic compost teas. Accelerates the decomposition of raw organic matter, increasing thermophilic temperatures to break down cellulose and eradicate weed seeds.
                 </p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Organic Crop Nutrition & Chelating Agent</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>
+                <p>
                   Acts as a natural chelating agent, binding to trace minerals (like iron and zinc) to make them more bio-available for root absorption. Can also be utilized as a natural surfactant in foliar spray mixes.
                 </p>
               </div>

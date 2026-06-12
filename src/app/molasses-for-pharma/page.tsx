@@ -26,19 +26,19 @@ export default function PharmaIndustry() {
               Pharmaceutical manufacturers require precise chemical controls. Sourcing from accredited refineries, we ensure low level contamination limits, consistent pH, and complete trace mineral documentation. Every tanker shipment is paired with a specific Certificate of Analysis (COA) for immediate laboratory validation at your intake depot.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Pharma Sourcing Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Pharma Sourcing Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Strict Sourcing Standards</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Audited sugar processing coordinates to limit pesticide and chemical residues in the raw molasses.</p>
+                <p>Audited sugar processing coordinates to limit pesticide and chemical residues in the raw molasses.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Complete Batch Traceability</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Detailed transit and Mill sourcing records to meet pharmaceutical regulatory documentation standards.</p>
+                <p>Detailed transit and Mill sourcing records to meet pharmaceutical regulatory documentation standards.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Weighment & Logistics Integrity</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Dedicated, clean tankers equipped with seals to prevent intermediate cargo dilution or tampering.</p>
+                <p>Dedicated, clean tankers equipped with seals to prevent intermediate cargo dilution or tampering.</p>
               </div>
             </div>
           </div>

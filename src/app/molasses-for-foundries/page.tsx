@@ -26,19 +26,19 @@ export default function FoundriesIndustry() {
               When molten metal is poured, the high temperature carbonizes the organic sugars in the molasses, forming a strong carbon film. This film prevents metal penetration into the sand, improves casting surface finish, and breaks down easily after cooling for efficient sand shakeout.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Foundry Mold Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Foundry Mold Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Superior Mold Surface Finish</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Carbonization creates a protective boundary layer, preventing sand grains from sintering onto hot castings.</p>
+                <p>Carbonization creates a protective boundary layer, preventing sand grains from sintering onto hot castings.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Easy Sand Shakeout & Collapsibility</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Once metal cools, the organic sugar structure collapses easily, making it simple to release the cast parts.</p>
+                <p>Once metal cools, the organic sugar structure collapses easily, making it simple to release the cast parts.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Heavy Carbon Content</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Guaranteed high Brix levels (82% - 88%) provide maximum organic matter per ton, optimizing binder efficiency.</p>
+                <p>Guaranteed high Brix levels (82% - 88%) provide maximum organic matter per ton, optimizing binder efficiency.</p>
               </div>
             </div>
           </div>

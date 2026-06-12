@@ -26,19 +26,19 @@ export default function CattleFeedIndustry() {
               In the pelleting process, molasses functions as a premium binder, enhancing pellet durability index (PDI) and reducing fines. It also provides essential natural trace minerals like calcium, magnesium, and potassium.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Feed Mill Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Feed Mill Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Improved Palatability & Taste</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Improves animal feed intake and digestability, leading to better yield and weight gain in livestock.</p>
+                <p>Improves animal feed intake and digestability, leading to better yield and weight gain in livestock.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Excellent Pellet Binding</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Acts as a physical binder to hold grains together, maintaining structural integrity during shipping.</p>
+                <p>Acts as a physical binder to hold grains together, maintaining structural integrity during shipping.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Dust Control & Fine Reduction</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Reduces airborne dust particles in feed manufacturing areas, ensuring safer operational conditions.</p>
+                <p>Reduces airborne dust particles in feed manufacturing areas, ensuring safer operational conditions.</p>
               </div>
             </div>
           </div>

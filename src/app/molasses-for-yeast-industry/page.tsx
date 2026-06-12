@@ -26,19 +26,19 @@ export default function YeastIndustry() {
               Yeast cells depend on readily fermentable sugars (sucrose, glucose, fructose) to sustain cellular growth. We select batches with low ash content and consistent pH levels (4.5 - 5.5) to maintain bio-fermentation stability.
             </p>
             
-            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)' }}>Yeast Propagation Benefits</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Yeast Propagation Benefits</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Essential Bio-Available Minerals</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Naturally contains key growth factors like biotin, pantothenic acid, and inorganic salts.</p>
+                <p>Naturally contains key growth factors like biotin, pantothenic acid, and inorganic salts.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Low Colloidal Impurities</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Carefully audited sourcing limits colloidal solids, easing downstream filtration and separation.</p>
+                <p>Carefully audited sourcing limits colloidal solids, easing downstream filtration and separation.</p>
               </div>
-              <div style={{ padding: '16px', background: 'var(--bg-light)', borderLeft: '4px solid var(--accent-gold)' }}>
+              <div className="symmetrical-detail-box">
                 <strong>Continuous Supply Reliability</strong>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary-light)', marginTop: '4px' }}>Consistent deliveries with standard specifications prevent fermentation batch failure risks.</p>
+                <p>Consistent deliveries with standard specifications prevent fermentation batch failure risks.</p>
               </div>
             </div>
           </div>
