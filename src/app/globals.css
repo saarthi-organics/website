@@ -471,8 +471,8 @@ section[style*="100vw"] {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   flex: 1;
   width: 100%;
 }
@@ -481,7 +481,7 @@ section[style*="100vw"] {
   font-size: 1.25rem;
   color: var(--text-primary);
   margin-bottom: 8px;
-  text-align: left;
+  text-align: center;
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
 }
@@ -492,7 +492,7 @@ section[style*="100vw"] {
   line-height: 1.6;
   margin-bottom: 20px;
   flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .industry-card-link {
@@ -1234,20 +1234,20 @@ section[style*="100vw"] {
 
   .industry-card-content {
     padding: 20px !important;
-    align-items: flex-start !important;
-    text-align: left !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
   .industry-card-title {
     font-size: 1.2rem !important;
-    text-align: left !important;
+    text-align: center !important;
     margin-bottom: 8px !important;
   }
 
   .industry-card-desc {
     font-size: 15px !important; /* Slightly smaller for mobile layout balance, overrides the generic 18px body font rule to prevent text bloat in cards */
     line-height: 1.5 !important;
-    text-align: left !important;
+    text-align: center !important;
     margin-bottom: 16px !important;
   }
 
