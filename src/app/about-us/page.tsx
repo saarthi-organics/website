@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function AboutUs() {
   return (
@@ -203,15 +204,7 @@ export default function AboutUs() {
       </section>
 
       {/* Final Action Area */}
-      <section style={{ textAlign: 'center', maxWidth: '800px', margin: '80px auto 80px auto' }}>
-        <h2 className="section-title">Looking to secure a stable molasses supply?</h2>
-        <p className="section-desc" style={{ marginBottom: '32px' }}>
-          Get in touch with our commercial sourcing desk today to outline your monthly volume commitments and delivery coordinates.
-        </p>
-        <Link href="/contact" className="btn-primary">
-          Connect with a Sourcing Specialist
-        </Link>
-      </section>
+      <FinalCTA />
 
     </main>
   );

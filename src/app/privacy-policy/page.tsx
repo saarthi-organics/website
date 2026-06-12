@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
 
         <h2 style={{ fontSize: '1.5rem', marginBottom: '16px', color: 'var(--text-primary-light)' }}>3. Document Safety & GST Auditing</h2>
         <p style={{ color: 'var(--text-secondary-light)', marginBottom: '24px' }}>
-          All tax invoices, weighment slips, e-way bills, and laboratory Certificate of Analysis (COA) records are stored securely in our databases to comply with standard corporate taxation, audit procedures, and regulatory requirements under the GST system of India.
+          All tax invoices, weighment slips, e-way bills, and any requested Certificate of Analysis (COA) records are stored securely in our databases to comply with standard corporate taxation, audit procedures, and regulatory requirements under the GST system of India.
         </p>
 
         <h2 style={{ fontSize: '1.5rem', marginBottom: '16px', color: 'var(--text-primary-light)' }}>4. Contact Sourcing Desk</h2>

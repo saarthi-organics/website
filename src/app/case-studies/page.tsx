@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function CaseStudies() {
   const cases = [
@@ -91,15 +92,7 @@ export default function CaseStudies() {
       </section>
 
       {/* Sourcing Action */}
-      <section style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 80px auto' }}>
-        <h2 className="section-title">Schedule a Sourcing Assessment</h2>
-        <p className="section-desc" style={{ marginBottom: '32px' }}>
-          Our technical sales engineers can evaluate your chemical and volume requirements to establish a stable, structured sourcing contract.
-        </p>
-        <Link href="/contact" className="btn-primary">
-          Consult our Sourcing Team
-        </Link>
-      </section>
+      <FinalCTA />
 
     </main>
   );

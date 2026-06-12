@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function PharmaIndustry() {
   return (
@@ -23,7 +24,7 @@ export default function PharmaIndustry() {
               The biopharmaceutical sector utilizes molasses as a nutrient feedstock for deep-tank aerobic and anaerobic fermentation systems. It serves as the primary organic carbon source for propagating microorganisms that produce antibiotics, vitamins (like B12), amino acids, and organic acids.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              Pharmaceutical manufacturers require precise chemical controls. Sourcing from accredited refineries, we ensure low level contamination limits, consistent pH, and complete trace mineral documentation. Every tanker shipment is paired with a specific Certificate of Analysis (COA) for immediate laboratory validation at your intake depot.
+              Pharmaceutical manufacturers require precise chemical controls. Sourcing from accredited refineries, we ensure low level contamination limits, consistent pH, and complete trace mineral documentation. Technical documentation and Certificate of Analysis (COA) reports are available on request for immediate laboratory validation at your intake depot.
             </p>
             
             <h3 style={{ fontSize: '1.4rem', margin: '30px 0 16px 0', color: 'var(--text-primary-light)', textAlign: 'center' }}>Pharma Sourcing Benefits</h3>
@@ -62,6 +63,8 @@ export default function PharmaIndustry() {
 
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );

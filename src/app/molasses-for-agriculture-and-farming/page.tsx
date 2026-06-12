@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function AgricultureFarmingIndustry() {
   return (
@@ -80,6 +81,8 @@ export default function AgricultureFarmingIndustry() {
 
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );

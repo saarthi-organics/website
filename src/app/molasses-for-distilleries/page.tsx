@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function DistilleriesIndustry() {
   return (
@@ -34,7 +35,7 @@ export default function DistilleriesIndustry() {
               </div>
               <div className="symmetrical-detail-box">
                 <strong>Predictable TRS Yields</strong>
-                <p>Standardized shipments with strict COA certificates to prevent batch-to-batch fermentation variations.</p>
+                <p>Standardized shipments with Certificate of Analysis (COA) documentation available on request.</p>
               </div>
               <div className="symmetrical-detail-box">
                 <strong>Direct Dispatch Logistics</strong>
@@ -62,6 +63,8 @@ export default function DistilleriesIndustry() {
 
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );

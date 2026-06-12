@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function QualityAndSourcing() {
   return (
@@ -10,7 +11,7 @@ export default function QualityAndSourcing() {
           <span className="section-label">Operational Quality</span>
           <h1 className="subpage-hero-title">Quality Assurance & Sourcing Excellence</h1>
           <p className="subpage-hero-desc">
-            Direct mill relationships, rigorous laboratory testing protocols, and complete Certificate of Analysis (COA) compliance for industrial buyers.
+            Direct mill relationships, rigorous laboratory testing protocols, and Certificate of Analysis (COA) documentation available on request for industrial buyers.
           </p>
         </div>
       </div>
@@ -28,9 +29,9 @@ export default function QualityAndSourcing() {
             </p>
             
             <div className="symmetrical-detail-box" style={{ background: 'var(--bg-light)' }}>
-              <strong style={{ color: 'var(--text-primary-light)' }}>Certificate of Analysis (COA) Standard</strong>
+              <strong style={{ color: 'var(--text-primary-light)' }}>Certificate of Analysis (COA) Verification</strong>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary-light)', lineHeight: '1.5' }}>
-                Every liquid tanker leaving our loading bays is sealed and accompanied by a physical COA. This laboratory slip documents exact refractometric Brix, total reducing sugars (TRS), sulfated ash percentages, density, and pH values.
+                Liquid tankers leaving our loading bays are sealed, and a Certificate of Analysis (COA) can be provided on request. This laboratory slip documents key metrics like refractometric Brix, total reducing sugars (TRS), and pH values for verification.
               </p>
             </div>
           </div>
@@ -84,12 +85,12 @@ export default function QualityAndSourcing() {
                 />
               </div>
             </div>
-            <div style={{ flex: 1.1, minWidth: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px', textAlign: 'center' }}>Direct Refining Connections</h3>
-              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px', textAlign: 'center' }}>
+            <div style={{ flex: 1.1, minWidth: '300px' }}>
+              <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
                 We maintain direct trade allocations across leading crushing units in Haryana, Punjab, and Uttar Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
               </p>
-              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', textAlign: 'center' }}>
+              <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
                 By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
               </p>
             </div>
@@ -116,6 +117,8 @@ export default function QualityAndSourcing() {
           </div>
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );

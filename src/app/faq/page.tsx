@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -25,7 +26,7 @@ export default function FAQPage() {
     },
     {
       q: "Do you supply Certificates of Analysis (COA)?",
-      a: "Yes. Every bulk shipment leaves the loading terminal with a dedicated laboratory COA slip detailing the Brix level (dry matter), Total Reducing Sugars (TRS), ash content, specific gravity, and pH value of the specific batch."
+      a: "Yes. A Certificate of Analysis (COA) can be provided on request. It details key quality metrics such as the Brix level, Total Reducing Sugars (TRS), and pH value of the batch to support your quality verification processes."
     },
     {
       q: "Is your billing GST compliant?",
@@ -52,7 +53,7 @@ export default function FAQPage() {
 
       {/* FAQ Accordion Section */}
       <section style={{ padding: '40px 24px 80px 24px' }}>
-        <div className="faq-list" style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div className="faq-list">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
@@ -116,20 +117,7 @@ export default function FAQPage() {
       </section>
 
       {/* Sourcing Action */}
-      <section style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 80px auto' }}>
-        <h2 className="section-title">Have a specific procurement requirement?</h2>
-        <p className="section-desc" style={{ marginBottom: '32px' }}>
-          Contact our commercial desk directly to discuss custom chemical specifications, delivery coordinates, or contract structures.
-        </p>
-        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link href="/contact" className="btn-primary">
-            Submit RFQ
-          </Link>
-          <a href="tel:+91-7055552535" className="btn-secondary">
-            Call Sourcing Desk
-          </a>
-        </div>
-      </section>
+      <FinalCTA />
 
     </main>
   );

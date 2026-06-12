@@ -33,7 +33,7 @@ export default function SpecTable() {
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>
-          * Typical Certificate of Analysis (COA) is issued for every dispatch tanker batch. Lab tested at sourcing point.
+          * Typical Certificate of Analysis (COA) is available on request. Lab testing reports can be provided for qualified requirements.
         </p>
         <a 
           href="/blackstrap-molasses" 

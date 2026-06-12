@@ -153,24 +153,18 @@ section[style*="100vw"] {
 
 /* Industrial Hero styling */
 .hero-section {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 48px;
   padding-top: 140px;
   padding-bottom: 60px;
 }
 
 .hero-content {
-  flex: none;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex: 1.1;
+  max-width: 620px;
 }
 
 .hero-title {
@@ -178,7 +172,6 @@ section[style*="100vw"] {
   line-height: 1.15;
   color: var(--text-primary);
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .highlight-gold {
@@ -190,15 +183,12 @@ section[style*="100vw"] {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 36px;
-  text-align: center;
-  max-width: 700px;
 }
 
 .hero-ctas {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .btn-primary {
@@ -251,12 +241,9 @@ section[style*="100vw"] {
 }
 
 .hero-image-wrapper {
-  flex: none;
-  width: 100%;
-  max-width: 600px;
+  flex: 0.9;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .hero-image-container {
@@ -347,10 +334,10 @@ section[style*="100vw"] {
   border-radius: 6px;
   padding: 32px;
   transition: all 0.3s ease;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .feature-card:hover {
@@ -374,14 +361,12 @@ section[style*="100vw"] {
   font-size: 1.25rem;
   color: var(--text-primary);
   margin-bottom: 12px;
-  text-align: center;
 }
 
 .feature-card-desc {
   color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.95rem;
-  text-align: center;
 }
 
 /* B2B Industry Section */
@@ -633,12 +618,16 @@ section[style*="100vw"] {
 
 .trust-signal-card {
   background: var(--bg-surface);
-  border-left: 4px solid var(--accent-gold);
-  border-top: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-gold);
+  border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px;
   padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .trust-signal-card h4 {
@@ -656,16 +645,20 @@ section[style*="100vw"] {
 /* Quote/Inquiry Form Page */
 .quote-section {
   display: flex;
-  gap: 60px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
 }
 
 .quote-info {
-  flex: 0.9;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .quote-info-title {
@@ -681,9 +674,6 @@ section[style*="100vw"] {
   line-height: 1.6;
   margin-bottom: 32px;
   text-align: center;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .quote-contact-card {
@@ -693,8 +683,11 @@ section[style*="100vw"] {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .quote-contact-item {
@@ -702,7 +695,7 @@ section[style*="100vw"] {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .quote-contact-icon {
@@ -711,9 +704,6 @@ section[style*="100vw"] {
   background: rgba(212, 175, 55, 0.08);
   padding: 8px;
   border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .quote-contact-details h5 {
@@ -722,14 +712,12 @@ section[style*="100vw"] {
   letter-spacing: 1px;
   color: var(--text-secondary);
   margin-bottom: 4px;
-  text-align: center;
 }
 
 .quote-contact-details p {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
-  text-align: center;
 }
 
 .quote-contact-actions {
@@ -790,7 +778,8 @@ section[style*="100vw"] {
 }
 
 .quote-form-container {
-  flex: 1.1;
+  width: 100%;
+  max-width: 680px;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -867,7 +856,7 @@ section[style*="100vw"] {
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
   gap: 48px;
   margin-bottom: 60px;
 }
@@ -1077,29 +1066,8 @@ section[style*="100vw"] {
     width: 100%;
   }
   .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 40px;
-  }
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-brand div {
-    justify-content: center !important;
-  }
-  .footer-info-item {
-    text-align: center;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
-  .footer-legal-links {
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 }
 

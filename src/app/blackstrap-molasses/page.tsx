@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function BlackstrapMolasses() {
   const faqs = [
@@ -10,7 +11,7 @@ export default function BlackstrapMolasses() {
     },
     {
       q: "What documentation accompanies a dispatch?",
-      a: "Each tanker leaves the sourcing terminal with a Tax Invoice, E-Way Bill, Weighment Slip from an authorized weighbridge, and a Certificate of Analysis (COA) specifying the Brix, pH, and Total Reducing Sugars (TRS) of the batch."
+      a: "Each tanker is dispatched with a Tax Invoice, E-Way Bill, and a verified Weighment Slip. A Certificate of Analysis (COA) specifying Brix, pH, and Total Reducing Sugars (TRS) can be provided on request."
     },
     {
       q: "How should industrial molasses be stored?",
@@ -61,14 +62,14 @@ export default function BlackstrapMolasses() {
               Our standard industrial blackstrap features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
             </p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--text-primary-light)' }}>Brix: 82% - 88%</strong>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>High active dry solids count</span>
+                <strong>Brix: 82% - 88%</strong>
+                <p>High active dry solids count</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--text-primary-light)' }}>TRS: 45.0% - 50.0%</strong>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>Excellent fermentation yield potential</span>
+                <strong>TRS: 45.0% - 50.0%</strong>
+                <p>Excellent fermentation yield potential</p>
               </div>
             </div>
           </div>
@@ -157,15 +158,7 @@ export default function BlackstrapMolasses() {
       </section>
 
       {/* Quote Form Call */}
-      <section style={{ textAlign: 'center', maxWidth: '800px' }}>
-        <h2 className="section-title">Secure Your Contract Pricing</h2>
-        <p className="section-desc" style={{ marginBottom: '32px' }}>
-          We offer volume-based pricing discounts for annual contracts with guaranteed monthly tanker allocations.
-        </p>
-        <Link href="/contact" className="btn-primary">
-          Submit RFQ Form
-        </Link>
-      </section>
+      <FinalCTA />
 
     </main>
   );

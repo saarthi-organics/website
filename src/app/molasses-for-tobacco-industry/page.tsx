@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function TobaccoIndustry() {
   return (
@@ -62,6 +63,8 @@ export default function TobaccoIndustry() {
 
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );

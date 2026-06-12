@@ -66,7 +66,7 @@ export default function BlogHub() {
       content: [
         "In industrial bio-ethanol distilleries, the fermentation yield of sugarcane molasses is directly dictated by its sugar content. Total Reducing Sugars (TRS) represent the combined concentration of sucrose, glucose, and fructose present in the syrup. High-quality blackstrap molasses typically yields a TRS percentage of 45% to 50%. This value determines the total alcohol yield that can be extracted per ton of raw material.",
         "To evaluate TRS, laboratory technicians utilize chemical titration methods, primarily the Lane-Eynon method, or high-performance liquid chromatography (HPLC). Prior to unloading a road tanker, raw material inspectors perform a refractometer test to verify that the Brix density is at least 80% to 82%, and extract samples to run a quick Fehling's solution titration to ensure TRS levels meet contractual agreements. Checking these metrics prevents the unloading of low-sugar cargo.",
-        "Low TRS molasses reduces the efficiency of yeast strains, resulting in lower alcohol conversion ratios per metric ton, which raises production costs. Saarthi Organics guarantees TRS levels through certificate of analysis (COA) sheets issued for each tanker load, tested in our own quality control lab prior to shipment, giving plant managers full predictability."
+        "Low TRS molasses reduces the efficiency of yeast strains, resulting in lower alcohol conversion ratios per metric ton, which raises production costs. Saarthi Organics supports quality assurance through Certificate of Analysis (COA) documentation available on request, detailing key laboratory metrics prior to unloading."
       ]
     },
     {
@@ -301,7 +301,7 @@ export default function BlogHub() {
       <section style={{ maxWidth: '1280px', margin: '0 auto', padding: '40px 24px' }}>
         <div style={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           alignItems: 'center',
           flexWrap: 'wrap',
           gap: '24px',
@@ -309,7 +309,7 @@ export default function BlogHub() {
           paddingBottom: '24px'
         }}>
           {/* Category Tabs */}
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -371,7 +371,7 @@ export default function BlogHub() {
         </div>
 
         {/* Results Counter */}
-        <div style={{ marginTop: '16px', color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '500', textAlign: 'center' }}>
+        <div style={{ marginTop: '16px', color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '500' }}>
           Showing {isFiltering ? allFilteredArticles.length : articles.length} of {articles.length} articles
           {isFiltering && (
             <button 
@@ -454,7 +454,7 @@ export default function BlogHub() {
                 {/* Article Info */}
                 <div style={{ padding: '28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
+                    <div style={{ display: 'flex', justifyItems: 'center', gap: '12px', fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '12px' }}>
                       <span>{post.date}</span>
                       <span>•</span>
                       <span>{post.readTime}</span>
@@ -464,8 +464,7 @@ export default function BlogHub() {
                       color: 'var(--text-primary)', 
                       marginBottom: '12px', 
                       lineHeight: 1.4,
-                      fontWeight: 700,
-                      textAlign: 'center'
+                      fontWeight: 700 
                     }}>
                       {post.title}
                     </h3>
@@ -473,8 +472,7 @@ export default function BlogHub() {
                       color: 'var(--text-secondary)', 
                       fontSize: '0.9rem', 
                       lineHeight: 1.5, 
-                      marginBottom: '24px',
-                      textAlign: 'center'
+                      marginBottom: '24px' 
                     }}>
                       {post.summary}
                     </p>
@@ -482,13 +480,12 @@ export default function BlogHub() {
 
                   <div style={{ 
                     display: 'flex', 
-                    flexDirection: 'column',
                     alignItems: 'center', 
-                    gap: '16px',
+                    justifyContent: 'space-between', 
                     borderTop: '1px solid var(--border-color)', 
                     paddingTop: '16px' 
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexDirection: 'column', textAlign: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <div style={{
                         width: '32px',
                         height: '32px',

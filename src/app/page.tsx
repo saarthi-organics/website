@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SpecTable from '@/components/SpecTable';
 import ContactForm from '@/components/ContactForm';
+import MolassesAnimation from '@/components/MolassesAnimation';
 
 export default function Home() {
   const features = [
@@ -25,7 +26,7 @@ export default function Home() {
     {
       icon: "📄",
       title: "GST-Compliant Documentation",
-      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, certificates of analysis (COA), and proper transit permit documentation."
+      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, certificates of analysis (COA) available upon request, and proper transit permit documentation."
     },
     {
       icon: "📦",
@@ -106,7 +107,7 @@ export default function Home() {
         <div className="hero-content">
           <span className="section-label">Industrial Procurement Partner</span>
           <h1 className="hero-title">
-            Bulk <span className="highlight-gold">Blackstrap Molasses</span> Industrial Supply Partner
+            Reliable <span className="highlight-gold">Molasses Supply</span> for Industrial Applications
           </h1>
           <p className="hero-subtitle">
             Reliable tanker-based supply across North India and PAN India. Sourcing high-quality molasses for distilleries, cattle feed mills, yeast plants, tobacco processors, and foundry foundations.
@@ -121,15 +122,8 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-image-wrapper">
-          <div className="hero-image-container">
-            <Image
-              src="/molasses_pouring.png"
-              alt="Rich viscous blackstrap molasses pouring in industrial facility"
-              width={500}
-              height={500}
-              style={{ objectFit: 'cover', display: 'block' }}
-              priority
-            />
+          <div className="hero-image-container" style={{ aspectRatio: '1', overflow: 'hidden' }}>
+            <MolassesAnimation />
           </div>
         </div>
       </section>
@@ -179,23 +173,23 @@ export default function Home() {
             />
           </div>
         </div>
-        <div style={{ flex: '1.2', minWidth: '320px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-          <span className="section-label" style={{ textAlign: 'center' }}>Legacy & Governance</span>
-          <h2 className="section-title" style={{ fontSize: '2.2rem', marginBottom: '20px', textAlign: 'center' }}>
+        <div style={{ flex: '1.2', minWidth: '320px' }}>
+          <span className="section-label">Legacy & Governance</span>
+          <h2 className="section-title" style={{ fontSize: '2.2rem', marginBottom: '20px' }}>
             The Mark of Sourcing Excellence
           </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '20px', textAlign: 'center' }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '20px' }}>
             Saarthi Organics operates under a heritage of trust, strength, and complete transparency. The Saarthi (Charioteer) represents guidance, dedication, and precision in navigating complex supply chains.
           </p>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '24px', textAlign: 'center' }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '24px' }}>
             Every shipment dispatched under our seal is guaranteed to meet the rigorous Brix density and Total Reducing Sugar (TRS) standards required by commercial industrial plants. We combine classical values of direct accountability with modern chemical testing and logistics.
           </p>
-          <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }}>
-            <div style={{ padding: '12px 24px', background: 'var(--bg-secondary)', border: '1px solid var(--border-light)', borderTop: '3px solid var(--accent-gold)', borderRadius: '4px', textAlign: 'center' }}>
+          <div style={{ display: 'flex', gap: '24px' }}>
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
               <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Authority</span>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Direct mill integrations</span>
             </div>
-            <div style={{ padding: '12px 24px', background: 'var(--bg-secondary)', border: '1px solid var(--border-light)', borderTop: '3px solid var(--accent-gold)', borderRadius: '4px', textAlign: 'center' }}>
+            <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px' }}>
               <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Precision</span>
               <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rigorous QA lab analysis</span>
             </div>
@@ -403,8 +397,8 @@ export default function Home() {
 
           <div className="trust-signals-grid">
             <div className="trust-signal-card">
-              <h4>Lab Testing & COA</h4>
-              <p>Every dispatch tanker is accompanied by a fresh Certificate of Analysis detailing Brix, TRS, and ash percentages.</p>
+              <h4>Technical Documentation</h4>
+              <p>A Certificate of Analysis (COA) can be provided on request detailing Brix, TRS, and ash percentages for verification.</p>
             </div>
             <div className="trust-signal-card">
               <h4>GSTIN Registered Sourcing</h4>

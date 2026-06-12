@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import FinalCTA from '@/components/FinalCTA';
 
 export default function LogisticsPage() {
   return (
@@ -98,6 +99,8 @@ export default function LogisticsPage() {
           </div>
         </div>
       </section>
+
+      <FinalCTA />
 
     </main>
   );
