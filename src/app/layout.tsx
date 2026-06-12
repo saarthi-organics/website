@@ -8,9 +8,7 @@ import StickyActionBar from "@/components/StickyActionBar";
 export const metadata: Metadata = {
   title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
   description: "Reliable molasses procurement partner via dedicated transport tankers across North India. Sourcing solutions for distilleries, feed mills, yeast, tobacco, and food processing.",
-  icons: {
-    icon: '/logo_heritage.jpg',
-  }
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
