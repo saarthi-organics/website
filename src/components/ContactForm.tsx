@@ -2,7 +2,11 @@
 
 import { useState, FormEvent } from 'react';
 
-export default function ContactForm() {
+interface ContactFormProps {
+  hideContactInfo?: boolean;
+}
+
+export default function ContactForm({ hideContactInfo = false }: ContactFormProps) {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     companyName: '',
@@ -56,6 +60,11 @@ export default function ContactForm() {
       }
       if (!formData.phone.trim()) {
         setError('Contact Number is required.');
+        return false;
+      }
+      const cleanedPhone = formData.phone.replace(/[\s()-]/g, '');
+      if (!/^\+?[0-9]{10,15}$/.test(cleanedPhone)) {
+        setError('Please enter a valid 10-15 digit phone number (e.g., +917055552535).');
         return false;
       }
       if (formData.email.trim() && !/\S+@\S+\.\S+/.test(formData.email)) {
@@ -169,11 +178,12 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="quote-section" id="quote-form-section">
+    <div className="quote-section" id="quote-form-section" style={{ gap: hideContactInfo ? '0' : '40px' }}>
       
       {/* Contact Details & Immediate Action Links */}
-      <div className="quote-info">
-        <h3 className="quote-info-title">Procurement Desk</h3>
+      {!hideContactInfo && (
+        <div className="quote-info">
+          <h3 className="quote-info-title">Procurement Desk</h3>
         <p className="quote-info-desc">
           Submit your bulk requirement details. Our commercial sourcing desk will evaluate your logistics coordinates and volume commitments to provide a formal, GST-compliant price quotation.
         </p>
@@ -254,9 +264,17 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
+      )}
 
       {/* 3-Step Modest & User-Friendly Industrial Procurement Form */}
-      <div className="quote-form-container" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div 
+        className="quote-form-container" 
+        style={{ 
+          position: 'relative', 
+          overflow: 'hidden',
+          maxWidth: hideContactInfo ? '100%' : '680px'
+        }}
+      >
         <h3 className="quote-form-title">Request Bulk Pricing</h3>
         <p className="quote-form-subtitle" style={{ marginBottom: '24px' }}>
           GST-compliant wholesale pricing quotation request
@@ -577,11 +595,41 @@ export default function ContactForm() {
                   style={{ flex: 2, padding: '14px', fontSize: '0.95rem', cursor: 'pointer' }}
                   disabled={status === 'submitting'}
                 >
-                  {status === 'submitting' ? 'Processing Sourcing Request...' : 'Submit RFQ'}
+                  {status === 'submitting' ? 'Processing Sourcing Request...' : 'Request Bulk Quote & Tanker Rates'}
                 </button>
               )}
             </div>
+            {step === 3 && (
+              <p style={{
+                textAlign: 'center',
+                fontSize: '0.82rem',
+                color: 'var(--text-secondary)',
+                opacity: 0.8,
+                marginTop: '16px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '6px'
+              }}>
+                <span>⚡ Average Response: 2-4 Hours</span>
+                <span>•</span>
+                <span>🔒 Secure B2B Sourcing Inquiry</span>
+              </p>
+            )}
           </form>
+        )}
+        {status !== 'success' && (
+          <div style={{ marginTop: '24px', borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
+            <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', opacity: 0.8, lineHeight: '1.45', marginBottom: '8px', textAlign: 'center' }}>
+              By submitting this form, you agree to be contacted by Saarthi Organics regarding your inquiry. Your information will be used solely for business communication and will not be sold or shared with third parties.
+            </p>
+            <p style={{ fontSize: '0.78rem', color: 'var(--accent-gold)', fontWeight: '600', marginBottom: '12px', textAlign: 'center' }}>
+              Typical response time: Within 24 business hours.
+            </p>
+            <p style={{ fontSize: '0.74rem', color: 'var(--text-secondary)', opacity: 0.6, lineHeight: '1.4', margin: 0, textAlign: 'center', fontStyle: 'italic' }}>
+              Pricing, availability, delivery schedules, and packaging options are subject to market conditions and order requirements. Please contact Saarthi Organics for the latest quotation.
+            </p>
+          </div>
         )}
       </div>
 

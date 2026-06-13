@@ -47,6 +47,19 @@ export default function LogisticsPage() {
                 <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Equipped with standardized connections for secure, contamination-free discharge.</p>
               </div>
             </div>
+            
+            <p style={{
+              fontSize: '0.82rem',
+              color: 'var(--text-secondary)',
+              opacity: 0.8,
+              marginTop: '32px',
+              fontStyle: 'italic',
+              lineHeight: '1.45',
+              borderLeft: '2px solid var(--accent-gold)',
+              paddingLeft: '12px'
+            }}>
+              Disclaimer: Delivery timelines may vary based on order volume, destination, road conditions, and operational factors. Our team will provide estimated delivery schedules during order confirmation.
+            </p>
           </div>
 
           <div style={{ flex: 0.9, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '24px' }}>

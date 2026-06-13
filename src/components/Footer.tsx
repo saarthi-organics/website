@@ -102,7 +102,27 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
 
+      {/* Corporate Disclaimer */}
+      <div style={{
+        borderTop: '1px solid var(--border-color)',
+        paddingTop: '20px',
+        paddingBottom: '10px',
+        maxWidth: '1280px',
+        margin: '0 auto',
+        textAlign: 'center'
+      }}>
+        <p style={{
+          fontSize: '0.78rem',
+          color: 'var(--text-secondary)',
+          opacity: 0.7,
+          lineHeight: '1.5',
+          margin: '0 auto',
+          maxWidth: '1000px'
+        }}>
+          Saarthi Organics supplies industrial-grade molasses for approved commercial and industrial applications. Product suitability should be evaluated based on individual operational requirements.
+        </p>
       </div>
 
       {/* Footer Bottom copyright and legal */}

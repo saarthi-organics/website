@@ -31,17 +31,31 @@ export default function SpecTable() {
           </tbody>
         </table>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)' }}>
-          * Typical Certificate of Analysis (COA) is available on request. Lab testing reports can be provided for qualified requirements.
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)', margin: 0 }}>
+            * Typical Certificate of Analysis (COA) is available on request. Lab testing reports can be provided for qualified requirements.
+          </p>
+          <a 
+            href="/blackstrap-molasses" 
+            className="btn-primary" 
+            style={{ fontSize: '0.85rem', padding: '10px 20px', borderRadius: '4px' }}
+          >
+            Download Full Technical Data Sheet (TDS)
+          </a>
+        </div>
+        <p style={{
+          fontSize: '0.78rem',
+          color: 'var(--text-secondary-light)',
+          opacity: 0.8,
+          lineHeight: '1.45',
+          margin: 0,
+          borderLeft: '2px solid var(--accent-gold)',
+          paddingLeft: '12px',
+          fontStyle: 'italic'
+        }}>
+          Disclaimer: Product specifications, including Brix and other quality parameters, may vary slightly based on source, season, and batch. Final specifications will be confirmed at the time of quotation and supply.
         </p>
-        <a 
-          href="/blackstrap-molasses" 
-          className="btn-primary" 
-          style={{ fontSize: '0.85rem', padding: '10px 20px', borderRadius: '4px' }}
-        >
-          Download Full Technical Data Sheet (TDS)
-        </a>
       </div>
     </div>
   );

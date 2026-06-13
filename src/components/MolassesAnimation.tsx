@@ -44,8 +44,9 @@ export default function MolassesAnimation() {
         </defs>
       </svg>
 
-      {/* Viscous Molasses Image with SVG filter */}
+      {/* Viscous Molasses Image layers */}
       <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
+        {/* Layer 1: Static Background, Nozzle, and Factory Machinery */}
         <Image
           src="/molasses_hero_new.png"
           alt="Viscous blackstrap industrial sugarcane molasses pouring in a production facility"
@@ -53,10 +54,28 @@ export default function MolassesAnimation() {
           sizes="(max-width: 968px) 100vw, 500px"
           style={{
             objectFit: 'cover',
-            filter: 'url(#viscous-molasses-ripple)',
             transform: 'scale(1.08)',
           }}
           priority
+        />
+
+        {/* Layer 2: Animated Molasses (Clipped precisely to stream and pool) */}
+        <Image
+          src="/molasses_hero_new.png"
+          alt=""
+          fill
+          sizes="(max-width: 968px) 100vw, 500px"
+          style={{
+            objectFit: 'cover',
+            filter: 'url(#viscous-molasses-ripple)',
+            transform: 'scale(1.08)',
+            clipPath: 'polygon(74% 37%, 88% 37%, 78% 77%, 100% 77%, 100% 100%, 0% 100%, 0% 77%, 66% 77%)',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
         />
       </div>
 

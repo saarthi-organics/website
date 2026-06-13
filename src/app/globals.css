@@ -1761,3 +1761,53 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   }
 }
 
+/* B2B Sourcing page updates */
+.google-map-iframe {
+  filter: grayscale(1) invert(0.92) contrast(1.2) sepia(0.25);
+  opacity: 0.85;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.google-map-iframe:hover {
+  filter: grayscale(0.1) invert(0) contrast(1) sepia(0);
+  opacity: 1;
+}
+
+details.faq-card summary::-webkit-details-marker {
+  display: none;
+}
+details.faq-card summary {
+  list-style: none;
+}
+details.faq-card[open] summary .faq-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.contact-trust-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-trust-card:hover {
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.08);
+  transform: translateY(-2.5px);
+}
+
+@media (max-width: 968px) {
+  .contact-layout-container {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  .contact-info-col, .contact-form-col {
+    width: 100% !important;
+    flex: none !important;
+  }
+}
+
+.contact-link-hover {
+  text-decoration: none;
+  color: var(--text-secondary) !important;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-link-hover:hover {
+  color: var(--accent-gold) !important;
+}
+
