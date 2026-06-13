@@ -17,16 +17,7 @@ async function syncToGoogleSheets(record: Record<string, string | undefined>): P
       const response = await fetch(webhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          dateTime: record.dateTime,
-          contactPerson: record.contactPerson,
-          companyName: record.companyName,
-          phone: record.phone,
-          email: record.email,
-          industryType: record.industryType,
-          message: record.message,
-          pageSource: record.formPageUrl || record.sourcePage || '/'
-        })
+        body: JSON.stringify(record)
       });
 
       if (response.ok) {
