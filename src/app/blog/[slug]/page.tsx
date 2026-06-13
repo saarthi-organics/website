@@ -89,6 +89,8 @@ export default async function BlogArticlePage({ params }: PageProps) {
 
       {/* Hero Header */}
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_blog.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label" style={{ display: 'inline-block', marginBottom: '16px' }}>{article.category}</span>
           <h1 className="subpage-hero-title" style={{ fontSize: '2.5rem', lineHeight: 1.2, maxWidth: '900px', margin: '0 auto 20px auto' }}>{article.title}</h1>

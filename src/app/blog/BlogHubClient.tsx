@@ -32,6 +32,8 @@ export default function BlogHubClient() {
     <div>
       {/* Blog Hub Hero */}
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_blog.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Knowledge Hub</span>
           <h1 className="subpage-hero-title">Molasses Procurement & Sourcing Intelligence</h1>

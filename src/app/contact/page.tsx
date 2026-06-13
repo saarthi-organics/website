@@ -71,6 +71,8 @@ export default function ContactPage() {
       />
 
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_contact.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">RFQ & Sourcing Desk</span>
           <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Sourcing</h1>

@@ -35,6 +35,8 @@ export default function DelhiNCRSupplierPage() {
       />
 
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_logistics.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Delhi NCR</h1>

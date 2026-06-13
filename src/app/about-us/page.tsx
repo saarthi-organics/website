@@ -16,6 +16,8 @@ export default function AboutUs() {
       
       {/* Hero Banner */}
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_about.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Company Profile</span>
           <h1 className="subpage-hero-title">About Saarthi Organics</h1>

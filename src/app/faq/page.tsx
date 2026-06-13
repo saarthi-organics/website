@@ -97,6 +97,8 @@ export default function FAQPage() {
       />
 
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_faq.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Buyer Resources</span>
           <h1 className="subpage-hero-title">Sourcing FAQ Desk</h1>

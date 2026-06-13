@@ -16,6 +16,8 @@ export default function LogisticsPage() {
     <main style={{ marginTop: '72px' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_logistics.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Logistics Command</span>
           <h1 className="subpage-hero-title">Bulk Logistics & Tanker Fleet</h1>

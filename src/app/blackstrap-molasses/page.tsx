@@ -80,6 +80,8 @@ export default function BlackstrapMolasses() {
       
       {/* Hero Banner */}
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_product.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Product Catalog</span>
           <h1 className="subpage-hero-title">Industrial Blackstrap Molasses</h1>

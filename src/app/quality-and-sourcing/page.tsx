@@ -16,6 +16,8 @@ export default function QualityAndSourcing() {
     <main style={{ marginTop: '72px' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_quality.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Operational Quality</span>
           <h1 className="subpage-hero-title">Quality Assurance & Sourcing Excellence</h1>

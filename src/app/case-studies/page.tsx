@@ -42,6 +42,8 @@ export default function CaseStudies() {
     <main style={{ marginTop: '72px' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_case_studies.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Operational Scenarios</span>
           <h1 className="subpage-hero-title">B2B Case Studies</h1>
