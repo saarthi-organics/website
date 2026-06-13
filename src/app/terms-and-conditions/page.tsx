@@ -14,6 +14,8 @@ export default function TermsAndConditions() {
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_terms.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Legal Information</span>
           <h1 className="subpage-hero-title">Terms & Conditions</h1>
