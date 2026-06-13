@@ -33,6 +33,50 @@ export default function BlackstrapMolasses() {
 
   return (
     <main style={{ marginTop: '72px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "@id": "https://www.saarthiorganics.com/blackstrap-molasses/#product",
+            "name": "Sugarcane Blackstrap Molasses",
+            "description": "Heavy industrial-grade blackstrap molasses with a Brix level of 82%-88% and Total Reducing Sugars (TRS) >= 45%. Perfect carbon substrate for fermentation, bio-ethanol, yeast, foundries, and cattle feed.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Saarthi Organics"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Saarthi Organics",
+              "url": "https://www.saarthiorganics.com"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "INR",
+              "price": "Negotiable",
+              "offerCount": "1"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Brix Density",
+                "value": "82% - 88%"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Total Reducing Sugars (TRS)",
+                "value": ">= 45%"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Packaging",
+                "value": "Bulk Tankers (20-50 MT), IBC Totes (1000L), MS/HDPE Drums (200L)"
+              }
+            ]
+          })
+        }}
+      />
       
       {/* Hero Banner */}
       <div className="subpage-hero">

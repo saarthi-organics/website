@@ -198,7 +198,7 @@ export default function ContactForm() {
               </svg>
             </div>
             <div className="quote-contact-details">
-              <h5>Direct Sourcing Desk</h5>
+              <h4>Direct Sourcing Desk</h4>
               <p>+91-7055552535</p>
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function ContactForm() {
           <div className="quote-contact-item">
             <div className="quote-contact-icon">✉️</div>
             <div className="quote-contact-details">
-              <h5>Official RFQ Email</h5>
+              <h4>Official RFQ Email</h4>
               <p>contact@saarthiorganics.com</p>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default function ContactForm() {
           <div className="quote-contact-item">
             <div className="quote-contact-icon">📍</div>
             <div className="quote-contact-details">
-              <h5>Corporate Location</h5>
+              <h4>Corporate Location</h4>
               <p>Farm House, Liberty Chowk, Karnal - 132001, Haryana</p>
             </div>
           </div>

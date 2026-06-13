@@ -108,6 +108,34 @@ export default function Home() {
 
   return (
     <main style={{ marginTop: '72px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.saarthiorganics.com/#organization",
+            "name": "Saarthi Organics",
+            "url": "https://www.saarthiorganics.com",
+            "logo": "https://www.saarthiorganics.com/logo_heritage.jpg",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-7055552535",
+              "contactType": "sales",
+              "areaServed": "IN",
+              "availableLanguage": ["en", "hi"]
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Farm House, Liberty Chowk",
+              "addressLocality": "Karnal",
+              "addressRegion": "Haryana",
+              "postalCode": "132001",
+              "addressCountry": "IN"
+            }
+          })
+        }}
+      />
       
       {/* SECTION 1 — HERO */}
       <section className="hero-section">
@@ -313,7 +341,7 @@ export default function Home() {
                 <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
-                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h4>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rich, slow-flowing viscosity indicating high total soluble solids (Brix) and density.</p>
               </div>
             </div>
@@ -322,7 +350,7 @@ export default function Home() {
                 <Image src="/gallery_texture.png" alt="Molasses texture close-up" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
-                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h4>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Deep brown-black coloration containing natural minerals, sucrose, and organic matter.</p>
               </div>
             </div>
@@ -331,7 +359,7 @@ export default function Home() {
                 <Image src="/gallery_sugarcane.png" alt="Sugarcane raw material sourcing" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
-                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Sugarcane Source</h4>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Sugarcane Source</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Sourced directly from large sugar mills situated in premium agricultural zones.</p>
               </div>
             </div>
@@ -340,7 +368,7 @@ export default function Home() {
                 <Image src="/gallery_industrial.png" alt="Industrial molasses mixing application" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
-                <h4 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Industrial Processing</h4>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Industrial Processing</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>High-volume feedstock processing matching strict industrial quality specifications.</p>
               </div>
             </div>
@@ -363,19 +391,19 @@ export default function Home() {
             </p>
             <div className="logistics-grid">
               <div className="logistics-item">
-                <h4>In-House Logistics</h4>
+                <h3>In-House Logistics</h3>
                 <p>No reliance on third-party brokers. We maintain complete control over dispatch timelines and tanker routing.</p>
               </div>
               <div className="logistics-item">
-                <h4>Emergency Sourcing</h4>
+                <h3>Emergency Sourcing</h3>
                 <p>We leverage our strong sugar mill network to coordinate urgent dispatches and prevent client plant shutdowns.</p>
               </div>
               <div className="logistics-item">
-                <h4>Flexible Turnaround</h4>
+                <h3>Flexible Turnaround</h3>
                 <p>Swift loading and unloading turnaround with standard couplers matching industrial plant intake setups.</p>
               </div>
               <div className="logistics-item">
-                <h4>Real-Time Dispatch</h4>
+                <h3>Real-Time Dispatch</h3>
                 <p>Constant communication with tanker operators for transparent ETA updates at your receiving bay.</p>
               </div>
             </div>
@@ -433,19 +461,19 @@ export default function Home() {
           </div>
 
           <div className="trust-signals-grid">
-            <div className="trust-signal-card">
-              <h4>Technical Documentation</h4>
-              <p>A Certificate of Analysis (COA) can be provided on request detailing Brix, TRS, and ash percentages for verification.</p>
+              <div className="trust-signal-card">
+                <h3>Technical Documentation</h3>
+                <p>A Certificate of Analysis (COA) can be provided on request detailing Brix, TRS, and ash percentages for verification.</p>
+              </div>
+              <div className="trust-signal-card">
+                <h3>GSTIN Registered Sourcing</h3>
+                <p>100% legal compliance. We facilitate input tax credits with accurate and immediate GST billing records.</p>
+              </div>
+              <div className="trust-signal-card">
+                <h3>Security of Sourcing</h3>
+                <p>We source directly from large-scale sugar refineries, insulating our buyers from seasonal scarcity.</p>
+              </div>
             </div>
-            <div className="trust-signal-card">
-              <h4>GSTIN Registered Sourcing</h4>
-              <p>100% legal compliance. We facilitate input tax credits with accurate and immediate GST billing records.</p>
-            </div>
-            <div className="trust-signal-card">
-              <h4>Security of Sourcing</h4>
-              <p>We source directly from large-scale sugar refineries, insulating our buyers from seasonal scarcity.</p>
-            </div>
-          </div>
         </div>
       </section>
 

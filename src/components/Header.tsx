@@ -245,7 +245,7 @@ export default function Header() {
 
       {/* Inline styles to handle hamburger show/hide on mobile */}
       <style jsx global>{`
-        @media (max-width: 968px) {
+        @media (max-width: 1120px) {
           .desktop-nav {
             display: none !important;
           }

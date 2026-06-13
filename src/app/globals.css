@@ -539,7 +539,7 @@ section[style*="100vw"] {
 
 .spec-table th {
   background: var(--accent-gold);
-  color: var(--text-primary-light);
+  color: #0A0A0A; /* Dark charcoal for excellent readability/contrast (10.5:1 ratio) on gold background */
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -1096,7 +1096,7 @@ section[style*="100vw"] {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 968px) {
+@media (max-width: 1120px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -1742,6 +1742,22 @@ section[style*="var(--bg-light)"] .symmetrical-detail-box,
   .symmetrical-grid-two-col {
     grid-template-columns: 1fr !important;
     gap: 20px;
+  }
+}
+
+/* Keyboard Navigation Accessibility Focus Outlines */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent-gold) !important;
+  outline-offset: 4px !important;
+}
+
+/* Header links collision prevention on smaller desktops */
+@media (max-width: 1300px) {
+  .nav-links {
+    gap: 14px !important;
+  }
+  .nav-links a {
+    font-size: 0.9rem !important;
   }
 }
 
