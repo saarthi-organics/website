@@ -351,14 +351,51 @@ export async function POST(req: NextRequest) {
 
     try {
       if (!fs.existsSync(dataDir)) {
-        fs.mkdirSync(dataDir, { recursive: true });
+        try {
+          fs.mkdirSync(dataDir, { recursive: true });
+        } catch {
+          // data directory in process.cwd() is read-only
+        }
       }
+
+      // Helper to write files with fallback to /tmp
+      const writeLocalFile = (filePath: string, content: string, append = false) => {
+        try {
+          if (append) {
+            fs.appendFileSync(filePath, content, 'utf8');
+          } else {
+            fs.writeFileSync(filePath, content, 'utf8');
+          }
+        } catch (writeErr) {
+          console.warn(`[DATABASE WARNING] Failed to write to ${filePath}. Retrying in /tmp...`, writeErr);
+          const filename = path.basename(filePath);
+          const tmpDir = path.join('/tmp', 'data');
+          if (!fs.existsSync(tmpDir)) {
+            fs.mkdirSync(tmpDir, { recursive: true });
+          }
+          const tmpPath = path.join(tmpDir, filename);
+          if (append) {
+            fs.appendFileSync(tmpPath, content, 'utf8');
+          } else {
+            fs.writeFileSync(tmpPath, content, 'utf8');
+          }
+          console.log(`[DATABASE] Successfully saved fallback copy to ${tmpPath}`);
+        }
+      };
 
       // JSON logging
       let records = [];
-      if (fs.existsSync(jsonPath)) {
-        const fileContent = fs.readFileSync(jsonPath, 'utf8');
+      let jsonContentToRead = jsonPath;
+      if (!fs.existsSync(jsonPath)) {
+        const tmpJsonPath = path.join('/tmp', 'data', 'submissions.json');
+        if (fs.existsSync(tmpJsonPath)) {
+          jsonContentToRead = tmpJsonPath;
+        }
+      }
+
+      if (fs.existsSync(jsonContentToRead)) {
         try {
+          const fileContent = fs.readFileSync(jsonContentToRead, 'utf8');
           records = JSON.parse(fileContent);
           if (!Array.isArray(records)) records = [];
         } catch {
@@ -366,10 +403,15 @@ export async function POST(req: NextRequest) {
         }
       }
       records.push(newRecord);
-      fs.writeFileSync(jsonPath, JSON.stringify(records, null, 2), 'utf8');
+      writeLocalFile(jsonPath, JSON.stringify(records, null, 2), false);
 
       // Check and Rebuild/Migrate CSV headers if needed
-      const migrated = migrateCSVIfRequired(jsonPath, csvPath);
+      let migrated = false;
+      try {
+        migrated = migrateCSVIfRequired(jsonPath, csvPath);
+      } catch (migrateErr) {
+        console.warn('[DATABASE] migrateCSVIfRequired failed, falling back:', migrateErr);
+      }
 
       if (!migrated) {
         // Append row to CSV
@@ -405,7 +447,7 @@ export async function POST(req: NextRequest) {
           escapeCSV(stateRegion)
         ].join(',');
 
-        fs.appendFileSync(csvPath, csvRow + '\n', 'utf8');
+        writeLocalFile(csvPath, csvRow + '\n', true);
       }
       localSaveSuccess = true;
       
@@ -557,6 +599,7 @@ export async function POST(req: NextRequest) {
       emailSendSuccess = true;
     }
 
+    // Return success if at least one dispatch pipeline succeeded
     if (localSaveSuccess && emailSendSuccess && sheetsSyncSuccess) {
       return NextResponse.json({
         success: true,
@@ -565,7 +608,8 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    if (!localSaveSuccess) {
+    // Only fail completely with 500 if ALL storage & delivery mechanisms failed
+    if (!localSaveSuccess && !emailSendSuccess && !sheetsSyncSuccess) {
       return NextResponse.json({
         success: false,
         message: 'System error processing request. Sourcing team notified. Please contact directly by phone.',
@@ -582,6 +626,7 @@ export async function POST(req: NextRequest) {
       message: 'Thank you for contacting Saarthi Organics. Our team will review your requirement and get back to you shortly.',
       warning: 'One of the dispatch pipeline steps completed with warnings, but your inquiry has been secured.',
       deliveryStatus: {
+        local: localSaveSuccess,
         email: emailSendSuccess,
         sheets: sheetsSyncSuccess
       }
