@@ -111,29 +111,40 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://www.saarthiorganics.com/#organization",
-            "name": "Saarthi Organics",
-            "url": "https://www.saarthiorganics.com",
-            "logo": "https://www.saarthiorganics.com/logo_heritage.jpg",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+91-7055552535",
-              "contactType": "sales",
-              "areaServed": "IN",
-              "availableLanguage": ["en", "hi"]
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.saarthiorganics.com/#website",
+              "name": "Saarthi Organics",
+              "alternateName": "Saarthi Organics",
+              "url": "https://www.saarthiorganics.com"
             },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Farm House, Liberty Chowk",
-              "addressLocality": "Karnal",
-              "addressRegion": "Haryana",
-              "postalCode": "132001",
-              "addressCountry": "IN"
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://www.saarthiorganics.com/#organization",
+              "name": "Saarthi Organics",
+              "alternateName": "Saarthi Organics",
+              "url": "https://www.saarthiorganics.com",
+              "logo": "https://www.saarthiorganics.com/logo_heritage.jpg",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-7055552535",
+                "contactType": "sales",
+                "areaServed": "IN",
+                "availableLanguage": ["en", "hi"]
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Farm House, Liberty Chowk",
+                "addressLocality": "Karnal",
+                "addressRegion": "Haryana",
+                "postalCode": "132001",
+                "addressCountry": "IN"
+              }
             }
-          })
+          ])
         }}
       />
       

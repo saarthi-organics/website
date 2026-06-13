@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier in Punjab | Ludhiana & Jalandhar Bulk Supply',
+  title: 'Molasses Supplier in Punjab | Ludhiana & Jalandhar Bulk Supply | Saarthi Organics',
   description: 'Reliable industrial sugarcane molasses supplier in Punjab. Sourcing solutions for bio-ethanol distilleries and cattle feed mills in Khanna, Jalandhar, Ludhiana, and Patiala.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-punjab',

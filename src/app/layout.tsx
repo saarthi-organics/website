@@ -19,7 +19,20 @@ export const metadata: Metadata = {
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
     ]
   },
-  manifest: "/site.webmanifest"
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
+    description: "Reliable molasses procurement partner via dedicated transport tankers across North India.",
+    url: "https://www.saarthiorganics.com",
+    siteName: "Saarthi Organics",
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
+    description: "Reliable molasses procurement partner via dedicated transport tankers across North India."
+  }
 };
 
 export default function RootLayout({

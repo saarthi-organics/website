@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier in Rajasthan | Sourcing Jaipur, Alwar & Kota',
+  title: 'Molasses Supplier in Rajasthan | Sourcing Jaipur, Alwar & Kota | Saarthi Organics',
   description: 'Supplying bulk sugarcane molasses to cattle feed plants, distilleries, and casting foundries across Rajasthan including Jaipur, Kota, Alwar, and Udaipur.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-rajasthan',

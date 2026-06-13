@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier in Haryana | Bulk Sourcing Karnal & Yamunanagar',
+  title: 'Molasses Supplier in Haryana | Bulk Sourcing | Saarthi Organics',
   description: 'GST-compliant bulk industrial sugarcane molasses supplier in Haryana. Specialized liquid tanker dispatches sourced from Karnal, Yamunanagar, and Panipat sugar mills.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-haryana',

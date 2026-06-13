@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier in Delhi NCR | Noida, Gurgaon & Faridabad Bulk Supply',
+  title: 'Molasses Supplier in Delhi NCR | Noida, Gurgaon & Faridabad Bulk Supply | Saarthi Organics',
   description: 'Corporate sugarcane molasses supplier in Delhi NCR. Timely liquid road tanker dispatch to industrial zones in Noida, Faridabad, Gurgaon, and Ghaziabad.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-delhi-ncr',

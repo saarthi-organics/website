@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier in Uttarakhand | Haridwar Pharma & Distillery Sourcing',
+  title: 'Molasses Supplier in Uttarakhand | Haridwar Pharma & Distillery Sourcing | Saarthi Organics',
   description: 'Industrial sugarcane molasses supplier in Uttarakhand. High-purity, traceable carbon media for pharmaceutical fermentation and distilleries in Haridwar, Kashipur, and Dehradun.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-uttarakhand',
