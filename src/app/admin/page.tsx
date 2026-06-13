@@ -192,10 +192,10 @@ export default function AdminPage() {
     }
   });
 
-  const handleExport = () => {
+  const handleExport = (format: 'csv' | 'xlsx') => {
     const savedCode = sessionStorage.getItem('admin_sourcing_passcode') || passcode;
     if (!savedCode) return;
-    window.open(`/api/export?code=${encodeURIComponent(savedCode)}`, '_blank');
+    window.open(`/api/export?code=${encodeURIComponent(savedCode)}&format=${format}`, '_blank');
   };
 
   // Passcode prompt render
@@ -340,9 +340,12 @@ export default function AdminPage() {
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '1px' }}>Primary Industry</span>
                 <h3 style={{ fontSize: '2.25rem', color: 'var(--accent-gold)', marginTop: '8px', marginBottom: 0, textTransform: 'capitalize' }}>{majorIndustry}</h3>
               </div>
-              <div style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <button onClick={handleExport} className="btn-primary" style={{ width: '100%', padding: '14px', borderRadius: '4px', textAlign: 'center' }}>
+              <div style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: '8px', justifyContent: 'center' }}>
+                <button onClick={() => handleExport('csv')} className="btn-primary" style={{ width: '100%', padding: '10px', borderRadius: '4px', textAlign: 'center', fontSize: '0.85rem' }}>
                   Export Leads (CSV)
+                </button>
+                <button onClick={() => handleExport('xlsx')} className="btn-secondary" style={{ width: '100%', padding: '10px', borderRadius: '4px', textAlign: 'center', fontSize: '0.85rem' }}>
+                  Export Leads (Excel)
                 </button>
               </div>
             </div>
