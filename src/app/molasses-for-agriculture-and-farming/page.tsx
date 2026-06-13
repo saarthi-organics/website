@@ -16,6 +16,8 @@ export default function AgricultureFarmingIndustry() {
       
       {/* Subpage Hero / Overview */}
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_agriculture.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Agriculture & Bio-Fertilizers</h1>

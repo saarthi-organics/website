@@ -15,6 +15,8 @@ export default function TobaccoIndustry() {
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_tobacco.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Tobacco Processing</h1>

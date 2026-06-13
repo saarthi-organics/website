@@ -15,6 +15,8 @@ export default function CattleFeedIndustry() {
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       
       <div className="subpage-hero">
+        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_cattle_feed.png')" }} />
+        <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses for Cattle Feed Manufacturers</h1>
