@@ -23,7 +23,7 @@ export default function Footer() {
             }}>
               <Image 
                 src="/logo_heritage.jpg" 
-                alt="Saarthi Organics Heritage Seal" 
+                alt="Saarthi Organics Heritage Emblem" 
                 fill
                 sizes="96px"
                 style={{ objectFit: 'cover' }} 
@@ -34,7 +34,7 @@ export default function Footer() {
             </h3>
           </div>
           <p style={{ marginBottom: '20px' }}>
-            Dependable bulk molasses procurement and distribution partner. We supply industrial-grade blackstrap molasses via our own transport fleet across North India and PAN India.
+            Dependable bulk molasses procurement and distribution partner. We supply industrial-grade blackstrap molasses via our own transport fleet across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other major industrial zones.
           </p>
           <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             <strong>GSTIN:</strong> 06AFEFS2128A1ZJ

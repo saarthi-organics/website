@@ -47,13 +47,13 @@ export const articles: Article[] = [
     image: "/industry_distilleries.png",
     author: {
       name: "Dr. Ananya Sen",
-      role: "Head of Laboratory QA",
+      role: "Quality Assurance Consultant",
       initials: "AS"
     },
     content: [
       "In industrial bio-ethanol distilleries, the fermentation yield of sugarcane molasses is directly dictated by its sugar content. Total Reducing Sugars (TRS) represent the combined concentration of sucrose, glucose, and fructose present in the syrup. High-quality blackstrap molasses typically yields a TRS percentage of 45% to 50%. This value determines the total alcohol yield that can be extracted per ton of raw material.",
       "To evaluate TRS, laboratory technicians utilize chemical titration methods, primarily the Lane-Eynon method, or high-performance liquid chromatography (HPLC). Prior to unloading a road tanker, raw material inspectors perform a refractometer test to verify that the Brix density is at least 80% to 82%, and extract samples to run a quick Fehling's solution titration to ensure TRS levels meet contractual agreements. Checking these metrics prevents the unloading of low-sugar cargo.",
-      "Low TRS molasses reduces the efficiency of yeast strains, resulting in lower alcohol conversion ratios per metric ton, which raises production costs. Saarthi Organics supports quality assurance through Certificate of Analysis (COA) documentation available on request, detailing key laboratory metrics prior to unloading."
+      "Low TRS molasses reduces the efficiency of yeast strains, resulting in lower alcohol conversion ratios per metric ton, which raises production costs. Saarthi Organics works with partners to facilitate Certificate of Analysis (COA) documentation when specifically requested and where available."
     ]
   },
   {
@@ -87,13 +87,13 @@ export const articles: Article[] = [
     image: "/industry_yeast.png",
     author: {
       name: "Dr. Ananya Sen",
-      role: "Head of Laboratory QA",
+      role: "Quality Assurance Consultant",
       initials: "AS"
     },
     content: [
       "Industrial yeast manufacturing and yeast-based fermentation rely on molasses as a primary carbon source. Yeast growth (Saccharomyces cerevisiae) is highly sensitive to the osmotic pressure of the growth medium. If the sugar concentration is too high (excessive Brix), osmotic shock can occur, damaging yeast cell walls and halting reproduction, which ruins fermentation batches.",
       "Conversely, low Brix indicates dilution, which increases the risk of premature bacterial contamination (such as lactic acid bacteria) in storage tanks. The optimal Brix level for raw bulk molasses is 80° to 85° Bx. During yeast media preparation, this is diluted with sterile water to a working Brix of 10° to 15° Bx, supplemented with nitrogen (urea or ammonium salts) and phosphorus to sustain high growth yields.",
-      "Saarthi Organics provides standardized, high-purity molasses specifically refined for yeast propagation, ensuring low ash content and high nutritional bioavailability for yeast cultures. We verify every load with refractometer analysis before dispatch."
+      "Saarthi Organics provides high-purity molasses specifically suited for yeast propagation, offering low ash content and high nutritional bioavailability for yeast cultures. Sourcing parameters or specifications may be discussed during order placement based on customer requirements."
     ]
   },
   {
@@ -153,7 +153,7 @@ export const articles: Article[] = [
     content: [
       "Blackstrap molasses is the thick, dark, viscous syrup remaining after the third and final boiling cycle of sugarcane juice extraction. During sugarcane refining, sucrose is repeatedly crystallized and removed. The final crystallization strike yields a heavy co-product that contains concentrated minerals, vitamins, and a lower sucrose content, making it highly valuable for industrial fermentation and chemical processes.",
       "From a procurement perspective, blackstrap molasses is characterized by its high density (measured in Brix), mineral richness, and dark coloration. Standard commercial grades require a Brix density between 80.0% and 88.0%. Unlike light or dark table molasses, blackstrap is not intended for direct retail culinary use but is rather structured as a robust carbon and nitrogen media for heavy manufacturing.",
-      "When auditing potential suppliers in India, purchasing heads should look for verifiable specs regarding Total Reducing Sugars (TRS), ash content, and sulfur dioxide residue. Saarthi Organics sources premium blackstrap molasses from major sugar crushing zones, offering comprehensive COA documentation for every tanker shipment."
+      "When auditing potential suppliers in India, purchasing heads should look for verifiable specs regarding Total Reducing Sugars (TRS), ash content, and sulfur dioxide residue. Saarthi Organics sources premium blackstrap molasses from major sugar crushing zones, and can discuss Certificate of Analysis (COA) documentation options based on specific customer requirements."
     ]
   },
   {
@@ -167,7 +167,7 @@ export const articles: Article[] = [
     image: "/industry_distilleries.png",
     author: {
       name: "Dr. Ananya Sen",
-      role: "Head of Laboratory QA",
+      role: "Quality Assurance Consultant",
       initials: "AS"
     },
     content: [
@@ -207,13 +207,13 @@ export const articles: Article[] = [
     image: "/molasses_testing.png",
     author: {
       name: "Dr. Ananya Sen",
-      role: "Head of Laboratory QA",
+      role: "Quality Assurance Consultant",
       initials: "AS"
     },
     content: [
       "Industrial buyers often experience quality variations between different molasses batches. These fluctuations stem from agronomic, operational, and climate factors during sugarcane cultivation and processing. Understanding these variables helps procurement teams anticipate feedstock quality.",
       "The primary factor is sugarcane crop maturity. Cane harvested at peak maturity (typically mid-season from January to March in North India) yields molasses with high TRS and stable Brix levels. In contrast, early-season or late-season harvests often produce higher concentrations of unfermentable organic solids. Additionally, the clarification and crystallization technology used by the sugar mill directly dictates the ash content and total sugar concentration left in the byproduct.",
-      "Saarthi Organics mitigates these variations by maintaining direct relationships with modern sugar mill refineries. We monitor active production runs, test incoming tanker batches, and maintain dedicated quality checks to ensure that the material delivered to your plant matches standard specification guidelines."
+      "Saarthi Organics mitigates these variations by maintaining direct relationships with modern sugar mill refineries. We coordinate directly with cooperative and private sugar mills to align shipments with standard specification guidelines."
     ]
   },
   {
@@ -233,7 +233,7 @@ export const articles: Article[] = [
     content: [
       "For heavy manufacturing plants, animal feed mills, and distilleries, molasses is a critical feedstock. A delay in delivery or a sudden drop in Brix levels can lead to costly plant shutdowns. When evaluating potential bulk supply partners in India, purchasing heads must verify several key areas.",
       "First, evaluate logistics capability. A supplier relying on external transport brokers often struggles with priority dispatches during high-demand crop seasons. A partner with a dedicated, in-house fleet of liquid tankers guarantees transit reliability and quick dispatch times. Second, review regulatory and tax compliance. Because molasses transit is supervised by state excise bodies, ensure the supplier manages e-way bills, excise permits, and issues GST-compliant invoices immediately.",
-      "Finally, check quality management systems. A reliable supplier should provide pre-shipment laboratory samples and issue a Certificate of Analysis (COA) for every load. Saarthi Organics is structured to meet these corporate requirements, combining direct refinery trade agreements, in-house tanker logistics, and strict compliance desks to support continuous industrial operations."
+      "Finally, check quality management systems. A reliable supplier should work with customers to align on specifications and quality documentation. Saarthi Organics can coordinate technical discussions regarding pre-shipment samples or Certificate of Analysis (COA) documentation based on specific contract terms."
     ]
   }
 ];

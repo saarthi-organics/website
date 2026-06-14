@@ -19,7 +19,7 @@ export default function BlackstrapMolasses() {
     },
     {
       q: "What documentation accompanies a dispatch?",
-      a: "Each tanker is dispatched with a Tax Invoice, E-Way Bill, and a verified Weighment Slip. A Certificate of Analysis (COA) specifying Brix, pH, and Total Reducing Sugars (TRS) can be provided on request."
+      a: "Each tanker is dispatched with a Tax Invoice, E-Way Bill, and a verified Weighment Slip. Sourcing documentation or typical specifications can be discussed and provided on request where available."
     },
     {
       q: "How should industrial molasses be stored?",

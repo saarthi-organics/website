@@ -4,7 +4,7 @@ import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
   title: 'Molasses for Pharma Industry & Fermentation | Saarthi Organics',
-  description: 'Specification-locked, high-purity sugarcane blackstrap molasses for pharmaceutical API fermentation. Documented trace minerals and strict QA standards.',
+  description: 'High-purity sugarcane blackstrap molasses for pharmaceutical API fermentation. Review specifications and quality documentation options.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-pharma',
   },
@@ -39,19 +39,19 @@ export default function PharmaIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> Our pharmaceutical-grade batches are characterized by strict control of heavy metals and minimal agricultural residues. Providing documented trace element profiles (magnesium, iron, zinc) supports stable culture reproduction rates and consistent yield indexes during batch runs.
+              <strong>Key Sourcing Benefits:</strong> Our pharmaceutical-grade batches are characterized by standard trace parameter options and low agricultural residues. Discussing typical trace element profiles (magnesium, iron, zinc) can help align sourcing batches with your fermentation requirements.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Pharma Media Sourcing Metrics</h3>
             
             <div className="symmetrical-grid-two-col" style={{ marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--accent-amber)' }}>Heavy Metal Testing</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Batches undergo strict testing to limit lead, arsenic, and cadmium below compliance limits.</p>
+                <strong style={{ color: 'var(--accent-amber)' }}>Heavy Metal Specifications</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Sourcing parameters are coordinated to align with limits for lead, arsenic, and cadmium based on customer requirements.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Batch Traceability</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Every dispatch is mapped directly to sugar refinery production strikes to meet audit standards.</p>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Dispatch batches can be traced to sugar refinery production strikes to meet audit standards.</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export default function PharmaIndustry() {
             </p>
 
             <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Delivery Protocols:</strong> We secure all cargo valves with uniquely serialized locks and provide pre-shipment laboratory samples (500ml) from the active batch to facilitate your internal quality assurance validation before the tanker enters your discharge zone.
+              <strong>Delivery Protocols:</strong> We coordinate prompt dispatches and can discuss pre-shipment samples (500ml) from the active batch to facilitate your internal quality assurance validation, based on customer requirements.
             </p>
           </div>
 

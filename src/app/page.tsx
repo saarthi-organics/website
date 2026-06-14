@@ -7,7 +7,7 @@ import MolassesAnimation from '@/components/MolassesAnimation';
 
 export const metadata: Metadata = {
   title: 'Saarthi Organics | Bulk Sugarcane Molasses Supplier India',
-  description: 'GST-compliant bulk industrial blackstrap molasses supplier and procurement partner. Coordinated liquid tanker supply for distilleries, feed mills, and casting foundries across North India.',
+  description: 'GST-compliant bulk industrial blackstrap molasses supplier and procurement partner. Coordinated liquid tanker supply across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com',
   },
@@ -28,12 +28,12 @@ export default function Home() {
     {
       icon: "📍",
       title: "PAN India Delivery",
-      desc: "Robust logistics grid operating across North India (Haryana, Punjab, Delhi NCR, Rajasthan, Uttarakhand) and extending long-haul dispatch capability to industrial zones nationwide."
+      desc: "Reliable molasses supply across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets across India."
     },
     {
       icon: "📄",
       title: "GST-Compliant Documentation",
-      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, certificates of analysis (COA) available upon request, and proper transit permit documentation."
+      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, and proper transit permit documentation. Sourcing specifications or quality documentation may be discussed based on customer requirements."
     },
     {
       icon: "📦",
@@ -156,7 +156,7 @@ export default function Home() {
             Sugarcane <span className="highlight-gold">Molasses Supply</span> for Industrial Sourcing
           </h1>
           <p className="hero-subtitle">
-            Excise-aligned bulk tanker distribution across North India and PAN India corridors. We coordinate direct-mill allocations of 82% min Brix molasses for distilleries, feed mills, yeast plants, and metal castings.
+            Excise-aligned bulk tanker distribution across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets. We coordinate direct-mill allocations of 82% min Brix molasses for distilleries, feed mills, yeast plants, and metal castings.
           </p>
           <div className="hero-ctas">
             <a href="#contact-desk" className="btn-primary">
@@ -202,7 +202,7 @@ export default function Home() {
         <span className="heritage-divider-motif">✦</span>
       </div>
 
-      {/* SECTION: Heritage and Legacy Seal */}
+      {/* SECTION: Heritage and Legacy Emblem */}
       <section style={{ padding: '80px 24px', display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
         <div style={{ flex: '0.8', minWidth: '280px', display: 'flex', justifyContent: 'center' }}>
           <div style={{
@@ -217,7 +217,7 @@ export default function Home() {
           }}>
             <Image 
               src="/logo_heritage.jpg" 
-              alt="Saarthi Organics Heritage Seal Logo" 
+              alt="Saarthi Organics Heritage Emblem Logo" 
               fill
               sizes="280px"
               style={{ objectFit: 'cover' }}
@@ -233,7 +233,7 @@ export default function Home() {
             Saarthi Organics operates under a heritage of trust, strength, and complete transparency. The Saarthi (Charioteer) represents guidance, dedication, and precision in navigating complex supply chains.
           </p>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '24px' }}>
-            Every shipment dispatched under our seal is guaranteed to meet the rigorous Brix density and Total Reducing Sugar (TRS) standards required by commercial industrial plants. We combine classical values of direct accountability with modern chemical testing and logistics.
+            We work with reliable sourcing partners to align dispatches with the standard Brix density and Total Reducing Sugar (TRS) specifications required by commercial industrial plants. We combine classical values of direct accountability with reliable logistics routing.
           </p>
           <div style={{ display: 'flex', gap: '24px', justifyContent: 'center' }}>
             <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px', textAlign: 'left' }}>
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
             <div style={{ borderLeft: '2px solid var(--accent-gold)', paddingLeft: '16px', textAlign: 'left' }}>
               <span style={{ display: 'block', fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-gold)', fontFamily: "'Cinzel', serif" }}>Precision</span>
-              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Rigorous QA lab analysis</span>
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Specification coordination</span>
             </div>
           </div>
         </div>
@@ -473,8 +473,8 @@ export default function Home() {
 
           <div className="trust-signals-grid">
               <div className="trust-signal-card">
-                <h3>Technical Documentation</h3>
-                <p>A Certificate of Analysis (COA) can be provided on request detailing Brix, TRS, and ash percentages for verification.</p>
+                <h3>Quality & Specifications</h3>
+                <p>Product specifications and supporting quality documentation may be discussed based on customer requirements and availability.</p>
               </div>
               <div className="trust-signal-card">
                 <h3>GSTIN Registered Sourcing</h3>

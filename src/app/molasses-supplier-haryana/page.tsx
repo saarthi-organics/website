@@ -61,7 +61,7 @@ export default function HaryanaSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our sales office based in Karnal provides real-time access to the North India industrial belt. We supply high Total Reducing Sugars (TRS ≥ 45.0%) feedstock ideal for local distilleries, cattle feed pellet mills, and yeast processors. By bypasssing third-party brokers, we ensure pure, un-diluted product quality directly delivered to your facility.
+              Our sales office based in Karnal provides real-time access to major industrial belts across northern and western India. We supply high Total Reducing Sugars (TRS ≥ 45.0%) feedstock ideal for distilleries, cattle feed pellet mills, and yeast processors. By bypasssing third-party brokers, we ensure pure, un-diluted product quality directly delivered to your facility.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Haryana Logistics & Excise Clearance</h3>

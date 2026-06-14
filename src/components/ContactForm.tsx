@@ -556,7 +556,7 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
                       name="message" 
                       value={formData.message} 
                       onChange={handleInput} 
-                      placeholder="E.g., specific Brix levels, TRS limits, or transit seal specifications."
+                      placeholder="E.g., specific Brix levels, TRS limits, or delivery schedule requirements."
                       disabled={status === 'submitting'}
                       style={{ minHeight: '80px', fontSize: '0.9rem' }}
                     />

@@ -7,7 +7,7 @@ import StickyActionBar from "@/components/StickyActionBar";
 
 export const metadata: Metadata = {
   title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
-  description: "Reliable molasses procurement partner via dedicated transport tankers across North India. Sourcing solutions for distilleries, feed mills, yeast, tobacco, and food processing.",
+  description: "Reliable molasses procurement partner via dedicated transport tankers across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh. Sourcing solutions for distilleries, feed mills, yeast, tobacco, and food processing.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
-    description: "Reliable molasses procurement partner via dedicated transport tankers across North India.",
+    description: "Reliable molasses procurement partner via dedicated transport tankers across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.",
     url: "https://www.saarthiorganics.com",
     siteName: "Saarthi Organics",
     locale: "en_IN",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
-    description: "Reliable molasses procurement partner via dedicated transport tankers across North India."
+    description: "Reliable molasses procurement partner via dedicated transport tankers across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh."
   }
 };
 

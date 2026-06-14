@@ -4,8 +4,8 @@ import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Brix 82-88 Molasses Quality Standards & SQA | Saarthi Organics',
-  description: 'Discover the rigorous chemical analysis and refractometer testing that guarantees Brix 82.0% - 88.0% and TRS 45.0% - 50.0% for our sugarcane molasses batches.',
+  title: 'Brix 82-88 Molasses Quality Sourcing | Saarthi Organics',
+  description: 'Learn about our quality-focused molasses sourcing. Discover specifications and documentation options for our sugarcane molasses batches.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/quality-and-sourcing',
   },
@@ -22,7 +22,7 @@ export default function QualityAndSourcing() {
           <span className="section-label">Operational Quality</span>
           <h1 className="subpage-hero-title">Quality Assurance & Sourcing Excellence</h1>
           <p className="subpage-hero-desc">
-            Direct mill relationships, rigorous laboratory testing protocols, and Certificate of Analysis (COA) documentation available on request for industrial buyers.
+            Direct mill relationships, quality-focused procurement, and Certificate of Analysis (COA) documentation available on request where available.
           </p>
         </div>
       </div>
@@ -40,9 +40,9 @@ export default function QualityAndSourcing() {
             </p>
             
             <div className="symmetrical-detail-box" style={{ background: 'var(--bg-light)' }}>
-              <strong style={{ color: 'var(--text-primary-light)' }}>Certificate of Analysis (COA) Verification</strong>
+              <strong style={{ color: 'var(--text-primary-light)' }}>Quality Documentation Discussions</strong>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary-light)', lineHeight: '1.5' }}>
-                Liquid tankers leaving our loading bays are sealed, and a Certificate of Analysis (COA) can be provided on request. This laboratory slip documents key metrics like refractometric Brix, total reducing sugars (TRS), and pH values for verification.
+                We work with reliable sourcing partners and can discuss quality documentation requirements, such as a Certificate of Analysis (COA), based on specific customer needs and availability.
               </p>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function QualityAndSourcing() {
             <div style={{ flex: 1.1, minWidth: '300px' }}>
               <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
-                We maintain direct trade allocations across leading crushing units in Haryana, Punjab, Rajasthan, Uttarakhand, and Delhi NCR. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
+                We maintain direct trade allocations across cooperative and private mills, serving industrial buyers in Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
               </p>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
                 By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
@@ -115,15 +115,15 @@ export default function QualityAndSourcing() {
             </div>
             
             <div className="feature-card">
-              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🔬</span>
-              <h3 className="feature-card-title">Laboratory Validation</h3>
-              <p className="feature-card-desc">Our laboratory performs Brix testing, pH titration, ash verification, and sucrose inversion testing to ensure product complies with industrial fermentation standards.</p>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🛡</span>
+              <h3 className="feature-card-title">Quality-Focused Procurement</h3>
+              <p className="feature-card-desc">We work with reliable sourcing partners and can discuss quality documentation requirements based on specific customer needs and availability.</p>
             </div>
 
             <div className="feature-card">
-              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🛡</span>
-              <h3 className="feature-card-title">Intake Security</h3>
-              <p className="feature-card-desc">We seal tanker discharge valves with serialized tamper-evident locks, protecting cargo from intermediate dilution or contamination during transit.</p>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>📄</span>
+              <h3 className="feature-card-title">Dispatch Documentation</h3>
+              <p className="feature-card-desc">Every bulk shipment is dispatched with a complete documentation dossier including mill weighment passes, GSTR-aligned tax invoices, and state excise transit passes.</p>
             </div>
           </div>
         </div>

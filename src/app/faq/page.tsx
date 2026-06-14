@@ -54,7 +54,7 @@ export default function FAQPage() {
     },
     {
       q: "What documents can be provided with dispatches?",
-      a: "Every shipment is accompanied by a complete dispatch dossier: GST Tax Invoice, e-Way Bill, Mill weighment slip, Gate pass, transport permit, and a laboratory Certificate of Analysis (COA) documenting refractometer Brix and Total Reducing Sugars (TRS) metrics."
+      a: "Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified weighment records. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available."
     },
     {
       q: "How should molasses be handled upon receipt?",
@@ -62,7 +62,7 @@ export default function FAQPage() {
     },
     {
       q: "What factors influence molasses quality consistency?",
-      a: "Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We maintain parameters by sourcing directly from high-capacity modern sugar mill refineries and running laboratory QA titrations prior to terminal tanker loading."
+      a: "Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We coordinate sourcing from refineries that maintain standard crystallization parameters and verify specifications according to customer contract requirements."
     },
     {
       q: "Can custom packaging requirements be accommodated?",
@@ -134,11 +134,11 @@ export default function FAQPage() {
         <h2>Do you support buyers across multiple locations?</h2>
         <p>Yes. We coordinate multi-destination corporate accounts, allowing national procurement teams to negotiate unified supply terms while our logistics desk manages local dispatches to individual factory units.</p>
         <h2>What documents can be provided with dispatches?</h2>
-        <p>Every shipment is accompanied by a complete dispatch dossier: GST Tax Invoice, e-Way Bill, Mill weighment slip, Gate pass, transport permit, and a laboratory Certificate of Analysis (COA) documenting refractometer Brix and Total Reducing Sugars (TRS) metrics.</p>
+        <p>Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified weighment records. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available.</p>
         <h2>How should molasses be handled upon receipt?</h2>
         <p>Molasses should be stored in steel or concrete tanks with specialized bottom discharge lines. Due to its high viscosity, we recommend using positive displacement rotary lobe pumps. For winter dispatches in cold climates, our tankers are fitted with internal steam-heating coils to drop the viscosity for rapid unloading.</p>
         <h2>What factors influence molasses quality consistency?</h2>
-        <p>Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We maintain parameters by sourcing directly from high-capacity modern sugar mill refineries and running laboratory QA titrations prior to terminal tanker loading.</p>
+        <p>Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We coordinate sourcing from refineries that maintain standard crystallization parameters and verify specifications according to customer contract requirements.</p>
         <h2>Can custom packaging requirements be accommodated?</h2>
         <p>Yes. For special industrial operations, we can coordinate packaging into client-specified container sizes or food-grade lined drums. Please outline your requirements with our sourcing desk.</p>
         <h2>What is the recommended method for requesting technical information?</h2>

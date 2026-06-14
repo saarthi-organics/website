@@ -59,12 +59,12 @@ export default function UttarakhandSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics provides a specialized supply chain to support these sensitive manufacturing setups. We source premium blackstrap molasses batches directly from state-of-the-art sugar refining facilities, running strict laboratory titrations to verify refractometric Brix density (82-88 Brix), Total Reducing Sugars (TRS ≥ 45.0%), and mineral metrics.
+              Saarthi Organics provides a specialized supply chain to support these sensitive manufacturing setups. We source premium blackstrap molasses batches directly from cooperative and private sugar refining facilities, coordinating specifications to verify refractometric Brix density (82-88 Brix), Total Reducing Sugars (TRS ≥ 45.0%), and mineral metrics.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Uttarakhand Mountain Logistics & Audits</h3>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Transporting high-viscosity liquid tankers through Uttarakhand&apos;s hilly entry pathways requires professional logistics mapping. We use specialized, well-maintained tankers and arrange early deliveries to avoid local traffic bottlenecks. For pharmaceutical audits, we provide a full Certificate of Analysis (COA) and material batch codes prior to gate discharge.
+              Transporting high-viscosity liquid tankers through Uttarakhand&apos;s hilly entry pathways requires professional logistics mapping. We use specialized, well-maintained tankers and arrange early deliveries to avoid local traffic bottlenecks. For pharmaceutical audits, we can discuss providing a typical Certificate of Analysis (COA) and material batch codes prior to gate discharge based on customer requirements.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>

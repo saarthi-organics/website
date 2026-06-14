@@ -5,7 +5,7 @@ import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
   title: 'Molasses Tanker Supply & Distribution Logistics | Saarthi Organics',
-  description: 'Learn about our dedicated logistics fleet of specialized liquid road tankers. We manage safe, GST-compliant, and temperature-controlled molasses dispatches across North India.',
+  description: 'Learn about our dedicated logistics fleet of specialized liquid road tankers. We manage safe, GST-compliant dispatches across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/logistics',
   },
@@ -22,7 +22,7 @@ export default function LogisticsPage() {
           <span className="section-label">Logistics Command</span>
           <h1 className="subpage-hero-title">Bulk Logistics & Tanker Fleet</h1>
           <p className="subpage-hero-desc">
-            In-house liquid transport network, specialized steel tankers, and PAN India delivery coverage optimized for industrial procurement demands.
+            In-house liquid transport network, specialized steel tankers, and expanded delivery coverage across major industrial regions including Gujarat and Madhya Pradesh.
           </p>
         </div>
       </div>
@@ -110,15 +110,15 @@ export default function LogisticsPage() {
             </div>
             
             <div className="feature-card">
-              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🔒</span>
-              <h3 className="feature-card-title">Tamper-Proof Sealing</h3>
-              <p className="feature-card-desc">Upon loading, all top manholes and bottom discharge valves are locked with uniquely numbered security seals. Seal numbers are documented on the transit invoice for verification before unload.</p>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>📍</span>
+              <h3 className="feature-card-title">Delivery Tracking & Coordination</h3>
+              <p className="feature-card-desc">Every dispatch is monitored, coordinating departure windows and route updates directly with your plant's raw material receiving coordinators to eliminate transit delays.</p>
             </div>
 
             <div className="feature-card">
               <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🚚</span>
-              <h3 className="feature-card-title">North India & PAN India Coverage</h3>
-              <p className="feature-card-desc">Routine daily supply channels operating across Haryana, Punjab, Rajasthan, Delhi NCR, and Uttarakhand, with capability to dispatch long-haul tankers nationwide.</p>
+              <h3 className="feature-card-title">Expanded Geographic Reach</h3>
+              <p className="feature-card-desc">Serving industrial buyers across Haryana, Punjab, Rajasthan, Delhi NCR, and Uttarakhand, with supply capability extending to Gujarat, Madhya Pradesh, and other major industrial regions across India.</p>
             </div>
           </div>
         </div>

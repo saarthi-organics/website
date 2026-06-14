@@ -145,7 +145,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
             <div style={{ marginTop: '48px', padding: '24px', background: 'var(--bg-secondary)', borderLeft: '4px solid var(--accent-gold)', borderRadius: '0 8px 8px 0' }}>
               <h4 style={{ color: 'var(--text-primary)', margin: '0 0 8px 0', fontSize: '1.1rem', fontWeight: 700 }}>Looking for a Reliable Molasses Sourcing Partner?</h4>
               <p style={{ color: 'var(--text-secondary)', margin: '0 0 16px 0', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                Saarthi Organics is a leading industrial molasses manufacturer and supplier in North India. We coordinate high-Brix tanker dispatches for distilleries, feed mills, agriculture, foundries, and pharmaceutical bioprocesses.
+                Saarthi Organics is a leading industrial molasses supplier with supply capability extending across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets. We coordinate high-Brix tanker dispatches for distilleries, feed mills, agriculture, foundries, and pharmaceutical bioprocesses.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Link href="/contact" style={{ color: 'var(--accent-gold)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}>Request Bulk Quote &rarr;</Link>

@@ -34,7 +34,7 @@ export default function SpecTable() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '16px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary-light)', margin: 0 }}>
-            * Typical Certificate of Analysis (COA) is available on request. Lab testing reports can be provided for qualified requirements.
+            * Typical Certificate of Analysis (COA) is available on request where available. Product specifications and documentation options can be discussed based on customer requirements.
           </p>
           <a 
             href="/blackstrap-molasses" 

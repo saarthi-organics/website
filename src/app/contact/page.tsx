@@ -50,7 +50,7 @@ export default function ContactPage() {
     },
     {
       q: "Can we request a pre-shipment sample kit for laboratory testing?",
-      a: "Yes. We coordinate sample kit shipments (2kg to 5kg in sealed containers) directly to your plant's QC lab. A pre-shipment Certificate of Analysis (COA) is enclosed with the kit. Contact our sourcing desk via the form or email to initiate a sample dispatch."
+      a: "Yes. Sourcing and sample kit dispatches (2kg to 5kg in sealed containers) may be discussed and arranged directly to your plant's QC lab. Sourcing documentation or typical specifications can be shared upon request during sample coordination. Contact our sourcing desk via the form or email to discuss options."
     },
     {
       q: "How are inter-state excise permits and logistics clearances managed?",
@@ -58,7 +58,7 @@ export default function ContactPage() {
     },
     {
       q: "What quality metrics are guaranteed in the contract pricing?",
-      a: "We guarantee minimum 82% Brix density, ash content below 12%, and optimized Total Reducing Sugars (TRS) based on industry demands (typically 48% to 52% TRS for distilleries). Batch test sheets from independent NABL-accredited labs are provided for every dispatch."
+      a: "We focus on providing sugarcane molasses matching standard industrial specifications. Sourcing parameters typically center around 82% Brix density and optimized Total Reducing Sugars (TRS). Product specifications and supporting quality documentation may be discussed based on customer requirements."
     }
   ];
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
           <span className="section-label">RFQ & Sourcing Desk</span>
           <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Sourcing</h1>
           <p className="subpage-hero-desc">
-            Direct coordination with our commercial sales office, logistics managers, and quality testing coordinators in Karnal, India. Secure bulk contract allocations, tanker rates, and sample testing kits.
+            Direct coordination with our commercial sales office, logistics managers, and procurement coordinators in Karnal, India. Secure bulk contract allocations, tanker rates, and sample testing kits.
           </p>
         </div>
       </div>
@@ -295,8 +295,8 @@ export default function ContactPage() {
                 }}>
                   <span style={{ fontSize: '1.8rem', color: 'var(--accent-gold)' }}>📍</span>
                   <div>
-                    <h4 style={{ fontSize: '0.95rem', color: 'var(--text-primary)', margin: '0 0 4px 0', fontWeight: '700' }}>PAN India Delivery</h4>
-                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Excise aligned shipping across North India and major national industrial hubs.</p>
+                    <h4 style={{ fontSize: '0.95rem', color: 'var(--text-primary)', margin: '0 0 4px 0', fontWeight: '700' }}>Expanded Geographic Reach</h4>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Excise aligned shipping across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets.</p>
                   </div>
                 </div>
 
@@ -309,10 +309,10 @@ export default function ContactPage() {
                   alignItems: 'flex-start',
                   gap: '12px'
                 }}>
-                  <span style={{ fontSize: '1.8rem', color: 'var(--accent-gold)' }}>🧪</span>
+                  <span style={{ fontSize: '1.8rem', color: 'var(--accent-gold)' }}>🛡</span>
                   <div>
-                    <h4 style={{ fontSize: '0.95rem', color: 'var(--text-primary)', margin: '0 0 4px 0', fontWeight: '700' }}>Lab-Certified Sourcing</h4>
-                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Standard Certificate of Analysis (COA) specifying Brix (82% Min) and TRS.</p>
+                    <h4 style={{ fontSize: '0.95rem', color: 'var(--text-primary)', margin: '0 0 4px 0', fontWeight: '700' }}>Quality-Focused Procurement</h4>
+                    <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>Product specifications and supporting documentation may be discussed based on customer requirements.</p>
                   </div>
                 </div>
 

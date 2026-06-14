@@ -43,13 +43,13 @@ export default function AboutUs() {
               Saarthi Organics operates at the intersection of sugar processing networks and heavy industrial consumers. Based in the agricultural manufacturing hub of Karnal, Haryana, we coordinate bulk sourcing directly from large-scale sugarcane processing mills.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', fontSize: '1rem', lineHeight: '1.6' }}>
-              We recognize that industrial buyers, plant heads, and distilleries cannot afford operational downtime. That is why we do not function as simple brokers. Instead, we control the entire supply chain—procuring directly, testing in our laboratory, and managing transport in our own dedicated tanker fleet.
+              We recognize that industrial buyers, plant heads, and distilleries cannot afford operational downtime. That is why we do not function as simple brokers. Instead, we control the entire supply chain—procuring directly, coordinating quality specifications with mills, and managing transport in our own dedicated tanker fleet.
             </p>
             
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Sourcing Authority</strong>
-                <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Direct tie-ups with leading sugar manufacturing plants across North India.</p>
+                <p style={{ color: 'var(--text-secondary-light)', fontSize: '0.9rem' }}>Direct tie-ups with sugar manufacturing plants, serving industrial buyers across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Logistics Command</strong>
@@ -96,7 +96,7 @@ export default function AboutUs() {
             <div className="feature-card">
               <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🔬</span>
               <h3 className="feature-card-title">Volume & Quality Guarantees</h3>
-              <p className="feature-card-desc">Contracts are backed by committed supply agreements and direct mill allocations. Every shipment undergoes rigorous refractometer and chemistry testing to ensure consistent Brix levels.</p>
+              <p className="feature-card-desc">Contracts are backed by committed supply agreements and direct mill allocations. Sourcing parameters are structured to align with standard industrial Brix and TRS specifications.</p>
             </div>
 
             <div className="feature-card">
