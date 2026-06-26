@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Molasses for Distilleries & Ethanol Plants | Saarthi Organics',
+  title: 'Molasses for Distilleries & Bio-Ethanol Sourcing | Saarthi Organics',
   description: 'Excise-aligned bulk sugarcane molasses supply for bio-ethanol and potable alcohol distilleries. High TRS (Total Reducing Sugars) feedstock yields maximized.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-distilleries',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function DistilleriesIndustry() {
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'Distilleries Industry', href: '/molasses-for-distilleries' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_distilleries.png')" }} />

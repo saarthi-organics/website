@@ -173,7 +173,7 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
       }
     } catch {
       setStatus('error');
-      setError('Connection failure. Your inquiry has been secured. Please call our sourcing desk at +91-7055552535.');
+      setError('Connection failure. Your inquiry has been secured. Please call our sourcing desk at +91-7055552535 or +91-9837022300.');
     }
   };
 
@@ -209,7 +209,10 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
             </div>
             <div className="quote-contact-details">
               <h4>Direct Sourcing Desk</h4>
-              <p>+91-7055552535</p>
+              <p style={{ display: 'flex', flexDirection: 'column', gap: '4px', margin: 0 }}>
+                <a href="tel:+917055552535" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">+91-7055552535</a>
+                <a href="tel:+919837022300" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">+91-9837022300</a>
+              </p>
             </div>
           </div>
 

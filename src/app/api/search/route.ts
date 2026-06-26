@@ -24,7 +24,15 @@ const RELEVANCE_BOOSTERS: Record<string, string[]> = {
   "delivery": ["/logistics"],
   "gst billing": ["/quality-and-sourcing", "/blog/gst-compliance-input-tax-credit-sugarcane-molasses"],
   "pricing": ["/contact", "/"],
-  "quote": ["/contact"]
+  "quote": ["/contact"],
+  "haryana": ["/molasses-supplier-haryana"],
+  "punjab": ["/molasses-supplier-punjab"],
+  "rajasthan": ["/molasses-supplier-rajasthan"],
+  "delhi ncr": ["/molasses-supplier-delhi-ncr"],
+  "uttarakhand": ["/molasses-supplier-uttarakhand"],
+  "gujarat": ["/molasses-supplier-gujarat"],
+  "madhya pradesh": ["/molasses-supplier-madhya-pradesh"],
+  "chhattisgarh": ["/molasses-supplier-chhattisgarh"]
 };
 
 // Helper to log searches to local JSON file

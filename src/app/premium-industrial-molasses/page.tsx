@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import SpecTable from '@/components/SpecTable';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Premium Industrial Molasses Specifications & TDS | Saarthi Organics',
+  title: 'Industrial Molasses Supplier & Specifications | Saarthi Organics',
   description: 'Detailed technical specification datasheet for premium industrial molasses. Review brix parameters, total reducing sugars, and packaging formats for bulk industrial buyers.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/premium-industrial-molasses',
@@ -33,6 +34,7 @@ export default function PremiumIndustrialMolasses() {
 
   return (
     <main style={{ marginTop: '72px' }}>
+      <Breadcrumbs items={[{ name: 'Premium Industrial Molasses', href: '/premium-industrial-molasses' }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

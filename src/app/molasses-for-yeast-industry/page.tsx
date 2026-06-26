@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Yeast Industry & Propagation | Saarthi Organics',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function YeastIndustry() {
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'Yeast Industry', href: '/molasses-for-yeast-industry' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_yeast.png')" }} />

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'About Saarthi Organics | Sugarcane Molasses Sourcing Authority',
+  title: 'About Saarthi Organics | Industrial Molasses Sourcing Partner',
   description: 'Learn about Saarthi Organics, a premier industrial molasses sourcing partner based in Karnal, Haryana. Discover our corporate values, founders, and quality standards.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/about-us',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <main style={{ marginTop: '72px' }}>
+      <Breadcrumbs items={[{ name: 'About Us', href: '/about-us' }]} />
       
       {/* Hero Banner */}
       <div className="subpage-hero">
@@ -62,7 +64,7 @@ export default function AboutUs() {
             <div className="hero-image-container">
               <Image 
                 src="/molasses_plant.png" 
-                alt="Saarthi Organics plant" 
+                alt="Saarthi Organics sugarcane molasses processing refinery and storage plant in Karnal, Haryana" 
                 width={500} 
                 height={400} 
                 style={{ objectFit: 'cover', display: 'block' }}

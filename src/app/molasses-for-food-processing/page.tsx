@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Molasses for Food Processing & Baking Industry | Saarthi Organics',
+  title: 'Molasses for Food Processing & Commercial Baking | Saarthi Organics',
   description: 'Pure sugarcane molasses supplier for food manufacturing. Ideal for bakery products, confectionery, industrial syrups, and food-grade fermentation.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-food-processing',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function FoodProcessingIndustry() {
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'Food Processing Industry', href: '/molasses-for-food-processing' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_food.png')" }} />

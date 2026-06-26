@@ -4,52 +4,52 @@ import FinalCTA from '@/components/FinalCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Molasses Supplier Rajasthan | Bulk Sand Foundry Binder | Saarthi Organics',
-  description: 'Supplying bulk sugarcane molasses to cattle feed plants, distilleries, and casting foundries across Rajasthan including Jaipur, Kota, Alwar, and Udaipur.',
+  title: 'Molasses Supplier Gujarat | Bulk Industrial Sourcing | Saarthi Organics',
+  description: 'Industrial sugarcane molasses supplier in Gujarat. High-Brix binding agent for foundries in Rajkot and carbon media for pharma units in Ahmedabad and Vadodara.',
   alternates: {
-    canonical: 'https://www.saarthiorganics.com/molasses-supplier-rajasthan',
+    canonical: 'https://www.saarthiorganics.com/molasses-supplier-gujarat',
   },
 };
 
-export default function RajasthanSupplierPage() {
+export default function GujaratSupplierPage() {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Saarthi Organics (Rajasthan Sourcing Hub)",
+    "name": "Saarthi Organics (Gujarat Distribution Hub)",
     "image": "https://www.saarthiorganics.com/logo_heritage.jpg",
     "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
     "email": "contact@saarthiorganics.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Jaipur",
-      "addressRegion": "Rajasthan",
+      "addressLocality": "Ahmedabad",
+      "addressRegion": "Gujarat",
       "addressCountry": "IN"
     },
-    "url": "https://www.saarthiorganics.com/molasses-supplier-rajasthan"
+    "url": "https://www.saarthiorganics.com/molasses-supplier-gujarat"
   };
 
   const regionalFaqs = [
     {
-      q: "How does Saarthi Organics manage molasses transport to Rajasthan?",
-      a: "We deploy specialized, insulated road tankers from our fleet to handle the long-haul transit into Rajasthan. Since high ambient temperatures in desert regions can decrease viscosity, our tankers are designed to prevent heat-related degradation, ensuring the product arrives in perfect condition."
+      q: "How does Saarthi Organics service industrial clients in Gujarat?",
+      a: "We maintain a robust distribution network that delivers sugarcane molasses to Gujarat-based buyers. We coordinate dispatches from cooperative sugar mills in South Gujarat (such as Bardoli, Gandevi, and Madhi) as well as inter-state refinery networks, providing reliable delivery via our tanker fleet."
     },
     {
-      q: "What types of molasses are supplied to Rajasthan foundries?",
-      a: "We supply a heavy industrial-grade sugarcane molasses with a high Brix density (82% to 85%). This grade provides superior binding strength, making it ideal for silica sand core binding in steel and iron casting foundries across Bhiwadi, Jaipur, and Jodhpur."
+      q: "What makes your molasses ideal for Rajkot foundries?",
+      a: "Rajkot is a major foundry hub requiring high-performance sand binders. Our molasses registers a high Brix density (82% to 85%), providing the strong cohesive bond needed to stabilize silica sand molds during high-temperature metal casting."
     },
     {
-      q: "Do you process state border clearances for Rajasthan deliveries?",
-      a: "Yes. Our logistics desk processes all inter-state transit permits, including Rajasthan State Excise declarations and matching GST e-way bills. This ensures our tankers clear borders like Shahjahanpur or Kotputli without compliance delays."
+      q: "Are you compliant with Gujarat State GST and Input Tax Credit (ITC) regulations?",
+      a: "Yes. All our dispatches are fully GST compliant. We generate computerized weighbridge slips, tax invoices, and digital e-way bills instantly, allowing your accounting team to claim Input Tax Credit seamlessly."
     },
     {
-      q: "What is the minimum order volume for Rajasthan industries?",
-      a: "Our standard minimum order quantity (MOQ) is one full road tanker of approximately 20 to 25 Metric Tons. For long-term contract partners, we can schedule multi-tanker deliveries weekly or monthly to match production demands."
+      q: "What packaging configurations are available for Gujarat industries?",
+      a: "We primary dispatch in bulk road tankers carrying 20 to 25 Metric Tons. For specific chemical formulating or pharmaceutical labs in Ahmedabad and Ankleshwar, we can arrange shipments in 1,000-liter IBC Totes or 200-liter steel drums upon request."
     }
   ];
 
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
-      <Breadcrumbs items={[{ name: 'Rajasthan Supplier', href: '/molasses-supplier-rajasthan' }]} />
+      <Breadcrumbs items={[{ name: 'Gujarat Supplier', href: '/molasses-supplier-gujarat' }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
@@ -59,10 +59,10 @@ export default function RajasthanSupplierPage() {
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_logistics.png')" }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
-          <span className="section-label">Rajasthan Sourcing & Logistics Channel</span>
-          <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Supplier in Rajasthan</h1>
+          <span className="section-label">Gujarat Sourcing & Distribution Hub</span>
+          <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Supplier in Gujarat</h1>
           <p className="subpage-hero-desc">
-            High-viscosity, premium-grade sugarcane molasses for foundries, distilleries, and feed plants. Delivered via our temperature-controlled tankers with full compliance.
+            High-viscosity, premium sugarcane molasses. Serving Rajkot metal foundries, Ahmedabad pharma units, and Anand cattle feed manufacturers with guaranteed Brix specifications.
           </p>
         </div>
       </div>
@@ -73,43 +73,44 @@ export default function RajasthanSupplierPage() {
           {/* Left Column: Extensive Content */}
           <div style={{ flex: 1.1, minWidth: '300px' }}>
             <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>
-              Strategic Sourcing Support for Rajasthan&apos;s Diverse Industries
+              Dependable Sugarcane Molasses Sourcing Across Gujarat
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Rajasthan presents a unique set of industrial challenges, demanding raw materials that can withstand high temperatures while maintaining their physical properties. Major B2B sectors across <strong>Jaipur, Alwar, Kota, Udaipur, and Bhilwara</strong> require consistent volumes of industrial-grade molasses. Saarthi Organics fills this need by managing cross-border logistics lanes that transport high-purity sugarcane molasses directly to Rajasthan&apos;s key industrial zones.
+              Gujarat is one of India&apos;s most industrially advanced states, hosting massive manufacturing sectors. B2B enterprises across <strong>Ahmedabad, Rajkot, Vadodara, Ankleshwar, Vapi, and Surat</strong> require a stable supply of high-purity raw materials. Saarthi Organics meets this demand by delivering premium sugarcane molasses, sourced directly from leading South Gujarat sugar cooperative mills and adjacent agricultural belts.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We source our molasses from top-tier sugar processing plants in neighboring agricultural states. By selecting mills that employ modern clarification and concentration processes, we secure molasses with a stable refractometric Brix value (82.0% - 84.0%). This high quality translates to better carbon content, improved binding efficiency, and consistent fermentation yields for our clients.
+              Our procurement desk maintains direct trade relationships with large-capacity mills in Bardoli, Gandevi, Maroli, and Madhi. By coordinating directly at the source, we bypass intermediate brokers, ensuring that our B2B partners in Gujarat receive pure, unadulterated, and high-density liquid molasses. Every tanker load is verified for Brix density and total reducing sugars to ensure consistent performance in your production lines.
             </p>
 
-            <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Rajasthan B2B Industries We Serve</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Gujarat B2B Industries We Serve</h3>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our bulk molasses supplies are optimized for several critical manufacturing processes in Rajasthan:
+              Our sugarcane molasses is optimized to support several key industrial sectors in Gujarat:
             </p>
             <ul style={{ paddingLeft: '20px', marginBottom: '24px', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-              <li><strong>Metal Casting Foundries (Jaipur, Bhiwadi, Jodhpur):</strong> Foundries utilize our high-Brix molasses as a natural sand core binder. The high sugar concentration forms a tough, heat-resistant carbon bond with silica sand, preventing mold collapse during casting.</li>
-              <li><strong>Animal Feed Plants (Alwar, Kota, Jaipur):</strong> Feed manufacturers rely on our molasses to bind grain mixtures into durable feed pellets. The rich carbohydrate profile also boosts the nutritional value and palatability of dairy feeds.</li>
-              <li><strong>Distilleries & Country Liquor Manufacturers:</strong> We supply distilleries with high-TRS feedstock, ensuring optimal alcohol recovery rates and compliance with state-allocated production quotas.</li>
+              <li><strong>Metal Casting Foundries (Rajkot):</strong> Rajkot&apos;s casting foundries use our high-Brix molasses as a core binder. It forms a solid carbon structure with silica sand, resisting intense heat and ensuring mold integrity during metal pours.</li>
+              <li><strong>Pharmaceuticals & Biotech (Ahmedabad & Vadodara):</strong> Pharmaceutical plants utilize our traceable, high-sugar molasses as a biological growth medium for fermenting active pharmaceutical ingredients, antibiotics, and vitamins.</li>
+              <li><strong>Chemical Manufacturing (Ankleshwar & Vapi):</strong> Chemical formulating units use molasses as a carbon source, natural binder, and raw material for synthesizing bio-based chemicals and agricultural inputs.</li>
+              <li><strong>Cattle Feed Plants (Anand & Mehsana):</strong> Gujarat&apos;s dairy cooperatives use our molasses to pelletize animal feed, improve palatability, and add energy density to cattle rations.</li>
             </ul>
 
-            <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Specialized Logistics & State Border Compliance</h3>
+            <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>GST Compliance & Long-Distance Tanker Logistics</h3>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Transporting liquid molasses through the arid landscape of Rajasthan requires specialized logistics management. Extreme heat can affect the viscosity of molasses, potentially leading to carbonization or handling issues. Saarthi Organics utilizes insulated liquid tankers that stabilize temperatures during long-haul transit.
+              Operating in Gujarat requires strict adherence to commercial compliance standards. Saarthi Organics is fully GST-aligned. We provide digital e-way bills, instant weighbridge slips, and detailed invoices, allowing procurement heads to easily claim Input Tax Credit without tax processing complications.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Furthermore, our compliance team manages all inter-state excise permits, e-way bills, and transit declarations. We verify all permits before dispatch, allowing our tankers to clear border checkpoints quickly and maintain strict delivery timelines.
+              We manage transport via our fleet of specialized liquid road tankers. Each vehicle undergoes cleaning before loading to prevent contamination, ensuring that the molasses discharged at your facility matches the purity levels measured at the mill gates.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--accent-amber)' }}>Foundry Grade Adhesives</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>High-density liquid molasses with low moisture content, optimized for sand mold core binding applications.</p>
+                <strong style={{ color: 'var(--accent-amber)' }}>Cooperative Mill Sourcing</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct procurement partnerships with South Gujarat cooperative sugar mills guarantee stable inventory year-round.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--accent-amber)' }}>Seamless Border Clearance</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct coordination of Rajasthan Excise transit permits and digital tax documentation for hassle-free delivery.</p>
+                <strong style={{ color: 'var(--accent-amber)' }}>Rigorous Quality Audits</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Strict pre-loading checks verify Brix and sugar percentages, matching the precise requirements of chemical and pharma buyers.</p>
               </div>
             </div>
           </div>
@@ -117,13 +118,13 @@ export default function RajasthanSupplierPage() {
           {/* Right Column: Sourcing Desk & Specifications */}
           <div style={{ flex: 0.9, minWidth: '300px' }}>
             <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '30px', marginBottom: '30px' }}>
-              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px', fontFamily: "'Cinzel', serif" }}>Rajasthan Sourcing Desk</h3>
+              <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px', fontFamily: "'Cinzel', serif" }}>Gujarat Sourcing Desk</h3>
               <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
-                Secure stable volume contracts for Rajasthan manufacturing plants. Talk to our logistics coordinators.
+                Secure reliable bulk supply and negotiate seasonal volume contracts for Gujarat industrial plants.
               </p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <Link href="/contact?region=rajasthan&subject=Rajasthan Bulk Sourcing Inquiry" className="btn-primary" style={{ textAlign: 'center', textDecoration: 'none' }}>
+                <Link href="/contact?region=gujarat&subject=Gujarat Bulk Sourcing Inquiry" className="btn-primary" style={{ textAlign: 'center', textDecoration: 'none' }}>
                   Request Tanker Quote
                 </Link>
                 <a href="tel:+917055552535" className="btn-secondary" style={{ textAlign: 'center', textDecoration: 'none' }}>
@@ -167,8 +168,8 @@ export default function RajasthanSupplierPage() {
       <section style={{ padding: '60px 24px', background: 'rgba(255,255,255,0.01)', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <span className="section-label">Rajasthan Support FAQ</span>
-            <h2 className="section-title">Regional Sourcing & Transit FAQ</h2>
+            <span className="section-label">Gujarat Support FAQ</span>
+            <h2 className="section-title">Regional Sourcing & Logistics FAQ</h2>
           </div>
           <div className="faq-list">
             {regionalFaqs.map((faq, index) => (

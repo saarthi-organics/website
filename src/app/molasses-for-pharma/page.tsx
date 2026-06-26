@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Pharma Industry & Fermentation | Saarthi Organics',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function PharmaIndustry() {
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'Pharma Industry', href: '/molasses-for-pharma' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_pharma.png')" }} />

@@ -55,7 +55,7 @@ export default function Header() {
             <div className="nav-logo-img-wrapper">
               <Image 
                 src="/logo_heritage.jpg" 
-                alt="Saarthi Organics Logo" 
+                alt="Saarthi Organics - Bulk Sugarcane Molasses Supplier India" 
                 width={54} 
                 height={54} 
                 className="nav-logo-img"

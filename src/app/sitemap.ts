@@ -35,6 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/molasses-supplier-rajasthan',
     '/molasses-supplier-delhi-ncr',
     '/molasses-supplier-uttarakhand',
+    '/molasses-supplier-gujarat',
+    '/molasses-supplier-madhya-pradesh',
+    '/molasses-supplier-chhattisgarh',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];

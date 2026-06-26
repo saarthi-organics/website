@@ -130,7 +130,7 @@ export default function Home() {
               "logo": "https://www.saarthiorganics.com/logo_heritage.jpg",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-7055552535",
+                "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
                 "contactType": "sales",
                 "areaServed": "IN",
                 "availableLanguage": ["en", "hi"]

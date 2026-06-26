@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Molasses Tanker Supply & Distribution Logistics | Saarthi Organics',
+  title: 'Bulk Molasses Tanker Supply & Logistics | Saarthi Organics',
   description: 'Learn about our dedicated logistics fleet of specialized liquid road tankers. We manage safe, GST-compliant dispatches across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/logistics',
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function LogisticsPage() {
   return (
     <main style={{ marginTop: '72px' }}>
+      <Breadcrumbs items={[{ name: 'Logistics', href: '/logistics' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_logistics.png')" }} />

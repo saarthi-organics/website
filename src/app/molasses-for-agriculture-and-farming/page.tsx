@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Molasses for Agriculture, Farming & Soil Health | Saarthi Organics',
+  title: 'Molasses for Agriculture & Organic Farming Sourcing | Saarthi Organics',
   description: 'Pure sugarcane molasses for organic farming, composting, and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-agriculture-and-farming',
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function AgricultureFarmingIndustry() {
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'Agriculture & Farming Industry', href: '/molasses-for-agriculture-and-farming' }]} />
       
       {/* Subpage Hero / Overview */}
       <div className="subpage-hero">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import FAQClient, { FAQItem } from './FAQClient';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Sourcing FAQ Desk | Bulk Molasses Sourcing | Saarthi Organics',
@@ -90,6 +91,7 @@ export default function FAQPage() {
 
   return (
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+      <Breadcrumbs items={[{ name: 'FAQ', href: '/faq' }]} />
       {/* Inject FAQ Schema */}
       <script
         type="application/ld+json"

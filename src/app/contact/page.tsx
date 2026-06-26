@@ -15,7 +15,7 @@ export default function ContactPage() {
     "@type": "LocalBusiness",
     "name": "Saarthi Organics",
     "image": "https://www.saarthiorganics.com/logo_heritage.jpg",
-    "telephone": "+91-7055552535",
+    "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
     "email": "contact@saarthiorganics.com",
     "address": {
       "@type": "PostalAddress",
@@ -93,140 +93,151 @@ export default function ContactPage() {
             alignItems: 'flex-start'
           }} className="contact-layout-container">
             
-            {/* Left Column: Sourcing Desk Info & Google Map */}
-            <div style={{ flex: 0.8, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '30px' }} className="contact-info-col">
+            {/* Left Column: Sourcing Desk Info Cards */}
+            <div style={{ flex: 0.8, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '24px' }} className="contact-info-col">
               
-              {/* Sourcing Info Card */}
+              {/* Card 1: Headquarters & Sourcing Hours */}
               <div style={{
                 background: 'var(--bg-secondary)',
                 border: '1px solid var(--border-color)',
                 borderRadius: '8px',
-                padding: '30px',
+                padding: '24px',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '24px'
+                gap: '16px'
               }}>
-                <div>
-                  <h3 style={{ fontSize: '1.4rem', color: 'var(--text-primary)', fontFamily: "'Cinzel', serif", fontWeight: 700, margin: '0 0 4px 0' }}>
-                    Saarthi Organics
-                  </h3>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--accent-gold)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700 }}>
-                    Industrial Sourcing & Logistics
-                  </span>
-                </div>
-
-                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                  
-                  {/* Address */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🏢</span>
                   <div>
-                    <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>Sourcing Headquarters</strong>
+                    <h3 style={{ fontSize: '1.15rem', color: 'var(--text-primary)', fontFamily: "'Cinzel', serif", fontWeight: 700, margin: 0 }}>
+                      Sourcing Headquarters
+                    </h3>
+                  </div>
+                </div>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '14px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div>
                     <a 
                       href="https://maps.google.com/?q=Liberty+Chowk,+Karnal,+Haryana" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="contact-link-hover"
                     >
-                      <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.5', color: 'inherit' }}>
+                      <p style={{ margin: 0, fontSize: '0.92rem', lineHeight: '1.5', color: 'inherit' }}>
                         Farm House, Liberty Chowk,<br />
                         Karnal, Haryana - 132001, India
                       </p>
                     </a>
                   </div>
-
-                  {/* Phones */}
                   <div>
-                    <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>Commercial Desk</strong>
-                    <div style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
-                      <a href="tel:+917055552535" className="contact-link-hover" style={{ display: 'block', marginBottom: '4px' }}>
-                        📞 +91-7055552535
-                      </a>
-                      <a href="tel:+919927029029" className="contact-link-hover" style={{ display: 'block' }}>
-                        📞 +91-9927029029
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Email */}
-                  <div>
-                    <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>Corporate Mail</strong>
-                    <p style={{ margin: 0, fontSize: '0.95rem' }}>
-                      <a href="mailto:contact@saarthiorganics.com" className="contact-link-hover">
-                        ✉️ contact@saarthiorganics.com
-                      </a>
-                    </p>
-                  </div>
-
-                  {/* Hours */}
-                  <div>
-                    <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>Sourcing Hours</strong>
-                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '2px' }}>Sourcing Hours</strong>
+                    <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
                       Monday – Saturday: 9:00 AM – 6:00 PM (IST)<br />
                       Sunday: Closed
                     </p>
                   </div>
-
                 </div>
-
-                {/* Immediate Mobile CTA Actions */}
-                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '4px' }} className="quote-contact-actions">
-                  <a 
-                    href="https://wa.me/917055552535" 
-                    className="btn-whatsapp"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ flex: 1, minWidth: '130px', padding: '12px', fontSize: '0.9rem', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 600 }}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" style={{ width: '16px', height: '16px' }}>
-                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.09-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg>
-                    WhatsApp Inquiry
-                  </a>
-                  <a 
-                    href="tel:+91-7055552535" 
-                    className="btn-secondary"
-                    style={{ flex: 1, minWidth: '130px', padding: '12px', fontSize: '0.9rem', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontWeight: 600 }}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" style={{ width: '16px', height: '16px' }}>
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                    </svg>
-                    Call Sourcing
-                  </a>
-                </div>
-
-                {/* Additional Note */}
-                <div style={{
-                  background: 'rgba(212, 175, 55, 0.05)',
-                  border: '1px solid rgba(212, 175, 55, 0.15)',
-                  padding: '16px',
-                  borderRadius: '4px',
-                  fontSize: '0.85rem',
-                  lineHeight: '1.4',
-                  color: 'var(--text-secondary)'
-                }}>
-                  <strong style={{ color: 'var(--accent-gold)' }}>Excise & Permit Notice:</strong> Molasses loading is strictly managed under state-regulated permits. Tanker arrival permits and gate delivery slips are processed and shared online in real-time.
-                </div>
-
               </div>
 
-              {/* Interactive Google Map Embed */}
+              {/* Card 2: Commercial & Sourcing Desk */}
               <div style={{
                 background: 'var(--bg-secondary)',
                 border: '1px solid var(--border-color)',
                 borderRadius: '8px',
-                padding: '12px',
+                padding: '24px',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '16px'
               }}>
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13840.407981577785!2d76.97495574360349!3d29.687989344445585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e71c667082877%3A0xa1b203c9ee5d7a4b!2sLiberty%20Chowk%2C%20Karnal%2C%20Haryana%20132001!5e0!3m2!1sen!2sin!4v1718280000000!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="260" 
-                  style={{ border: 0, borderRadius: '6px' }} 
-                  allowFullScreen={true} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="google-map-iframe"
-                />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{ fontSize: '1.5rem' }}>📞</span>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', color: 'var(--text-primary)', fontFamily: "'Cinzel', serif", fontWeight: 700, margin: 0 }}>
+                      Commercial Desk
+                    </h3>
+                  </div>
+                </div>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '14px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <div>
+                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>Phone Numbers</strong>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.92rem' }}>
+                      <a href="tel:+917055552535" className="contact-link-hover" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span>+91-7055552535</span>
+                      </a>
+                      <a href="tel:+919927029029" className="contact-link-hover" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span>+91-9927029029</span>
+                      </a>
+                      <a href="tel:+919837022300" className="contact-link-hover" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span>+91-9837022300</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '2px' }}>Corporate Mail</strong>
+                    <a href="mailto:contact@saarthiorganics.com" className="contact-link-hover" style={{ fontSize: '0.92rem' }}>
+                      contact@saarthiorganics.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Digital Channels & Online Permits */}
+              <div style={{
+                background: 'var(--bg-secondary)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '8px',
+                padding: '24px',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '16px'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <span style={{ fontSize: '1.5rem' }}>💬</span>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', color: 'var(--text-primary)', fontFamily: "'Cinzel', serif", fontWeight: 700, margin: 0 }}>
+                      Digital Desk & Permits
+                    </h3>
+                  </div>
+                </div>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '14px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }} className="quote-contact-actions">
+                    <a 
+                      href="https://wa.me/917055552535" 
+                      className="btn-whatsapp"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ flex: 1, minWidth: '120px', padding: '10px', fontSize: '0.85rem', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px', fontWeight: 600 }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" style={{ width: '14px', height: '14px' }}>
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.09-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                      </svg>
+                      WhatsApp Inquiry
+                    </a>
+                    <a 
+                      href="tel:+91-7055552535" 
+                      className="btn-secondary"
+                      style={{ flex: 1, minWidth: '120px', padding: '10px', fontSize: '0.85rem', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px', fontWeight: 600 }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" style={{ width: '14px', height: '14px' }}>
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                      </svg>
+                      Call Sourcing
+                    </a>
+                  </div>
+                  <div style={{
+                    background: 'rgba(212, 175, 55, 0.05)',
+                    border: '1px solid rgba(212, 175, 55, 0.15)',
+                    padding: '12px',
+                    borderRadius: '4px',
+                    fontSize: '0.82rem',
+                    lineHeight: '1.4',
+                    color: 'var(--text-secondary)'
+                  }}>
+                    <strong style={{ color: 'var(--accent-gold)' }}>Excise Notice:</strong> Molasses loading is strictly managed under state-regulated permits. Tanker transit permits are processed online in real-time.
+                  </div>
+                </div>
               </div>
 
             </div>

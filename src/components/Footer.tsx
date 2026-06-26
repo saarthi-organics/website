@@ -23,7 +23,7 @@ export default function Footer() {
             }}>
               <Image 
                 src="/logo_heritage.jpg" 
-                alt="Saarthi Organics Heritage Emblem" 
+                alt="Saarthi Organics - Bulk Sugarcane Molasses Sourcing Emblem" 
                 fill
                 sizes="96px"
                 style={{ objectFit: 'cover' }} 
@@ -73,9 +73,9 @@ export default function Footer() {
             <li><Link href="/molasses-supplier-rajasthan">Rajasthan</Link></li>
             <li><Link href="/molasses-supplier-delhi-ncr">Delhi NCR</Link></li>
             <li><Link href="/molasses-supplier-uttarakhand">Uttarakhand</Link></li>
-            <li><Link href="/contact?region=gujarat">Gujarat</Link></li>
-            <li><Link href="/contact?region=madhya-pradesh">Madhya Pradesh</Link></li>
-            <li><Link href="/contact?region=chhattisgarh">Chhattisgarh</Link></li>
+            <li><Link href="/molasses-supplier-gujarat">Gujarat</Link></li>
+            <li><Link href="/molasses-supplier-madhya-pradesh">Madhya Pradesh</Link></li>
+            <li><Link href="/molasses-supplier-chhattisgarh">Chhattisgarh</Link></li>
           </ul>
         </div>
 
@@ -93,8 +93,9 @@ export default function Footer() {
             <div className="footer-info-item">
               <div>
                 <strong>Direct Contact:</strong><br />
-                +91-7055552535<br />
-                +91-9927029029
+                <a href="tel:+917055552535" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">+91-7055552535</a><br />
+                <a href="tel:+919927029029" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">+91-9927029029</a><br />
+                <a href="tel:+919837022300" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">+91-9837022300</a>
               </div>
             </div>
             <div className="footer-info-item">

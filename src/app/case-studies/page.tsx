@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import FinalCTA from '@/components/FinalCTA';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'B2B Case Studies | Sugarcane Molasses Supply Results | Saarthi Organics',
+  title: 'B2B Sourcing Case Studies | Sugarcane Molasses | Saarthi Organics',
   description: 'Real-world case studies demonstrating our sugarcane molasses sourcing solutions, logistics fleet reliability, and quality control performance for feed mills, distilleries, and yeast plants.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/case-studies',
@@ -40,6 +41,7 @@ export default function CaseStudies() {
 
   return (
     <main style={{ marginTop: '72px' }}>
+      <Breadcrumbs items={[{ name: 'Case Studies', href: '/case-studies' }]} />
       
       <div className="subpage-hero">
         <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_case_studies.png')" }} />
@@ -89,7 +91,7 @@ export default function CaseStudies() {
                   <div className="hero-image-container" style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                     <Image 
                       src={cs.image} 
-                      alt={cs.title} 
+                      alt={`B2B industrial molasses procurement case study: ${cs.title}`} 
                       fill 
                       sizes="(max-width: 768px) 100vw, 300px"
                       style={{ objectFit: 'cover' }} 
