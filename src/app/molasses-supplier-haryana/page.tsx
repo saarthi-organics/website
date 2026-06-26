@@ -131,6 +131,9 @@ export default function HaryanaSupplierPage() {
                 <a href="tel:+917055552535" className="btn-secondary" style={{ textAlign: 'center', textDecoration: 'none' }}>
                   Call +91-7055552535
                 </a>
+                <a href="tel:+919927029029" className="btn-secondary" style={{ textAlign: 'center', textDecoration: 'none', background: 'transparent', border: '1px solid var(--border-light)' }}>
+                  Call +91-9927029029
+                </a>
                 <a href="tel:+919837022300" className="btn-secondary" style={{ textAlign: 'center', textDecoration: 'none', background: 'transparent', border: '1px solid var(--border-light)' }}>
                   Call +91-9837022300
                 </a>
