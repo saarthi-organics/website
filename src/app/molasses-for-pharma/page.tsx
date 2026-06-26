@@ -4,7 +4,7 @@ import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
   title: 'Molasses for Pharma Industry & Fermentation | Saarthi Organics',
-  description: 'High-purity sugarcane blackstrap molasses for pharmaceutical API fermentation. Review specifications and quality documentation options.',
+  description: 'High-purity sugarcane molasses for pharmaceutical API fermentation. Review specifications and quality documentation options.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-pharma',
   },
@@ -35,7 +35,7 @@ export default function PharmaIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why the Pharmaceutical Industry Uses Molasses:</strong> Biopharmaceutical manufacturers utilize sugarcane blackstrap molasses as a complex carbon media inside deep-tank aerobic and anaerobic fermentation systems. It serves as the primary organic nutrient source to cultivate bacteria and fungi that synthesize antibiotics, vitamin complexes (such as B12), and bio-organic acids.
+              <strong>Why the Pharmaceutical Industry Uses Molasses:</strong> Biopharmaceutical manufacturers utilize sugarcane industrial molasses as a complex carbon media inside deep-tank aerobic and anaerobic fermentation systems. It serves as the primary organic nutrient source to cultivate bacteria and fungi that synthesize antibiotics, vitamin complexes (such as B12), and bio-organic acids.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

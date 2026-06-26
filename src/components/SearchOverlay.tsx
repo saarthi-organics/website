@@ -516,7 +516,7 @@ export default function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
               >
                 {[
                   { title: "Industries We Serve", href: "/#industries", icon: "🏭" },
-                  { title: "Product Specifications", href: "/blackstrap-molasses#specifications", icon: "📋" },
+                  { title: "Product Specifications", href: "/premium-industrial-molasses#specifications", icon: "📋" },
                   { title: "Sourcing FAQ Desk", href: "/faq", icon: "❓" },
                   { title: "Contact Us Desk", href: "/contact", icon: "✉️" },
                   { title: "Request Bulk Quote", href: "/contact", icon: "💰" }

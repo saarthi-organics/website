@@ -51,7 +51,7 @@ export const articles: Article[] = [
       initials: "AS"
     },
     content: [
-      "In industrial bio-ethanol distilleries, the fermentation yield of sugarcane molasses is directly dictated by its sugar content. Total Reducing Sugars (TRS) represent the combined concentration of sucrose, glucose, and fructose present in the syrup. High-quality blackstrap molasses typically yields a TRS percentage of 45% to 50%. This value determines the total alcohol yield that can be extracted per ton of raw material.",
+      "In industrial bio-ethanol distilleries, the fermentation yield of sugarcane molasses is directly dictated by its sugar content. Total Reducing Sugars (TRS) represent the combined concentration of sucrose, glucose, and fructose present in the syrup. High-quality sugarcane molasses typically yields a TRS percentage of 45% to 50%. This value determines the total alcohol yield that can be extracted per ton of raw material.",
       "To evaluate TRS, laboratory technicians utilize chemical titration methods, primarily the Lane-Eynon method, or high-performance liquid chromatography (HPLC). Prior to unloading a road tanker, raw material inspectors perform a refractometer test to verify that the Brix density is at least 80% to 82%, and extract samples to run a quick Fehling's solution titration to ensure TRS levels meet contractual agreements. Checking these metrics prevents the unloading of low-sugar cargo.",
       "Low TRS molasses reduces the efficiency of yeast strains, resulting in lower alcohol conversion ratios per metric ton, which raises production costs. Saarthi Organics works with partners to facilitate Certificate of Analysis (COA) documentation when specifically requested and where available."
     ]
@@ -61,7 +61,7 @@ export const articles: Article[] = [
     slug: "winter-viscosity-control-cold-climate-transport",
     title: "Winter Viscosity Control: Cold-Climate Transport Logistics",
     category: "Logistics",
-    summary: "Pumping heavy blackstrap molasses becomes problematic below 15°C. Review logistics engineering best practices, steam-coiled tankers, and intake piping layouts to keep your manufacturing plant running through winter.",
+    summary: "Pumping heavy sugarcane molasses becomes problematic below 15°C. Review logistics engineering best practices, steam-coiled tankers, and intake piping layouts to keep your manufacturing plant running through winter.",
     date: "April 18, 2026",
     readTime: "7 min read",
     image: "/logistics_fleet.png",
@@ -81,7 +81,7 @@ export const articles: Article[] = [
     slug: "brix-concentration-yeast-yield-optimization",
     title: "Brix Concentration and Yeast Yield Optimization in Industrial Fermentation",
     category: "Quality",
-    summary: "Explore the biochemistry of sucrose, glucose, and fructose ratios in blackstrap molasses. Discover how minor variations in Brix density directly impact industrial yeast reproduction cycles.",
+    summary: "Explore the biochemistry of sucrose, glucose, and fructose ratios in sugarcane molasses. Discover how minor variations in Brix density directly impact industrial yeast reproduction cycles.",
     date: "April 02, 2026",
     readTime: "6 min read",
     image: "/industry_yeast.png",
@@ -101,7 +101,7 @@ export const articles: Article[] = [
     slug: "molasses-high-adhesion-binder-casting-foundries",
     title: "Molasses as a High-Adhesion Binder in Casting Foundries",
     category: "Applications",
-    summary: "A technical evaluation of blackstrap molasses as an organic sand core binder. Learn how thermal degradation properties compare with synthetic resins in high-temperature metal casting.",
+    summary: "A technical evaluation of sugarcane molasses as an organic sand core binder. Learn how thermal degradation properties compare with synthetic resins in high-temperature metal casting.",
     date: "March 15, 2026",
     readTime: "5 min read",
     image: "/industry_foundries.png",
@@ -111,7 +111,7 @@ export const articles: Article[] = [
       initials: "VJ"
     },
     content: [
-      "In metal casting foundries, sand molds and cores must withstand intense heat and pressure when molten metal is poured. Traditionally, organic binders like linseed oil or synthetic resins have been used. However, blackstrap molasses represents a highly cost-effective, environmentally friendly organic binder for sand cores.",
+      "In metal casting foundries, sand molds and cores must withstand intense heat and pressure when molten metal is poured. Traditionally, organic binders like linseed oil or synthetic resins have been used. However, industrial sugarcane molasses represents a highly cost-effective, environmentally friendly organic binder for sand cores.",
       "When mixed with silica sand (typically 2% to 4% by weight) and clay, molasses provides excellent green strength, allowing the sand core to hold its shape prior to baking. During casting, as the molten metal fills the mold, the high heat causes the sugars in the molasses to undergo carbonization, forming a strong carbon bond that temporarily increases mold strength.",
       "Once the casting cools, the carbonized molasses easily crumbles (collapsibility), allowing clean sand removal from the cast metal piece without cracking the finished component, making it an excellent sustainable raw material choice."
     ]
@@ -138,10 +138,10 @@ export const articles: Article[] = [
   },
   {
     id: 7,
-    slug: "what-is-blackstrap-molasses-procurement-guide",
-    title: "What is Blackstrap Molasses? A Technical Procurement Guide",
+    slug: "what-is-sugarcane-molasses-procurement-guide",
+    title: "What is Sugarcane Molasses? A Technical Procurement Guide",
     category: "Procurement",
-    summary: "Understand the biochemical classification of blackstrap molasses, its extraction processes, and key technical parameters that corporate buyers must evaluate during procurement cycles.",
+    summary: "Understand the biochemical classification of sugarcane molasses, its extraction processes, and key technical parameters that corporate buyers must evaluate during procurement cycles.",
     date: "February 15, 2026",
     readTime: "6 min read",
     image: "/molasses_plant.png",
@@ -151,9 +151,9 @@ export const articles: Article[] = [
       initials: "AG"
     },
     content: [
-      "Blackstrap molasses is the thick, dark, viscous syrup remaining after the third and final boiling cycle of sugarcane juice extraction. During sugarcane refining, sucrose is repeatedly crystallized and removed. The final crystallization strike yields a heavy co-product that contains concentrated minerals, vitamins, and a lower sucrose content, making it highly valuable for industrial fermentation and chemical processes.",
-      "From a procurement perspective, blackstrap molasses is characterized by its high density (measured in Brix), mineral richness, and dark coloration. Standard commercial grades require a Brix density between 80.0% and 88.0%. Unlike light or dark table molasses, blackstrap is not intended for direct retail culinary use but is rather structured as a robust carbon and nitrogen media for heavy manufacturing.",
-      "When auditing potential suppliers in India, purchasing heads should look for verifiable specs regarding Total Reducing Sugars (TRS), ash content, and sulfur dioxide residue. Saarthi Organics sources premium blackstrap molasses from major sugar crushing zones, and can discuss Certificate of Analysis (COA) documentation options based on specific customer requirements."
+      "Sugarcane molasses is the thick, dark, viscous syrup remaining after the third and final boiling cycle of sugarcane juice extraction. During sugarcane refining, sucrose is repeatedly crystallized and removed. The final crystallization strike yields a heavy co-product that contains concentrated minerals, vitamins, and a lower sucrose content, making it highly valuable for industrial fermentation and chemical processes.",
+      "From a procurement perspective, sugarcane molasses is characterized by its high density (measured in Brix), mineral richness, and dark coloration. Standard commercial grades require a Brix density between 80.0% and 88.0%. Unlike light or dark table molasses, industrial molasses is not intended for direct retail culinary use but is rather structured as a robust carbon and nitrogen media for heavy manufacturing.",
+      "When auditing potential suppliers in India, purchasing heads should look for verifiable specs regarding Total Reducing Sugars (TRS), ash content, and sulfur dioxide residue. Saarthi Organics sources premium sugarcane molasses from major sugar crushing zones, and can discuss Certificate of Analysis (COA) documentation options based on specific customer requirements."
     ]
   },
   {
@@ -161,7 +161,7 @@ export const articles: Article[] = [
     slug: "uses-of-molasses-in-distilleries-bio-ethanol",
     title: "Uses of Sugarcane Molasses in Distilleries and Bio-Ethanol Production",
     category: "Applications",
-    summary: "An in-depth look at how bio-ethanol plants and potable distilleries utilize blackstrap molasses feedstock to maximize ethanol conversion efficiency and manage distillation residues.",
+    summary: "An in-depth look at how bio-ethanol plants and potable distilleries utilize sugarcane molasses feedstock to maximize ethanol conversion efficiency and manage distillation residues.",
     date: "January 20, 2026",
     readTime: "7 min read",
     image: "/industry_distilleries.png",

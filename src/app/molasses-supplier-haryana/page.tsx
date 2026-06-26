@@ -43,7 +43,7 @@ export default function HaryanaSupplierPage() {
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Haryana</h1>
           <p className="subpage-hero-desc">
-            Direct-from-mill sugarcane blackstrap molasses dispatches with verified 82-88 Brix density, coordinated from our logistics headquarters in Karnal.
+            Direct-from-mill sugarcane industrial molasses dispatches with verified 82-88 Brix density, coordinated from our logistics headquarters in Karnal.
           </p>
         </div>
       </div>

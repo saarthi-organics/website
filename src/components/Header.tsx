@@ -14,7 +14,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about-us' },
-    { name: 'Product', href: '/blackstrap-molasses' },
+    { name: 'Product', href: '/premium-industrial-molasses' },
     { name: 'Logistics', href: '/logistics' },
     { name: 'Quality', href: '/quality-and-sourcing' },
     { name: 'Case Studies', href: '/case-studies' },

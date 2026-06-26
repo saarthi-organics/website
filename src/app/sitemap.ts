@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about-us',
     '/logistics',
     '/quality-and-sourcing',
-    '/blackstrap-molasses',
+    '/premium-industrial-molasses',
     '/contact',
     '/faq',
     '/blog',

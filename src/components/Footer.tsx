@@ -34,7 +34,7 @@ export default function Footer() {
             </h3>
           </div>
           <p style={{ marginBottom: '20px' }}>
-            Dependable bulk molasses procurement and distribution partner. We supply industrial-grade blackstrap molasses via our own transport fleet across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other major industrial zones.
+            Dependable bulk molasses procurement and distribution partner. We supply industrial-grade sugarcane molasses via our own transport fleet across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other major industrial zones.
           </p>
           <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
             <strong>GSTIN:</strong> 06AFEFS2128A1ZJ
@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Procurement</h4>
           <ul>
-            <li><Link href="/blackstrap-molasses">Blackstrap Molasses</Link></li>
+            <li><Link href="/premium-industrial-molasses">Premium Industrial Molasses</Link></li>
             <li><Link href="/quality-and-sourcing">Quality Assurance</Link></li>
             <li><Link href="/logistics">Logistics & Fleet</Link></li>
             <li><Link href="/blog">Sourcing Blog</Link></li>
@@ -56,11 +56,11 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Industries</h4>
           <ul>
-            <li><Link href="/molasses-for-distilleries">Distilleries</Link></li>
             <li><Link href="/molasses-for-cattle-feed">Cattle Feed</Link></li>
             <li><Link href="/molasses-for-yeast-industry">Yeast Production</Link></li>
             <li><Link href="/molasses-for-pharma">Pharma Industry</Link></li>
             <li><Link href="/molasses-for-foundries">Foundry Binder</Link></li>
+            <li><Link href="/molasses-for-distilleries">Distilleries</Link></li>
           </ul>
         </div>
 
@@ -68,11 +68,14 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Supply Regions</h4>
           <ul>
-            <li><Link href="/molasses-supplier-haryana">Haryana (Karnal)</Link></li>
-            <li><Link href="/molasses-supplier-punjab">Punjab (Ludhiana)</Link></li>
-            <li><Link href="/molasses-supplier-rajasthan">Rajasthan (Jaipur)</Link></li>
+            <li><Link href="/molasses-supplier-haryana">Haryana</Link></li>
+            <li><Link href="/molasses-supplier-punjab">Punjab</Link></li>
+            <li><Link href="/molasses-supplier-rajasthan">Rajasthan</Link></li>
             <li><Link href="/molasses-supplier-delhi-ncr">Delhi NCR</Link></li>
             <li><Link href="/molasses-supplier-uttarakhand">Uttarakhand</Link></li>
+            <li><Link href="/contact?region=gujarat">Gujarat</Link></li>
+            <li><Link href="/contact?region=madhya-pradesh">Madhya Pradesh</Link></li>
+            <li><Link href="/contact?region=chhattisgarh">Chhattisgarh</Link></li>
           </ul>
         </div>
 

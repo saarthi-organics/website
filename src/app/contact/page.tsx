@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Saarthi Organics | Bulk Molasses Inquiry & Sourcing Desk',
-  description: 'Connect with our bulk molasses sourcing desk in Karnal, Haryana. Submit an RFQ for sugarcane blackstrap molasses sample kits, tanker rates, and contract pricing.',
+  description: 'Connect with our bulk molasses sourcing desk in Karnal, Haryana. Submit an RFQ for sugarcane molasses sample kits, tanker rates, and contract pricing.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/contact',
   },
@@ -46,7 +46,7 @@ export default function ContactPage() {
   const contactFaqs = [
     {
       q: "What is the Minimum Order Quantity (MOQ)?",
-      a: "Our standard MOQ for commercial liquid blackstrap molasses is 20 to 25 Metric Tons (equivalent to one road tanker). We also offer customized industrial orders in 1000L IBC Totes (approx. 1.4 MT) or steel drums (200L) upon prior logistics arrangement."
+      a: "Our standard MOQ for commercial liquid sugarcane molasses is 20 to 25 Metric Tons (equivalent to one road tanker). We also offer customized industrial orders in 1000L IBC Totes (approx. 1.4 MT) or steel drums (200L) upon prior logistics arrangement."
     },
     {
       q: "Can we request a pre-shipment sample kit for laboratory testing?",
@@ -139,10 +139,10 @@ export default function ContactPage() {
                     <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '6px' }}>Commercial Desk</strong>
                     <div style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.6' }}>
                       <a href="tel:+917055552535" className="contact-link-hover" style={{ display: 'block', marginBottom: '4px' }}>
-                        📞 +91-7055552535 (Direct Sourcing)
+                        📞 +91-7055552535
                       </a>
                       <a href="tel:+919927029029" className="contact-link-hover" style={{ display: 'block' }}>
-                        📞 +91-9927029029 (Logistics Office)
+                        📞 +91-9927029029
                       </a>
                     </div>
                   </div>

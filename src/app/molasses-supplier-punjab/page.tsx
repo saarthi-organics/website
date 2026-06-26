@@ -59,7 +59,7 @@ export default function PunjabSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics provides a dependable logistics network that connects sugar crushing zones in neighboring Haryana directly with Punjab&apos;s heavy industrial consumers. Sourcing raw materials from high-capacity modern sugar refineries, we deliver sugarcane blackstrap molasses with a guaranteed Brix density of 82.0% - 88.0% and low ash parameters.
+              Saarthi Organics provides a dependable logistics network that connects sugar crushing zones in neighboring Haryana directly with Punjab&apos;s heavy industrial consumers. Sourcing raw materials from high-capacity modern sugar refineries, we deliver sugarcane industrial molasses with a guaranteed Brix density of 82.0% - 88.0% and low ash parameters.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Interstate Transit & Punjab Excise Passes</h3>

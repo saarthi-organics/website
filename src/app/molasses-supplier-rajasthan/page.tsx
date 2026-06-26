@@ -41,7 +41,7 @@ export default function RajasthanSupplierPage() {
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Rajasthan</h1>
           <p className="subpage-hero-desc">
-            Industrial-grade blackstrap molasses dispatches optimized for foundries, feed mills, and chemical plants in Rajasthan.
+            Industrial-grade sugarcane molasses dispatches optimized for foundries, feed mills, and chemical plants in Rajasthan.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function RajasthanSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics coordinates long-haul tanker transit lines to supply sugarcane blackstrap molasses across the state. Sourced from high-performance crushing mills in our regional network, our product maintains a standardized refractometric Brix density of 82.0% - 88.0%, making it highly effective for sand core bonding in foundries and carbohydrate binding in cattle pellet mills.
+              Saarthi Organics coordinates long-haul tanker transit lines to supply sugarcane industrial molasses across the state. Sourced from high-performance crushing mills in our regional network, our product maintains a standardized refractometric Brix density of 82.0% - 88.0%, making it highly effective for sand core bonding in foundries and carbohydrate binding in cattle pellet mills.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Long-Haul Temperature Controls</h3>

@@ -21,7 +21,7 @@ export default function FinalCTA() {
         <Link href="/contact" className="btn-primary">
           Request a Quote
         </Link>
-        <Link href="/blackstrap-molasses#specifications" className="btn-secondary">
+        <Link href="/premium-industrial-molasses#specifications" className="btn-secondary">
           Request Technical Details
         </Link>
       </div>

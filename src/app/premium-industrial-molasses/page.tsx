@@ -4,14 +4,14 @@ import SpecTable from '@/components/SpecTable';
 import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Industrial Blackstrap Molasses Specifications & TDS | Saarthi Organics',
-  description: 'Detailed technical specification datasheet for blackstrap molasses. Review brix parameters, total reducing sugars, and packaging formats for bulk industrial buyers.',
+  title: 'Premium Industrial Molasses Specifications & TDS | Saarthi Organics',
+  description: 'Detailed technical specification datasheet for premium industrial molasses. Review brix parameters, total reducing sugars, and packaging formats for bulk industrial buyers.',
   alternates: {
-    canonical: 'https://www.saarthiorganics.com/blackstrap-molasses',
+    canonical: 'https://www.saarthiorganics.com/premium-industrial-molasses',
   },
 };
 
-export default function BlackstrapMolasses() {
+export default function PremiumIndustrialMolasses() {
   const faqs = [
     {
       q: "What is the Minimum Order Quantity (MOQ)?",
@@ -27,7 +27,7 @@ export default function BlackstrapMolasses() {
     },
     {
       q: "Do you supply organic certification?",
-      a: "We trade heavy blackstrap molasses, which is a natural co-product of raw sugarcane sugar refining. While it is chemical-free and 100% natural, it is primarily graded as industrial-grade. If you require food-grade or specific certified organic batches, please notify our team in advance."
+      a: "We trade heavy sugarcane molasses, which is a natural co-product of raw sugarcane sugar refining. While it is chemical-free and 100% natural, it is primarily graded as industrial-grade. If you require food-grade or specific certified organic batches, please notify our team in advance."
     }
   ];
 
@@ -39,9 +39,9 @@ export default function BlackstrapMolasses() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            "@id": "https://www.saarthiorganics.com/blackstrap-molasses/#product",
-            "name": "Sugarcane Blackstrap Molasses",
-            "description": "Heavy industrial-grade blackstrap molasses with a Brix level of 82%-88% and Total Reducing Sugars (TRS) >= 45%. Perfect carbon substrate for fermentation, bio-ethanol, yeast, foundries, and cattle feed.",
+            "@id": "https://www.saarthiorganics.com/premium-industrial-molasses/#product",
+            "name": "Premium Industrial Sugarcane Molasses",
+            "description": "Heavy industrial-grade sugarcane molasses with a Brix level of 82%-88% and Total Reducing Sugars (TRS) >= 45%. Perfect carbon substrate for fermentation, bio-ethanol, yeast, foundries, and cattle feed.",
             "brand": {
               "@type": "Brand",
               "name": "Saarthi Organics"
@@ -84,7 +84,7 @@ export default function BlackstrapMolasses() {
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Product Catalog</span>
-          <h1 className="subpage-hero-title">Industrial Blackstrap Molasses</h1>
+          <h1 className="subpage-hero-title">Premium Industrial Molasses</h1>
           <p className="subpage-hero-desc">
             Heavy, concentrated liquid sugarcane co-product. Rich in fermentable sugars, minerals, and organic solids, graded specifically for manufacturing and industrial processes.
           </p>
@@ -99,7 +99,7 @@ export default function BlackstrapMolasses() {
             <div className="hero-image-container">
               <Image 
                 src="/molasses_quality.png" 
-                alt="Premium viscous blackstrap molasses raw material under laboratory quality inspection" 
+                alt="Premium viscous sugarcane molasses raw material under laboratory quality inspection" 
                 width={500} 
                 height={400} 
                 style={{ objectFit: 'cover', display: 'block' }}
@@ -110,10 +110,10 @@ export default function BlackstrapMolasses() {
           <div style={{ flex: 1.1, minWidth: '300px' }}>
             <h2 className="section-title">High Solids, High Sugar Industrial Feedstock</h2>
             <p className="section-desc" style={{ marginBottom: '20px', lineHeight: '1.6' }}>
-              Blackstrap molasses is the final viscous liquid obtained from the sugarcane refining process after the third crystallization cycle. Because the majority of the sucrose has been extracted, blackstrap contains highly concentrated natural minerals, organic compounds, and uncrystallized reducing sugars.
+              Sugarcane molasses is the final viscous liquid obtained from the sugarcane refining process after the third crystallization cycle. Because the majority of the sucrose has been extracted, this molasses contains highly concentrated natural minerals, organic compounds, and uncrystallized reducing sugars.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              Our standard industrial blackstrap features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
+              Our standard industrial sugarcane molasses features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
             </p>
             
             <div className="symmetrical-grid-two-col">
@@ -150,7 +150,7 @@ export default function BlackstrapMolasses() {
           <div style={{ flex: 1.1, minWidth: '300px' }}>
             <h2 className="section-title">On-Site Storage & Handling Guidelines</h2>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              Due to its high viscosity, industrial blackstrap molasses requires specific equipment and environment controls to maintain flowability and prevent pump cavitation.
+              Due to its high viscosity, industrial sugarcane molasses requires specific equipment and environment controls to maintain flowability and prevent pump cavitation.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div className="symmetrical-detail-box">

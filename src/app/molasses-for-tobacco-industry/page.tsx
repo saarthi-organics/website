@@ -4,7 +4,7 @@ import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
   title: 'Molasses for Tobacco Industry & Processing | Saarthi Organics',
-  description: 'High-viscosity blackstrap molasses supplier for the tobacco industry. Natural humectant, physical binder, and flavoring agent casing supplier.',
+  description: 'High-viscosity sugarcane molasses supplier for the tobacco industry. Natural humectant, physical binder, and flavoring agent casing supplier.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-tobacco-industry',
   },
@@ -21,7 +21,7 @@ export default function TobaccoIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Tobacco Processing</h1>
           <p className="subpage-hero-desc">
-            High-viscosity, heavy blackstrap molasses selected specifically to serve as a natural humectant, physical binder, and flavor casing agent.
+            High-viscosity, heavy sugarcane molasses selected specifically to serve as a natural humectant, physical binder, and flavor casing agent.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function TobaccoIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why the Tobacco Industry Uses Molasses:</strong> Tobacco processors utilize blackstrap molasses as a binding and casing syrup. Its chemical properties allow it to act as a humectant (preventing tobacco leaves from drying out and crumbling), while its natural sucrose content binds flavoring casing agents to the leaf structure.
+              <strong>Why the Tobacco Industry Uses Molasses:</strong> Tobacco processors utilize sugarcane molasses as a binding and casing syrup. Its chemical properties allow it to act as a humectant (preventing tobacco leaves from drying out and crumbling), while its natural sucrose content binds flavoring casing agents to the leaf structure.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

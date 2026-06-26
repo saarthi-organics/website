@@ -24,7 +24,7 @@ export default function CaseStudies() {
       title: "Cattle Feed Pellet Durability Optimization",
       industry: "Animal Nutrition & Feed Mill",
       challenge: "A feed mill in Punjab faced high pellet disintegration rates during shipping. The low-grade molasses they were using lacked binding cohesion.",
-      solution: "We evaluated their mill parameters and sourced a high-viscosity, low-moisture blackstrap batch (Brix ≥ 85.0%) directly from specific refinery runs. This heavy molasses was delivered warm to facilitate uniform mixing.",
+      solution: "We evaluated their mill parameters and sourced a high-viscosity, low-moisture sugarcane molasses batch (Brix ≥ 85.0%) directly from specific refinery runs. This heavy molasses was delivered warm to facilitate uniform mixing.",
       result: "The Pellet Durability Index (PDI) increased from 88% to 94%, significantly reducing product returns and dusty fines in finished sacks.",
       image: "/case_feed_mill.png"
     },

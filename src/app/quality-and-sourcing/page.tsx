@@ -63,7 +63,7 @@ export default function QualityAndSourcing() {
                 Download our standard product data sheet or request historical batch analysis reports for audit compliance.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <Link href="/blackstrap-molasses" className="btn-primary" style={{ textAlign: 'center' }}>
+                <Link href="/premium-industrial-molasses" className="btn-primary" style={{ textAlign: 'center' }}>
                   Download Technical Details
                 </Link>
                 <Link href="/contact" className="btn-secondary" style={{ textAlign: 'center' }}>

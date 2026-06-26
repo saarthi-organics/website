@@ -21,7 +21,7 @@ export default function DistilleriesIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Ethanol Distilleries</h1>
           <p className="subpage-hero-desc">
-            Excise-aligned bulk supply of sugarcane blackstrap molasses with verified Total Reducing Sugars (TRS) ratios optimized for bio-ethanol and potable alcohol fermentation runs.
+            Excise-aligned bulk supply of sugarcane industrial molasses with verified Total Reducing Sugars (TRS) ratios optimized for bio-ethanol and potable alcohol fermentation runs.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function DistilleriesIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why Distilleries Use Molasses:</strong> Ethanol distilleries utilize sugarcane blackstrap molasses as their primary carbon substrate for yeast metabolism. The efficiency of the fermentation run is directly determined by the concentration of fermentable sugars in the feedstock.
+              <strong>Why Distilleries Use Molasses:</strong> Ethanol distilleries utilize sugarcane industrial molasses as their primary carbon substrate for yeast metabolism. The efficiency of the fermentation run is directly determined by the concentration of fermentable sugars in the feedstock.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

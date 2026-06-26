@@ -149,7 +149,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <Link href="/contact" style={{ color: 'var(--accent-gold)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}>Request Bulk Quote &rarr;</Link>
-                <Link href="/blackstrap-molasses" style={{ color: 'var(--accent-orange)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}>View Specifications &rarr;</Link>
+                <Link href="/premium-industrial-molasses" style={{ color: 'var(--accent-orange)', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none' }}>View Specifications &rarr;</Link>
               </div>
             </div>
 

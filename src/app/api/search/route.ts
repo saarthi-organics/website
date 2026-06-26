@@ -5,9 +5,9 @@ import { articles } from '@/data/blogArticles';
 
 // Synonym/relevance boosters for B2B procurement terms
 const RELEVANCE_BOOSTERS: Record<string, string[]> = {
-  "molasses": ["/blackstrap-molasses", "/"],
-  "blackstrap molasses": ["/blackstrap-molasses"],
-  "brix": ["/blackstrap-molasses", "/quality-and-sourcing"],
+  "molasses": ["/premium-industrial-molasses", "/"],
+  "premium industrial molasses": ["/premium-industrial-molasses"],
+  "brix": ["/premium-industrial-molasses", "/quality-and-sourcing"],
   "bulk supply": ["/logistics", "/"],
   "tanker supply": ["/logistics", "/"],
   "distillery": ["/molasses-for-distilleries"],
@@ -19,7 +19,7 @@ const RELEVANCE_BOOSTERS: Record<string, string[]> = {
   "food processing": ["/molasses-for-food-processing"],
   "pharma": ["/molasses-for-pharma"],
   "foundry": ["/molasses-for-foundries"],
-  "packaging": ["/blackstrap-molasses", "/logistics"],
+  "packaging": ["/premium-industrial-molasses", "/logistics"],
   "logistics": ["/logistics"],
   "delivery": ["/logistics"],
   "gst billing": ["/quality-and-sourcing", "/blog/gst-compliance-input-tax-credit-sugarcane-molasses"],

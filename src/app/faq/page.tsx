@@ -14,7 +14,7 @@ export default function FAQPage() {
   const faqs: FAQItem[] = [
     {
       q: "What is the typical Brix range of your molasses?",
-      a: "We supply heavy industrial blackstrap molasses with a standardized refractometric Brix range of 82.0% to 88.0% (titrated at 20°C). This ensures high density, high concentration of total soluble solids, and stable shelf life under proper storage parameters."
+      a: "We supply heavy industrial sugarcane molasses with a standardized refractometric Brix range of 82.0% to 88.0% (titrated at 20°C). This ensures high density, high concentration of total soluble solids, and stable shelf life under proper storage parameters."
     },
     {
       q: "What industries commonly use your molasses?",
@@ -114,7 +114,7 @@ export default function FAQPage() {
       {/* Static text representation for search indexer / SEO crawlers */}
       <div style={{ display: 'none' }} aria-hidden="true">
         <h2>What is the typical Brix range of your molasses?</h2>
-        <p>We supply heavy industrial blackstrap molasses with a standardized refractometric Brix range of 82.0% to 88.0% (titrated at 20°C). This ensures high density, high concentration of total soluble solids, and stable shelf life under proper storage parameters.</p>
+        <p>We supply heavy industrial sugarcane molasses with a standardized refractometric Brix range of 82.0% to 88.0% (titrated at 20°C). This ensures high density, high concentration of total soluble solids, and stable shelf life under proper storage parameters.</p>
         <h2>What industries commonly use your molasses?</h2>
         <p>Our sugarcane-derived molasses serves as a vital raw material feedstock across multiple manufacturing sectors. Common applications include ethanol fermentation in distilleries, carbohydrate binding in animal cattle feed mills, carbon sourcing in yeast plants, sand core binder formulations in foundries, organic nutrients in agriculture, flavor humectants in tobacco, and growth substrates in pharmaceutical manufacturing.</p>
         <h2>What packaging formats are available?</h2>

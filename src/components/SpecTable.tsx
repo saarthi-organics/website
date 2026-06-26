@@ -37,7 +37,7 @@ export default function SpecTable() {
             * Typical Certificate of Analysis (COA) is available on request where available. Product specifications and documentation options can be discussed based on customer requirements.
           </p>
           <a 
-            href="/blackstrap-molasses" 
+            href="/premium-industrial-molasses" 
             className="btn-primary" 
             style={{ fontSize: '0.85rem', padding: '10px 20px', borderRadius: '4px' }}
           >

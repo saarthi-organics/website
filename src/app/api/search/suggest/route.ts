@@ -5,7 +5,7 @@ import { articles } from '@/data/blogArticles';
 
 // Predefined suggestion targets matching the required examples and typical search queries
 const SUGGESTION_POOL = [
-  "Blackstrap Molasses",
+  "Premium Industrial Molasses",
   "Molasses Specifications",
   "Molasses for Distilleries",
   "Molasses for Cattle Feed",

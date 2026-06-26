@@ -4,7 +4,7 @@ import FinalCTA from '@/components/FinalCTA';
 
 export const metadata: Metadata = {
   title: 'Molasses for Agriculture, Farming & Soil Health | Saarthi Organics',
-  description: 'Pure blackstrap molasses for organic farming, composting, and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
+  description: 'Pure sugarcane molasses for organic farming, composting, and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-agriculture-and-farming',
   },
@@ -22,7 +22,7 @@ export default function AgricultureFarmingIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Agriculture & Bio-Fertilizers</h1>
           <p className="subpage-hero-desc">
-            Raw, high-solids blackstrap molasses rich in organic carbon and trace elements, optimized for agricultural soil conditioning and composting setups.
+            Raw, high-solids sugarcane molasses rich in organic carbon and trace elements, optimized for agricultural soil conditioning and composting setups.
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default function AgricultureFarmingIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why the Agricultural Industry Uses Molasses:</strong> Commercial farming and organic fertilizer manufacturers utilize blackstrap molasses as an organic carbon source. Liquid molasses activates beneficial soil microorganisms, mycorrhizal fungi, and nitrogen-fixing bacteria, building soil structure and improving plant nutrient absorption.
+              <strong>Why the Agricultural Industry Uses Molasses:</strong> Commercial farming and organic fertilizer manufacturers utilize sugarcane molasses as an organic carbon source. Liquid molasses activates beneficial soil microorganisms, mycorrhizal fungi, and nitrogen-fixing bacteria, building soil structure and improving plant nutrient absorption.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

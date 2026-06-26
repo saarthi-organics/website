@@ -35,7 +35,7 @@ export default function CattleFeedIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why Feed Mills Use Molasses:</strong> Cattle feed compounders utilize blackstrap molasses as a multi-functional raw material. It serves as a natural binder that adheres grains together, a highly palatable flavoring agent to encourage livestock intake, and a dust suppressant for grain elevators.
+              <strong>Why Feed Mills Use Molasses:</strong> Cattle feed compounders utilize sugarcane molasses as a multi-functional raw material. It serves as a natural binder that adheres grains together, a highly palatable flavoring agent to encourage livestock intake, and a dust suppressant for grain elevators.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

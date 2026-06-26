@@ -41,7 +41,7 @@ export default function DelhiNCRSupplierPage() {
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Delhi NCR</h1>
           <p className="subpage-hero-desc">
-            Seamless industrial sugarcane blackstrap molasses distribution servicing Noida, Gurgaon, Faridabad, and Ghaziabad manufacturing zones.
+            Seamless industrial sugarcane molasses distribution servicing Noida, Gurgaon, Faridabad, and Ghaziabad manufacturing zones.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function DelhiNCRSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics coordinates daily liquid road tanker dispatches to meet these demanding production schedules. Sourced directly from our sugar mill refinery partner network in Haryana and western UP corridors (dispatched legally under excise clears), our molasses is verified at 82-88 Brix to ensure top chemical binding performance and fermentation efficiency.
+              Saarthi Organics coordinates daily liquid road tanker dispatches to meet these demanding production schedules. Sourced directly from our sugar mill refinery partner network in Haryana and neighboring agricultural corridors (dispatched legally under excise clears), our molasses is verified at 82-88 Brix to ensure top chemical binding performance and fermentation efficiency.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Peak-Hour Truck Restrictions & Logistics Clearance</h3>

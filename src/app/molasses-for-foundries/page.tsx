@@ -35,7 +35,7 @@ export default function FoundriesIndustry() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Why Foundries Use Molasses:</strong> Metal casting foundries utilize heavy sugarcane blackstrap molasses as an organic core and mold sand binder. When mixed with silica sand and bentonite clay, its high-sucrose viscosity binds the sand grains together, providing the mold with dry strength to resist hot metal erosion during pouring.
+              <strong>Why Foundries Use Molasses:</strong> Metal casting foundries utilize heavy sugarcane industrial molasses as an organic core and mold sand binder. When mixed with silica sand and bentonite clay, its high-sucrose viscosity binds the sand grains together, providing the mold with dry strength to resist hot metal erosion during pouring.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>

@@ -21,7 +21,7 @@ export default function YeastIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses for Yeast Manufacturing & Bioprocessing</h1>
           <p className="subpage-hero-desc">
-            Highly filtered, low-ash blackstrap molasses with consistent mineral and carbohydrate profiles optimized for commercial yeast propagation.
+            Highly filtered, low-ash sugarcane molasses with consistent mineral and carbohydrate profiles optimized for commercial yeast propagation.
           </p>
         </div>
       </div>

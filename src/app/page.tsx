@@ -7,7 +7,7 @@ import MolassesAnimation from '@/components/MolassesAnimation';
 
 export const metadata: Metadata = {
   title: 'Saarthi Organics | Bulk Sugarcane Molasses Supplier India',
-  description: 'GST-compliant bulk industrial blackstrap molasses supplier and procurement partner. Coordinated liquid tanker supply across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
+  description: 'GST-compliant bulk industrial sugarcane molasses supplier and procurement partner. Coordinated liquid tanker supply across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com',
   },
@@ -100,7 +100,7 @@ export default function Home() {
     {
       icon: "🌱",
       title: "Agriculture & Farming",
-      desc: "Blackstrap molasses is widely used in organic farming, composting, and soil conditioning applications, helping support microbial activity and soil health.",
+      desc: "Sugarcane molasses is widely used in organic farming, composting, and soil conditioning applications, helping support microbial activity and soil health.",
       link: "/molasses-for-agriculture-and-farming",
       image: "/industry_agriculture.png"
     }
@@ -162,7 +162,7 @@ export default function Home() {
             <a href="#contact-desk" className="btn-primary">
               Request Bulk Pricing
             </a>
-            <Link href="/blackstrap-molasses" className="btn-secondary">
+            <Link href="/premium-industrial-molasses" className="btn-secondary">
               Request Technical Details
             </Link>
           </div>
@@ -326,7 +326,7 @@ export default function Home() {
           <span className="section-label">Technical Datasheet</span>
           <h2 className="section-title">Specifications Preview</h2>
           <p className="section-desc">
-            We guarantee industrial-grade consistency. Review key chemical and physical metrics for our standard heavy blackstrap molasses.
+            We guarantee industrial-grade consistency. Review key chemical and physical metrics for our standard heavy sugarcane molasses.
           </p>
         </div>
         <SpecTable />
@@ -336,12 +336,12 @@ export default function Home() {
         <span className="heritage-divider-motif">✦</span>
       </div>
 
-      {/* Inside Blackstrap Molasses section (New Gallery) */}
+      {/* Inside Sugarcane Molasses section (New Gallery) */}
       <section id="gallery-inside" style={{ background: 'var(--bg-secondary)', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', padding: '80px 24px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
           <div className="section-header">
             <span className="section-label">Visual Gallery</span>
-            <h2 className="section-title">Inside Blackstrap Molasses</h2>
+            <h2 className="section-title">Inside Sugarcane Molasses</h2>
             <p className="section-desc">
               Allowing you to visually witness the appearance, richness, and heavy industrial quality of our sugarcane-derived molasses.
             </p>
@@ -349,7 +349,7 @@ export default function Home() {
           <div className="gallery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '30px' }}>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>
               <div style={{ position: 'relative', width: '100%', height: '240px' }}>
-                <Image src="/gallery_pouring.png" alt="Viscous blackstrap molasses pouring" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
+                <Image src="/gallery_pouring.png" alt="Viscous sugarcane molasses pouring" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Molasses Pouring</h3>
@@ -362,7 +362,7 @@ export default function Home() {
               </div>
               <div style={{ padding: '20px', textAlign: 'center' }}>
                 <h3 style={{ color: 'var(--accent-gold)', marginBottom: '8px', fontSize: '1.1rem' }}>Texture Detail</h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Deep brown-black coloration containing natural minerals, sucrose, and organic matter.</p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Dark reddish-brown coloration containing natural minerals, sucrose, and organic matter.</p>
               </div>
             </div>
             <div className="gallery-item" style={{ overflow: 'hidden', borderRadius: '8px', border: '1px solid var(--border-color)', position: 'relative', background: 'var(--bg-primary)' }}>

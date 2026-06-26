@@ -49,7 +49,7 @@ export default function MolassesAnimation() {
         {/* Layer 1: Static Background, Nozzle, and Factory Machinery */}
         <Image
           src="/molasses_hero_new.png"
-          alt="Viscous blackstrap industrial sugarcane molasses pouring in a production facility"
+          alt="Viscous premium industrial sugarcane molasses pouring in a production facility"
           fill
           sizes="(max-width: 968px) 100vw, 500px"
           style={{

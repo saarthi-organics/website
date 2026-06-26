@@ -41,7 +41,7 @@ export default function UttarakhandSupplierPage() {
           <span className="section-label">Regional Sourcing Hub</span>
           <h1 className="subpage-hero-title">Bulk Molasses Supplier in Uttarakhand</h1>
           <p className="subpage-hero-desc">
-            Traceable, heavy-metal tested sugarcane blackstrap molasses dispatches optimized for pharmaceutical fermentation and distilleries in Uttarakhand.
+            Traceable, heavy-metal tested sugarcane industrial molasses dispatches optimized for pharmaceutical fermentation and distilleries in Uttarakhand.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function UttarakhandSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Saarthi Organics provides a specialized supply chain to support these sensitive manufacturing setups. We source premium blackstrap molasses batches directly from cooperative and private sugar refining facilities, coordinating specifications to verify refractometric Brix density (82-88 Brix), Total Reducing Sugars (TRS ≥ 45.0%), and mineral metrics.
+              Saarthi Organics provides a specialized supply chain to support these sensitive manufacturing setups. We source premium sugarcane molasses batches directly from cooperative and private sugar refining facilities, coordinating specifications to verify refractometric Brix density (82-88 Brix), Total Reducing Sugars (TRS ≥ 45.0%), and mineral metrics.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Uttarakhand Mountain Logistics & Audits</h3>
