@@ -18,7 +18,7 @@ export default function RajasthanSupplierPage() {
     "name": "Saarthi Organics (Rajasthan Sourcing Hub)",
     "image": "https://www.saarthiorganics.com/logo_heritage.jpg",
     "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
-    "email": "contact@saarthiorganics.com",
+    "email": "connect@saarthiorganics.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jaipur",

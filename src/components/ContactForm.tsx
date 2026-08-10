@@ -221,7 +221,7 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
             <div className="quote-contact-icon">✉️</div>
             <div className="quote-contact-details">
               <h4>Official RFQ Email</h4>
-              <p>contact@saarthiorganics.com</p>
+              <p>connect@saarthiorganics.com</p>
             </div>
           </div>
 

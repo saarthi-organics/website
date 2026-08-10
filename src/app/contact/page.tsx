@@ -16,7 +16,7 @@ export default function ContactPage() {
     "name": "Saarthi Organics",
     "image": "https://www.saarthiorganics.com/logo_heritage.jpg",
     "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
-    "email": "contact@saarthiorganics.com",
+    "email": "connect@saarthiorganics.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Farm House, Liberty Chowk",
@@ -175,8 +175,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '2px' }}>Corporate Mail</strong>
-                    <a href="mailto:contact@saarthiorganics.com" className="contact-link-hover" style={{ fontSize: '0.92rem' }}>
-                      contact@saarthiorganics.com
+                    <a href="mailto:connect@saarthiorganics.com" className="contact-link-hover" style={{ fontSize: '0.92rem' }}>
+                      connect@saarthiorganics.com
                     </a>
                   </div>
                 </div>

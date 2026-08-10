@@ -101,7 +101,7 @@ export default function Footer() {
             <div className="footer-info-item">
               <div>
                 <strong>Email:</strong><br />
-                contact@saarthiorganics.com
+                connect@saarthiorganics.com
               </div>
             </div>
           </div>

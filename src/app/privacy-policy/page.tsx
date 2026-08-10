@@ -64,7 +64,7 @@ export default function PrivacyPolicy() {
             4. Contact Sourcing Desk
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            For queries relating to corporate data compliance, audit record requests, or updates to your procurement contact details, please contact us at: <a href="mailto:contact@saarthiorganics.com" style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}><strong>contact@saarthiorganics.com</strong></a>.
+            For queries relating to corporate data compliance, audit record requests, or updates to your procurement contact details, please contact us at: <a href="mailto:connect@saarthiorganics.com" style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}><strong>connect@saarthiorganics.com</strong></a>.
           </p>
 
           <div style={{ borderTop: '1px solid var(--border-color)', marginTop: '40px', paddingTop: '24px', textAlign: 'center' }}>
