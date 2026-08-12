@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Saarthi Organics | Bulk Sugarcane Molasses Supplier India',
   description: 'GST-compliant bulk industrial sugarcane molasses supplier and procurement partner. Coordinated liquid tanker supply across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.',
   alternates: {
-    canonical: 'https://www.saarthiorganics.com',
+    canonical: 'https://www.saarthiorganics.com/',
   },
 };
 
@@ -118,7 +118,7 @@ export default function Home() {
               "@id": "https://www.saarthiorganics.com/#website",
               "name": "Saarthi Organics",
               "alternateName": "Saarthi Organics",
-              "url": "https://www.saarthiorganics.com"
+              "url": "https://www.saarthiorganics.com/"
             },
             {
               "@context": "https://schema.org",
@@ -126,7 +126,7 @@ export default function Home() {
               "@id": "https://www.saarthiorganics.com/#organization",
               "name": "Saarthi Organics",
               "alternateName": "Saarthi Organics",
-              "url": "https://www.saarthiorganics.com",
+              "url": "https://www.saarthiorganics.com/",
               "logo": "https://www.saarthiorganics.com/logo_heritage.jpg",
               "contactPoint": {
                 "@type": "ContactPoint",

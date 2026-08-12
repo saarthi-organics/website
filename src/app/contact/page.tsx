@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
+import ContactWhatsAppButton from '@/components/ContactWhatsAppButton';
 
 export const metadata: Metadata = {
   title: 'Contact Saarthi Organics | Bulk Molasses Inquiry & Sourcing Desk',
@@ -16,7 +17,11 @@ export default function ContactPage() {
     "name": "Saarthi Organics",
     "image": "https://www.saarthiorganics.com/logo_heritage.jpg",
     "telephone": ["+91-7055552535", "+91-9927029029", "+91-9837022300"],
-    "email": "connect@saarthiorganics.com",
+    "email": [
+      "connect@saarthiorganics.com",
+      "ambujgoyal@saarthiorganics.com",
+      "anujtayal@saarthiorganics.com"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Farm House, Liberty Chowk",
@@ -34,10 +39,11 @@ export default function ContactPage() {
           "Wednesday",
           "Thursday",
           "Friday",
-          "Saturday"
+          "Saturday",
+          "Sunday"
         ],
         "opens": "09:00",
-        "closes": "18:00"
+        "closes": "21:00"
       }
     ],
     "url": "https://www.saarthiorganics.com/contact"
@@ -132,8 +138,8 @@ export default function ContactPage() {
                   <div>
                     <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '2px' }}>Sourcing Hours</strong>
                     <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
-                      Monday – Saturday: 9:00 AM – 6:00 PM (IST)<br />
-                      Sunday: Closed
+                      Monday – Sunday<br />
+                      9:00 AM – 9:00 PM (IST)
                     </p>
                   </div>
                 </div>
@@ -174,10 +180,20 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div>
-                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '2px' }}>Corporate Mail</strong>
-                    <a href="mailto:connect@saarthiorganics.com" className="contact-link-hover" style={{ fontSize: '0.92rem' }}>
+                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>General Enquiries</strong>
+                    <a href="mailto:connect@saarthiorganics.com" className="contact-link-hover" style={{ fontSize: '0.92rem', display: 'block', marginBottom: '12px' }}>
                       connect@saarthiorganics.com
                     </a>
+                    
+                    <strong style={{ display: 'block', fontSize: '0.75rem', color: 'var(--accent-orange)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>Direct Business Contacts</strong>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.92rem' }}>
+                      <a href="mailto:ambujgoyal@saarthiorganics.com" className="contact-link-hover">
+                        ambujgoyal@saarthiorganics.com
+                      </a>
+                      <a href="mailto:anujtayal@saarthiorganics.com" className="contact-link-hover">
+                        anujtayal@saarthiorganics.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,18 +219,7 @@ export default function ContactPage() {
                 </div>
                 <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '14px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }} className="quote-contact-actions">
-                    <a 
-                      href="https://wa.me/917055552535" 
-                      className="btn-whatsapp"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      style={{ flex: 1, minWidth: '120px', padding: '10px', fontSize: '0.85rem', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px', fontWeight: 600 }}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" style={{ width: '14px', height: '14px' }}>
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.09-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                      </svg>
-                      WhatsApp Inquiry
-                    </a>
+                    <ContactWhatsAppButton />
                     <a 
                       href="tel:+91-7055552535" 
                       className="btn-secondary"

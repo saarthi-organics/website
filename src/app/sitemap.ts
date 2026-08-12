@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages
   staticPages.forEach((route) => {
     sitemapEntries.push({
-      url: `${baseUrl}${route}`,
+      url: route === '' ? `${baseUrl}/` : `${baseUrl}${route}`,
       lastModified: new Date(),
       changeFrequency: route === '' ? 'daily' : 'monthly',
       priority: route === '' ? 1.0 : 0.8,

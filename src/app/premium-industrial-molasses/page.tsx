@@ -51,7 +51,7 @@ export default function PremiumIndustrialMolasses() {
             "manufacturer": {
               "@type": "Organization",
               "name": "Saarthi Organics",
-              "url": "https://www.saarthiorganics.com"
+              "url": "https://www.saarthiorganics.com/"
             },
             "offers": {
               "@type": "AggregateOffer",

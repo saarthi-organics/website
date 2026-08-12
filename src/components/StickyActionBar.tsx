@@ -1,8 +1,27 @@
 "use client";
 
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { buildWhatsAppLink } from '@/utils/whatsapp';
 
 export default function StickyActionBar() {
+  const [whatsAppLink, setWhatsAppLink] = useState('https://wa.me/917055552535');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWhatsAppLink(buildWhatsAppLink(window.location.pathname));
+      
+      const handleDraftUpdate = () => {
+        setWhatsAppLink(buildWhatsAppLink(window.location.pathname));
+      };
+      
+      window.addEventListener('saarthi_whatsapp_draft_updated', handleDraftUpdate);
+      return () => {
+        window.removeEventListener('saarthi_whatsapp_draft_updated', handleDraftUpdate);
+      };
+    }
+  }, []);
+
   const trackClick = (action: string) => {
     if (typeof window !== 'undefined') {
       try {
@@ -54,7 +73,7 @@ export default function StickyActionBar() {
 
         {/* Button 2: WhatsApp */}
         <a
-          href="https://wa.me/917055552535?text=Hi,%20I'm%20interested%20in%20Saarthi%20Organics%20industrial%20molasses%20bulk%20supply."
+          href={whatsAppLink}
           className="sticky-btn sticky-btn-whatsapp"
           target="_blank"
           rel="noopener noreferrer"

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Saarthi Organics - Industrial Molasses Supplier & Procurement Partner",
     description: "Reliable molasses procurement partner via dedicated transport tankers across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh.",
-    url: "https://www.saarthiorganics.com",
+    url: "https://www.saarthiorganics.com/",
     siteName: "Saarthi Organics",
     locale: "en_IN",
     type: "website"

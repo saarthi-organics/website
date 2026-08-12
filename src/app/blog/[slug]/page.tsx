@@ -57,6 +57,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
     "publisher": {
       "@type": "Organization",
       "name": "Saarthi Organics",
+      "url": "https://www.saarthiorganics.com/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.saarthiorganics.com/logo_heritage.jpg"

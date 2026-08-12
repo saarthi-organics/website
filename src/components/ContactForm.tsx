@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useEffect } from 'react';
+import { saveWhatsAppDraft, buildWhatsAppLink, WhatsAppEnquiryData } from '@/utils/whatsapp';
 
 interface ContactFormProps {
   hideContactInfo?: boolean;
@@ -23,10 +24,56 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
   const [honeypot, setHoneypot] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [error, setError] = useState('');
+  const [whatsAppLink, setWhatsAppLink] = useState('https://wa.me/917055552535');
+  const [lastSubmittedData, setLastSubmittedData] = useState<WhatsAppEnquiryData | null>(null);
+
+  // Sync with localStorage on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const raw = localStorage.getItem('saarthi_draft_enquiry');
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          setFormData(prev => ({
+            ...prev,
+            companyName: parsed.companyName || prev.companyName,
+            contactPerson: parsed.contactPerson || prev.contactPerson,
+            requiredQuantity: parsed.requiredQuantity || prev.requiredQuantity,
+            deliveryLocation: parsed.deliveryLocation || prev.deliveryLocation,
+            message: parsed.message || prev.message
+          }));
+        } catch (e) {
+          console.error('Error loading draft form data:', e);
+        }
+      }
+    }
+  }, []);
+
+  // Update WhatsApp link when formData or lastSubmittedData changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const pagePath = window.location.pathname;
+      if (status === 'success' && lastSubmittedData) {
+        setWhatsAppLink(buildWhatsAppLink(pagePath, lastSubmittedData));
+      } else {
+        setWhatsAppLink(buildWhatsAppLink(pagePath));
+      }
+    }
+  }, [formData, lastSubmittedData, status]);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setError('');
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const updated = { ...formData, [e.target.name]: e.target.value };
+    setFormData(updated);
+    
+    // Save draft details to localStorage
+    saveWhatsAppDraft({
+      contactPerson: updated.contactPerson,
+      companyName: updated.companyName,
+      requiredQuantity: updated.requiredQuantity,
+      deliveryLocation: updated.deliveryLocation,
+      message: updated.message
+    });
   };
 
   const validateStep = (currentStep: number) => {
@@ -152,6 +199,13 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
           window.dispatchEvent(customEvent);
         }
 
+        setLastSubmittedData({
+          contactPerson: formData.contactPerson,
+          companyName: formData.companyName,
+          requiredQuantity: formData.requiredQuantity,
+          deliveryLocation: formData.deliveryLocation,
+          message: formData.message
+        });
         setStatus('success');
         setStep(1);
         setFormData({
@@ -217,11 +271,26 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
             </div>
           </div>
 
-          <div className="quote-contact-item">
-            <div className="quote-contact-icon">✉️</div>
-            <div className="quote-contact-details">
-              <h4>Official RFQ Email</h4>
-              <p>connect@saarthiorganics.com</p>
+          <div className="quote-contact-item" style={{ alignItems: 'flex-start' }}>
+            <div className="quote-contact-icon" style={{ marginTop: '2px' }}>✉️</div>
+            <div className="quote-contact-details" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div>
+                <h4 style={{ margin: '0 0 2px 0' }}>Official RFQ Email</h4>
+                <a href="mailto:connect@saarthiorganics.com" className="contact-link-hover" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.92rem' }}>
+                  connect@saarthiorganics.com
+                </a>
+              </div>
+              <div>
+                <h4 style={{ margin: '0 0 2px 0' }}>Direct Business Contacts</h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '0.92rem' }}>
+                  <a href="mailto:ambujgoyal@saarthiorganics.com" className="contact-link-hover" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    ambujgoyal@saarthiorganics.com
+                  </a>
+                  <a href="mailto:anujtayal@saarthiorganics.com" className="contact-link-hover" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    anujtayal@saarthiorganics.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -235,7 +304,7 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
 
           <div className="quote-contact-actions">
             <a 
-              href="https://wa.me/917055552535" 
+              href={whatsAppLink} 
               className="btn-whatsapp"
               target="_blank" 
               rel="noopener noreferrer"
@@ -358,9 +427,32 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
               margin: '0 auto 20px auto'
             }}>✓</div>
             <h4 style={{ marginBottom: '12px', fontSize: '1.3rem', fontWeight: '700', color: 'var(--accent-gold)' }}>RFQ Received Successfully</h4>
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '440px', margin: '0 auto' }}>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '440px', margin: '0 auto 20px auto' }}>
               Thank you for contacting Saarthi Organics. Our team will review your requirement and get back to you shortly.
             </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <a 
+                href={whatsAppLink} 
+                className="btn-whatsapp"
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  padding: '12px 24px',
+                  fontSize: '0.95rem',
+                  borderRadius: '4px',
+                  fontWeight: 600,
+                  textDecoration: 'none'
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" style={{ width: '16px', height: '16px' }}>
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.09-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                Discuss via WhatsApp
+              </a>
+            </div>
           </div>
         ) : (
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px', minHeight: '340px', justifyContent: 'space-between' }}>

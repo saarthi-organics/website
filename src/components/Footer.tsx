@@ -101,7 +101,14 @@ export default function Footer() {
             <div className="footer-info-item">
               <div>
                 <strong>Email:</strong><br />
-                connect@saarthiorganics.com
+                <a href="mailto:connect@saarthiorganics.com" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">connect@saarthiorganics.com</a>
+              </div>
+            </div>
+            <div className="footer-info-item">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <strong>Direct Business:</strong>
+                <a href="mailto:ambujgoyal@saarthiorganics.com" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">ambujgoyal@saarthiorganics.com</a>
+                <a href="mailto:anujtayal@saarthiorganics.com" style={{ color: 'inherit', textDecoration: 'none' }} className="contact-link-hover">anujtayal@saarthiorganics.com</a>
               </div>
             </div>
           </div>
