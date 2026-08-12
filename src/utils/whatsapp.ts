@@ -65,8 +65,7 @@ export function buildWhatsAppLink(sourcePage: string, customData?: WhatsAppEnqui
       `Delivery Location: ${data.deliveryLocation?.trim() || 'Not provided'}\n` +
       `Additional Requirements: ${data.message?.trim() || 'None'}\n\n` +
       `Please share the available pricing, delivery timeline, and other relevant commercial details.\n\n` +
-      `Thank you.\n\n` +
-      `Enquiry Source: ${sourcePage}`;
+      `Thank you.`;
   } else {
     message = `Hello Saarthi Organics,\n\n` +
       `I would like to enquire about bulk molasses supply. Please find my requirements below:\n\n` +
@@ -74,8 +73,7 @@ export function buildWhatsAppLink(sourcePage: string, customData?: WhatsAppEnqui
       `Quantity Required: \n` +
       `Delivery Location: \n\n` +
       `Please share the available pricing, delivery timeline, and other relevant commercial details.\n\n` +
-      `Thank you.\n\n` +
-      `Enquiry Source: ${sourcePage}`;
+      `Thank you.`;
   }
 
   return `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
