@@ -57,28 +57,25 @@ export function buildWhatsAppLink(sourcePage: string, customData?: WhatsAppEnqui
   let message = '';
 
   if (hasDetails) {
-    message = `Hello Saarthi Organics Sourcing Desk,\n\n` +
-      `I would like to make a bulk molasses enquiry. Here are the details:\n\n` +
-      `- Name: ${data.contactPerson?.trim() || 'Not provided'}\n` +
-      `- Company Name: ${data.companyName?.trim() || 'Not provided'}\n` +
-      `- Quantity Required: ${data.requiredQuantity?.trim() || 'Not provided'}\n` +
-      `- Delivery Location: ${data.deliveryLocation?.trim() || 'Not provided'}\n` +
-      `- Product: Bulk Molasses\n`;
-
-    if (data.message && data.message.trim()) {
-      message += `- Additional Requirements: ${data.message.trim()}\n`;
-    } else {
-      message += `- Additional Requirements: None\n`;
-    }
-
-    message += `\nEnquiry Source: ${sourcePage}`;
+    message = `Hello Saarthi Organics,\n\n` +
+      `I would like to enquire about bulk molasses supply.\n\n` +
+      `Company Name: ${data.companyName?.trim() || 'Not provided'}\n` +
+      `Contact Name: ${data.contactPerson?.trim() || 'Not provided'}\n` +
+      `Quantity Required: ${data.requiredQuantity?.trim() || 'Not provided'}\n` +
+      `Delivery Location: ${data.deliveryLocation?.trim() || 'Not provided'}\n` +
+      `Additional Requirements: ${data.message?.trim() || 'None'}\n\n` +
+      `Please share the available pricing, delivery timeline, and other relevant commercial details.\n\n` +
+      `Thank you.\n\n` +
+      `Enquiry Source: ${sourcePage}`;
   } else {
-    message = `Hello Saarthi Organics Sourcing Desk,\n\n` +
-      `I would like to make a bulk molasses enquiry. Please find my requirements below:\n\n` +
+    message = `Hello Saarthi Organics,\n\n` +
+      `I would like to enquire about bulk molasses supply. Please find my requirements below:\n\n` +
       `Company Name: \n` +
       `Quantity Required: \n` +
-      `Delivery Location: \n` +
-      `\nEnquiry Source: ${sourcePage}`;
+      `Delivery Location: \n\n` +
+      `Please share the available pricing, delivery timeline, and other relevant commercial details.\n\n` +
+      `Thank you.\n\n` +
+      `Enquiry Source: ${sourcePage}`;
   }
 
   return `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
