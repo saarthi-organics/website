@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import ContactWhatsAppButton from '@/components/ContactWhatsAppButton';
 
@@ -77,7 +78,7 @@ export default function ContactPage() {
       />
 
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_contact.png')" }} />
+        <Image src="/hero_contact.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">RFQ & Sourcing Desk</span>

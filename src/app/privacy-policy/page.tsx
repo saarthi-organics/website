@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function PrivacyPolicy() {
     <main style={{ marginTop: '72px', background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
       
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_privacy.png')" }} />
+        <Image src="/hero_privacy.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Legal Information</span>

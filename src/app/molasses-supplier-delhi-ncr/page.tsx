@@ -81,7 +81,7 @@ export default function DelhiNCRSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our sourcing strategy relies on securing primary allocations from neighboring agricultural crushing zones in Haryana and Western Uttar Pradesh. This proximity allows us to load, inspect, and transport liquid molasses within hours of generation. By maintaining an in-house transport network, we guarantee that the molasses arriving at your facility is fresh, un-diluted, and matches the specified Brix value of 82.0% - 84.0%.
+              Our sourcing strategy relies on securing primary allocations from neighboring agricultural crushing zones in Haryana. This proximity allows us to load, inspect, and transport liquid molasses within hours of generation. By maintaining an in-house transport network, we guarantee that the molasses arriving at your facility is fresh, un-diluted, and matches the specified Brix value of 82.0% - 84.0%.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>NCR B2B Industries We Serve</h3>

@@ -1,4 +1,5 @@
 import { articles } from '@/data/blogArticles';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
@@ -90,7 +91,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
 
       {/* Hero Header */}
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_blog.png')" }} />
+        <Image src="/hero_blog.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label" style={{ display: 'inline-block', marginBottom: '16px' }}>{article.category}</span>

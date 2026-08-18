@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -17,7 +18,7 @@ export default function CattleFeedIndustry() {
       <Breadcrumbs items={[{ name: 'Cattle Feed Industry', href: '/molasses-for-cattle-feed' }]} />
       
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_cattle_feed.png')" }} />
+        <Image src="/hero_cattle_feed.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>

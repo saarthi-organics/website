@@ -82,7 +82,7 @@ export default function PremiumIndustrialMolasses() {
       
       {/* Hero Banner */}
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_product.png')" }} />
+        <Image src="/hero_product.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Product Catalog</span>

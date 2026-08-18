@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -17,7 +18,7 @@ export default function YeastIndustry() {
       <Breadcrumbs items={[{ name: 'Yeast Industry', href: '/molasses-for-yeast-industry' }]} />
       
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_yeast.png')" }} />
+        <Image src="/hero_yeast.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Industrial Applications</span>

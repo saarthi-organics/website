@@ -18,7 +18,7 @@ export default function AboutUs() {
       
       {/* Hero Banner */}
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_about.png')" }} />
+        <Image src="/hero_about.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Company Profile</span>

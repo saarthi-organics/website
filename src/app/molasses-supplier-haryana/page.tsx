@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import FinalCTA from '@/components/FinalCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -58,7 +59,7 @@ export default function HaryanaSupplierPage() {
       />
 
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_logistics.png')" }} />
+        <Image src="/hero_logistics.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Haryana Sourcing & Distribution Hub</span>

@@ -44,7 +44,7 @@ export default function CaseStudies() {
       <Breadcrumbs items={[{ name: 'Case Studies', href: '/case-studies' }]} />
       
       <div className="subpage-hero">
-        <div className="subpage-hero-bg" style={{ backgroundImage: "url('/hero_case_studies.png')" }} />
+        <Image src="/hero_case_studies.png" alt="" fill priority className="subpage-hero-bg" style={{ objectFit: 'cover' }} />
         <div className="subpage-hero-overlay" />
         <div className="subpage-hero-container">
           <span className="section-label">Operational Scenarios</span>
