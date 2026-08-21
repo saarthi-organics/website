@@ -56,7 +56,14 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Industries We Serve</h4>
           <ul>
-            <li><Link href="/#industries">Explore All Industries Served</Link></li>
+            <li><Link href="/molasses-for-distilleries">Distilleries & Ethanol</Link></li>
+            <li><Link href="/molasses-for-cattle-feed">Cattle Feed Mills</Link></li>
+            <li><Link href="/molasses-for-yeast-industry">Yeast Production</Link></li>
+            <li><Link href="/molasses-for-foundries">Foundry Binder</Link></li>
+            <li><Link href="/molasses-for-agriculture-and-farming">Agriculture & Farming</Link></li>
+            <li><Link href="/molasses-for-food-processing">Food Processing</Link></li>
+            <li><Link href="/molasses-for-pharma">Pharma Fermentation</Link></li>
+            <li><Link href="/molasses-for-tobacco-industry">Tobacco Processing</Link></li>
           </ul>
         </div>
 
