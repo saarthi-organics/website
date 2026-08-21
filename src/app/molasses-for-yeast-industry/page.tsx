@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Yeast Industry & Propagation | Saarthi Organics',
-  description: 'Pure sugarcane molasses for commercial yeast manufacturing. Standardized carbon source with low ash content and optimal nutrient profile for high dry yeast yields.',
+  description: 'Sugarcane molasses for commercial yeast manufacturing. Standardized carbon source with low ash content and optimal nutrient profile for high dry yeast yields.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-yeast-industry',
   },

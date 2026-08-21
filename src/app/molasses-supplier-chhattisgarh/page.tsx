@@ -36,7 +36,7 @@ export default function ChhattisgarhSupplierPage() {
     },
     {
       q: "Why is your molasses preferred by Raipur and Bhilai steel foundries?",
-      a: "Steel casting units require binders that can withstand extremely high casting temperatures. Our high-Brix (82% to 85%) molasses binds silica sand cores efficiently, forming a high-strength carbon structure that prevents molding defects."
+      a: "Steel casting units require binders that can withstand extremely high casting temperatures. Our molasses typically registers in the range of 82% to 88% Brix, providing the strong cohesive bond needed to stabilize silica sand molds during high-temperature metal casting."
     },
     {
       q: "Are your liquid road tanker shipments fully compliant with CG State Excise?",
@@ -82,7 +82,7 @@ export default function ChhattisgarhSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our procurement desk maintains direct allocations with cooperative sugar processing units in Kawardha, Balod, and Bemetara. Sourcing directly at the mill gates ensures we provide our industrial clients with pure, un-diluted molasses. Every dispatch is verified for refractometric Brix density (typically 82.0% - 84.0%) and sugar content to ensure it performs consistently in intense industrial environments.
+              Our procurement desk maintains direct allocations with cooperative sugar processing units in Kawardha, Balod, and Bemetara. Sourcing directly at the mill gates ensures we provide our industrial clients with high-density liquid sugarcane molasses. Every dispatch is verified for typical refractometric Brix density (typically 82.0% - 88.0%) and sugar content to support consistent performance in intense industrial environments.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Chhattisgarh B2B Industries We Serve</h3>
@@ -146,11 +146,11 @@ export default function ChhattisgarhSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -158,7 +158,7 @@ export default function ChhattisgarhSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

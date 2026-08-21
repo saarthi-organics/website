@@ -36,7 +36,7 @@ export default function GujaratSupplierPage() {
     },
     {
       q: "What makes your molasses ideal for Rajkot foundries?",
-      a: "Rajkot is a major foundry hub requiring high-performance sand binders. Our molasses registers a high Brix density (82% to 85%), providing the strong cohesive bond needed to stabilize silica sand molds during high-temperature metal casting."
+      a: "Rajkot is a major foundry hub requiring high-performance sand binders. Our molasses typically registers in the range of 82% to 88% Brix, providing the strong cohesive bond needed to stabilize silica sand molds during high-temperature metal casting."
     },
     {
       q: "Are you compliant with Gujarat State GST and Input Tax Credit (ITC) regulations?",
@@ -44,7 +44,7 @@ export default function GujaratSupplierPage() {
     },
     {
       q: "What packaging configurations are available for Gujarat industries?",
-      a: "We primary dispatch in bulk road tankers carrying 20 to 25 Metric Tons. For specific chemical formulating or pharmaceutical labs in Ahmedabad and Ankleshwar, we can arrange shipments in 1,000-liter IBC Totes or 200-liter steel drums upon request."
+      a: "We primary dispatch in bulk road tankers with a typical capacity of approximately 20 to 50 Metric Tons (depending on vehicle configuration, route and customer requirements). For specific chemical formulating or pharmaceutical labs in Ahmedabad and Ankleshwar, we can arrange shipments in 1,000-liter IBC Totes or 200-liter steel drums upon request."
     }
   ];
 
@@ -82,7 +82,7 @@ export default function GujaratSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our procurement desk maintains direct trade relationships with large-capacity mills in Bardoli, Gandevi, Maroli, and Madhi. By coordinating directly at the source, we bypass intermediate brokers, ensuring that our B2B partners in Gujarat receive pure, unadulterated, and high-density liquid molasses. Every tanker load is verified for Brix density and total reducing sugars to ensure consistent performance in your production lines.
+              Our procurement desk maintains direct trade relationships with large-capacity mills in Bardoli, Gandevi, Maroli, and Madhi. By coordinating directly at the source, we bypass intermediate brokers, ensuring that our B2B partners in Gujarat receive high-density liquid sugarcane molasses. Every tanker load is verified for Brix density and total reducing sugars to support consistent performance in your production lines.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Gujarat B2B Industries We Serve</h3>
@@ -146,11 +146,11 @@ export default function GujaratSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -158,7 +158,7 @@ export default function GujaratSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

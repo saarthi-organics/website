@@ -35,7 +35,7 @@ export default function LogisticsPage() {
           <div style={{ flex: 1.1, minWidth: '300px' }}>
             <h2 className="section-title">The Advantage of an In-House Tanker Fleet</h2>
             <p className="section-desc" style={{ marginBottom: '20px', lineHeight: '1.6' }}>
-              Unlike traditional brokers or generic traders who rely on third-party transport intermediaries, Saarthi Organics owns and controls its logistics operations. For plant heads and distillery operators, this translates to guaranteed delivery windows and operational predictability.
+              Unlike traditional brokers or generic traders who rely on third-party transport intermediaries, Saarthi Organics owns and controls its logistics operations. For plant heads and distillery operators, this translates to reliable delivery windows and operational predictability.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
               We maintain specialized, high-capacity liquid tankers designed for viscous fluids. Our logistics division monitors all tanker movements from loading terminals in sugar mills directly to your plant&apos;s intake valves, keeping your dispatch schedules completely transparent.
@@ -101,7 +101,7 @@ export default function LogisticsPage() {
           <div className="section-header">
             <span className="section-label">Operational Workflow</span>
             <h2 className="section-title">Weighment & Dispatch Security</h2>
-            <p className="section-desc">We follow strict standard operating procedures to guarantee correct quantities and grades.</p>
+            <p className="section-desc">We follow strict standard operating procedures to verify correct quantities and grades.</p>
           </div>
 
           <div className="features-grid">

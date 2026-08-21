@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses Supplier Uttarakhand | Bulk Sugarcane Sourcing | Saarthi Organics',
-  description: 'Industrial sugarcane molasses supplier in Uttarakhand. High-purity carbon media for pharmaceutical fermentation and distilleries in Haridwar, Kashipur, Bazpur, and Pantnagar.',
+  description: 'Industrial sugarcane molasses supplier in Uttarakhand. Carbon media for pharmaceutical fermentation and distilleries in Haridwar, Kashipur, Bazpur, and Pantnagar.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-supplier-uttarakhand',
   },
@@ -32,7 +32,7 @@ export default function UttarakhandSupplierPage() {
   const regionalFaqs = [
     {
       q: "Do you supply pharmaceutical-grade molasses in Uttarakhand?",
-      a: "Yes. For biotechnology and pharmaceutical fermentation units in SIDCUL (Haridwar) and Pantnagar, we supply high-purity sugarcane molasses. Sourcing parameters typically center around 82% Brix density and optimized Total Reducing Sugars (TRS). Product specifications and supporting quality documentation may be discussed based on customer requirements."
+      a: "For biotechnology and pharmaceutical fermentation units in SIDCUL (Haridwar) and Pantnagar, we supply industrial-grade sugarcane molasses. Sourcing parameters typically center around typical Brix range of 82%–88% density and typical Total Reducing Sugars (TRS) of 45%–50%. Product specifications and supporting quality documentation may be discussed based on customer requirements."
     },
     {
       q: "How are deliveries managed in the hilly terrains of Uttarakhand?",
@@ -82,7 +82,7 @@ export default function UttarakhandSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We source our liquid sugarcane molasses directly from state-of-the-art mills located in the Terai sugar belt of Uttarakhand, including <strong>Lalkuan, Kichha, Kashipur, Bazpur, and Iqbalpur</strong>, as well as adjacent agricultural corridors. This direct integration guarantees that our molasses exhibits an optimal chemical structure (with a typical refractometric Brix density of 82.0% - 84.0%) and low unfermentable solids, which is essential for maximizing yields in biological reactors.
+              We source our liquid sugarcane molasses directly from state-of-the-art mills located in the Terai sugar belt of Uttarakhand, including <strong>Lalkuan, Kichha, Kashipur, Bazpur, and Iqbalpur</strong>, as well as adjacent agricultural corridors. This direct integration ensures that our molasses exhibits an optimal chemical structure (with a typical refractometric Brix density of 82.0% - 88.0%) and low unfermentable solids, which is essential for biological reactors.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Uttarakhand Industries We Serve</h3>
@@ -145,11 +145,11 @@ export default function UttarakhandSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -157,7 +157,7 @@ export default function UttarakhandSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

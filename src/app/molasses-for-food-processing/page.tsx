@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Food Processing & Commercial Baking | Saarthi Organics',
-  description: 'Pure sugarcane molasses supplier for food manufacturing. Ideal for bakery products, confectionery, industrial syrups, and food-grade fermentation.',
+  description: 'Sugarcane molasses supplier for food manufacturing. Used in selected food-processing applications, subject to applicable grade and customer requirements.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-food-processing',
   },
@@ -24,7 +24,7 @@ export default function FoodProcessingIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses for Commercial Food Processing</h1>
           <p className="subpage-hero-desc">
-            Industrial food-grade molasses suited for commercial bakery production, confectionery formulations, and large-scale manufacturing.
+            Industrial sugarcane molasses used in selected food-processing applications, subject to applicable grade and customer requirements.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function FoodProcessingIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> We select batches from modern sugar refineries that adhere to strict sanitary processing codes. Every batch is certified for consistent Brix density (82% to 85%) and low insoluble solids, ensuring it pumps seamlessly through automated B2B recipe mixing lines.
+              <strong>Key Sourcing Benefits:</strong> We select batches from modern sugar refineries that adhere to strict sanitary processing codes. Every batch is verified for consistent typical Brix density (82%–88%) and low insoluble solids, ensuring it pumps seamlessly through automated B2B recipe mixing lines.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Food Grade Sourcing Standards</h3>
@@ -73,7 +73,7 @@ export default function FoodProcessingIndustry() {
             <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
               <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Food Sourcing Desk</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
-                We coordinate seasonal contracts and volume pricing agreements for large commercial bakeries and food processors.
+                Our standard offering is industrial-grade molasses. If your application requires a specific grade, certification or specification, please discuss the requirement with our sourcing team before quotation. We coordinate seasonal contracts and volume pricing agreements for large commercial bakeries and food processors.
               </p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>

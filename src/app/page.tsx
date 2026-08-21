@@ -37,8 +37,8 @@ export default function Home() {
     },
     {
       icon: "📦",
-      title: "Custom Packaging Options",
-      desc: "While tanker supply is our core, we accommodate custom industrial requirements including 1000L IBC Totes, Flexibags, and standard 200L steel/HDPE drums."
+      title: "Flexible Bulk & Packaging Options",
+      desc: "Bulk road tankers are our primary dispatch mode to ensure cost efficiency. Under specific logistics terms, we can coordinate alternative packing including 1000L IBC Totes, Flexibags, and standard 200L steel/HDPE drums."
     },
     {
       icon: "🤝",
@@ -156,7 +156,7 @@ export default function Home() {
             Sugarcane <span className="highlight-gold">Molasses Supply</span> for Industrial Sourcing
           </h1>
           <p className="hero-subtitle">
-            Excise-aligned bulk tanker distribution across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets. We coordinate direct-mill allocations of 82% min Brix molasses for distilleries, feed mills, yeast plants, and metal castings.
+            Excise-aligned bulk tanker distribution across Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, Madhya Pradesh, and other industrial markets. We coordinate direct-mill allocations of typical 82%–88% Brix molasses for distilleries, feed mills, yeast plants, and metal castings.
           </p>
           <div className="hero-ctas">
             <a href="#contact-desk" className="btn-primary">
@@ -326,7 +326,7 @@ export default function Home() {
           <span className="section-label">Technical Datasheet</span>
           <h2 className="section-title">Specifications Preview</h2>
           <p className="section-desc">
-            We guarantee industrial-grade consistency. Review key chemical and physical metrics for our standard heavy sugarcane molasses.
+            We work to maintain typical industrial-grade consistency. Review key chemical and physical metrics for our standard heavy sugarcane molasses.
           </p>
         </div>
         <SpecTable />
@@ -398,7 +398,7 @@ export default function Home() {
             <span className="section-label" style={{ color: 'var(--accent-gold)', textAlign: 'center' }}>Fleet Logistics</span>
             <h2 className="section-title logistics-title" style={{ textAlign: 'center' }}>Reliable Logistics & Fleet Network</h2>
             <p className="section-desc logistics-desc" style={{ textAlign: 'center' }}>
-              Our in-house transport network guarantees on-time dispatch and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant&apos;s storage tanks.
+              Our in-house transport network supports reliable dispatch scheduling and stable product supply. We navigate complex transport restrictions and regulatory clearances to deliver directly to your plant&apos;s storage tanks.
             </p>
             <div className="logistics-grid">
               <div className="logistics-item">
@@ -407,7 +407,7 @@ export default function Home() {
               </div>
               <div className="logistics-item">
                 <h3>Emergency Sourcing</h3>
-                <p>We leverage our strong sugar mill network to coordinate urgent dispatches and prevent client plant shutdowns.</p>
+                <p>We leverage our strong sugar mill network to coordinate urgent dispatches and help reduce the risk of client production interruptions.</p>
               </div>
               <div className="logistics-item">
                 <h3>Flexible Turnaround</h3>

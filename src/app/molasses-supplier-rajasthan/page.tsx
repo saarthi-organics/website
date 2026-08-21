@@ -36,7 +36,7 @@ export default function RajasthanSupplierPage() {
     },
     {
       q: "What types of molasses are supplied to Rajasthan foundries?",
-      a: "We supply a heavy industrial-grade sugarcane molasses with a high Brix density (82% to 85%). This grade provides superior binding strength, making it ideal for silica sand core binding in steel and iron casting foundries across Bhiwadi, Jaipur, and Jodhpur."
+      a: "We supply heavy industrial-grade sugarcane molasses typically in the range of 82% to 88% Brix. This grade provides superior binding strength, making it ideal for silica sand core binding in steel and iron casting foundries across Bhiwadi, Jaipur, and Jodhpur."
     },
     {
       q: "Do you process state border clearances for Rajasthan deliveries?",
@@ -44,7 +44,7 @@ export default function RajasthanSupplierPage() {
     },
     {
       q: "What is the minimum order volume for Rajasthan industries?",
-      a: "Our standard minimum order quantity (MOQ) is one full road tanker of approximately 20 to 25 Metric Tons. For long-term contract partners, we can schedule multi-tanker deliveries weekly or monthly to match production demands."
+      a: "Our standard minimum order quantity (MOQ) is a typical tanker quantity of approximately 20 to 50 Metric Tons (depending on vehicle configuration, route and customer requirements). For long-term contract partners, we can schedule multi-tanker deliveries weekly or monthly to match production demands."
     }
   ];
 
@@ -78,11 +78,11 @@ export default function RajasthanSupplierPage() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Rajasthan presents a unique set of industrial challenges, demanding raw materials that can withstand high temperatures while maintaining their physical properties. Major B2B sectors across <strong>Jaipur, Alwar, Kota, Udaipur, and Bhilwara</strong> require consistent volumes of industrial-grade molasses. Saarthi Organics fills this need by managing cross-border logistics lanes that transport high-purity sugarcane molasses directly to Rajasthan&apos;s key industrial zones.
+              Rajasthan presents a unique set of industrial challenges, demanding raw materials that can withstand high temperatures while maintaining their physical properties. Major B2B sectors across <strong>Jaipur, Alwar, Kota, Udaipur, and Bhilwara</strong> require consistent volumes of industrial-grade molasses. Saarthi Organics fills this need by managing cross-border logistics lanes that transport sugarcane molasses directly to Rajasthan&apos;s key industrial zones.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We source our molasses from top-tier sugar processing plants in neighboring agricultural states. By selecting mills that employ modern clarification and concentration processes, we secure molasses with a stable refractometric Brix value (82.0% - 84.0%). This high quality translates to better carbon content, improved binding efficiency, and consistent fermentation yields for our clients.
+              We source our molasses from top-tier sugar processing plants in neighboring agricultural states. By selecting mills that employ modern clarification and concentration processes, we secure molasses with a stable refractometric Brix value (typical range 82.0% - 88.0%). This high quality translates to better carbon content, improved binding efficiency, and consistent fermentation yields for our clients.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Rajasthan B2B Industries We Serve</h3>
@@ -145,11 +145,11 @@ export default function RajasthanSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -157,7 +157,7 @@ export default function RajasthanSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

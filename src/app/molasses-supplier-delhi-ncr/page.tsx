@@ -39,7 +39,7 @@ export default function DelhiNCRSupplierPage() {
     },
     {
       q: "Do you supply customized packaging options for NCR buyers?",
-      a: "While our primary volume goes via 20-25 MT road tankers, we also cater to NCR research labs and chemical units by providing molasses in 1,000-liter IBC Totes (approx. 1.4 MT) or 200-liter steel drums upon pre-arranged scheduling."
+      a: "While our primary volume goes via typical road tankers (approximately 20 to 50 Metric Tons depending on vehicle configuration and route), we also cater to NCR research labs and chemical units by providing molasses in 1,000-liter IBC Totes (approx. 1.4 MT) or 200-liter steel drums upon pre-arranged scheduling."
     },
     {
       q: "Are the shipments subject to municipal or environmental taxes in NCR?",
@@ -81,7 +81,7 @@ export default function DelhiNCRSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our sourcing strategy relies on securing primary allocations from neighboring agricultural crushing zones in Haryana. This proximity allows us to load, inspect, and transport liquid molasses within hours of generation. By maintaining an in-house transport network, we guarantee that the molasses arriving at your facility is fresh, un-diluted, and matches the specified Brix value of 82.0% - 84.0%.
+              Our sourcing strategy relies on securing primary allocations from neighboring agricultural crushing zones in Haryana. This proximity allows us to load, inspect, and transport liquid molasses within hours of generation. By maintaining an in-house transport network, we support consistent delivery of molasses that is typically in the Brix range of 82.0% - 88.0%.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>NCR B2B Industries We Serve</h3>
@@ -144,11 +144,11 @@ export default function DelhiNCRSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -156,7 +156,7 @@ export default function DelhiNCRSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

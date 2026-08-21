@@ -42,7 +42,7 @@ export default function CattleFeedIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> Our molasses is selected for high Brix solids (≥ 82.0%) to guarantee maximum binding cohesion. Fortifying feed with this natural syrup provides organic trace minerals (potassium, calcium, magnesium) and raises the overall digestable energy density of the finished pellet.
+              <strong>Key Sourcing Benefits:</strong> Our molasses is selected for high Brix solids (Typical Brix Range: 82%–88%) to support maximum binding cohesion. Fortifying feed with this natural syrup provides organic trace minerals (potassium, calcium, magnesium) and raises the overall digestable energy density of the finished pellet.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Technical Sourcing Specifications</h3>

@@ -36,7 +36,7 @@ export default function FAQPage() {
     },
     {
       q: "Can recurring monthly supply contracts be supported?",
-      a: "Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This guarantees raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October)."
+      a: "Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This supports raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October)."
     },
     {
       q: "How is pricing determined for bulk orders?",
@@ -48,7 +48,7 @@ export default function FAQPage() {
     },
     {
       q: "Can deliveries be arranged on short notice?",
-      a: "Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to prevent distillery or plant shutdown scenarios."
+      a: "Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to help reduce the risk of distillery or plant production interruptions."
     },
     {
       q: "Do you support buyers across multiple locations?",
@@ -67,8 +67,8 @@ export default function FAQPage() {
       a: "Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We coordinate sourcing from refineries that maintain standard crystallization parameters and verify specifications according to customer contract requirements."
     },
     {
-      q: "Can custom packaging requirements be accommodated?",
-      a: "Yes. For special industrial operations, we can coordinate packaging into client-specified container sizes or food-grade lined drums. Please outline your requirements with our sourcing desk."
+      q: "Can flexible packaging options be accommodated?",
+      a: "While bulk liquid road tankers are our primary dispatch method to ensure cost efficiency, we can coordinate alternative packaging such as 1000L IBC Totes, Flexibags, or 200L drums under specific logistics agreements. Please outline your requirements with our sourcing desk."
     },
     {
       q: "What is the recommended method for requesting technical information?",
@@ -127,13 +127,13 @@ export default function FAQPage() {
         <h2>Do you provide GST-compliant invoices?</h2>
         <p>Yes. Saarthi Organics is a registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation.</p>
         <h2>Can recurring monthly supply contracts be supported?</h2>
-        <p>Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This guarantees raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October).</p>
+        <p>Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This supports raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October).</p>
         <h2>How is pricing determined for bulk orders?</h2>
         <p>Bulk contract pricing is formulated based on current ex-mill sugarcane crushing rates, volume commitments, and delivery transit distances from our sourcing hubs in Karnal and neighboring sugar mills. We provide formal quotations with transparent freight breakdown structures.</p>
         <h2>What information is required to request a quotation?</h2>
         <p>To provide an accurate B2B quote, we request your target volume (in Metric Tons), frequency of dispatch (daily, weekly, or monthly), preferred packaging format, delivery site postal PIN code, and any specific unloading gate constraints (such as coupler sizes or pump requirements).</p>
         <h2>Can deliveries be arranged on short notice?</h2>
-        <p>Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to prevent distillery or plant shutdown scenarios.</p>
+        <p>Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to help reduce the risk of distillery or plant production interruptions.</p>
         <h2>Do you support buyers across multiple locations?</h2>
         <p>Yes. We coordinate multi-destination corporate accounts, allowing national procurement teams to negotiate unified supply terms while our logistics desk manages local dispatches to individual factory units.</p>
         <h2>What documents can be provided with dispatches?</h2>
@@ -142,8 +142,8 @@ export default function FAQPage() {
         <p>Molasses should be stored in steel or concrete tanks with specialized bottom discharge lines. Due to its high viscosity, we recommend using positive displacement rotary lobe pumps. For winter dispatches in cold climates, our tankers are fitted with internal steam-heating coils to drop the viscosity for rapid unloading.</p>
         <h2>What factors influence molasses quality consistency?</h2>
         <p>Consistency is impacted by sugarcane crushing variables, crop maturity, and sugar mill separation efficiency. We coordinate sourcing from refineries that maintain standard crystallization parameters and verify specifications according to customer contract requirements.</p>
-        <h2>Can custom packaging requirements be accommodated?</h2>
-        <p>Yes. For special industrial operations, we can coordinate packaging into client-specified container sizes or food-grade lined drums. Please outline your requirements with our sourcing desk.</p>
+        <h2>Can flexible packaging options be accommodated?</h2>
+        <p>While bulk liquid road tankers are our primary dispatch method to ensure cost efficiency, we can coordinate alternative packaging such as 1000L IBC Totes, Flexibags, or 200L drums under specific logistics agreements. Please outline your requirements with our sourcing desk.</p>
         <h2>What is the recommended method for requesting technical information?</h2>
         <p>Procurement heads and laboratory managers can request Technical Data Sheets (TDS), material safety data sheets (MSDS), and pre-shipment laboratory sample kits (500ml) via our RFQ desk or by clicking the &apos;Request Technical Details&apos; button on our forms.</p>
       </div>

@@ -36,7 +36,7 @@ export default function MadhyaPradeshSupplierPage() {
     },
     {
       q: "Why is Ujjain-Dewas a key destination for your molasses supplies?",
-      a: "Ujjain and Dewas house major industrial fermentation, chemical processing, and solvent extraction plants. We supply these facilities with high-Brix, un-diluted sugarcane molasses that serves as a dependable carbon feedstock for their chemical reactions."
+      a: "Ujjain and Dewas house major industrial fermentation, chemical processing, and solvent extraction plants. We supply these facilities with high-Brix sugarcane molasses that serves as a dependable carbon feedstock for their chemical reactions."
     },
     {
       q: "Do you provide excise permit documentation for MP distilleries?",
@@ -44,7 +44,7 @@ export default function MadhyaPradeshSupplierPage() {
     },
     {
       q: "What is the standard delivery lead time for MP locations?",
-      a: "For contracted volume partners, we schedule dispatches to match your production cycles, ensuring tankers arrive within 48 to 72 hours of order confirmation. We also maintain emergency buffer stocks to prevent plant shutdowns."
+      a: "For contracted volume partners, we schedule dispatches to match your production cycles, ensuring tankers arrive within 48 to 72 hours of order confirmation. We also maintain emergency buffer stocks to help reduce the risk of plant production interruptions."
     }
   ];
 
@@ -82,7 +82,7 @@ export default function MadhyaPradeshSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We source our molasses from premier mills in the Malwa region, as well as bordering sugar belts. This strategic sourcing network allows us to provide molasses with a high refractometric Brix value (typically 82.0% - 84.0%) and low unfermentable ash levels. By managing our own logistics fleet, we guarantee that every shipment arrives un-diluted and meets the technical specifications required by quality control heads.
+              We source our molasses from premier mills in the Malwa region, as well as bordering sugar belts. This strategic sourcing network allows us to support delivery of molasses typically in the Brix range of 82.0% - 88.0% and low unfermentable ash levels. By managing our own logistics fleet, we support consistent delivery that meets the technical specifications required by quality control heads.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Madhya Pradesh B2B Industries We Serve</h3>
@@ -146,11 +146,11 @@ export default function MadhyaPradeshSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -158,7 +158,7 @@ export default function MadhyaPradeshSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

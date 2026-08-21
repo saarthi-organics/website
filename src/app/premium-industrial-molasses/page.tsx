@@ -28,7 +28,7 @@ export default function PremiumIndustrialMolasses() {
     },
     {
       q: "Do you supply organic certification?",
-      a: "We trade heavy sugarcane molasses, which is a natural co-product of raw sugarcane sugar refining. While it is chemical-free and 100% natural, it is primarily graded as industrial-grade. If you require food-grade or specific certified organic batches, please notify our team in advance."
+      a: "Our standard offering is industrial-grade molasses derived from sugarcane processing. Sourcing specific organic or certified batches is subject to availability. If your application requires a particular grade or certification, please discuss this with our sourcing team before quotation."
     }
   ];
 
@@ -43,7 +43,7 @@ export default function PremiumIndustrialMolasses() {
             "@type": "Product",
             "@id": "https://www.saarthiorganics.com/premium-industrial-molasses/#product",
             "name": "Premium Industrial Sugarcane Molasses",
-            "description": "Heavy industrial-grade sugarcane molasses with a Brix level of 82%-88% and Total Reducing Sugars (TRS) >= 45%. Perfect carbon substrate for fermentation, bio-ethanol, yeast, foundries, and cattle feed.",
+            "description": "Heavy industrial-grade sugarcane molasses with a Brix level of 82%-88% and Total Reducing Sugars (TRS) of 45%-50%. Perfect carbon substrate for fermentation, bio-ethanol, yeast, foundries, and cattle feed.",
             "brand": {
               "@type": "Brand",
               "name": "Saarthi Organics"
@@ -68,7 +68,7 @@ export default function PremiumIndustrialMolasses() {
               {
                 "@type": "PropertyValue",
                 "name": "Total Reducing Sugars (TRS)",
-                "value": ">= 45%"
+                "value": "45% - 50%"
               },
               {
                 "@type": "PropertyValue",
@@ -115,7 +115,7 @@ export default function PremiumIndustrialMolasses() {
               Sugarcane molasses is the final viscous liquid obtained from the sugarcane refining process after the third crystallization cycle. Because the majority of the sucrose has been extracted, this molasses contains highly concentrated natural minerals, organic compounds, and uncrystallized reducing sugars.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              Our standard industrial sugarcane molasses features a high dry-matter content (Brix level of 82% - 88%) and excellent Total Reducing Sugars (TRS ≥ 45%). This makes it a highly efficient carbon substrate for fermentation processes, bio-ethanol distillation, and structural binders.
+              Our standard industrial sugarcane molasses typically features a high dry-matter content (Typical Brix Range: 82%–88%) and Total Reducing Sugars (Typical TRS: 45%–50%). This makes it an efficient carbon substrate for fermentation processes, bio-ethanol distillation, and binder formulations.
             </p>
             
             <div className="symmetrical-grid-two-col">
@@ -150,9 +150,9 @@ export default function PremiumIndustrialMolasses() {
         <div style={{ display: 'flex', gap: '60px', alignItems: 'center', flexWrap: 'wrap' }}>
           
           <div style={{ flex: 1.1, minWidth: '300px' }}>
-            <h2 className="section-title">On-Site Storage & Handling Guidelines</h2>
+            <h2 className="section-title">Customer-Side Molasses Handling & Storage Considerations</h2>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              Due to its high viscosity, industrial sugarcane molasses requires specific equipment and environment controls to maintain flowability and prevent pump cavitation.
+              The following information is intended for customers who receive and store molasses at their own facilities. Saarthi Organics supplies molasses for industrial applications and does not operate customer storage facilities. Due to its high viscosity, industrial sugarcane molasses requires specific equipment and environmental considerations to maintain flowability.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div className="symmetrical-detail-box">

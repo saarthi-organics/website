@@ -99,10 +99,10 @@ export default function QualityAndSourcing() {
             <div style={{ flex: 1.1, minWidth: '300px' }}>
               <h3 style={{ fontSize: '1.6rem', color: 'var(--text-primary-light)', marginBottom: '16px' }}>Direct Refining Connections</h3>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '16px' }}>
-                We maintain direct trade allocations across cooperative and private mills, serving industrial buyers in Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver stays pure and un-diluted.
+                We maintain direct trade allocations across cooperative and private mills, serving industrial buyers in Haryana, Punjab, Rajasthan, Delhi NCR, Uttarakhand, Gujarat, and Madhya Pradesh. Our sourcing operations bypass third-party agents, ensuring that the raw sugarcane molasses we deliver meets typical quality parameters.
               </p>
               <p style={{ color: 'var(--text-secondary-light)', fontSize: '1rem', lineHeight: '1.6' }}>
-                By aligning our bulk demand with annual crushing schedules, we guarantee consistent product volume for bio-ethanol plants, foundries, and animal feed mills year-round.
+                By aligning our bulk demand with annual crushing schedules, we support reliable product availability for bio-ethanol plants, foundries, and animal feed mills year-round.
               </p>
             </div>
           </div>

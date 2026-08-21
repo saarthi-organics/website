@@ -42,7 +42,7 @@ export default function TobaccoIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> We select heavy, high-viscosity batches (Brix density 84% to 86%) directly from sugar mill strikes. Sourcing molasses with standardized sugar-to-water ratios prevents mold formation while maintaining leaf elasticity during shredding and packaging runs.
+              <strong>Key Sourcing Benefits:</strong> We select heavy, high-viscosity batches (Typical Brix Range: 82%–88%) directly from sugar mill strikes. Sourcing molasses with standardized sugar-to-water ratios prevents mold formation while maintaining leaf elasticity during shredding and packaging runs.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Tobacco Casing Sourcing Metrics</h3>
@@ -73,7 +73,7 @@ export default function TobaccoIndustry() {
             <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
               <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Tobacco Sourcing Desk</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
-                We coordinate scheduled container allocations and custom packaging options for commercial tobacco processors.
+                We coordinate bulk road tanker allocations and flexible packaging options for commercial tobacco processors.
               </p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>

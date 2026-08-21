@@ -54,13 +54,9 @@ export default function Footer() {
 
         {/* Industry Focus */}
         <div className="footer-column">
-          <h4>Industries</h4>
+          <h4>Industries We Serve</h4>
           <ul>
-            <li><Link href="/molasses-for-cattle-feed">Cattle Feed</Link></li>
-            <li><Link href="/molasses-for-yeast-industry">Yeast Production</Link></li>
-            <li><Link href="/molasses-for-pharma">Pharma Industry</Link></li>
-            <li><Link href="/molasses-for-foundries">Foundry Binder</Link></li>
-            <li><Link href="/molasses-for-distilleries">Distilleries</Link></li>
+            <li><Link href="/#industries">Explore All Industries Served</Link></li>
           </ul>
         </div>
 

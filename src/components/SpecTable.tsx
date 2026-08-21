@@ -1,7 +1,7 @@
 export default function SpecTable() {
   const specs = [
     { parameter: "Total Soluble Solids (Brix)", limit: "82.0% - 88.0%", method: "Refractometric at 20°C" },
-    { parameter: "Total Reducing Sugars (TRS)", limit: "45.0% - 50.0% min", method: "Lane & Eynon Method" },
+    { parameter: "Total Reducing Sugars (TRS)", limit: "45.0% - 50.0%", method: "Lane & Eynon Method" },
     { parameter: "Sulfated Ash Content", limit: "12.0% - 15.0% max", method: "Gravimetric Calcination" },
     { parameter: "pH Value (1:1 aqueous)", limit: "4.5 - 5.5", method: "Potentiometric" },
     { parameter: "Specific Gravity / Density", limit: "1.42 - 1.47 g/ml", method: "Hydrometer / Pycnometer" },
@@ -54,7 +54,7 @@ export default function SpecTable() {
           paddingLeft: '12px',
           fontStyle: 'italic'
         }}>
-          Disclaimer: Product specifications, including Brix and other quality parameters, may vary slightly based on source, season, and batch. Final specifications will be confirmed at the time of quotation and supply.
+          Disclaimer: The testing methods listed represent typical general industry testing methods and do not necessarily represent Saarthi Organics&apos; in-house laboratory testing procedures. Product specifications, including Brix and other quality parameters, may vary slightly based on source, season, and batch. Final specifications will be confirmed at the time of quotation and supply.
         </p>
       </div>
     </div>

@@ -50,11 +50,11 @@ export default function DistilleriesIndustry() {
             <div className="symmetrical-grid-two-col" style={{ marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Total Reducing Sugars (TRS)</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Maintained at 45.0% - 50.0% to support continuous cell density and prevent fermentation stalls.</p>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Typical TRS: 45.0% - 50.0% to support continuous cell density and help reduce the risk of fermentation stalls.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Brix Density Verification</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Supplied at 82.0% - 88.0% Brix, ensuring minimal water dilution and high raw material density.</p>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Typical range of 82.0% - 88.0% Brix, ensuring minimal water dilution and high raw material density.</p>
               </div>
             </div>
 

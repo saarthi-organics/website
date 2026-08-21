@@ -53,7 +53,7 @@ export default function ContactPage() {
   const contactFaqs = [
     {
       q: "What is the Minimum Order Quantity (MOQ)?",
-      a: "Our standard MOQ for commercial liquid sugarcane molasses is 20 to 25 Metric Tons (equivalent to one road tanker). We also offer customized industrial orders in 1000L IBC Totes (approx. 1.4 MT) or steel drums (200L) upon prior logistics arrangement."
+      a: "Our standard MOQ for commercial liquid sugarcane molasses is a typical tanker quantity of approximately 20 to 50 Metric Tons (depending on vehicle configuration, route and customer requirements). We also offer customized industrial orders in 1000L IBC Totes (approx. 1.4 MT) or steel drums (200L) upon prior logistics arrangement."
     },
     {
       q: "Can we request a pre-shipment sample kit for laboratory testing?",
@@ -65,7 +65,7 @@ export default function ContactPage() {
     },
     {
       q: "What quality metrics are guaranteed in the contract pricing?",
-      a: "We focus on providing sugarcane molasses matching standard industrial specifications. Sourcing parameters typically center around 82% Brix density and optimized Total Reducing Sugars (TRS). Product specifications and supporting quality documentation may be discussed based on customer requirements."
+      a: "We focus on providing sugarcane molasses matching standard industrial specifications. Sourcing parameters typically center around typical Brix range of 82%–88% density and typical TRS of 45%–50%. Product specifications and supporting quality documentation may be discussed based on customer requirements."
     }
   ];
 

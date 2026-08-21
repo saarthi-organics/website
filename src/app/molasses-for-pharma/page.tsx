@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Pharma Industry & Fermentation | Saarthi Organics',
-  description: 'High-purity sugarcane molasses for pharmaceutical API fermentation. Review specifications and quality documentation options.',
+  description: 'Sugarcane molasses used in selected pharmaceutical API fermentation applications. Review typical specifications and documentation options.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-pharma',
   },
@@ -24,7 +24,7 @@ export default function PharmaIndustry() {
           <span className="section-label">Industrial Applications</span>
           <h1 className="subpage-hero-title">Molasses Sourcing for Pharmaceutical Fermentation</h1>
           <p className="subpage-hero-desc">
-            Specification-locked, high-purity carbon substrates with documented mineral profiles, optimized for active pharmaceutical ingredient (API) bioprocessing.
+            Sugarcane molasses carbon substrates for active pharmaceutical ingredient (API) fermentation, subject to applicable grade and customer specifications.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function PharmaIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> Our pharmaceutical-grade batches are characterized by standard trace parameter options and low agricultural residues. Discussing typical trace element profiles (magnesium, iron, zinc) can help align sourcing batches with your fermentation requirements.
+              <strong>Key Sourcing Benefits:</strong> Sourcing for biotechnology and pharmaceutical fermentation requires careful selection of batches. If your application requires a specific pharmaceutical-grade or technical specification, please discuss these requirements with our team to align sourcing batches with your fermentation process.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Pharma Media Sourcing Metrics</h3>
@@ -73,7 +73,7 @@ export default function PharmaIndustry() {
             <div className="quote-contact-card" style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
               <h3 style={{ fontSize: '1.3rem', color: 'var(--text-primary)', marginBottom: '12px' }}>Pharma Sourcing Desk</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '20px' }}>
-                We coordinate premium specification-locked logistics for active pharma ingredient (API) manufacturers and bioprocessing plants.
+                Our standard offering is industrial-grade molasses. If your application requires a specific grade, certification or specification, please discuss the requirement with our sourcing team before quotation. We work to support bioprocessing applications based on specific customer-defined metrics.
               </p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>

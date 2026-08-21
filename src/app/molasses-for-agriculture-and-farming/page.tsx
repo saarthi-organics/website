@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Molasses for Agriculture & Organic Farming Sourcing | Saarthi Organics',
-  description: 'Pure sugarcane molasses for organic farming, composting, and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
+  description: 'Sugarcane molasses for agricultural composting and soil conditioning. Stimulates soil microbes and enhances crop nutrient uptake.',
   alternates: {
     canonical: 'https://www.saarthiorganics.com/molasses-for-agriculture-and-farming',
   },
@@ -44,7 +44,7 @@ export default function AgricultureFarmingIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> Our raw molasses is sourced directly from primary sugar crushing mills, retaining its natural trace minerals (potassium, calcium, magnesium, iron). Sourcing raw, un-diluted syrup (Brix ≥ 82.0% min) guarantees maximum carbohydrate energy values per liter.
+              <strong>Key Sourcing Benefits:</strong> Our raw molasses is sourced directly from primary sugar crushing mills, retaining its natural trace minerals (potassium, calcium, magnesium, iron). Sourcing raw syrup (Typical Brix Range: 82%–88%) supports maximum carbohydrate energy values per liter.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Soil & Compost Biological Metrics</h3>
@@ -67,7 +67,7 @@ export default function AgricultureFarmingIndustry() {
             </p>
 
             <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Sourcing Desk Support:</strong> Sourced directly from sugar refiners, our logistics division coordinates multi-state transport to your blending warehouses, guaranteeing consistent deliveries to feed your production lines.
+              <strong>Sourcing Desk Support:</strong> Sourced directly from sugar refiners, our logistics division coordinates multi-state transport to your blending warehouses, supporting consistent deliveries to feed your production lines.
             </p>
           </div>
 

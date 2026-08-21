@@ -23,7 +23,7 @@ const SUGGESTION_POOL = [
   "Sourcing QA Quality Standards",
   "GST Billing & Input Tax Credit",
   "Request Sourcing Quote",
-  "Custom Packaging Options",
+  "Flexible Bulk & Packaging Options",
   "Direct Sugar Mill Sourcing",
   "About Saarthi Organics",
   "Frequently Asked Questions"

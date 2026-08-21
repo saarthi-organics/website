@@ -42,7 +42,7 @@ export default function FoundriesIndustry() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Key Sourcing Benefits:</strong> Sourcing high-solids molasses (Brix ≥ 82.0% min) is vital to guarantee thermal carbonization under extreme heats. The carbonized sugars form a protective carbon barrier, improving casting surface finishes and collapsing easily for clean sand shakeout after cooling.
+              <strong>Key Sourcing Benefits:</strong> Sourcing high-solids molasses (Typical Brix Range: 82%–88%) is vital to support thermal carbonization under extreme heats. The carbonized sugars form a protective carbon barrier, improving casting surface finishes and collapsing easily for clean sand shakeout after cooling.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Foundry Mold Sourcing Metrics</h3>

@@ -38,7 +38,7 @@ export default function HaryanaSupplierPage() {
     },
     {
       q: "What is the typical Brix and sugar specification of Haryana sugarcane molasses?",
-      a: "Haryana molasses typically registers a Brix density between 81% and 84%. The Total Reducing Sugars (TRS) range from 44% to 48%, making it an excellent fermentable feedstock. We provide batch-wise lab reports indicating purity, ash content, and density to guarantee processing stability."
+      a: "Haryana molasses typically registers a Brix density between 82% and 88%. The Total Reducing Sugars (TRS) typically range from 45% to 50%, making it an excellent fermentable feedstock. We provide batch-wise lab reports indicating purity, ash content, and density to support processing stability."
     },
     {
       q: "Are your liquid tanker shipments GST and Excise compliant?",
@@ -46,7 +46,7 @@ export default function HaryanaSupplierPage() {
     },
     {
       q: "Do you supply small industrial orders or samples in Haryana?",
-      a: "For industrial validations, we dispatch pre-shipment sample kits (2kg to 5kg) to plant quality control labs. For commercial orders, our minimum order quantity (MOQ) is one full road tanker, carrying approximately 20 to 25 Metric Tons of liquid molasses."
+      a: "For industrial validations, we dispatch pre-shipment sample kits (2kg to 5kg) to plant quality control labs. For commercial orders, our minimum order quantity (MOQ) is a typical tanker quantity of approximately 20 to 50 Metric Tons of liquid molasses."
     }
   ];
 
@@ -65,7 +65,7 @@ export default function HaryanaSupplierPage() {
           <span className="section-label">Haryana Sourcing & Distribution Hub</span>
           <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Supplier in Haryana</h1>
           <p className="subpage-hero-desc">
-            Premium industrial-grade sugarcane molasses with guaranteed Brix density. Handled directly from our Karnal operations desk with full excise compliance and nationwide shipping.
+            Premium industrial-grade sugarcane molasses with typical Brix density. Handled directly from our Karnal operations desk with full excise compliance and nationwide shipping.
           </p>
         </div>
       </div>
@@ -80,7 +80,7 @@ export default function HaryanaSupplierPage() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Haryana is a major agricultural corridor in Northern India, producing substantial sugarcane volumes through cooperative and private sugar mills. Saarthi Organics leverages its central sourcing desk in Karnal to secure direct allocations from premier mill zones in <strong>Yamunanagar, Panipat, Shahabad, Rohtak, and Sonipat</strong>. By coordinating procurement directly at the mill gates, we eliminate intermediate traders and ensure that our clients receive unadulterated, high-density sugarcane molasses at competitive prices.
+              Haryana is a major agricultural corridor in Northern India, producing substantial sugarcane volumes through cooperative and private sugar mills. Saarthi Organics leverages its central sourcing desk in Karnal to secure direct allocations from premier mill zones in <strong>Yamunanagar, Panipat, Shahabad, Rohtak, and Sonipat</strong>. By coordinating procurement directly at the mill gates, we eliminate intermediate traders and ensure that our clients receive high-density sugarcane molasses at competitive prices.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
@@ -147,11 +147,11 @@ export default function HaryanaSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -159,7 +159,7 @@ export default function HaryanaSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>

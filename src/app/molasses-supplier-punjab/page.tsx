@@ -40,11 +40,11 @@ export default function PunjabSupplierPage() {
     },
     {
       q: "Can you supply high-sugar molasses suitable for Punjab distilleries?",
-      a: "Yes. We source specific high-purity batches with a Total Reducing Sugars (TRS) value of 45% to 48%. This high sugar density is ideal for bio-ethanol and potable alcohol distilleries in Patiala, Sangrur, and Firozpur, ensuring high fermentation yields."
+      a: "Yes. We source specific batches typically in the Total Reducing Sugars (TRS) range of 45% to 50%. This sugar density is ideal for bio-ethanol and potable alcohol distilleries in Patiala, Sangrur, and Firozpur, supporting efficient fermentation runs."
     },
     {
       q: "What is your dispatch capacity and seasonal availability for Punjab buyers?",
-      a: "We operate a private fleet of over 40 liquid road tankers, allowing us to deliver up to 500 Metric Tons of sugarcane molasses daily. Thanks to our storage contracts, we guarantee stable year-round supply even during the summer sugar mill crushing off-season."
+      a: "We operate a private fleet of over 40 liquid road tankers, allowing us to deliver up to 500 Metric Tons of sugarcane molasses daily. Thanks to our storage contracts, we support stable year-round supply even during the summer sugar mill crushing off-season."
     }
   ];
 
@@ -82,7 +82,7 @@ export default function PunjabSupplierPage() {
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Unlike unorganized brokers who offer inconsistent quality and uncertain delivery timelines, Saarthi Organics operates on a contract-backed sourcing structure. We source our molasses from technologically advanced sugar mills, ensuring that the physical and chemical properties of each shipment are standardized. Our clients receive molasses with verified Brix percentages (typically 82% to 84%) and high fermentable sugars.
+              Unlike unorganized brokers who offer inconsistent quality and uncertain delivery timelines, Saarthi Organics operates on a contract-backed sourcing structure. We source our molasses from technologically advanced sugar mills, ensuring that the physical and chemical properties of each shipment are standardized. Our clients receive molasses with typical Brix percentages (typically 82% to 88%) and high fermentable sugars.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Punjab Industries We Support</h3>
@@ -145,11 +145,11 @@ export default function PunjabSupplierPage() {
                 <tbody>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Brix Density</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 84.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>82.0% - 88.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Total Reducing Sugar</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>44.0% - 48.0%</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>45.0% - 50.0%</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Moisture Content</td>
@@ -157,7 +157,7 @@ export default function PunjabSupplierPage() {
                   </tr>
                   <tr>
                     <td style={{ padding: '8px 0', color: 'var(--text-secondary)' }}>Standard MOQ</td>
-                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 25 MT (Tanker)</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontWeight: 'bold' }}>20 - 50 MT (Tanker)</td>
                   </tr>
                 </tbody>
               </table>
