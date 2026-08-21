@@ -32,7 +32,7 @@ export default function GujaratSupplierPage() {
   const regionalFaqs = [
     {
       q: "How does Saarthi Organics service industrial clients in Gujarat?",
-      a: "We maintain a robust distribution network that delivers sugarcane molasses to Gujarat-based buyers. We coordinate dispatches from cooperative sugar mills in South Gujarat (such as Bardoli, Gandevi, and Madhi) as well as inter-state refinery networks, providing reliable delivery via our tanker fleet."
+      a: "We maintain a robust distribution network that delivers sugarcane molasses to Gujarat-based buyers. We coordinate dispatches from cooperative sugar mills and approved supply partners across Gujarat, providing reliable delivery via our tanker fleet."
     },
     {
       q: "What makes your molasses ideal for Rajkot foundries?",
@@ -63,7 +63,7 @@ export default function GujaratSupplierPage() {
           <span className="section-label">Gujarat Sourcing & Distribution Hub</span>
           <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Supplier in Gujarat</h1>
           <p className="subpage-hero-desc">
-            High-viscosity, premium sugarcane molasses. Serving Rajkot metal foundries, Ahmedabad pharma units, and Anand cattle feed manufacturers with guaranteed Brix specifications.
+            High-viscosity, premium sugarcane molasses. Serving Rajkot metal foundries, Ahmedabad pharma units, and Anand cattle feed manufacturers with specifications confirmed for each supply.
           </p>
         </div>
       </div>
@@ -78,11 +78,11 @@ export default function GujaratSupplierPage() {
             </h2>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Gujarat is one of India&apos;s most industrially advanced states, hosting massive manufacturing sectors. B2B enterprises across <strong>Ahmedabad, Rajkot, Vadodara, Ankleshwar, Vapi, and Surat</strong> require a stable supply of high-purity raw materials. Saarthi Organics meets this demand by delivering premium sugarcane molasses, sourced directly from leading South Gujarat sugar cooperative mills and adjacent agricultural belts.
+              Gujarat is one of India&apos;s most industrially advanced states, hosting massive manufacturing sectors. B2B enterprises across <strong>Ahmedabad, Rajkot, Vadodara, Ankleshwar, Vapi, and Surat</strong> require a stable supply of industrial-grade raw materials. Saarthi Organics meets this demand by delivering premium sugarcane molasses, sourced directly from leading South Gujarat sugar cooperative mills and adjacent agricultural belts.
             </p>
             
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our procurement desk maintains direct trade relationships with large-capacity mills in Bardoli, Gandevi, Maroli, and Madhi. By coordinating directly at the source, we bypass intermediate brokers, ensuring that our B2B partners in Gujarat receive high-density liquid sugarcane molasses. Every tanker load is verified for Brix density and total reducing sugars to support consistent performance in your production lines.
+              We source from established sugar mills and approved supply partners across Gujarat, subject to availability and customer requirements, working to supply high-density liquid sugarcane molasses. Product specifications can be reviewed and confirmed based on source, batch and customer requirements.
             </p>
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Gujarat B2B Industries We Serve</h3>
@@ -101,17 +101,17 @@ export default function GujaratSupplierPage() {
               Operating in Gujarat requires strict adherence to commercial compliance standards. Saarthi Organics is fully GST-aligned. We provide digital e-way bills, instant weighbridge slips, and detailed invoices, allowing procurement heads to easily claim Input Tax Credit without tax processing complications.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We manage transport via our fleet of specialized liquid road tankers. Each vehicle undergoes cleaning before loading to prevent contamination, ensuring that the molasses discharged at your facility matches the purity levels measured at the mill gates.
+              We manage transport via our fleet of specialized liquid road tankers. We coordinate transport via specialized liquid road tankers, working with fleet operators to ensure that transport vessels are inspected and clean prior to dispatch.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Cooperative Mill Sourcing</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct procurement partnerships with South Gujarat cooperative sugar mills guarantee stable inventory year-round.</p>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct procurement partnerships with South Gujarat cooperative sugar mills support reliable seasonal sourcing and supply planning.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
-                <strong style={{ color: 'var(--accent-amber)' }}>Rigorous Quality Audits</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Strict pre-loading checks verify Brix and sugar percentages, matching the precise requirements of chemical and pharma buyers.</p>
+                <strong style={{ color: 'var(--accent-amber)' }}>Quality & Specification Checks</strong>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Pre-dispatch specification checks are carried out where applicable, matching the typical parameters required by industrial chemical and bioprocessing buyers.</p>
               </div>
             </div>
           </div>

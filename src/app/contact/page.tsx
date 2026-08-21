@@ -64,7 +64,7 @@ export default function ContactPage() {
       a: "Saarthi Organics has an in-house excise and compliance team. We process all regulatory transport permits, state pass clearances, and gate exit licenses in real-time. Transit permits are shared digitally with the tanker crew prior to dispatch."
     },
     {
-      q: "What quality metrics are guaranteed in the contract pricing?",
+      q: "What quality metrics are typical in the contract pricing?",
       a: "We focus on providing sugarcane molasses matching standard industrial specifications. Sourcing parameters typically center around typical Brix range of 82%–88% density and typical TRS of 45%–50%. Product specifications and supporting quality documentation may be discussed based on customer requirements."
     }
   ];

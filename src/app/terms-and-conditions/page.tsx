@@ -44,7 +44,7 @@ export default function TermsAndConditions() {
             1. Sourcing & Dispatch Commitments
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>
-            Quotations are formulated based on seasonal sugar refiner parameters, bulk transit distances, and delivery quantities. Standard dispatches require a formal corporate Purchase Order (PO). Sourcing contracts secure specific monthly Metric Tons (MT) allocations which are guaranteed through our mill relationships during the crushing off-season (May to October).
+            Quotations are formulated based on seasonal sugar refiner parameters, bulk transit distances, and delivery quantities. Standard dispatches require a formal corporate Purchase Order (PO). Sourcing contracts secure specific monthly Metric Tons (MT) allocations which are supported through our mill relationships during the crushing off-season (May to October).
           </p>
 
           <h2 style={{ fontSize: '1.4rem', marginBottom: '14px', color: 'var(--accent-gold)', borderBottom: '1px solid var(--border-light)', paddingBottom: '8px' }}>

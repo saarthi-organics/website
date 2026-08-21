@@ -65,7 +65,7 @@ export default function FoodProcessingIndustry() {
             </p>
 
             <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Clean Tanker Protocols:</strong> Because biological contamination is a critical hazard, we enforce strict tanker cleaning protocols before loading, ensuring that the raw sugarcane molasses arrives fresh, stable, and ready for your intake QA inspection.
+              <strong>Clean Tanker Protocols:</strong> Because contamination is a critical concern, we coordinate with transport operators to ensure vehicles are clean prior to loading, helping support predictable quality parameters at your intake inspection.
             </p>
           </div>
 
