@@ -26,9 +26,9 @@ export const articles: Article[] = [
     readTime: "8 min read",
     image: "/molasses_plant.png",
     author: {
-      name: "Ambuj Goyal",
-      role: "Co-Founder & Sourcing Director",
-      initials: "AG"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "Sugarcane molasses is a heavily regulated commodity in India, subject to strict state excise rules and federal tax laws. Under the Indian Goods and Services Tax (GST) regime, molasses is classified under HSN Code 1703, carrying a standard GST rate of 28%. For heavy manufacturing units, distilleries, and chemical plants, managing the tax compliance of raw materials is vital to ensure cash flow efficiency.",
@@ -46,8 +46,8 @@ export const articles: Article[] = [
     readTime: "5 min read",
     image: "/industry_distilleries.png",
     author: {
-      name: "Saarthi Organics Technical Desk",
-      role: "Technical Writing & Quality Desk",
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
       initials: "SO"
     },
     content: [
@@ -66,9 +66,9 @@ export const articles: Article[] = [
     readTime: "7 min read",
     image: "/logistics_fleet.png",
     author: {
-      name: "Anuj Tayal",
-      role: "Co-Founder & Logistics Director",
-      initials: "AT"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "The physical flow behavior of sugarcane molasses is highly temperature-dependent. At warm temperatures, molasses acts as a pumpable fluid, but as the ambient temperature drops below 15°C, its viscosity increases exponentially, transforming it into a thick, semi-solid syrup that can clog standard transfer pumps and cause massive delays at the receiving station.",
@@ -86,8 +86,8 @@ export const articles: Article[] = [
     readTime: "6 min read",
     image: "/industry_yeast.png",
     author: {
-      name: "Saarthi Organics Technical Desk",
-      role: "Technical Writing & Quality Desk",
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
       initials: "SO"
     },
     content: [
@@ -106,9 +106,9 @@ export const articles: Article[] = [
     readTime: "5 min read",
     image: "/industry_foundries.png",
     author: {
-      name: "Vikram R. Joshi",
-      role: "Materials Engineer",
-      initials: "VJ"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "In metal casting foundries, sand molds and cores must withstand intense heat and pressure when molten metal is poured. Traditionally, organic binders like linseed oil or synthetic resins have been used. However, industrial sugarcane molasses represents a highly cost-effective, environmentally friendly organic binder for sand cores.",
@@ -126,9 +126,9 @@ export const articles: Article[] = [
     readTime: "6 min read",
     image: "/industry_cattle_feed.png",
     author: {
-      name: "Amit Sharma",
-      role: "Agricultural Analyst",
-      initials: "AS"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "Sugarcane molasses is widely utilized in animal nutrition as an additive in cattle feed formulations. It serves multiple purposes: it suppresses dust in feed mills, binds feed ingredients into compact pellets, and provides a rich source of highly digestible energy (carbohydrates) for livestock.",
@@ -146,9 +146,9 @@ export const articles: Article[] = [
     readTime: "6 min read",
     image: "/molasses_plant.png",
     author: {
-      name: "Ambuj Goyal",
-      role: "Co-Founder & Sourcing Director",
-      initials: "AG"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "Sugarcane molasses is the thick, dark, viscous syrup remaining after the third and final boiling cycle of sugarcane juice extraction. During sugarcane refining, sucrose is repeatedly crystallized and removed. The final crystallization strike yields a heavy co-product that contains concentrated minerals, vitamins, and a lower sucrose content, making it highly valuable for industrial fermentation and chemical processes.",
@@ -166,8 +166,8 @@ export const articles: Article[] = [
     readTime: "7 min read",
     image: "/industry_distilleries.png",
     author: {
-      name: "Saarthi Organics Technical Desk",
-      role: "Technical Writing & Quality Desk",
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
       initials: "SO"
     },
     content: [
@@ -186,9 +186,9 @@ export const articles: Article[] = [
     readTime: "6 min read",
     image: "/logistics_fleet.png",
     author: {
-      name: "Anuj Tayal",
-      role: "Co-Founder & Logistics Director",
-      initials: "AT"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "Storing bulk molasses requires specialized infrastructure. Because it is highly viscous and hygroscopic (absorbing moisture from the atmosphere), improper storage can lead to dilution at the surface, triggering bacterial spoilage or spontaneous fermentation inside storage vessels. This section outlines key design parameters for bulk storage facilities.",
@@ -206,8 +206,8 @@ export const articles: Article[] = [
     readTime: "5 min read",
     image: "/molasses_testing.png",
     author: {
-      name: "Saarthi Organics Technical Desk",
-      role: "Technical Writing & Quality Desk",
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
       initials: "SO"
     },
     content: [
@@ -226,9 +226,9 @@ export const articles: Article[] = [
     readTime: "7 min read",
     image: "/logistics_fleet.png",
     author: {
-      name: "Ambuj Goyal",
-      role: "Co-Founder & Sourcing Director",
-      initials: "AG"
+      name: "Saarthi Organics",
+      role: "Sourcing Intelligence Desk",
+      initials: "SO"
     },
     content: [
       "For heavy manufacturing plants, animal feed mills, and distilleries, molasses is a critical feedstock. A delay in delivery or a sudden drop in Brix levels can lead to costly plant production delays. When evaluating potential bulk supply partners in India, purchasing heads must verify several key areas.",

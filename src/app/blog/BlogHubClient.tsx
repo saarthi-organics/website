@@ -177,30 +177,9 @@ export default function BlogHubClient() {
                   borderTop: '1px solid var(--border-color)',
                   padding: '16px 24px',
                   display: 'flex',
-                  justifyContent: 'space-between',
+                  justifyContent: 'flex-end',
                   alignItems: 'center'
                 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <div style={{
-                      width: '32px',
-                      height: '32px',
-                      borderRadius: '50%',
-                      background: 'var(--accent-gold)',
-                      color: '#111111',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontWeight: '700',
-                      fontSize: '0.75rem'
-                    }}>
-                      {post.author.initials}
-                    </div>
-                    <div>
-                      <h6 style={{ color: 'var(--text-primary)', margin: 0, fontSize: '0.8rem', fontWeight: 600 }}>{post.author.name}</h6>
-                      <p style={{ color: 'var(--text-secondary)', margin: 0, fontSize: '0.7rem' }}>{post.author.role}</p>
-                    </div>
-                  </div>
-
                   <Link href={`/blog/${post.slug}`} style={{
                     fontWeight: 700,
                     fontSize: '0.85rem',

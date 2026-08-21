@@ -51,9 +51,9 @@ export default async function BlogArticlePage({ params }: PageProps) {
     "datePublished": new Date(article.date).toISOString().split('T')[0],
     "image": `https://www.saarthiorganics.com${article.image}`,
     "author": {
-      "@type": "Person",
-      "name": article.author.name,
-      "jobTitle": article.author.role
+      "@type": "Organization",
+      "name": "Saarthi Organics",
+      "url": "https://www.saarthiorganics.com/"
     },
     "publisher": {
       "@type": "Organization",
@@ -109,31 +109,21 @@ export default async function BlogArticlePage({ params }: PageProps) {
           {/* Main Body */}
           <div style={{ flex: 1.3, minWidth: '300px' }}>
             
-            {/* Author Profile card */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'var(--bg-secondary)', padding: '20px', borderRadius: '8px', marginBottom: '36px', border: '1px solid var(--border-color)' }}>
-              <div style={{
-                width: '48px',
-                height: '48px',
-                borderRadius: '50%',
-                background: 'var(--accent-gold)',
-                color: '#111111',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: '800',
-                fontSize: '1rem',
-                boxShadow: '0 0 10px rgba(212, 175, 55, 0.2)'
-              }}>
-                {article.author.initials}
-              </div>
-              <div style={{ flex: 1 }}>
-                <h5 style={{ color: 'var(--text-primary)', margin: '0 0 2px 0', fontSize: '1rem', fontWeight: 600 }}>{article.author.name}</h5>
-                <p style={{ color: 'var(--text-secondary)', margin: 0, fontSize: '0.8rem' }}>{article.author.role}</p>
-              </div>
-              <div style={{ textAlign: 'right', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                <div>Published: {article.date}</div>
-                <div>{article.readTime}</div>
-              </div>
+            {/* Article Metadata (Date & Read Time) */}
+            <div style={{ 
+              display: 'flex', 
+              justifyContent: 'space-between', 
+              alignItems: 'center', 
+              background: 'var(--bg-secondary)', 
+              padding: '16px 20px', 
+              borderRadius: '8px', 
+              marginBottom: '36px', 
+              border: '1px solid var(--border-color)',
+              fontSize: '0.85rem', 
+              color: 'var(--text-secondary)' 
+            }}>
+              <div>Published: <strong>{article.date}</strong></div>
+              <div>{article.readTime}</div>
             </div>
 
             {/* Paragraph Content */}
