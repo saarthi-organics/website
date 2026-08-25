@@ -271,8 +271,8 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
             </div>
           </div>
 
-          <div className="quote-contact-item" style={{ alignItems: 'flex-start' }}>
-            <div className="quote-contact-icon" style={{ marginTop: '2px' }}>✉️</div>
+          <div className="quote-contact-item">
+            <div className="quote-contact-icon">✉️</div>
             <div className="quote-contact-details" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <div>
                 <h4 style={{ margin: '0 0 2px 0' }}>Official RFQ Email</h4>
@@ -298,7 +298,7 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
             <div className="quote-contact-icon">📍</div>
             <div className="quote-contact-details">
               <h4>Corporate Location</h4>
-              <p>Farm House, Liberty Chowk, Karnal - 132001, Haryana</p>
+              <p style={{ fontSize: '0.92rem', fontWeight: 400, margin: 0 }}>Farm House, Liberty Chowk, Karnal - 132001, Haryana</p>
             </div>
           </div>
 
