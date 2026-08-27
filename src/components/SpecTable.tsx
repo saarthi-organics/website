@@ -5,7 +5,7 @@ export default function SpecTable() {
     { parameter: "Sulfated Ash Content", limit: "12.0% - 15.0% max", method: "Gravimetric Calcination" },
     { parameter: "pH Value (1:1 aqueous)", limit: "4.5 - 5.5", method: "Potentiometric" },
     { parameter: "Specific Gravity / Density", limit: "1.42 - 1.47 g/ml", method: "Hydrometer / Pycnometer" },
-    { parameter: "Physical Appearance", limit: "Dark Brown / Black Viscous", method: "Visual Examination" },
+    { parameter: "Physical Appearance", limit: "Dark Brown Viscous", method: "Visual Examination" },
     { parameter: "Apparent Viscosity", limit: "3000 - 5000 cP at 25°C", method: "Brookfield Viscometer" },
   ];
 
