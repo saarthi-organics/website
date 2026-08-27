@@ -28,6 +28,8 @@ export default function FAQClient({ faqs }: FAQClientProps) {
               <button 
                 onClick={() => toggleFAQ(index)}
                 className="faq-question"
+                aria-expanded={isOpen}
+                aria-controls={`faq-answer-${index}`}
                 style={{
                   width: '100%',
                   border: 'none',
@@ -66,6 +68,9 @@ export default function FAQClient({ faqs }: FAQClientProps) {
               
               {/* Answer content with smooth height transition container */}
               <div 
+                id={`faq-answer-${index}`}
+                role="region"
+                aria-label={`Answer to: ${faq.q}`}
                 style={{
                   maxHeight: isOpen ? '300px' : '0px',
                   overflow: 'hidden',

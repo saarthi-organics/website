@@ -135,6 +135,10 @@ export default function ContactForm({ hideContactInfo = false }: ContactFormProp
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (step < 3) {
+      handleNext();
+      return;
+    }
     if (!validateStep(3)) return;
     
     setStatus('submitting');

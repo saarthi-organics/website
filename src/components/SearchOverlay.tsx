@@ -426,6 +426,15 @@ export default function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
                     <div 
                       key={res.url}
                       onClick={() => handleResultClick(res)}
+                      tabIndex={0}
+                      role="button"
+                      aria-label={`Search result: ${res.title}`}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          handleResultClick(res);
+                        }
+                      }}
                       style={{
                         background: isActive ? 'rgba(212, 175, 55, 0.02)' : 'var(--bg-secondary)',
                         border: isActive ? '1px solid var(--accent-gold)' : '1px solid var(--border-light)',

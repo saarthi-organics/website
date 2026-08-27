@@ -1753,6 +1753,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* Header links collision prevention on smaller desktops */
 @media (max-width: 1300px) {
+  .nav-header {
+    padding: 16px 24px !important;
+  }
   .nav-links {
     gap: 14px !important;
   }
@@ -1851,5 +1854,34 @@ details.faq-card[open] summary .faq-arrow-icon {
   z-index: 3 !important;
   max-width: 960px !important;
   margin: 0 auto !important;
+}
+
+/* Responsive mobile menu overlay */
+.mobile-overlay {
+  position: fixed;
+  top: 88px; /* Desktop & Tablet Landscape */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 88px);
+  background: var(--bg-primary);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  gap: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .mobile-overlay {
+    top: 72px; /* Mobile Viewports */
+    height: calc(100vh - 72px);
+  }
+}
+
+/* Hide Mobile Sticky Action Bar when mobile menu is open */
+body.mobile-menu-open .sticky-action-bar {
+  display: none !important;
 }
 

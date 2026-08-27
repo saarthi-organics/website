@@ -68,7 +68,8 @@ export default function MolassesAnimation() {
           style={{
             objectFit: 'cover',
             filter: 'url(#viscous-molasses-ripple)',
-            transform: 'scale(1.08)',
+            transform: 'scale(1.08) translate3d(0,0,0)',
+            willChange: 'filter',
             clipPath: 'polygon(74% 37%, 88% 37%, 78% 77%, 100% 77%, 100% 100%, 0% 100%, 0% 77%, 66% 77%)',
             position: 'absolute',
             top: 0,

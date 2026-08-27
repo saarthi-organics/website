@@ -39,11 +39,14 @@ export default function Header() {
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden';
+      document.body.classList.add('mobile-menu-open');
     } else {
       document.body.style.overflow = '';
+      document.body.classList.remove('mobile-menu-open');
     }
     return () => {
       document.body.style.overflow = '';
+      document.body.classList.remove('mobile-menu-open');
     };
   }, [mobileOpen]);
 
@@ -159,24 +162,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div 
-          className="mobile-overlay"
-          style={{
-            position: 'fixed',
-            top: '72px',
-            left: 0,
-            width: '100%',
-            height: 'calc(100vh - 72px)',
-            background: 'var(--bg-primary)',
-            zIndex: 99,
-            display: 'flex',
-            flexDirection: 'column',
-            padding: '40px 24px',
-            gap: '24px',
-            borderTop: '1px solid rgba(255,255,255,0.08)',
-            overflowY: 'auto'
-          }}
-        >
+        <div className="mobile-overlay">
           {/* Mobile Menu Search Searchbar trigger */}
           <button 
             onClick={() => { setMobileOpen(false); setIsSearchOpen(true); }}
@@ -245,7 +231,7 @@ export default function Header() {
 
       {/* Inline styles to handle hamburger show/hide on mobile */}
       <style jsx global>{`
-        @media (max-width: 1120px) {
+        @media (max-width: 1200px) {
           .desktop-nav {
             display: none !important;
           }
