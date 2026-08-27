@@ -406,8 +406,8 @@ export default function Home() {
                 <p>No reliance on third-party brokers. We maintain complete control over dispatch timelines and tanker routing.</p>
               </div>
               <div className="logistics-item">
-                <h3>Excise Compliance</h3>
-                <p>We manage all state excise permits, e-way bills, and transit declarations to ensure smooth border crossings and zero delays.</p>
+                <h3>Emergency Sourcing</h3>
+                <p>We leverage our strong sugar mill network to coordinate urgent dispatches and help reduce the risk of client production interruptions.</p>
               </div>
               <div className="logistics-item">
                 <h3>Flexible Turnaround</h3>
