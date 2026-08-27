@@ -65,7 +65,7 @@ export default function DistilleriesIndustry() {
             </p>
 
             <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Excise & Contract Sourcing:</strong> Because molasses transport is heavily regulated by state excise policies, we handle all permit tracking, e-way bill logging, and supply clearances from partner sugar mills, ensuring legally compliant delivery directly to your bulk intake storage tanks.
+              <strong>Excise & Contract Sourcing:</strong> Because molasses transport is heavily regulated by state excise policies, we handle all permit tracking, e-way bill logging, weighment slip checks, and supply clearances from partner sugar mills, ensuring legally compliant delivery directly to your bulk intake storage tanks.
             </p>
           </div>
 

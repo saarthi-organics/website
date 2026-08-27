@@ -40,7 +40,7 @@ export default function ChhattisgarhSupplierPage() {
     },
     {
       q: "Are your liquid road tanker shipments fully compliant with CG State Excise?",
-      a: "Yes. All sugarcane molasses movement in Chhattisgarh is fully aligned with the State Excise department regulations. We issue digitized e-way bills, official weighbridge certifications, and GST invoices to ensure hassle-free transit."
+      a: "Yes. All sugarcane molasses movement in Chhattisgarh is fully aligned with the State Excise department regulations. We issue digitized e-way bills, official weighbridge certifications, GST invoices, and weighment slips to ensure hassle-free transit."
     },
     {
       q: "Can you supply molasses for cement or concrete manufacturing in CG?",
@@ -101,7 +101,7 @@ export default function ChhattisgarhSupplierPage() {
               Transporting liquid molasses inside Chhattisgarh requires navigating state excise regulations. Saarthi Organics handles all required compliance documents. We coordinate directly with state portals to generate e-way bills and transit permits, ensuring tankers clear checkpoints without delays.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We operate an in-house fleet of specialized liquid road tankers. Each vehicle is equipped with GPS tracking and digital seals. Our weighbridge check procedures ensure the exact quantity loaded at the sugar mill gates matches the quantity discharged at your facility.
+              We operate an in-house fleet of specialized liquid road tankers. Each vehicle is equipped with GPS tracking and seals. Our weighbridge check procedures ensure the exact quantity loaded at the sugar mill gates matches the quantity discharged at your facility.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>

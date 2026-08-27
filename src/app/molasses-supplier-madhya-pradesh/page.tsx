@@ -40,7 +40,7 @@ export default function MadhyaPradeshSupplierPage() {
     },
     {
       q: "Do you provide excise permit documentation for MP distilleries?",
-      a: "Yes. Our compliance desk handles the entire state excise permitting workflow. We ensure all transport passes, digital e-way bills, and transit declarations are fully processed before the tankers arrive at your facility."
+      a: "Yes. Our compliance desk handles the entire state excise permitting workflow. We ensure all transport passes, digital e-way bills, weighment slips, and transit declarations are fully processed before the tankers arrive at your facility."
     },
     {
       q: "What is the standard delivery lead time for MP locations?",
@@ -101,7 +101,7 @@ export default function MadhyaPradeshSupplierPage() {
               Transporting liquid molasses through Central India requires navigating strict state excise compliance guidelines. Saarthi Organics manages the entire administrative workflow. Our compliance team coordinates with state excise portals to secure all necessary transport permits and matching GST e-way bills.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              We operate a private fleet of specialized liquid road tankers. Each vehicle is equipped with digital sealing and GPS tracking to prevent cargo tampering. Our automated weighbridge validation ensures that the weight loaded at the mill gates matches the weight discharged at your plant.
+              We operate a private fleet of specialized liquid road tankers. Each vehicle is equipped with GPS tracking to prevent cargo tampering. Our automated weighbridge validation ensures that the weight loaded at the mill gates matches the weight discharged at your plant.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>

@@ -33,7 +33,7 @@ export default function Home() {
     {
       icon: "📄",
       title: "GST-Compliant Documentation",
-      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, and proper transit permit documentation. Sourcing specifications or quality documentation may be discussed based on customer requirements."
+      desc: "Standardized corporate billing. Complete transparency with GST invoices, e-way bills, weighment slips, and proper transit permit documentation. Sourcing specifications or quality documentation may be discussed based on customer requirements."
     },
     {
       icon: "📦",
@@ -65,7 +65,7 @@ export default function Home() {
     {
       icon: "🦠",
       title: "Yeast Industry",
-      desc: "Highly filtered molasses with consistent pH and mineral profiles, serving as a primary carbon feed source for yeast propagation.",
+      desc: "Low-ash sugarcane molasses with stable pH and nutrient profiles, serving as a primary carbon feed source for yeast propagation.",
       link: "/molasses-for-yeast-industry",
       image: "/industry_yeast.png"
     },
@@ -86,7 +86,7 @@ export default function Home() {
     {
       icon: "🔬",
       title: "Pharma Industry",
-      desc: "Controlled-viscosity carbon feeds used in industrial fermentation systems for vitamins, antibiotics, and organic acids.",
+      desc: "Sugarcane molasses carbon substrates used in industrial fermentation systems for vitamins, antibiotics, and organic acids.",
       link: "/molasses-for-pharma",
       image: "/industry_pharma.png"
     },
@@ -285,7 +285,7 @@ export default function Home() {
             <span className="section-label">Industrial Solutions</span>
             <h2 className="section-title">Industries We Serve</h2>
             <p className="section-desc">
-              Providing application-specific molasses formulations matching the distinct chemical and physical specifications of diverse industrial sectors.
+              Supplying industrial-grade molasses matching the distinct chemical and physical specifications of diverse industrial sectors.
             </p>
           </div>
           <div className="industry-grid">
@@ -458,7 +458,7 @@ export default function Home() {
               <div className="stat-label">States Served</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">150K+</div>
+              <div className="stat-number">80K+</div>
               <div className="stat-label">Tons Supplied Annually</div>
             </div>
             <div className="stat-card">

@@ -40,7 +40,7 @@ export default function RajasthanSupplierPage() {
     },
     {
       q: "Do you process state border clearances for Rajasthan deliveries?",
-      a: "Yes. Our logistics desk processes all inter-state transit permits, including Rajasthan State Excise declarations and matching GST e-way bills. This ensures our tankers clear borders like Shahjahanpur or Kotputli without compliance delays."
+      a: "Yes. Our logistics desk processes all inter-state transit permits, including Rajasthan State Excise declarations, matching GST e-way bills, and verified weighment slips. This ensures our tankers clear borders like Shahjahanpur or Kotputli without compliance delays."
     },
     {
       q: "What is the minimum order volume for Rajasthan industries?",
@@ -100,7 +100,7 @@ export default function RajasthanSupplierPage() {
               Transporting liquid molasses through the arid landscape of Rajasthan requires specialized logistics management. Extreme heat can affect the viscosity of molasses, potentially leading to carbonization or handling issues. Saarthi Organics utilizes insulated liquid tankers that stabilize temperatures during long-haul transit.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Furthermore, our compliance team manages all inter-state excise permits, e-way bills, and transit declarations. We verify all permits before dispatch, allowing our tankers to clear border checkpoints quickly and maintain strict delivery timelines.
+              Furthermore, our compliance team manages all inter-state excise permits, e-way bills, weighment slips, and transit declarations. We verify all permits before dispatch, allowing our tankers to clear border checkpoints quickly and maintain strict delivery timelines.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>

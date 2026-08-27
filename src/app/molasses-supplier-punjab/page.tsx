@@ -97,10 +97,10 @@ export default function PunjabSupplierPage() {
 
             <h3 style={{ fontSize: '1.4rem', margin: '36px 0 16px 0', color: 'var(--accent-gold)' }}>Logistics Integrity & Border Excise Clearances</h3>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Transporting industrial molasses across state borders into Punjab requires rigorous compliance. Saarthi Organics maintains an in-house excise documentation team that coordinates directly with state authorities. We manage all transit passes and ensure that e-way bills and excise permits are properly matched to prevent delays at entry points like Lalru and Shambhu borders.
+              Transporting industrial molasses across state borders into Punjab requires rigorous compliance. Saarthi Organics maintains an in-house excise documentation team that coordinates directly with state authorities. We manage all transit passes and ensure that e-way bills, excise permits, and weighment slips are properly matched to prevent delays at entry points like Lalru and Shambhu borders.
             </p>
             <p className="section-desc" style={{ marginBottom: '20px', textAlign: 'left', lineHeight: '1.6' }}>
-              Our tankers are constructed with heavy-duty mild steel (MS) and stainless steel (SS) designed for liquid molasses transportation. With digital sealing, GPS tracking, and automated weighment validation, we verify that the weight loaded at the mill matches the weight discharged at your plant.
+              Our tankers are constructed with heavy-duty mild steel (MS) and stainless steel (SS) designed for liquid molasses transportation. With GPS tracking and automated weighment validation, we verify that the weight loaded at the mill matches the weight discharged at your plant.
             </p>
 
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>

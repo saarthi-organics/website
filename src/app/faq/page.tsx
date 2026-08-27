@@ -32,7 +32,7 @@ export default function FAQPage() {
     },
     {
       q: "Do you provide GST-compliant invoices?",
-      a: "Yes. Saarthi Organics is a registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation."
+      a: "Yes. Saarthi Organics is a registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, verified weighment slips, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation."
     },
     {
       q: "Can recurring monthly supply contracts be supported?",
@@ -56,7 +56,7 @@ export default function FAQPage() {
     },
     {
       q: "What documents can be provided with dispatches?",
-      a: "Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified weighment records. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available."
+      a: "Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified Weighment Slip. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available."
     },
     {
       q: "How should molasses be handled upon receipt?",
@@ -125,7 +125,7 @@ export default function FAQPage() {
         <h2>Can tanker deliveries be arranged?</h2>
         <p>Yes. Bulk tanker supply is our specialized operation. We coordinate logistics utilizing our in-house fleet of tankers, ensuring reliable transit routing and priority dispatch schedules directly to your plant receiving valves.</p>
         <h2>Do you provide GST-compliant invoices?</h2>
-        <p>Yes. Saarthi Organics is a registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation.</p>
+        <p>Yes. Saarthi Organics is a registered corporate tax-paying entity (GSTIN: 06AFEFS2128A1ZJ). Every delivery is accompanied by a valid GST Tax Invoice (HSN Code 1703), transit e-way bills, verified weighment slips, and necessary state excise passes to ensure legal compliance and smooth Input Tax Credit (ITC) reconciliation.</p>
         <h2>Can recurring monthly supply contracts be supported?</h2>
         <p>Yes. We specialize in coordinating annual and monthly supply contracts with locked-in volume commitments. This supports raw material security for plant heads during the seasonal sugar mill crushing off-season (May to October).</p>
         <h2>How is pricing determined for bulk orders?</h2>
@@ -137,7 +137,7 @@ export default function FAQPage() {
         <h2>Do you support buyers across multiple locations?</h2>
         <p>Yes. We coordinate multi-destination corporate accounts, allowing national procurement teams to negotiate unified supply terms while our logistics desk manages local dispatches to individual factory units.</p>
         <h2>What documents can be provided with dispatches?</h2>
-        <p>Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified weighment records. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available.</p>
+        <p>Every shipment is accompanied by standard logistics and legal documentation: a GST Tax Invoice, E-Way Bill, and verified Weighment Slip. Quality-related documentation, such as a Certificate of Analysis (COA), can be discussed and provided on request where available.</p>
         <h2>How should molasses be handled upon receipt?</h2>
         <p>Molasses should be stored in steel or concrete tanks with specialized bottom discharge lines. Due to its high viscosity, we recommend using positive displacement rotary lobe pumps. For winter dispatches in cold climates, our tankers are fitted with internal steam-heating coils to drop the viscosity for rapid unloading.</p>
         <h2>What factors influence molasses quality consistency?</h2>
