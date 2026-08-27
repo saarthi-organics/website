@@ -63,7 +63,7 @@ export default function PunjabSupplierPage() {
           <span className="section-label">Punjab B2B Sourcing Channel</span>
           <h1 className="subpage-hero-title">Bulk Sugarcane Molasses Supplier in Punjab</h1>
           <p className="subpage-hero-desc">
-            Direct mill allocations of industrial-grade liquid sugarcane molasses. Serving feed mills in Khanna, distilleries, and bio-fuel plants across Punjab with full excise clearance.
+            Bulk supplier of industrial-grade liquid sugarcane molasses. Serving feed mills in Khanna, distilleries, and bio-fuel plants across Punjab with full excise clearance.
           </p>
         </div>
       </div>

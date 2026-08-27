@@ -139,7 +139,7 @@ export default function PremiumIndustrialMolasses() {
           <div className="section-header">
             <span className="section-label">Chemical Composition</span>
             <h2 className="section-title">Technical Specification Datasheet</h2>
-            <p className="section-desc">We maintain consistent viscosity and sugar levels across all supply runs.</p>
+            <p className="section-desc">We work to maintain typical industrial-grade consistency, although specifications may vary slightly based on source, season, and batch.</p>
           </div>
           <SpecTable />
         </div>

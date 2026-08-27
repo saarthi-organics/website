@@ -98,7 +98,7 @@ export default function AboutUs() {
             <div className="feature-card">
               <span style={{ fontSize: '2rem', display: 'block', marginBottom: '16px' }}>🔬</span>
               <h3 className="feature-card-title">Volume & Quality Assurance</h3>
-              <p className="feature-card-desc">Sourcing is supported by committed supply agreements and direct mill allocations. Sourcing parameters are typically structured to align with standard industrial Brix and TRS ranges.</p>
+              <p className="feature-card-desc">Sourcing is supported by committed supply agreements. Sourcing parameters are typically structured to align with standard industrial Brix and TRS ranges.</p>
             </div>
 
             <div className="feature-card">

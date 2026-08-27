@@ -36,7 +36,7 @@ export default function QualityAndSourcing() {
               For industrial processors, chemical consistency is paramount. Diluted molasses or fluctuating Brix percentages can compromise yeast fermentation and binder properties, causing production delays.
             </p>
             <p className="section-desc" style={{ marginBottom: '24px', lineHeight: '1.6' }}>
-              At Saarthi Organics, we manage quality at the source. We select batches directly from approved sugarcane refineries that maintain strict sanitation and crystallization parameters. Once sourced, the product is analyzed at the refinery loading terminal where it undergoes full hydrometer and refractometer analysis before transport dispatch.
+              At Saarthi Organics, we manage quality at the source. We select batches directly from approved sugarcane refineries that maintain strict sanitation and crystallization parameters.
             </p>
             
             <div className="symmetrical-detail-box" style={{ background: 'var(--bg-light)' }}>

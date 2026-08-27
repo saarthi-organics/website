@@ -61,7 +61,7 @@ export default function FoodProcessingIndustry() {
             <h3 style={{ fontSize: '1.4rem', margin: '24px 0 16px 0', color: 'var(--accent-gold)' }}>Procurement & Unloading Operations</h3>
             
             <p className="section-desc" style={{ marginBottom: '16px', textAlign: 'left', lineHeight: '1.6' }}>
-              <strong>Supply & Delivery Logistics:</strong> We dispatch bulk shipments utilizing clean road tankers (20 - 50 MT) directly to plant receiving bays. For custom formulations or specialized ingredients, we supply clean 1000L IBC Totes or sealed 200L food-grade drums.
+              <strong>Supply & Delivery Logistics:</strong> We dispatch bulk shipments utilizing clean road tankers (20 - 50 MT) directly to plant receiving bays. For specific batch requirements or specialized grades, we supply clean 1000L IBC Totes or sealed 200L food-grade drums.
             </p>
 
             <p className="section-desc" style={{ marginBottom: '24px', textAlign: 'left', lineHeight: '1.6' }}>

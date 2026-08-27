@@ -32,7 +32,7 @@ export default function MadhyaPradeshSupplierPage() {
   const regionalFaqs = [
     {
       q: "How does Saarthi Organics distribute bulk molasses in Madhya Pradesh?",
-      a: "We manage bulk dispatches using our own liquid tanker fleet. We source molasses from cooperative and private mills in the Malwa region (like Ujjain and Sehore) and coordinate inter-state transit lines from adjacent crushing zones to ensure a steady supply for MP buyers."
+      a: "We manage bulk dispatches using our own liquid tanker fleet. We source molasses from cooperative and private mills in the Malwa region and coordinate inter-state transit lines from adjacent crushing zones to ensure a steady supply for MP buyers."
     },
     {
       q: "Why is Ujjain-Dewas a key destination for your molasses supplies?",
@@ -44,7 +44,7 @@ export default function MadhyaPradeshSupplierPage() {
     },
     {
       q: "What is the standard delivery lead time for MP locations?",
-      a: "For contracted volume partners, we schedule dispatches to match your production cycles, ensuring tankers arrive within 48 to 72 hours of order confirmation. We also maintain emergency buffer stocks to help reduce the risk of plant production interruptions."
+      a: "For contracted volume partners, we schedule dispatches to match your production cycles, ensuring tankers arrive within 48 to 72 hours of order confirmation."
     }
   ];
 
@@ -107,7 +107,7 @@ export default function MadhyaPradeshSupplierPage() {
             <div className="symmetrical-grid-two-col" style={{ marginTop: '30px', marginBottom: '36px' }}>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Malwa Sourcing Desk</strong>
-                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Direct procurement links with sugar mills in Ujjain, Sehore, and adjacent belts ensure steady inventory year-round.</p>
+                <p style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Our sourcing network across key sugarcane belts in the region helps secure steady volume availability year-round.</p>
               </div>
               <div className="symmetrical-detail-box" style={{ margin: 0 }}>
                 <strong style={{ color: 'var(--accent-amber)' }}>Excise Compliant</strong>

@@ -48,7 +48,7 @@ export default function FAQPage() {
     },
     {
       q: "Can deliveries be arranged on short notice?",
-      a: "Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to help reduce the risk of distillery or plant production interruptions."
+      a: "Yes. For contracted volume partners, we schedule dispatches to align with your production requirements, coordinating transport runs within 24 to 48 hours of order confirmation based on tanker availability."
     },
     {
       q: "Do you support buyers across multiple locations?",
@@ -133,7 +133,7 @@ export default function FAQPage() {
         <h2>What information is required to request a quotation?</h2>
         <p>To provide an accurate B2B quote, we request your target volume (in Metric Tons), frequency of dispatch (daily, weekly, or monthly), preferred packaging format, delivery site postal PIN code, and any specific unloading gate constraints (such as coupler sizes or pump requirements).</p>
         <h2>Can deliveries be arranged on short notice?</h2>
-        <p>Yes. By maintaining buffer stock reserves at our dedicated sourcing yards and partner mill storage tanks, we coordinate emergency tanker runs within 24 to 48 hours for contracted buyers to help reduce the risk of distillery or plant production interruptions.</p>
+        <p>Yes. For contracted volume partners, we schedule dispatches to align with your production requirements, coordinating transport runs within 24 to 48 hours of order confirmation based on tanker availability.</p>
         <h2>Do you support buyers across multiple locations?</h2>
         <p>Yes. We coordinate multi-destination corporate accounts, allowing national procurement teams to negotiate unified supply terms while our logistics desk manages local dispatches to individual factory units.</p>
         <h2>What documents can be provided with dispatches?</h2>
