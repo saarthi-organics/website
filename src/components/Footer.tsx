@@ -135,7 +135,7 @@ export default function Footer() {
           margin: '0 auto',
           maxWidth: '1000px'
         }}>
-          Saarthi Organics supplies industrial-grade molasses for approved commercial and industrial applications. Product suitability should be evaluated based on individual operational requirements.
+          Saarthi Organics supplies industrial-grade molasses for approved commercial and industrial applications.
         </p>
       </div>
 
